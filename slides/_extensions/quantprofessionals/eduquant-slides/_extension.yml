@@ -4,7 +4,8 @@ version: 0.0.1
 contributes:
   formats:
     revealjs:
-       theme: [default, theme.scss] 
+       theme: [default, theme.scss]
+       multiplex: true
        transition: slide
        transition-speed: fast
        logo: logo_transparent.svg
