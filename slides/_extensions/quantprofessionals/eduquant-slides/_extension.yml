@@ -9,6 +9,7 @@ contributes:
        transition-speed: fast
        logo: logo_transparent.svg
        multiplex: true
+       resources: "*-speaker.html"
        footer:
        title-slide-attributes:
           data-background-color: lightblue

@@ -2,6 +2,7 @@ project:
   type: website
   output-dir: docs
 
+
 website:
   title: "eduquant-courses"
   navbar:
@@ -12,7 +13,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: moon
     css: styles.css
     toc: true
 
