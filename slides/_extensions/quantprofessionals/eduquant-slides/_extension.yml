@@ -5,10 +5,10 @@ contributes:
   formats:
     revealjs:
        theme: [default, theme.scss]
-       multiplex: true
        transition: slide
        transition-speed: fast
        logo: logo_transparent.svg
+       multiplex: true
        footer:
        title-slide-attributes:
           data-background-color: lightblue
