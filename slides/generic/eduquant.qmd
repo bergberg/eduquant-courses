@@ -1,0 +1,63 @@
+---
+title: "Course Title"
+subtitle: "Day N: Catchy tagline"
+author: "Your Name"
+date: today
+date-format: long
+format: eduquant-slides-revealjs
+toc: true  # ToC slide generated from title slides
+---
+
+
+## Quote/article discussion example
+
+:::: {.columns}
+
+::: {.column width="50%" .r-fit-text}
+Longer discussion of the article, text auto-fit. 
+
+Lorem ipsum dolor sit amet^[Footnote text], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+Ut enim ad minim veniam:
+
+ 1. quis nostrud exercitation,
+ 1. ullamco laboris nisi ut aliquip,
+ 1. ex ea commodo consequat. 
+
+:::
+
+::: {.column width="50%" .r-fit-text }
+:::{.callout-note icon=false collapse="false" appearance="simple"}
+
+### [*CRR Article 146*](https://www.eba.europa.eu/regulation-and-policy/single-rulebook/interactive-single-rulebook/1478)
+
+***Measures to be taken where the requirements of this Chapter cease to be met.***
+ 
+*Where an institution ceases to comply with the requirements laid down in this Chapter, it shall notify the competent authority and do **one** of the following:* 
+
+*[...]*
+
+*(b) demonstrate to the satisfaction of the competent authorities that the effect of non-compliance is immaterial.*
+:::
+:::
+
+::::
+
+::: aside
+Additional commentary of more peripheral interest.
+:::
+
+::: {.notes}
+Regulatory article/paragraph slide format.
+:::
+
+## Diagram slide
+
+
+## Graph slide
+
+
+## List/text slide
+
+
+## Multiple choice question slide

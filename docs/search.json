@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "slides/generic/eduquant.html#quotearticle-discussion-example",
+    "href": "slides/generic/eduquant.html#quotearticle-discussion-example",
+    "title": "Course Title",
+    "section": "Quote/article discussion example",
+    "text": "Quote/article discussion example\n\n\nLonger discussion of the article, text auto-fit.\nLorem ipsum dolor sit amet1, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam:\n\nquis nostrud exercitation,\nullamco laboris nisi ut aliquip,\nex ea commodo consequat.\n\n\n\n\n\nCRR Article 146\n\n\nMeasures to be taken where the requirements of this Chapter cease to be met.\nWhere an institution ceases to comply with the requirements laid down in this Chapter, it shall notify the competent authority and do one of the following:\n[…]\n(b) demonstrate to the satisfaction of the competent authorities that the effect of non-compliance is immaterial.\n\n\n\n\n\n\n\nRegulatory article/paragraph slide format.\n\n\nAdditional commentary of more peripheral interest.\nFootnote text"
+  },
+  {
+    "objectID": "slides/generic/eduquant.html#diagram-slide",
+    "href": "slides/generic/eduquant.html#diagram-slide",
+    "title": "Course Title",
+    "section": "Diagram slide",
+    "text": "Diagram slide"
+  },
+  {
+    "objectID": "slides/generic/eduquant.html#graph-slide",
+    "href": "slides/generic/eduquant.html#graph-slide",
+    "title": "Course Title",
+    "section": "Graph slide",
+    "text": "Graph slide"
+  },
+  {
+    "objectID": "slides/generic/eduquant.html#listtext-slide",
+    "href": "slides/generic/eduquant.html#listtext-slide",
+    "title": "Course Title",
+    "section": "List/text slide",
+    "text": "List/text slide"
+  },
+  {
+    "objectID": "slides/generic/eduquant.html#multiple-choice-question-slide",
+    "href": "slides/generic/eduquant.html#multiple-choice-question-slide",
+    "title": "Course Title",
+    "section": "Multiple choice question slide",
+    "text": "Multiple choice question slide"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "eduquant-courses",
+    "section": "",
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\nCourse Title\n\n\n\n\n\n\nYour Name\n\n\nAug 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]
