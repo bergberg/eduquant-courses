@@ -7,6 +7,20 @@
     "text": "About this site"
   },
   {
+    "objectID": "slides/generic/eduquant.html#host",
+    "href": "slides/generic/eduquant.html#host",
+    "title": "Course Title",
+    "section": "host",
+    "text": "host\nA password is required to host a seminar.\n\n\nClick  here  to host the seminar."
+  },
+  {
+    "objectID": "slides/generic/eduquant.html#invite",
+    "href": "slides/generic/eduquant.html#invite",
+    "title": "Course Title",
+    "section": "invite",
+    "text": "invite"
+  },
+  {
     "objectID": "slides/generic/eduquant.html#quotearticle-discussion-example",
     "href": "slides/generic/eduquant.html#quotearticle-discussion-example",
     "title": "Course Title",
@@ -39,13 +53,13 @@
     "href": "slides/generic/eduquant.html#multiple-choice-question-slide",
     "title": "Course Title",
     "section": "Multiple choice question slide",
-    "text": "Multiple choice question slide"
+    "text": "Multiple choice question slide\n\n    Yes\n    \n    No\n\nResponses: 0"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\nCourse Title\n\n\n\n\n\n\nYour Name\n\n\nAug 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\nCourse Title\n\n\n\n\n\n\nYour Name\n\n\nAug 22, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

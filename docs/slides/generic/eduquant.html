@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.0.38">
 
   <meta name="author" content="Your Name">
-  <meta name="dcterms.date" content="2022-08-21">
+  <meta name="dcterms.date" content="2022-08-22">
   <title>eduquant-courses - Course Title</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -323,12 +323,14 @@
   <h1 class="title">Course Title</h1>
   <p class="subtitle">Day N: Catchy tagline</p>
   <p class="author">Your Name</p>
-  <p class="date">August 21, 2022</p>
+  <p class="date">August 22, 2022</p>
 </section>
 <section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Table of contents</h2>
 <ul>
+<li><a href="#/host" id="/toc-host">host</a></li>
+<li><a href="#/invite" id="/toc-invite">invite</a></li>
 <li><a href="#/quotearticle-discussion-example" id="/toc-quotearticle-discussion-example">Quote/article discussion example</a></li>
 <li><a href="#/diagram-slide" id="/toc-diagram-slide">Diagram slide</a></li>
 <li><a href="#/graph-slide" id="/toc-graph-slide">Graph slide</a></li>
@@ -338,6 +340,20 @@
 </nav>
 </section>
 
+<section id="host" class="slide level2">
+<h2>host</h2>
+<p>A password is required to host a seminar.</p>
+<div><input type="password" id="password" style="font-size:70%;" value="123456"></div>
+
+<div>Click <a id="host" href="#"> here </a> to host the seminar.</div>
+</section>
+<section id="invite" class="slide level2">
+<h2>invite</h2>
+<div>
+    <canvas id="qrcode" style="width:300px;height:300px;"></canvas>
+</div>              
+<a id="room"></a>
+</section>
 <section id="quotearticle-discussion-example" class="slide level2">
 <h2>Quote/article discussion example</h2>
 <div class="columns">
@@ -394,6 +410,12 @@
 </section>
 <section id="multiple-choice-question-slide" class="slide level2">
 <h2>Multiple choice question slide</h2>
+<div class="poll" data-poll="1">
+    <button data-value="yes">Yes</button>
+    <br>
+    <button data-value="no">No</button>
+</div>
+<p style="font-size:24px;color:gray;">Responses: <span class="voters" data-poll="1">0</span></p>
 
 
 <img src="../_extensions/quantprofessionals/eduquant-slides/logo_transparent.svg" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -411,8 +433,10 @@
   <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/multiplex/socket.io.js"></script>
-  <script src="../../site_libs/revealjs/plugin/multiplex/multiplex.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-seminar/seminar.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-seminar/socket.io.min.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-seminar/qrious.min.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-poll/poll.js"></script>
   <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -435,7 +459,7 @@
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":null,"id":"66bd7aee5a90b3d7","url":"https://reveal-multiplex.glitch.me/"},
+'seminar': {"server":"https://floating-spire-62135.herokuapp.com/","room":"Eduquant","hash":"$2a$05$xDh7ryvPvudDIz/KulLV9OD/FjyTpXq/Jr.N0vCpvWjO2qeJRXEc.","autoJoin":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -606,14 +630,66 @@
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealSeminar, RevealPoll, QuartoSupport,
 
           RevealMath,
-          
+          RevealNotes,
           RevealSearch,
           RevealZoom
         ]
       });
+    </script>
+    <script>
+    document.querySelector("#host").addEventListener('click', function(e) {
+    	e.preventDefault();
+    	RevealSeminar.open_or_join_room(document.getElementById('password').value);
+    });
+
+    document.querySelector("#close").addEventListener('click', function(e) {
+    	e.preventDefault();
+    	RevealSeminar.close_room(document.getElementById('password').value);
+    });
+
+    function logger( event ) {
+    			document.getElementById("seminar-status").innerHTML = event;
+    			console.log( event ); 
+    }
+    function generateToken(length) {
+    	var token = "";
+    	while ( token.length < length ) {
+    		token += (Math.random() * new Date().getTime()).toString(36).replace(/\./g, '');
+    	}
+    	return token.substr(0,length);
+    }
+
+    function getParameterByName(name, url) {
+        if (!url) {
+          url = window.location.href;
+        }
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    function addParam(url, param, value) {
+    	var a = document.createElement('a'), regex = /(?:\?|&amp;|&)+([^=]+)(?:=([^&]*))*/g;
+    	var match, str = []; a.href = url; param = encodeURIComponent(param);
+    	while (match = regex.exec(a.search)) {
+    		if (param != match[1]) str.push(match[1]+(match[2]?"="+match[2]:""));
+    	}
+    	str.push(param+(value?"="+ encodeURIComponent(value):""));
+    	a.search = str.join("&");
+    	return a.href;
+    }
+    var room = getParameterByName("room") || generateToken(32);
+    var link = addParam(window.location.href, "room", room );
+    document.getElementById("room").innerHTML = link;
+    document.getElementById("room").href = link;
+    var qrcode = new QRious({ element: document.getElementById('qrcode'), level: 'H', padding: 25, size: 500, value: link });
+
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {

@@ -8,7 +8,24 @@ format: eduquant-slides-revealjs
 toc: true  # ToC slide generated from title slides
 ---
 
+## host
 
+A password is required to host a seminar.
+
+```{=html}
+<div><input type="password" id="password" style="font-size:70%;" value="123456"></div>
+
+<div>Click <a id="host" href="#"> here </a> to host the seminar.</div>
+```
+
+## invite
+
+```{=html}
+<div>
+    <canvas id="qrcode" style="width:300px;height:300px;"></canvas>
+</div>				
+<a id="room"></a>
+```
 ## Quote/article discussion example
 
 :::: {.columns}
@@ -61,3 +78,12 @@ Regulatory article/paragraph slide format.
 
 
 ## Multiple choice question slide
+
+```{=html}
+<div class="poll" data-poll="1">
+    <button data-value="yes">Yes</button>
+    <br>
+    <button data-value="no">No</button>
+</div>
+<p style="font-size:24px;color:gray;">Responses: <span class="voters" data-poll="1">0</span></p>
+```

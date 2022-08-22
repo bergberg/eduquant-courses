@@ -1,0 +1,8 @@
+name: RevealSeminar
+script: [seminar.js, socket.io.min.js, qrious.min.js]
+config:
+  seminar:
+    server: 'https://floating-spire-62135.herokuapp.com/'
+    room: 'Eduquant'
+    hash: '$2a$05$xDh7ryvPvudDIz/KulLV9OD/FjyTpXq/Jr.N0vCpvWjO2qeJRXEc.'
+    autoJoin: true
