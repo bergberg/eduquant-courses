@@ -39,13 +39,13 @@
     "href": "slides/generic/eduquant.html#multiple-choice-question-slide",
     "title": "Course Title",
     "section": "Multiple choice question slide",
-    "text": "Multiple choice question slide"
+    "text": "Multiple choice question slide\n\n\nLonger discussion of the question, text auto-fit.\nLorem ipsum dolor sit amet1, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam:\n\nquis nostrud exercitation,\nullamco laboris nisi ut aliquip,\nex ea commodo consequat.\n\n\n\n\n\n\n\n\n\n\nFootnote text"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\nCourse Title\n\n\n\n\n\n\nYour Name\n\n\nAug 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\nCourse Title\n\n\n\n\n\n\nYour Name\n\n\nAug 22, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

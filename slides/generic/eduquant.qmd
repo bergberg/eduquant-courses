@@ -61,3 +61,27 @@ Regulatory article/paragraph slide format.
 
 
 ## Multiple choice question slide
+
+:::: {.columns}
+
+::: {.column width="50%" .r-fit-text}
+Longer discussion of the question, text auto-fit. 
+
+Lorem ipsum dolor sit amet^[Footnote text], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+Ut enim ad minim veniam:
+
+ 1. quis nostrud exercitation,
+ 1. ullamco laboris nisi ut aliquip,
+ 1. ex ea commodo consequat. 
+
+:::
+
+::: {.column width="50%" .r-fit-text }
+```{=html}
+<iframe class="qp_iframe" src="https://poll-maker.com/frame4435386x512A084F-139" seamless="seamless" frameborder="no" style="border:0; background:transparent; width:100%; height:540px;"></iframe>
+```
+:::
+::::
+
+
