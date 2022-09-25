@@ -4,10 +4,7 @@ subtitle: "Day 1"
 # author: "Pieter van den Berg"
 date: today
 date-format: long
-format: 
-    eduquant-slides-revealjs:
-        center: true
-toc: false  # ToC slide generated from title slides
+format: eduquant-slides-revealjs
 ---
 
 
@@ -254,7 +251,7 @@ Regulatory article/paragraph slide format.
 
 :::: {.columns}
 
-::: {.column width="40%" .r-fit-text}
+::: {.column width="50%" .r-fit-text}
 Longer discussion of the diagram, text auto-fit. 
 
 Lorem ipsum dolor sit amet^[Footnote text], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -267,7 +264,7 @@ Ut enim ad minim veniam:
 
 :::
 
-::: {.column width="60%" .r-fit-text }
+::: {.column width="50%" }
 
 ```{mermaid}
 graph TD
@@ -367,7 +364,7 @@ term
 
 
 
-## Animated hierarchy {auto-animate=true auto-animate-easing="ease"}
+## Animated hierarchy {auto-animate=true auto-animate-easing="ease" auto-animate-duration="0.5"}
 
 This is a fancy slide with auto-animated matched elements and fragments
 
@@ -403,7 +400,7 @@ Grade 3
 
 :::
 
-## Animated hierarchy {auto-animate=true auto-animate-easing="ease"}
+## Animated hierarchy {auto-animate=true auto-animate-easing="ease" auto-animate-duration="0.5"}
 
 This is a fancy slide with auto-animated matched elements and fragments
 
@@ -413,7 +410,7 @@ This is a fancy slide with auto-animated matched elements and fragments
 :::
 
 ::: {data-id="box2" style="background: #006076; width: 250px; height: 80px; border-radius: 20px;"}
-:::
+::: 
 
 ::: {.r-hstack}
 
@@ -428,17 +425,20 @@ This is a fancy slide with auto-animated matched elements and fragments
 
 ::: {data-id="text1"}
 Rating System
+: 
 :::
 
 ::: {data-id="text2"}
 Calibration Segment
+: 
 :::
 
 ::: {data-id="text3"}
 Grade
+: 
 :::
 
-## Animated hierarchy {auto-animate=true auto-animate-easing="ease-out"}
+## Animated hierarchy {auto-animate=true auto-animate-easing="ease-out" auto-animate-duration="0.1"}
 
 This is a fancy slide with auto-animated matched elements and fragments
 

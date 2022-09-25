@@ -12,6 +12,7 @@ contributes:
        resources: "*-speaker.html"
        mermaid-format: svg
        css: style.css
+       center: true
        title-slide-attributes:
           data-background-color: lightblue
           data-background-position: bottom 2.5em center
