@@ -1,0 +1,281 @@
+---
+title: "Course Title"
+subtitle: "Day N: Catchy tagline"
+author: "Your Name"
+date: today
+date-format: long
+format: eduquant-slides-revealjs
+toc: false  # ToC slide generated from title slides
+---
+
+
+## Quote/article discussion example
+
+:::: {.columns}
+
+::: {.column width="50%" .r-fit-text}
+Longer discussion of the article, text auto-fit. 
+
+Lorem ipsum dolor sit amet^[Footnote text], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+Ut enim ad minim veniam:
+
+ 1. quis nostrud exercitation,
+ 1. ullamco laboris nisi ut aliquip,
+ 1. ex ea commodo consequat. 
+
+:::
+
+::: {.column width="50%" .r-fit-text }
+:::{.callout-note icon=false collapse="false" appearance="simple"}
+
+### [*CRR Article 146*](https://www.eba.europa.eu/regulation-and-policy/single-rulebook/interactive-single-rulebook/1478)
+
+***Measures to be taken where the requirements of this Chapter cease to be met.***
+ 
+*Where an institution ceases to comply with the requirements laid down in this Chapter, it shall notify the competent authority and do **one** of the following:* 
+
+*[...]*
+
+*(b) demonstrate to the satisfaction of the competent authorities that the effect of non-compliance is immaterial.*
+:::
+:::
+
+::::
+
+:::{.callout-warning}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+
+::: {.notes}
+Regulatory article/paragraph slide format.
+:::
+
+## Diagram slide 
+#### (with mermaid)
+
+:::: {.columns}
+
+::: {.column width="40%" .r-fit-text}
+Longer discussion of the diagram, text auto-fit. 
+
+Lorem ipsum dolor sit amet^[Footnote text], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+Ut enim ad minim veniam:
+
+ 1. quis nostrud exercitation,
+ 1. ullamco laboris nisi ut aliquip,
+ 1. ex ea commodo consequat. 
+
+:::
+
+::: {.column width="60%" .r-fit-text }
+
+```{mermaid}
+graph TD
+    A[Christmas] --> B(Go shopping)
+    B --> C{Let me think}
+    C -->|A| D[Laptop]
+    C -->|B| E[iPhone]
+    C -->|C| F[fa:fa-car Car]
+```
+
+:::
+
+::::
+
+::: aside
+Additional commentary of more peripheral interest.
+:::
+
+::: {.notes}
+Diagrams with mermaid. Use https://mermaid.live/ to edit online. Alternatively, export svg from http://draw.io (see next slide)
+:::
+
+## Small diagram/figure slide 
+
+:::: {.columns}
+
+::: {.column width="40%" .r-fit-text}
+Longer discussion of the diagram, text auto-fit. 
+
+Lorem ipsum dolor sit amet^[Footnote text], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+Ut enim ad minim veniam:
+
+ 1. quis nostrud exercitation,
+ 1. ullamco laboris nisi ut aliquip,
+ 1. ex ea commodo consequat. 
+
+:::
+
+::: {.column width="60%" }  
+
+![](irb-diagram.svg){.absolute top=33%}
+
+:::
+
+::::
+
+::: aside
+Additional commentary of more peripheral interest.
+:::
+
+::: {.notes}
+Export svg from http://draw.io (see next slide). Position/size figure with .absolute
+:::
+
+
+
+## Large diagram/figure slide 
+
+
+![](irb-diagram-large.svg){fig-align="center"}
+
+:::{.r-fit-text}
+Short description of the figure/diagram, text auto-fit. 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+:::
+
+
+::: {.notes}
+Put larger figures above text.
+:::
+
+
+## Simple list slide
+
+* item 1
+    + sub-item 1
+    + sub-item 2
+        - sub-sub-item 1
+* item 2
+
+## Numbered list slide 
+
+1. numbered item 1
+2. numbered item 2
+    i) sub-item 1
+         A.  sub-sub-item 1
+
+This formats definitions in a nice way:
+
+term
+: definition of the term
+
+
+
+
+
+
+## Animated hierarchy {auto-animate=true auto-animate-easing="ease"}
+
+This is a fancy slide with auto-animated matched elements and fragments
+
+
+::: {.r-vstack}
+::: {data-id="box1" style="background: #02908b; width: 570px; height: auto; border-radius: 20px;margin: 10px; padding: 10px"}
+:::{data-id="text1"} 
+Rating System
+:::
+:::
+
+::: {data-id="box2" style="background: #006076; color: lightgrey; width: 550px; height: auto; border-radius: 20px; margin: 10px ; padding: 10px"}
+::: {data-id="text2"}
+Calibration Segment
+:::
+:::
+
+::: {.r-hstack}
+::: {data-id="box3" style="background: #003f63; color: white; width: 150px; height: auto; border-radius: 20px; margin: 10px ; padding: 10px"}
+::: {data-id="text3"}
+Grade 1
+:::
+:::
+
+::: {data-id="box4" style="background: #003f63; color: white; width: 150px; height: auto; border-radius: 20px; margin: 10px ; padding: 10px"}
+Grade 2
+:::
+
+::: {data-id="box5" style="background: #003f63; color: white; width: 150px; height: auto; border-radius: 20px; margin: 10px ; padding: 10px"}
+Grade 3
+:::
+:::
+
+:::
+
+## Animated hierarchy {auto-animate=true auto-animate-easing="ease"}
+
+This is a fancy slide with auto-animated matched elements and fragments
+
+
+::: {.r-stack}
+::: {data-id="box1" style="background: #02908b; width: 350px; height: 100px; border-radius: 20px;"}
+:::
+
+::: {data-id="box2" style="background: #006076; width: 250px; height: 80px; border-radius: 20px;"}
+:::
+
+::: {.r-hstack}
+
+::: {data-id="box3" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
+:::
+::: {data-id="box4" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
+:::
+::: {data-id="box5" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
+:::
+:::
+:::
+
+::: {data-id="text1"}
+Rating System
+:::
+
+::: {data-id="text2"}
+Calibration Segment
+:::
+
+::: {data-id="text3"}
+Grade
+:::
+
+## Animated hierarchy {auto-animate=true auto-animate-easing="ease-out"}
+
+This is a fancy slide with auto-animated matched elements and fragments
+
+
+::: {.r-stack}
+::: {data-id="box1" style="background: #02908b; width: 350px; height: 100px; border-radius: 20px;"}
+:::
+
+::: {data-id="box2" style="background: #006076; width: 250px; height: 80px; border-radius: 20px;"}
+:::
+
+::: {.r-hstack}
+
+::: {data-id="box3" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
+:::
+::: {data-id="box4" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
+:::
+::: {data-id="box5" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
+:::
+:::
+:::
+
+::: {data-id="text1"}
+Rating System
+: Liber idem donut basil
+:::
+
+::: {data-id="text2"}
+Calibration Segment
+: Avicum id ustercet
+:::
+
+::: {data-id="text3"}
+Grade
+: Nil opposit
+:::

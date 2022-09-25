@@ -10,7 +10,8 @@ contributes:
        logo: logo_transparent.svg
        multiplex: true
        resources: "*-speaker.html"
-       footer:
+       mermaid-format: svg
+       css: style.css
        title-slide-attributes:
           data-background-color: lightblue
           data-background-position: bottom 2.5em center

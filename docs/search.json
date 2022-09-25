@@ -7,45 +7,122 @@
     "text": "About this site"
   },
   {
-    "objectID": "slides/generic/eduquant.html#quotearticle-discussion-example",
-    "href": "slides/generic/eduquant.html#quotearticle-discussion-example",
-    "title": "Course Title",
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#introductions",
+    "href": "slides/moc_dt/moc_dt_day_1.html#introductions",
+    "title": "MoC + DT LGD",
+    "section": "Introductions",
+    "text": "Introductions\nWho are we \nWho are you \nWhat do you want \nWhat do you get"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#course-outline-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#course-outline-1",
+    "title": "MoC + DT LGD",
+    "section": "Course outline",
+    "text": "Course outline\nGeneral topics\n\nIRB Regulation\nRisk Parameter quantification\n\nMargin of Conservatism\n\nDeficiencies\nAppropriate Adjustments\nMoC Quantification\n\nDownturn LGD\n\nDownturn Identification\nDownturn LGD Quantification"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#day-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#day-1",
+    "title": "MoC + DT LGD",
+    "section": "Day 1",
+    "text": "Day 1\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nIntroduction\nOverview of IRB Regulation\nRisk Parameter Quantification\nBreak\nMoC Conceptual Basis\nGeneral Estimation Errors\nDay Recap"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#day-2",
+    "href": "slides/moc_dt/moc_dt_day_1.html#day-2",
+    "title": "MoC + DT LGD",
+    "section": "Day 2",
+    "text": "Day 2\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nQuiz & Recap\nDeficiencies\nAppropriate Adjustments\nBreak\nAdditional Uncertainties\nMoC Quantification\nCase Study Explanation"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#quotearticle-discussion-example",
+    "href": "slides/moc_dt/moc_dt_day_1.html#quotearticle-discussion-example",
+    "title": "MoC + DT LGD",
     "section": "Quote/article discussion example",
-    "text": "Quote/article discussion example\n\n\nLonger discussion of the article, text auto-fit.\nLorem ipsum dolor sit amet1, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam:\n\nquis nostrud exercitation,\nullamco laboris nisi ut aliquip,\nex ea commodo consequat.\n\n\n\n\n\nCRR Article 146\n\n\nMeasures to be taken where the requirements of this Chapter cease to be met.\nWhere an institution ceases to comply with the requirements laid down in this Chapter, it shall notify the competent authority and do one of the following:\n[…]\n(b) demonstrate to the satisfaction of the competent authorities that the effect of non-compliance is immaterial.\n\n\n\n\n\n\n\nRegulatory article/paragraph slide format.\n\n\nAdditional commentary of more peripheral interest.\nFootnote text"
+    "text": "Quote/article discussion example\n\n\nLonger discussion of the article, text auto-fit.\nLorem ipsum dolor sit amet1, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam:\n\nquis nostrud exercitation,\nullamco laboris nisi ut aliquip,\nex ea commodo consequat.\n\n\n\n\n\nCRR Article 146\n\n\nMeasures to be taken where the requirements of this Chapter cease to be met.\nWhere an institution ceases to comply with the requirements laid down in this Chapter, it shall notify the competent authority and do one of the following:\n[…]\n(b) demonstrate to the satisfaction of the competent authorities that the effect of non-compliance is immaterial.\n\n\n\n\n\n\nRegulatory article/paragraph slide format.\n\nFootnote text"
   },
   {
-    "objectID": "slides/generic/eduquant.html#diagram-slide",
-    "href": "slides/generic/eduquant.html#diagram-slide",
-    "title": "Course Title",
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#diagram-slide",
+    "href": "slides/moc_dt/moc_dt_day_1.html#diagram-slide",
+    "title": "MoC + DT LGD",
     "section": "Diagram slide",
-    "text": "Diagram slide"
+    "text": "Diagram slide\n(with mermaid)\n\n\nLonger discussion of the diagram, text auto-fit.\nLorem ipsum dolor sit amet1, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam:\n\nquis nostrud exercitation,\nullamco laboris nisi ut aliquip,\nex ea commodo consequat.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA\n\n\n\nB\n\n\n\nC\n\n\n\nChristmas\n\n\n\nGo shopping\n\n\n\nLet me think\n\n\n\nLaptop\n\n\n\niPhone\n\n\n\n Car\n\n\n\n\n\n\n\n\n\n\n\nDiagrams with mermaid. Use https://mermaid.live/ to edit online. Alternatively, export svg from http://draw.io (see next slide)\n\n\nAdditional commentary of more peripheral interest.\nFootnote text"
   },
   {
-    "objectID": "slides/generic/eduquant.html#graph-slide",
-    "href": "slides/generic/eduquant.html#graph-slide",
-    "title": "Course Title",
-    "section": "Graph slide",
-    "text": "Graph slide"
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#small-diagramfigure-slide",
+    "href": "slides/moc_dt/moc_dt_day_1.html#small-diagramfigure-slide",
+    "title": "MoC + DT LGD",
+    "section": "Small diagram/figure slide",
+    "text": "Small diagram/figure slide\n\n\nLonger discussion of the diagram, text auto-fit.\nLorem ipsum dolor sit amet1, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam:\n\nquis nostrud exercitation,\nullamco laboris nisi ut aliquip,\nex ea commodo consequat.\n\n\n\n\n\n\n\nExport svg from http://draw.io (see next slide). Position/size figure with .absolute\n\n\nAdditional commentary of more peripheral interest.\nFootnote text"
   },
   {
-    "objectID": "slides/generic/eduquant.html#listtext-slide",
-    "href": "slides/generic/eduquant.html#listtext-slide",
-    "title": "Course Title",
-    "section": "List/text slide",
-    "text": "List/text slide"
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#large-diagramfigure-slide",
+    "href": "slides/moc_dt/moc_dt_day_1.html#large-diagramfigure-slide",
+    "title": "MoC + DT LGD",
+    "section": "Large diagram/figure slide",
+    "text": "Large diagram/figure slide\n\n\nShort description of the figure/diagram, text auto-fit.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\nPut larger figures above text."
   },
   {
-    "objectID": "slides/generic/eduquant.html#multiple-choice-question-slide",
-    "href": "slides/generic/eduquant.html#multiple-choice-question-slide",
-    "title": "Course Title",
-    "section": "Multiple choice question slide",
-    "text": "Multiple choice question slide"
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#simple-list-slide",
+    "href": "slides/moc_dt/moc_dt_day_1.html#simple-list-slide",
+    "title": "MoC + DT LGD",
+    "section": "Simple list slide",
+    "text": "Simple list slide\n\nitem 1\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\nitem 2"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#numbered-list-slide",
+    "href": "slides/moc_dt/moc_dt_day_1.html#numbered-list-slide",
+    "title": "MoC + DT LGD",
+    "section": "Numbered list slide",
+    "text": "Numbered list slide\n\nnumbered item 1\nnumbered item 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\nThis formats definitions in a nice way:\n\nterm\n\ndefinition of the term"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#animated-hierarchy",
+    "href": "slides/moc_dt/moc_dt_day_1.html#animated-hierarchy",
+    "title": "MoC + DT LGD",
+    "section": "Animated hierarchy",
+    "text": "Animated hierarchy\nThis is a fancy slide with auto-animated matched elements and fragments\n\n\n\nRating System\n\n\n\n\nCalibration Segment\n\n\n\n\n\nGrade 1\n\n\n\nGrade 2\n\n\nGrade 3"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#animated-hierarchy-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#animated-hierarchy-1",
+    "title": "MoC + DT LGD",
+    "section": "Animated hierarchy",
+    "text": "Animated hierarchy\nThis is a fancy slide with auto-animated matched elements and fragments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRating System\n\n\nCalibration Segment\n\n\nGrade"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#animated-hierarchy-2",
+    "href": "slides/moc_dt/moc_dt_day_1.html#animated-hierarchy-2",
+    "title": "MoC + DT LGD",
+    "section": "Animated hierarchy",
+    "text": "Animated hierarchy\nThis is a fancy slide with auto-animated matched elements and fragments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRating System\n\nLiber idem donut basil\n\n\n\n\n\nCalibration Segment\n\nAvicum id ustercet\n\n\n\n\n\nGrade\n\nNil opposit"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\nCourse Title\n\n\n\n\n\n\nYour Name\n\n\nAug 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nCourse Title\n\n\n\n\n\n\nYour Name\n\n\nSep 25, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC + DT LGD\n\n\n\n\n\n\n\n\n\nSep 25, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#course-outline",
+    "href": "slides/moc_dt/moc_dt_day_1.html#course-outline",
+    "title": "MoC + DT LGD",
+    "section": "Course outline",
+    "text": "Course outline\n\n\nGeneral topics\n\nIRB Regulation\nRisk Parameter quantification\n\n\n\n\nMargin of Conservatism\n\nDeficiencies\nAppropriate Adjustments\nMoC Quantification\n\n\n\n\nDownturn LGD\n\nDownturn Identification\nDownturn LGD Quantification"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#day-3",
+    "href": "slides/moc_dt/moc_dt_day_1.html#day-3",
+    "title": "MoC + DT LGD",
+    "section": "Day 3",
+    "text": "Day 3\n\n\n13:00\n13:45\n14:30\n15:00\n15:15\n16:00\n16:45\n\nRecap & Discussion Case Study\nDT LGD Conceptual Basis\nNature of an Economic Downturn\nBreak\nSeverity & Duration\nDT LGD Quantification\nCase Study Explanation"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#day-4",
+    "href": "slides/moc_dt/moc_dt_day_1.html#day-4",
+    "title": "MoC + DT LGD",
+    "section": "Day 4",
+    "text": "Day 4\n\n\n13:00\n13:45\n14:30\n15:00\n15:15\n16:00\n16:45\n\nRecap & Discussion Case Study\nObserved Impact Assessments\nExtrapolation & Haircut Approaches\nBreak\nDT LGD Calibration\nCourse Recap & Quiz\nQ&A"
   }
 ]

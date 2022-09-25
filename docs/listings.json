@@ -2,7 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/slides/generic/eduquant.html"
+      "/slides/sections/eduquant.html",
+      "/slides/moc_dt/moc_dt_day_1.html"
     ]
   }
 ]

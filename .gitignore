@@ -1,2 +1,5 @@
 /.quarto/
 /_site/
+
+#ignore targets remaining in source dirs
+/slides/**/*.html

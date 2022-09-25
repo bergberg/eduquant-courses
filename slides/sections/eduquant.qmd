@@ -1,0 +1,11 @@
+---
+title: "Course Title"
+subtitle: "Day N: Catchy tagline"
+author: "Your Name"
+date: today
+date-format: long
+format: eduquant-slides-revealjs
+mermaid-format: svg # Somehow cant be added to extension?
+toc: false  # ToC slide generated from title slides
+---
+
