@@ -63,7 +63,7 @@ MoC Quantification
 :::
 ::: {.column #vcenter width="70%"}
 
-    Downturn Identification
+Downturn Identification
 
 Downturn LGD Quantification 
 :::
@@ -309,7 +309,7 @@ Ut enim ad minim veniam:
 
 ::: {.column width="60%" }  
 
-![](irb-diagram.svg){.absolute top=33%}
+![](/media/irb-diagram.svg){.absolute top=33%}
 
 :::
 
@@ -328,7 +328,7 @@ Export svg from http://draw.io (see next slide). Position/size figure with .abso
 ## Large diagram/figure slide 
 
 
-![](irb-diagram-large.svg){fig-align="center"}
+![](/media/irb-diagram-large.svg){fig-align="center"}
 
 :::{.r-fit-text}
 Short description of the figure/diagram, text auto-fit. 
