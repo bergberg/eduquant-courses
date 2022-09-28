@@ -5,6 +5,7 @@ contributes:
   formats:
     revealjs:
        theme: [default, theme.scss]
+       standalone: true
        transition: slide
        transition-speed: fast
        logo: logo_transparent.svg
@@ -12,9 +13,9 @@ contributes:
        resources: "*-speaker.html"
        mermaid-format: svg
        css: style.css
-       center: true
-       title-slide-attributes:
-          data-background-color: lightblue
+       center: false
+       title-slide-attributes: 
+          data-background-color: "#defafc"
           data-background-position: bottom 2.5em center
           data-background-image: logo_transparent.svg
           data-background-size: 33%

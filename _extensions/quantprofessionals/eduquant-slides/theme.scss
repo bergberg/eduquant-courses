@@ -1,18 +1,19 @@
 /*-- scss:defaults --*/
 
 // Include theme-specific fonts
-@import url(https://fonts.googleapis.com/css?family=Hind+Madurai:700,600,500,400);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,600,500,400);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,700,400italic,700italic);
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: rgb(249, 249, 236);
+$backgroundColor: rgb(255, 255, 220);
 // $mainColor: rgb(12, 33, 49) !default;
-$mainFont: 'Raleway', sans-serif;
-$linkColor: #4b5be8;
+$mainFont: 'Open Sans', sans-serif;
+$mainColor: rgb(36, 36, 50);
+$linkColor: rgb(38, 38, 88);
 $linkColorHover: lighten( $linkColor, 20% );
-$headingFont: 'Hind Madurai', sans-serif;
-$headingColor: rgb(9, 33, 52);
+$headingFont: 'Muli', sans-serif;
+$headingColor: rgb(9, 37, 59);
 $headingTextShadow: none;
 $headingLetterSpacing: -0.0em;
 $headingTextTransform: none;

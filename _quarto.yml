@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  preview:
+    port: 4200
+    browser: true
 
 
 website:
@@ -14,7 +17,7 @@ website:
 format:
   html:
     theme: moon
-    css: styles.css
+    css: webpage_styles.css
     toc: true
 
 

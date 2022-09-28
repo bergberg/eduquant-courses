@@ -1,0 +1,10 @@
+## Introductions
+
+{{< li dxjqoygy trigger=loop delay=15000 >}} Who are we 
+
+{{< li ssdupzsv trigger=loop delay=20000  >}} Who are you 
+
+{{< li rwotyanb trigger=loop delay=13000  >}} What do you want 
+
+{{< li nsbufguq trigger=loop delay=14000  >}} What do you get
+

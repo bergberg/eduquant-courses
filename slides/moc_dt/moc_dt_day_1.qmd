@@ -1,42 +1,34 @@
 ---
-title: "MoC + DT LGD"
+title: "MoC & Downturn LGD"
 subtitle: "Day 1"
 # author: "Pieter van den Berg"
-date: today
+date: last-modified
 date-format: long
 format: eduquant-slides-revealjs
 ---
 
-## Introductions
-
-{{< li dxjqoygy trigger=loop delay=5000 >}} Who are we 
-
-{{< li ssdupzsv trigger=loop delay=2000  >}} Who are you 
-
-{{< li rwotyanb trigger=loop delay=3000  >}} What do you want 
-
-{{< li nsbufguq trigger=loop delay=4000  >}} What do you get {
+{{< include ../_sections/introductions.qmd >}}
 
 ## Course outline
 
-::: columns
-::: {#vcenter .column width="30%"}
+::: {.columns #vcenter}
+::: {.column width="45%" }
 [General topics]{style="color: darkseagreen;"}
 :::
 
-::: {.column width="70%"}
+::: {.column width="55%"}
 IRB Regulation
 
 Risk Parameter quantification
 :::
 :::
 
-::: {.columns .v-center-container}
-::: {.column width="30%"}
+::: {.columns}
+::: {.column width="45%"}
 [Margin of Conservatism]{style="color: darkseagreen;"}
 :::
 
-::: {.column width="70%"}
+::: {.column width="55%"}
 Deficiencies
 
 Appropriate Adjustments
@@ -45,12 +37,12 @@ MoC Quantification
 :::
 :::
 
-::: columns
-::: {.column width="30%"}
+::: {.columns}
+::: {.column width="45%"}
 [Downturn LGD]{style="color: darkseagreen;"}
 :::
 
-::: {.column width="70%"}
+::: {.column width="55%"}
 Downturn Identification
 
 Downturn LGD Quantification
@@ -59,8 +51,8 @@ Downturn LGD Quantification
 
 ## Day 1
 
-::: columns
-::: {.column width="30%"}
+::: {.columns}
+::: {.column width="40%"}
 *13:00*
 
 *13:30*
@@ -76,7 +68,7 @@ Downturn LGD Quantification
 *16:45*
 :::
 
-::: {.column width="70%"}
+::: {.column width="60%"}
 Introduction
 
 Overview of IRB Regulation
@@ -85,9 +77,9 @@ Risk Parameter Quantification
 
 *Break*
 
-MoC Conceptual Basis
+LGD Quantification
 
-General Estimation Errors
+Margin of Conservatism
 
 Day Recap
 :::
@@ -95,8 +87,8 @@ Day Recap
 
 ## Day 2
 
-::: columns
-::: {.column width="30%"}
+::: {.columns}
+::: {.column width="40%"}
 *13:00*
 
 *13:30*
@@ -112,18 +104,18 @@ Day Recap
 *16:45*
 :::
 
-::: {.column width="70%"}
+::: {.column width="60%"}
 Quiz & Recap
+
+General Estimation Error
 
 Deficiencies
 
-Appropriate Adjustments
-
 *Break*
 
-Additional Uncertainties
+Appropriate Adjustments
 
-MoC Quantification
+Additional Uncertainties
 
 Case Study Explanation
 :::
@@ -131,8 +123,8 @@ Case Study Explanation
 
 ## Day 3
 
-::: columns
-::: {.column width="30%"}
+::: {.columns}
+::: {.column width="40%"}
 *13:00*
 
 *13:45*
@@ -148,7 +140,7 @@ Case Study Explanation
 *16:45*
 :::
 
-::: {.column width="70%"}
+::: {.column width="60%"}
 Recap & Discussion Case Study
 
 DT LGD Conceptual Basis
@@ -168,7 +160,7 @@ Case Study Explanation
 ## Day 4
 
 ::: columns
-::: {.column width="30%"}
+::: {.column width="40%"}
 *13:00*
 
 *13:45*
@@ -184,7 +176,7 @@ Case Study Explanation
 *16:45*
 :::
 
-::: {.column width="70%"}
+::: {.column width="60%"}
 Recap & Discussion Case Study
 
 Observed Impact Assessments
@@ -201,264 +193,16 @@ Q&A
 :::
 :::
 
-## Quote/article discussion example
+# Introduction
 
-::: columns
-::: {.column .r-fit-text width="50%"}
-Longer discussion of the article, text auto-fit.
+## Overview of IRB Regulation
 
-Lorem ipsum dolor sit amet[^1], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+## Risk Parameter Quantification
 
-Ut enim ad minim veniam:
+# *Break*
 
-1.  quis nostrud exercitation,
-2.  ullamco laboris nisi ut aliquip,
-3.  ex ea commodo consequat.
-:::
+## LGD Quantification
 
-::: {.column .r-fit-text width="50%"}
-::: {.callout-note icon="false" collapse="true" appearance="simple"}
-### [*CRR Article 146*](https://www.eba.europa.eu/regulation-and-policy/single-rulebook/interactive-single-rulebook/1478)
+# Margin of Conservatism
 
-***Measures to be taken where the requirements of this Chapter cease to be met.***
-
-*Where an institution ceases to comply with the requirements laid down in this Chapter, it shall notify the competent authority and do **one** of the following:*
-
-*\[...\]*
-
-*(b) demonstrate to the satisfaction of the competent authorities that the effect of non-compliance is immaterial.*
-:::
-:::
-:::
-
-[^1]: Footnote text
-
-::: notes
-Regulatory article/paragraph slide format.
-:::
-
-## Diagram slide
-
-#### (with mermaid)
-
-::: columns
-::: {.column .r-fit-text width="50%"}
-Longer discussion of the diagram, text auto-fit.
-
-Lorem ipsum dolor sit amet[^2], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Ut enim ad minim veniam:
-
-1.  quis nostrud exercitation,
-2.  ullamco laboris nisi ut aliquip,
-3.  ex ea commodo consequat.
-:::
-
-::: {.column width="50%"}
-```{mermaid}
-graph TD
-    A[Christmas] --> B(Go shopping)
-    B --> C{Let me think}
-    C -->|A| D[Laptop]
-    C -->|B| E[iPhone]
-    C -->|C| F[fa:fa-car Car]
-```
-:::
-:::
-
-[^2]: Footnote text
-
-::: aside
-Additional commentary of more peripheral interest.
-:::
-
-::: notes
-Diagrams with mermaid. Use https://mermaid.live/ to edit online. Alternatively, export svg from http://draw.io (see next slide)
-:::
-
-## Small diagram/figure slide
-
-::: columns
-::: {.column .r-fit-text width="40%"}
-Longer discussion of the diagram, text auto-fit.
-
-Lorem ipsum dolor sit amet[^3], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Ut enim ad minim veniam:
-
-1.  quis nostrud exercitation,
-2.  ullamco laboris nisi ut aliquip,
-3.  ex ea commodo consequat.
-:::
-
-::: {.column width="60%"}
-![](/media/irb-diagram.svg){.absolute top="33%"}
-:::
-:::
-
-[^3]: Footnote text
-
-::: aside
-Additional commentary of more peripheral interest.
-:::
-
-::: notes
-Export svg from http://draw.io (see next slide). Position/size figure with .absolute
-:::
-
-## Large diagram/figure slide
-
-![](/media/irb-diagram-large.svg){fig-align="center"}
-
-::: r-fit-text
-Short description of the figure/diagram, text auto-fit.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-:::
-
-::: notes
-Put larger figures above text.
-:::
-
-## Simple list slide
-
--   item 1
-    -   sub-item 1
-    -   sub-item 2
-        -   sub-sub-item 1
--   item 2
-
-## Numbered list slide
-
-1.  numbered item 1
-2.  numbered item 2
-    i)  sub-item 1
-        A.  sub-sub-item 1
-
-This formats definitions in a nice way:
-
-term
-
-:   definition of the term
-
-## Animated hierarchy {auto-animate="true" auto-animate-easing="ease" auto-animate-duration="0.5"}
-
-This is a fancy slide with auto-animated matched elements and fragments
-
-::: r-vstack
-::: {data-id="box1" style="background: #02908b; width: 570px; height: auto; border-radius: 20px;margin: 10px; padding: 10px"}
-::: {data-id="text1"}
-Rating System
-:::
-:::
-
-::: {data-id="box2" style="background: #006076; color: lightgrey; width: 550px; height: auto; border-radius: 20px; margin: 10px ; padding: 10px"}
-::: {data-id="text2"}
-Calibration Segment
-:::
-:::
-
-::: r-hstack
-::: {data-id="box3" style="background: #003f63; color: white; width: 150px; height: auto; border-radius: 20px; margin: 10px ; padding: 10px"}
-::: {data-id="text3"}
-Grade 1
-:::
-:::
-
-::: {data-id="box4" style="background: #003f63; color: white; width: 150px; height: auto; border-radius: 20px; margin: 10px ; padding: 10px"}
-Grade 2
-:::
-
-::: {data-id="box5" style="background: #003f63; color: white; width: 150px; height: auto; border-radius: 20px; margin: 10px ; padding: 10px"}
-Grade 3
-:::
-:::
-:::
-
-## Animated hierarchy {auto-animate="true" auto-animate-easing="ease" auto-animate-duration="0.5"}
-
-This is a fancy slide with auto-animated matched elements and fragments
-
-::: r-stack
-::: {data-id="box1" style="background: #02908b; width: 350px; height: 100px; border-radius: 20px;"}
-:::
-
-::: {data-id="box2" style="background: #006076; width: 250px; height: 80px; border-radius: 20px;"}
-:::
-
-::: r-hstack
-::: {data-id="box3" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
-:::
-
-::: {data-id="box4" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
-:::
-
-::: {data-id="box5" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
-:::
-:::
-:::
-
-::: {data-id="text1"}
-
-Rating System
-
-:   
-:::
-
-::: {data-id="text2"}
-
-Calibration Segment
-
-:   
-:::
-
-::: {data-id="text3"}
-
-Grade
-
-:   
-:::
-
-## Animated hierarchy {auto-animate="true" auto-animate-easing="ease-out" auto-animate-duration="0.1"}
-
-This is a fancy slide with auto-animated matched elements and fragments
-
-::: r-stack
-::: {data-id="box1" style="background: #02908b; width: 350px; height: 100px; border-radius: 20px;"}
-:::
-
-::: {data-id="box2" style="background: #006076; width: 250px; height: 80px; border-radius: 20px;"}
-:::
-
-::: r-hstack
-::: {data-id="box3" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
-:::
-
-::: {data-id="box4" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
-:::
-
-::: {data-id="box5" style="background: #003f63; width: 40px; height: 40px; border-radius: 5px;margin:10px"}
-:::
-:::
-:::
-
-::: {data-id="text1"}
-
-Rating System
-
-:   Liber idem donut basil
-:::
-
-::: {data-id="text2"}
-
-Calibration Segment
-
-:   Avicum id ustercet
-:::
-
-::: {data-id="text3"}
-
-Grade
-
-:   Nil opposit
-:::
+## Conceptual Basis
