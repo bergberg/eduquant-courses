@@ -9,6 +9,8 @@ format: eduquant-slides-revealjs
 
 {{< include ../_sections/introductions.qmd >}}
 
+# Course Outline
+
 ## Course outline
 
 ::: {.columns #vcenter}
@@ -197,11 +199,96 @@ Q&A
 
 ## Overview of IRB Regulation
 
+::: {.notes}
+Diagram: basel -> CRR/RTS/GL  -> EGIM ]
+:::
+
+## Example: Observed default rate 
+
+::: {.notes}
+Show Basel CRE36.64, article 4(78), GL PD/LGD par 73ff 
+:::
+
+## Implementing IRB
+
+::: {.notes}
+Diagram: [ CRR/RTS/GL + EGIM ] -> policy -> standard -> rating system
+:::
+
+## Example: Review of estimates
+
+
+::: {.notes}
+Maybe find a simpler example
+:::
+
+## Reading regulation
+
+::: {.notes}
+Defined versus undefined
+Principle-based versus rule-based
+:::
+
+## Rating Systems
+
+::: {.notes}
+multiple slides with definitions
+
+exposure class
+rating system
+type of exposure
+range of application
+IRB approval
+:::
+
+## Risk Parameter Estimation
+
+::: {.notes}
+Diagram: differentiation -> quantification
+:::
+
 ## Risk Parameter Quantification
+
+::: {.notes}
+Diagram: Type of Exposures -> RDS -> Initial Calibration Target -> Appr. Adjusted Target
+
+Par 12 PD&LGD
+
+:::
+
+
+## Reference Data Sets
+
+::: {.notes}
+Estimation RDS: Type of Exposures -> Comparable Exposures, Reference Dates -> RDS
+
+Application Portfolio RDS: Recent Date, Actual Portfolio
+:::
+
+## Reference Dates & Observation Windows
+
+::: {.notes}
+Diagrams: discrete timelines with labels
+
+PD:   R => [o o o o o D . . . . . . . ]
+           performing default recovery
+LGD: R => [o o o o o o D d d d d ... L]
+CCF:  R => o o o o o D ...
+
+In-default LGD/CCF: D ... R [... R[ ... L ]]...
+:::
+
 
 # *Break*
 
-## LGD Quantification
+# LGD Quantification
+
+## Realised LGD Calculation
+
+:::{.notes}
+Formula Realised LGD = Actual exposure at default - discounted recoveries / 
+
+:::
 
 # Margin of Conservatism
 
