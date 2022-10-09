@@ -113,7 +113,7 @@ Ut enim ad minim veniam:
 
 ::: {.column width="60%" }  
 
-![](irb-diagram.svg){.absolute top=33%}
+![](/media/differentiation_quantification_small.drawio.svg){.absolute top=33%}
 
 :::
 

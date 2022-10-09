@@ -14,8 +14,8 @@
     "text": "Introductions\n Who are we\n Who are you\n What do you want\n What do you get"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#course-outline",
-    "href": "slides/moc_dt/moc_dt_day_1.html#course-outline",
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#course-outline-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#course-outline-1",
     "title": "MoC & Downturn LGD",
     "section": "Course outline",
     "text": "Course outline\n\n\nGeneral topics\n\nIRB Regulation\nRisk Parameter quantification\n\n\n\n\nMargin of Conservatism\n\nDeficiencies\nAppropriate Adjustments\nMoC Quantification\n\n\n\n\nDownturn LGD\n\nDownturn Identification\nDownturn LGD Quantification"
@@ -53,21 +53,77 @@
     "href": "slides/moc_dt/moc_dt_day_1.html#overview-of-irb-regulation",
     "title": "MoC & Downturn LGD",
     "section": "Overview of IRB Regulation",
-    "text": "Overview of IRB Regulation"
+    "text": "Overview of IRB Regulation\n\n\n\n\n\n\n\n\nDiagram: basel -> CRR/RTS/GL -> EGIM ]"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#example-observed-default-rate",
+    "href": "slides/moc_dt/moc_dt_day_1.html#example-observed-default-rate",
+    "title": "MoC & Downturn LGD",
+    "section": "Example: Observed default rate",
+    "text": "Example: Observed default rate\n\nShow Basel CRE36.64, article 4(78), GL PD/LGD par 73ff"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#implementing-irb",
+    "href": "slides/moc_dt/moc_dt_day_1.html#implementing-irb",
+    "title": "MoC & Downturn LGD",
+    "section": "Implementing IRB",
+    "text": "Implementing IRB\n\nDiagram: [ CRR/RTS/GL + EGIM ] -> policy -> standard -> rating system"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#example-review-of-estimates",
+    "href": "slides/moc_dt/moc_dt_day_1.html#example-review-of-estimates",
+    "title": "MoC & Downturn LGD",
+    "section": "Example: Review of estimates",
+    "text": "Example: Review of estimates\n\nMaybe find a simpler example"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#reading-regulation",
+    "href": "slides/moc_dt/moc_dt_day_1.html#reading-regulation",
+    "title": "MoC & Downturn LGD",
+    "section": "Reading regulation",
+    "text": "Reading regulation\n\nDefined versus undefined Principle-based versus rule-based"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems",
+    "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems",
+    "title": "MoC & Downturn LGD",
+    "section": "Rating Systems",
+    "text": "Rating Systems\n\n\n\n\nrating system\n\nassessment methods & processes developed for a certain type of exposures\n\ntype of exposures\n\nhomogeneously managed, common drivers of risk\n\nrange of application\n\nall exposures of a certain type rated by the rating system\n\n\n\nright\n\n\n\n\nmultiple slides with definitions + article\nexposure class rating system type of exposure range of application IRB approval"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation",
+    "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation",
+    "title": "MoC & Downturn LGD",
+    "section": "Risk Parameter Estimation",
+    "text": "Risk Parameter Estimation\n\n\nDiagram: differentiation -> quantification"
   },
   {
     "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-quantification",
     "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-quantification",
     "title": "MoC & Downturn LGD",
     "section": "Risk Parameter Quantification",
-    "text": "Risk Parameter Quantification"
+    "text": "Risk Parameter Quantification\n\nDiagram: Type of Exposures -> RDS -> Initial Calibration Target -> Appr. Adjusted Target\nPar 12 PD&LGD"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#lgd-quantification",
-    "href": "slides/moc_dt/moc_dt_day_1.html#lgd-quantification",
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#reference-data-sets",
+    "href": "slides/moc_dt/moc_dt_day_1.html#reference-data-sets",
     "title": "MoC & Downturn LGD",
-    "section": "LGD Quantification",
-    "text": "LGD Quantification"
+    "section": "Reference Data Sets",
+    "text": "Reference Data Sets\n\nEstimation RDS: Type of Exposures -> Comparable Exposures, Reference Dates -> RDS\nApplication Portfolio RDS: Recent Date, Actual Portfolio"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#reference-dates-observation-windows",
+    "href": "slides/moc_dt/moc_dt_day_1.html#reference-dates-observation-windows",
+    "title": "MoC & Downturn LGD",
+    "section": "Reference Dates & Observation Windows",
+    "text": "Reference Dates & Observation Windows\n\nDiagrams: discrete timelines with labels\nPD: R => [o o o o o D . . . . . . . ] performing default recovery LGD: R => [o o o o o o D d d d d … L] CCF: R => o o o o o D …\nIn-default LGD/CCF: D … R [… R[ … L ]]…"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-calculation",
+    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-calculation",
+    "title": "MoC & Downturn LGD",
+    "section": "Realised LGD Calculation",
+    "text": "Realised LGD Calculation\n\nFormula Realised LGD = Actual exposure at default - discounted recoveries / …\nExplanation of CFs"
   },
   {
     "objectID": "slides/moc_dt/moc_dt_day_1.html#conceptual-basis",
@@ -81,6 +137,48 @@
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nOct 10, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#observed-average-lgd",
+    "href": "slides/moc_dt/moc_dt_day_1.html#observed-average-lgd",
+    "title": "MoC & Downturn LGD",
+    "section": "Observed average LGD",
+    "text": "Observed average LGD"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#small-diagramfigure-slide",
+    "href": "slides/moc_dt/moc_dt_day_1.html#small-diagramfigure-slide",
+    "title": "MoC & Downturn LGD",
+    "section": "Small diagram/figure slide",
+    "text": "Small diagram/figure slide\n\n\n\nRegulatory requirements appear in multiple layers\n\n\n\n\n\n\n\n\n\n\n\nBasel/EBA/ECB may differ on details — always look through all layers\n\n\n\n\nDiagram: basel -> CRR/RTS/GL -> EGIM ]"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#example-two-rating-systems",
+    "href": "slides/moc_dt/moc_dt_day_1.html#example-two-rating-systems",
+    "title": "MoC & Downturn LGD",
+    "section": "Example: two rating systems",
+    "text": "Example: two rating systems"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Overview of IRB Regulation",
+    "text": "Overview of IRB Regulation\n\n\nLayers of regulation\n\nBasel Framework\n\nBIS recommendations on banking regulations\n\nCRR (Part 3/II, Chapter III)\n\nCapital Requirements Regulation (Internal Ratings Based Approach )\n\nRTS \\(\\rightarrow\\) CDR\n\nRegulatory Technical Standards adopted as Comm. Del. Regulation\n\nEBA Guidelines and Q&A\n\nClarification, specifications\n\nECB Guide to Internal Models\n\nSupervisory expectations\n\n\n\n\n\n\n\n\n\n\nBasel/EBA/ECB may differ on details — always look through all layers\n\n\n\n\n\nDiagram: basel -> CRR/RTS/GL -> EGIM ]"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#example-downturn-lgd",
+    "href": "slides/moc_dt/moc_dt_day_1.html#example-downturn-lgd",
+    "title": "MoC & Downturn LGD",
+    "section": "Example: Downturn LGD",
+    "text": "Example: Downturn LGD\n:::: columns\n\n\n\n\nCRE 36.85\n\n\n\\(\\small{[\\cdots]}\\) A bank must estimate an LGD for each facility that aims to reflect economic downturn conditions where necessary to capture the relevant risks. \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCRR Article 181\n\n\n(1)(b) institutions shall use LGD estimates that are appropriate for an economic downturn if those are more conservative than the long-run average. \\(\\small{[\\cdots]}\\)\n(3) EBA shall develop draft regulatory technical standards to specify the following: (a) the nature, severity and duration of an economic downturn referred to in paragraph 1; \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCDR 2021/930 Article 1\n\n\nSpecification of the nature, severity and duration of an economic downturn \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\n\n\nShow Basel CRE36.64, article 4(78), GL PD/LGD par 73ff"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#example-economic-downturn",
+    "href": "slides/moc_dt/moc_dt_day_1.html#example-economic-downturn",
+    "title": "MoC & Downturn LGD",
+    "section": "Example: Economic Downturn",
+    "text": "Example: Economic Downturn\n\n\n\nEconomic Downturn not specified in Basel Framework or CRR\nEBA has drafted an RTS, elevated into regulation CDR 2021/930\nEGIM is not more specific\n\n\n\n\n\nCRE 36.85\n\n\n\\(\\small{[\\cdots]}\\) A bank must estimate an LGD for each facility that aims to reflect economic downturn conditions where necessary to capture the relevant risks. \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCRR Article 181\n\n\n(1)(b) institutions shall use LGD estimates that are appropriate for an economic downturn if those are more conservative than the long-run average. \\(\\small{[\\cdots]}\\)\n(3) EBA shall develop draft regulatory technical standards to specify the following: (a) the nature, severity and duration of an economic downturn referred to in paragraph 1; \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCDR 2021/930 Article 1\n\n\nSpecification of the nature, severity and duration of an economic downturn \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nShow Basel CRE36.64, article 4(78), GL PD/LGD par 73ff"
   }
 ]

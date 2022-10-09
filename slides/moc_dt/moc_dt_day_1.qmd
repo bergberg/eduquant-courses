@@ -13,8 +13,8 @@ format: eduquant-slides-revealjs
 
 ## Course outline
 
-::: {.columns #vcenter}
-::: {.column width="45%" }
+::: {#vcenter .columns}
+::: {.column width="45%"}
 [General topics]{style="color: darkseagreen;"}
 :::
 
@@ -25,7 +25,7 @@ Risk Parameter quantification
 :::
 :::
 
-::: {.columns}
+::: columns
 ::: {.column width="45%"}
 [Margin of Conservatism]{style="color: darkseagreen;"}
 :::
@@ -39,7 +39,7 @@ MoC Quantification
 :::
 :::
 
-::: {.columns}
+::: columns
 ::: {.column width="45%"}
 [Downturn LGD]{style="color: darkseagreen;"}
 :::
@@ -53,7 +53,7 @@ Downturn LGD Quantification
 
 ## Day 1
 
-::: {.columns}
+::: columns
 ::: {.column width="40%"}
 *13:00*
 
@@ -89,7 +89,7 @@ Day Recap
 
 ## Day 2
 
-::: {.columns}
+::: columns
 ::: {.column width="40%"}
 *13:00*
 
@@ -125,7 +125,7 @@ Case Study Explanation
 
 ## Day 3
 
-::: {.columns}
+::: columns
 ::: {.column width="40%"}
 *13:00*
 
@@ -197,87 +197,192 @@ Q&A
 
 # Introduction
 
-## Overview of IRB Regulation
+## Overview of IRB Regulation {auto-animate=true}
 
-::: {.notes}
-Diagram: basel -> CRR/RTS/GL  -> EGIM ]
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+
 :::
 
-## Example: Observed default rate 
+::: {.column width="50%" #vcenter}  
 
-::: {.notes}
-Show Basel CRE36.64, article 4(78), GL PD/LGD par 73ff 
+![](/media/basel_crr_egim.drawio.svg)
+
+:::
+
+::::
+
+
+::: notes
+Diagram: basel -\> CRR/RTS/GL -\> EGIM \]
+:::
+
+## Overview of IRB Regulation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+#### Layers of regulation
+
+Basel Framework
+: BIS recommendations on banking regulations
+
+CRR (Part 3/II, Chapter III)
+: Capital Requirements Regulation (Internal Ratings Based Approach )
+
+RTS $\rightarrow$ CDR
+: Regulatory Technical Standards adopted as Comm. Del. Regulation
+
+
+EBA Guidelines and Q&A
+: Clarification, specifications
+
+ECB Guide to Internal Models
+: Supervisory expectations
+
+:::
+
+::: {.column width="50%" #vcenter}  
+
+![](/media/basel_crr_egim_highlight.drawio.svg)
+
+:::
+
+::::
+
+:::{.fragment .fade-up}
+::: {.callout-caution}
+Basel/EBA/ECB may differ on details --- always look through all layers
+:::
+:::
+
+::: notes
+Diagram: basel -\> CRR/RTS/GL -\> EGIM \]
+:::
+
+## Example: Economic Downturn
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+ - Economic Downturn not specified in Basel Framework or CRR
+ - EBA has drafted an RTS, elevated into regulation CDR 2021/930
+ - EGIM is not more specific
+:::
+
+
+::: {.column width="50%" #vcenter .r-fit-text}
+::: {.callout-note}
+## CRE 36.85
+$\small{[\cdots]}$ _A bank must estimate an LGD for each facility that aims to reflect economic downturn conditions where necessary to capture the relevant risks._ $\small{[\cdots]}$
+:::
+::: {.callout-note}
+## CRR Article 181
+_(1)(b) institutions shall use LGD estimates that are appropriate for an economic downturn if those are more conservative than the long-run average._ $\small{[\cdots]}$
+
+_(3) EBA shall develop draft regulatory technical standards to specify the following: (a) the nature, severity and duration of an economic downturn referred to in paragraph 1;_ $\small{[\cdots]}$
+:::
+
+::: {.callout-note}
+## CDR 2021/930 Article 1
+_Specification of the nature, severity and duration of an economic downturn_ $\small{[\cdots]}$
+:::
+:::
+::::
+
+::: notes
+Show Basel CRE36.64, article 4(78), GL PD/LGD par 73ff
 :::
 
 ## Implementing IRB
 
-::: {.notes}
-Diagram: [ CRR/RTS/GL + EGIM ] -> policy -> standard -> rating system
+::: notes
+Diagram: \[ CRR/RTS/GL + EGIM \] -\> policy -\> standard -\> rating system
 :::
 
 ## Example: Review of estimates
 
-
-::: {.notes}
+::: notes
 Maybe find a simpler example
-:::
-
-## Reading regulation
-
-::: {.notes}
-Defined versus undefined
-Principle-based versus rule-based
 :::
 
 ## Rating Systems
 
-::: {.notes}
-multiple slides with definitions
+::: { .r-fit-text}
 
-exposure class
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
 rating system
-type of exposure
+: assessment methods & processes developed for a certain type of exposures
+
+type of exposures
+: homogeneously managed, common drivers of risk
+
 range of application
-IRB approval
+: all exposures of a certain type rated by the rating system
+ 
+:::
+
+::: {.column width="50%" #vcenter .r-fit-text}
+right
+:::
+
+::::
+
+
+
+:::
+
+::: notes
+multiple slides with definitions + article
+
+exposure class 
+rating system 
+type of exposure range of application IRB approval
+:::
+
+## Example: two rating systems
+
+::: notes
+
 :::
 
 ## Risk Parameter Estimation
 
-::: {.notes}
-Diagram: differentiation -> quantification
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+
+::: notes
+Diagram: differentiation -\> quantification
 :::
 
 ## Risk Parameter Quantification
 
-::: {.notes}
-Diagram: Type of Exposures -> RDS -> Initial Calibration Target -> Appr. Adjusted Target
+::: notes
+Diagram: Type of Exposures -\> RDS -\> Initial Calibration Target -\> Appr. Adjusted Target
 
 Par 12 PD&LGD
-
 :::
-
 
 ## Reference Data Sets
 
-::: {.notes}
-Estimation RDS: Type of Exposures -> Comparable Exposures, Reference Dates -> RDS
+::: notes
+Estimation RDS: Type of Exposures -\> Comparable Exposures, Reference Dates -\> RDS
 
 Application Portfolio RDS: Recent Date, Actual Portfolio
 :::
 
 ## Reference Dates & Observation Windows
 
-::: {.notes}
+::: notes
 Diagrams: discrete timelines with labels
 
-PD:   R => [o o o o o D . . . . . . . ]
-           performing default recovery
-LGD: R => [o o o o o o D d d d d ... L]
-CCF:  R => o o o o o D ...
+PD: R =\> \[o o o o o D . . . . . . . \] performing default recovery LGD: R =\> \[o o o o o o D d d d d ... L\] CCF: R =\> o o o o o D ...
 
-In-default LGD/CCF: D ... R [... R[ ... L ]]...
+In-default LGD/CCF: D ... R \[... R\[ ... L \]\]...
 :::
-
 
 # *Break*
 
@@ -285,11 +390,17 @@ In-default LGD/CCF: D ... R [... R[ ... L ]]...
 
 ## Realised LGD Calculation
 
-:::{.notes}
-Formula Realised LGD = Actual exposure at default - discounted recoveries / 
+::: notes
+Formula Realised LGD = Actual exposure at default - discounted recoveries / ...
 
+Explanation of CFs
 :::
+
+## Observed average LGD
 
 # Margin of Conservatism
 
 ## Conceptual Basis
+
+::: notes
+:::

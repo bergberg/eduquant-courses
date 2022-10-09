@@ -1,0 +1,40 @@
+
+{
+	"column": {
+		"prefix": "col",
+		"body": [
+			":::: columns",
+			"",
+			"::: {.column width=\"50%\" #vcenter .r-fit-text}",
+			"${1:left}",
+			":::",
+			"",
+			"::: {.column width=\"50%\" #vcenter}",
+			"${2:right}",
+			":::",
+			"",
+			"::::"
+		],
+		"description": "quarto columns"
+	},
+	"panel": {
+	  "prefix": "panel",
+	  "body": ["::: {.panel-tabset}", "${1:body}", ":::"],
+	  "description": "quarto panel"
+	},
+	"fence": {
+	  "prefix": "fence",
+	  "body": [":::{.${1:type}}", "${2:body}", ":::"],
+	  "description": "quarto fence"
+	},
+	"aside": {
+	  "prefix": "",
+	  "body": ["::: aside", "${1:body}", ":::"],
+	  "description": "quarto aside"
+	},
+	"fragment": {
+	  "prefix": "",
+	  "body": ["::: {.fragment .${1:type}}", "${2:body}", ":::"],
+	  "description": "quarto fragment"
+	},
+}
