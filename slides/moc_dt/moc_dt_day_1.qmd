@@ -197,22 +197,9 @@ Q&A
 
 # Introduction
 
-## Overview of IRB Regulation {auto-animate=true}
+## Overview of IRB Regulation {auto-animate=true center=true}
 
-:::: columns
-
-::: {.column width="50%" #vcenter .r-fit-text}
-
-
-:::
-
-::: {.column width="50%" #vcenter}  
-
-![](/media/basel_crr_egim.drawio.svg)
-
-:::
-
-::::
+![](/media/basel_crr_egim_bare.drawio.svg){data-id="fig1" fig-align="center"}
 
 
 ::: notes
@@ -246,7 +233,7 @@ ECB Guide to Internal Models
 
 ::: {.column width="50%" #vcenter}  
 
-![](/media/basel_crr_egim_highlight.drawio.svg)
+![](/media/basel_crr_egim_highlight.drawio.svg){data-id="fig1"}
 
 :::
 
@@ -319,15 +306,23 @@ rating system
 : assessment methods & processes developed for a certain type of exposures
 
 type of exposures
-: homogeneously managed, common drivers of risk
+: homogeneously managed, comparable risk characteristics
 
 range of application
-: all exposures of a certain type rated by the rating system
- 
+: all exposures of the type in scope of the rating system
+
+Risk parameter model
+: ranking method  
+
+scope of application
+: all exposures of a certain type rated by the model
+
+calibration segment
+: level of risk quantification $\subset$ scope of application
 :::
 
 ::: {.column width="50%" #vcenter .r-fit-text}
-right
+![](/media/rating_system_calib_segm.drawio.svg)
 :::
 
 ::::
@@ -345,14 +340,183 @@ type of exposure range of application IRB approval
 :::
 
 ## Example: two rating systems
+:::: columns
 
+::: {.column width="50%" .r-fit-text}
+![](/media/two_rating_system_wrong.drawio.svg)
+
+::: {.callout-warning appearance="simple"}
+Not based on exposure characteristics!
+:::
+:::
+
+::: {.column width="50%"}
+::: fragment
+![](/media/two_rating_system_right.drawio.svg)
+:::
+:::
+
+::::
 ::: notes
 
 :::
 
-## Risk Parameter Estimation
+## Risk Parameter Estimation {auto-animate=true}
 
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+
+:::{data-id=a1}
+Indirect estimation
+: risk quantification cond. on risk differentiation
+:::
+
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on (internal) risk measure
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::
+
+::: {.column width="50%" }
 ![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+:::
+
+::::
+
+::: notes
+Diagram: differentiation -\> quantification
+:::
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+:::{data-id=a1}
+Indirect estimation
+: risk quantification cond. on risk differentiation
+:::
+
+:::{.highlight-block}
+ * Direct estimation: special case
+ * *Continuous* estimates: also special 
+:::
+
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on (internal) risk measure
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::
+
+::: {.column width="50%" .r-fit-text }
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+
+::: {.callout-note .smaller}
+## CRR Article 169
+_3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale._
+:::
+
+:::
+
+::::
+
+
+
+
+::: notes
+Diagram: differentiation -\> quantification
+:::
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+:::{data-id=a1}
+Indirect estimation
+: risk quantification cond. on risk differentiation
+:::
+
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on (internal) risk measure
+:::
+
+:::{.highlight-block}
+ * Typical approach: $\sim$ into-default flag / realized LGD on closed cases / realized CCF 
+ * Conditional on risk drivers, based on data set representative of application portfolio
+:::
+
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::
+
+::: {.column width="50%" }
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+:::
+
+::::
+
+::: notes
+Diagram: differentiation -\> quantification
+:::
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+:::{data-id=a1}
+Indirect estimation
+: risk quantification cond. on risk differentiation
+:::
+
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on (internal) risk measure
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::{.highlight-block}
+ * Estimates of long-run default/loss experience
+ * Primary focus of this course 
+:::
+
+:::
+
+::: {.column width="50%"}
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+:::
+
+::::
+
+
+
 
 ::: notes
 Diagram: differentiation -\> quantification

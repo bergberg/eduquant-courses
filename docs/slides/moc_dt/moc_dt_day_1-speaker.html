@@ -10,7 +10,7 @@
 <script src="../../site_libs/quarto-contrib/lord-icon-bundle-3.4.2/bundle.js"></script><meta charset="utf-8">
   <meta name="generator" content="quarto-1.1.189">
 
-  <meta name="dcterms.date" content="2022-10-10">
+  <meta name="dcterms.date" content="2022-10-20">
   <title>eduquant-courses - MoC &amp; Downturn LGD</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -328,7 +328,7 @@
 <section id="title-slide" data-background-color="#defafc" data-background-image="../../_extensions/quantprofessionals/eduquant-slides/logo_transparent.svg" data-background-position="bottom 2.5em center" data-background-size="33%" class="center">
   <h1 class="title">MoC &amp; Downturn LGD</h1>
   <p class="subtitle">Day 1</p>
-  <p class="date">October 10, 2022</p>
+  <p class="date">October 20, 2022</p>
 </section>
 
 <section id="introductions" class="slide level2">
@@ -464,16 +464,10 @@
 <h1>Introduction</h1>
 
 </section>
-<section id="overview-of-irb-regulation" class="slide level2" data-auto-animate="true">
+<section id="overview-of-irb-regulation" class="slide level2" data-auto-animate="true" data-center="true">
 <h2 data-id="quarto-animate-title">Overview of IRB Regulation</h2>
-<div class="columns">
-<div id="vcenter" class="column r-fit-text" style="width:50%;">
 
-</div><div id="vcenter" class="column" style="width:50%;">
-<p><img data-src="../../media/basel_crr_egim.drawio.svg"></p>
-</div>
-</div>
-<aside class="notes">
+<img data-src="../../media/basel_crr_egim_bare.drawio.svg" data-id="fig1" class="r-stretch quarto-figure-center"><aside class="notes">
 <p>Diagram: basel -&gt; CRR/RTS/GL -&gt; EGIM ]</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -515,7 +509,7 @@ Supervisory expectations
 </dd>
 </dl>
 </div><div id="vcenter" class="column" style="width:50%;">
-<p><img data-src="../../media/basel_crr_egim_highlight.drawio.svg"></p>
+<p><img data-src="../../media/basel_crr_egim_highlight.drawio.svg" data-id="fig1"></p>
 </div>
 </div>
 <div class="fragment fade-up">
@@ -642,15 +636,27 @@ assessment methods &amp; processes developed for a certain type of exposures
 </dd>
 <dt>type of exposures</dt>
 <dd>
-homogeneously managed, common drivers of risk
+homogeneously managed, comparable risk characteristics
 </dd>
 <dt>range of application</dt>
 <dd>
-all exposures of a certain type rated by the rating system
+all exposures of the type in scope of the rating system
+</dd>
+<dt>Risk parameter model</dt>
+<dd>
+ranking method
+</dd>
+<dt>scope of application</dt>
+<dd>
+all exposures of a certain type rated by the model
+</dd>
+<dt>calibration segment</dt>
+<dd>
+level of risk quantification <span class="math inline">\(\subset\)</span> scope of application
 </dd>
 </dl>
 </div><div id="vcenter" class="column r-fit-text" style="width:50%;">
-<p>right</p>
+<p><img data-src="../../media/rating_system_calib_segm.drawio.svg"></p>
 </div>
 </div>
 </div>
@@ -671,6 +677,25 @@ all exposures of a certain type rated by the rating system
 </section>
 <section id="example-two-rating-systems" class="slide level2">
 <h2>Example: two rating systems</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+<p><img data-src="../../media/two_rating_system_wrong.drawio.svg"></p>
+<div class="callout callout-warning callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Not based on exposure characteristics!</p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p><img data-src="../../media/two_rating_system_right.drawio.svg"></p>
+</div>
+</div>
+</div>
 <aside class="notes">
 
 <style type="text/css">
@@ -685,10 +710,221 @@ all exposures of a certain type rated by the rating system
           display:block!important;
       }</style></aside>
 </section>
-<section id="risk-parameter-estimation" class="slide level2">
-<h2>Risk Parameter Estimation</h2>
-
-<img data-src="../../media/differentiation_quantification_small.drawio.svg" class="r-stretch quarto-figure-center"><aside class="notes">
+<section id="risk-parameter-estimation" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Risk Parameter Estimation</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<div data-id="a1">
+<dl>
+<dt>Indirect estimation</dt>
+<dd>
+risk quantification cond. on risk differentiation
+</dd>
+</dl>
+</div>
+<div data-id="a2">
+<dl>
+<dt>Risk Differentiation</dt>
+<dd>
+differentiate and rank exposures on (internal) risk measure
+</dd>
+</dl>
+</div>
+<div data-id="a3">
+<dl>
+<dt>Risk Quantification</dt>
+<dd>
+Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+</dd>
+</dl>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../media/differentiation_quantification_small.drawio.svg"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Diagram: differentiation -&gt; quantification</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="risk-parameter-estimation-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Risk Parameter Estimation</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<div data-id="a1">
+<dl>
+<dt>Indirect estimation</dt>
+<dd>
+risk quantification cond. on risk differentiation
+</dd>
+</dl>
+</div>
+<div class="highlight-block">
+<ul>
+<li>Direct estimation: special case</li>
+<li><em>Continuous</em> estimates: also special</li>
+</ul>
+</div>
+<div data-id="a2">
+<dl>
+<dt>Risk Differentiation</dt>
+<dd>
+differentiate and rank exposures on (internal) risk measure
+</dd>
+</dl>
+</div>
+<div data-id="a3">
+<dl>
+<dt>Risk Quantification</dt>
+<dd>
+Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+</dd>
+</dl>
+</div>
+</div><div class="column r-fit-text" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../media/differentiation_quantification_small.drawio.svg"></p>
+</figure>
+</div>
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>CRR Article 169</strong></p>
+</div>
+<div class="callout-content">
+<p><em>3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale.</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Diagram: differentiation -&gt; quantification</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="risk-parameter-estimation-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Risk Parameter Estimation</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<div data-id="a1">
+<dl>
+<dt>Indirect estimation</dt>
+<dd>
+risk quantification cond. on risk differentiation
+</dd>
+</dl>
+</div>
+<div data-id="a2">
+<dl>
+<dt>Risk Differentiation</dt>
+<dd>
+differentiate and rank exposures on (internal) risk measure
+</dd>
+</dl>
+</div>
+<div class="highlight-block">
+<ul>
+<li>Typical approach: <span class="math inline">\(\sim\)</span> into-default flag / realized LGD on closed cases / realized CCF</li>
+<li>Conditional on risk drivers, based on data set representative of application portfolio</li>
+</ul>
+</div>
+<div data-id="a3">
+<dl>
+<dt>Risk Quantification</dt>
+<dd>
+Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+</dd>
+</dl>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../media/differentiation_quantification_small.drawio.svg"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Diagram: differentiation -&gt; quantification</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="risk-parameter-estimation-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Risk Parameter Estimation</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<div data-id="a1">
+<dl>
+<dt>Indirect estimation</dt>
+<dd>
+risk quantification cond. on risk differentiation
+</dd>
+</dl>
+</div>
+<div data-id="a2">
+<dl>
+<dt>Risk Differentiation</dt>
+<dd>
+differentiate and rank exposures on (internal) risk measure
+</dd>
+</dl>
+</div>
+<div data-id="a3">
+<dl>
+<dt>Risk Quantification</dt>
+<dd>
+Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+</dd>
+</dl>
+</div>
+<div class="highlight-block">
+<ul>
+<li>Estimates of long-run default/loss experience</li>
+<li>Primary focus of this course</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../media/differentiation_quantification_small.drawio.svg"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside class="notes">
 <p>Diagram: differentiation -&gt; quantification</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {

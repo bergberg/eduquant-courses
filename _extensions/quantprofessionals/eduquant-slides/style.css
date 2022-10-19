@@ -8,3 +8,8 @@
     align-items: center;
     height: 90%;
   }
+
+.highlight-block {
+  background-color:rgb(167, 191, 215);
+  color:rgb(255, 255, 220);
+}
