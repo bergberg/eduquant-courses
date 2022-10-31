@@ -5,9 +5,10 @@ contributes:
   formats:
     revealjs:
        theme: [default, theme.scss]
-       standalone: true
        transition: slide
        transition-speed: fast
+       auto-animate-duration: 0.5
+       auto-animate-ease: ease-in-out
        logo: logo_transparent.svg
        multiplex: true
        resources: "*-speaker.html"
@@ -15,11 +16,12 @@ contributes:
        css: style.css
        center: false
        callout-appearance: minimal
-       self-contained: false
+       embed-resources: false
+       standalone: false
        navigation-mode: linear
        title-slide-attributes: 
           data-background-color: "#defafc"
-          data-background-position: bottom 2.5em center
+          data-background-position: bottom 5% center
           data-background-image: logo_transparent.svg
-          data-background-size: 33%
+          data-background-size: 25%
        preview-links: true

@@ -60,7 +60,7 @@
     "href": "slides/moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-1",
     "title": "MoC & Downturn LGD",
     "section": "Overview of IRB Regulation",
-    "text": "Overview of IRB Regulation\n\n\nLayers of regulation\n\nBasel Framework\n\nBIS recommendations on banking regulations\n\nCRR (Part 3/II, Chapter III)\n\nCapital Requirements Regulation (Internal Ratings Based Approach )\n\nRTS \\(\\rightarrow\\) CDR\n\nRegulatory Technical Standards adopted as Comm. Del. Regulation\n\nEBA Guidelines and Q&A\n\nClarification, specifications\n\nECB Guide to Internal Models\n\nSupervisory expectations\n\n\n\n\n\n\n\n\n\n\nBasel/EBA/ECB may differ on details — always look through all layers\n\n\n\n\n\nDiagram: basel -> CRR/RTS/GL -> EGIM ]"
+    "text": "Overview of IRB Regulation\n\n\nLayers of regulation\n\nBasel Framework\n\nBIS recommendations on banking regulations\n\nCRR (Part 3/II, Chapter III)\n\nCapital Requirements Regulation (Internal Ratings Based Approach )\n\nRTS \\(\\rightarrow\\) CDR\n\nRegulatory Technical Standards adopted as Comm. Del. Regulation\n\nEBA Guidelines and Q&A\n\nClarification, specifications\n\nECB Guide to Internal Models\n\nSupervisory expectations\n\n\n\n\n\n\n\nDiagram: basel -> CRR/RTS/GL -> EGIM ]"
   },
   {
     "objectID": "slides/moc_dt/moc_dt_day_1.html#example-economic-downturn",
@@ -70,32 +70,46 @@
     "text": "Example: Economic Downturn\n\n\n\nEconomic Downturn not specified in Basel Framework or CRR\nEBA has drafted an RTS, elevated into regulation CDR 2021/930\nEGIM is not more specific\n\n\n\n\n\nCRE 36.85\n\n\n\\(\\small{[\\cdots]}\\) A bank must estimate an LGD for each facility that aims to reflect economic downturn conditions where necessary to capture the relevant risks. \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCRR Article 181\n\n\n(1)(b) institutions shall use LGD estimates that are appropriate for an economic downturn if those are more conservative than the long-run average. \\(\\small{[\\cdots]}\\)\n(3) EBA shall develop draft regulatory technical standards to specify the following: (a) the nature, severity and duration of an economic downturn referred to in paragraph 1; \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCDR 2021/930 Article 1\n\n\nSpecification of the nature, severity and duration of an economic downturn \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nShow Basel CRE36.64, article 4(78), GL PD/LGD par 73ff"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#implementing-irb",
-    "href": "slides/moc_dt/moc_dt_day_1.html#implementing-irb",
-    "title": "MoC & Downturn LGD",
-    "section": "Implementing IRB",
-    "text": "Implementing IRB\n\nDiagram: [ CRR/RTS/GL + EGIM ] -> policy -> standard -> rating system"
-  },
-  {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#example-review-of-estimates",
-    "href": "slides/moc_dt/moc_dt_day_1.html#example-review-of-estimates",
-    "title": "MoC & Downturn LGD",
-    "section": "Example: Review of estimates",
-    "text": "Example: Review of estimates\n\nMaybe find a simpler example"
-  },
-  {
     "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems",
     "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems",
     "title": "MoC & Downturn LGD",
     "section": "Rating Systems",
-    "text": "Rating Systems\n\n\n\n\nrating system\n\nassessment methods & processes developed for a certain type of exposures\n\ntype of exposures\n\nhomogeneously managed, comparable risk characteristics\n\nrange of application\n\nall exposures of the type in scope of the rating system\n\nRisk parameter model\n\nranking method\n\nscope of application\n\nall exposures of a certain type rated by the model\n\ncalibration segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\n\n\n\n\n\n\n\nmultiple slides with definitions + article\nexposure class rating system type of exposure range of application IRB approval"
+    "text": "Rating Systems\n\n\n\nrating system\n\nassessment methods & processes developed for a certain type of exposures\n\ntype of exposures\n\nhomogeneously managed, comparable risk characteristics\n\nrange of application\n\nall exposures of the type in scope of the rating system\n\nRisk parameter model\n\nranking method\n\nscope of application\n\nall exposures of a certain type rated by the model\n\ncalibration segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\n\n\n\n\n\n\nCRR Article 142\n\n\n(1) “rating system” means all of the methods, processes, controls, data collection and IT systems that support the assessment of credit risk, the assignment of exposures to rating grades or pools, and the quantification of default and loss estimates that have been developed for a certain type of exposures; \\(\\small{[\\cdots]}\\)"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Rating Systems",
+    "text": "Rating Systems\n\n\n\nrating system\n\nassessment methods & processes developed for a certain type of exposures\n\ntype of exposures\n\nhomogeneously managed, comparable risk characteristics\n\nrange of application\n\nall exposures of the type in scope of the rating system\n\nRisk parameter model\n\nranking method\n\nscope of application\n\nall exposures of a certain type rated by the model\n\ncalibration segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\n\n\n\n\n\n\nCRR Article 142\n\n\n“type of exposures” means a group of homogeneously managed exposures which are formed by a certain type of facilities \\(\\small{[\\cdots]}\\)"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems-2",
+    "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems-2",
+    "title": "MoC & Downturn LGD",
+    "section": "Rating Systems",
+    "text": "Rating Systems\n\n\n\nrating system\n\nassessment methods & processes developed for a certain type of exposures\n\ntype of exposures\n\nhomogeneously managed, comparable risk characteristics\n\nrange of application\n\nall exposures of the type in scope of the rating system\n\nRisk parameter model\n\nranking method\n\nscope of application\n\nall exposures of a certain type rated by the model\n\ncalibration segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\n\n\n\n\n\n\nEBA/GL/2017/16 par. 12\n\n\nA rating system in the sense of point (1) of Article 142(1) of Regulation (EU) No 575/2013 should cover all those exposures where the obligors or facilities show common drivers of risk and credit-worthiness and fundamentally comparable availability of credit-related information. \\(\\small{[\\cdots]}\\)"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems-3",
+    "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems-3",
+    "title": "MoC & Downturn LGD",
+    "section": "Rating Systems",
+    "text": "Rating Systems\n\n\n\nrating system\n\nassessment methods & processes developed for a certain type of exposures\n\ntype of exposures\n\nhomogeneously managed, comparable risk characteristics\n\nrange of application\n\nall exposures of the type in scope of the rating system\n\nRisk parameter model\n\nranking method\n\nscope of application\n\nall exposures of a certain type rated by the model\n\ncalibration segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\n\n\n\n\n\n\nEBA/GL/2017/16 par. 13\n\n\nExposures covered by the same rating system should be treated similarly by the institution in terms of risk management, decision making and credit approval process and should be assigned to a common obligor rating scale \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nmultiple slides with definitions + article\nexposure class rating system type of exposure range of application IRB approval"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems-4",
+    "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems-4",
+    "title": "MoC & Downturn LGD",
+    "section": "Rating Systems",
+    "text": "Rating Systems\n\n\n\nrating system\n\nassessment methods & processes developed for a certain type of exposures\n\ntype of exposures\n\nhomogeneously managed, comparable risk characteristics\n\nrange of application\n\nall exposures of the type in scope of the rating system\n\nRisk parameter model\n\nranking method\n\nscope of application\n\nall exposures of a certain type rated by the model\n\ncalibration segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n12. \\(\\small{[\\cdots]}\\) The PD and LGD model within a rating system may comprise various calibration segments.\\(\\small{[\\cdots]}\\)"
   },
   {
     "objectID": "slides/moc_dt/moc_dt_day_1.html#example-two-rating-systems",
     "href": "slides/moc_dt/moc_dt_day_1.html#example-two-rating-systems",
     "title": "MoC & Downturn LGD",
     "section": "Example: two rating systems",
-    "text": "Example: two rating systems\n\n\n\n\n\n\n\n\n\nNot based on exposure characteristics!"
+    "text": "Example: two rating systems\n\n\n\n\n\n\n\n\n\n\nNot based on exposure characteristics!"
   },
   {
     "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation",
@@ -103,55 +117,6 @@
     "title": "MoC & Downturn LGD",
     "section": "Risk Parameter Estimation",
     "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification cond. on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on (internal) risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification"
-  },
-  {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-quantification",
-    "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-quantification",
-    "title": "MoC & Downturn LGD",
-    "section": "Risk Parameter Quantification",
-    "text": "Risk Parameter Quantification\n\nDiagram: Type of Exposures -> RDS -> Initial Calibration Target -> Appr. Adjusted Target\nPar 12 PD&LGD"
-  },
-  {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#reference-data-sets",
-    "href": "slides/moc_dt/moc_dt_day_1.html#reference-data-sets",
-    "title": "MoC & Downturn LGD",
-    "section": "Reference Data Sets",
-    "text": "Reference Data Sets\n\nEstimation RDS: Type of Exposures -> Comparable Exposures, Reference Dates -> RDS\nApplication Portfolio RDS: Recent Date, Actual Portfolio"
-  },
-  {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#reference-dates-observation-windows",
-    "href": "slides/moc_dt/moc_dt_day_1.html#reference-dates-observation-windows",
-    "title": "MoC & Downturn LGD",
-    "section": "Reference Dates & Observation Windows",
-    "text": "Reference Dates & Observation Windows\n\nDiagrams: discrete timelines with labels\nPD: R => [o o o o o D . . . . . . . ] performing default recovery LGD: R => [o o o o o o D d d d d … L] CCF: R => o o o o o D …\nIn-default LGD/CCF: D … R [… R[ … L ]]…"
-  },
-  {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-calculation",
-    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-calculation",
-    "title": "MoC & Downturn LGD",
-    "section": "Realised LGD Calculation",
-    "text": "Realised LGD Calculation\n\nFormula Realised LGD = Actual exposure at default - discounted recoveries / …\nExplanation of CFs"
-  },
-  {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#observed-average-lgd",
-    "href": "slides/moc_dt/moc_dt_day_1.html#observed-average-lgd",
-    "title": "MoC & Downturn LGD",
-    "section": "Observed average LGD",
-    "text": "Observed average LGD"
-  },
-  {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#conceptual-basis",
-    "href": "slides/moc_dt/moc_dt_day_1.html#conceptual-basis",
-    "title": "MoC & Downturn LGD",
-    "section": "Conceptual Basis",
-    "text": "Conceptual Basis"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "eduquant-courses",
-    "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nOct 20, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation-1",
@@ -165,13 +130,160 @@
     "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation-2",
     "title": "MoC & Downturn LGD",
     "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification cond. on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on (internal) risk measure\n\n\n\n\n\nTypical approach: \\(\\sim\\) into-default flag / realized LGD on closed cases / realized CCF\nConditional on risk drivers, based on data set representative of application portfolio\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification"
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification cond. on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nTypical approach: \\(\\sim\\) into-default flag / realized LGD on closed cases / realized CCF\nConditional on risk drivers, based on data set representative of application portfolio\nRegulatory requirements focus on meaningful differentiation (\\(\\sim\\) modelling process)\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification"
   },
   {
     "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation-3",
     "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation-3",
     "title": "MoC & Downturn LGD",
     "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification cond. on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on (internal) risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\nEstimates of long-run default/loss experience\nPrimary focus of this course\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification"
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification cond. on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on (internal) risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\nEstimates of long-run default/loss experience\nRegulatory requirements focus on calculation method and quantification process\nPrimary focus of this course\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-quantification",
+    "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-quantification",
+    "title": "MoC & Downturn LGD",
+    "section": "Risk Parameter Quantification",
+    "text": "Risk Parameter Quantification\n\n\n\nReference dates\n\nDate to which realised values are aggregated\n\nCalibration Target (CT)\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness / other sources of bias\n\nAppr. Adj. CT\n\nCalibration Target adjusted for biases\n\n\n\n\n\n\n\nDiagram: Type of Exposures -> RDS -> Initial Calibration Target -> Appr. Adjusted Target\nPar 12 PD&LGD"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#reference-data-sets",
+    "href": "slides/moc_dt/moc_dt_day_1.html#reference-data-sets",
+    "title": "MoC & Downturn LGD",
+    "section": "Reference Data Sets",
+    "text": "Reference Data Sets\n\n\n\nLength of historical period\n\nmin. requirements (5 or 7 yr) + available relevant internal data on comparable exposures\n\nMethodology\n\n(non-)overlapping [PD], time-to-default [LGD, CCF], recovery process [in-default]\n\nExposure attributes\n\nidentify exposures at historical observation dates\n\nDefault/loss characteristics\n\nObserved default/loss data aggregated by exposure over observation period at reference date (target variable)\n\nRisk characteristics\n\nRisk drivers, appropriate adjustment variables\n\nObservation windows\n\naggregate to obtain targets (fwd) or variables (bwd)"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#calibration-targets",
+    "href": "slides/moc_dt/moc_dt_day_1.html#calibration-targets",
+    "title": "MoC & Downturn LGD",
+    "section": "Calibration Targets",
+    "text": "Calibration Targets\n\n\n\nMethodology\n\n(non-)overlapping [PD], time-to-default [LGD, CCF], time-in-default/recovery process [in-default]\n\nReference dates \\(t_r\\)\n\nset of dates over which calibration target is calculated, either as an average (LRA LGD), average of yearly averages (PD & LRA CCF), or an estimated downturn effect (DT LGD/CCF)\n\nCalibration level \\(L\\)\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\n(Initial) calibration target\n\nrisk parameter calibration target not accounting for biases, i.e., long-run average default rate, (in-default) LRA/DT LGD/CCF, prior to appr. adj."
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#calibration-targets-pd",
+    "href": "slides/moc_dt/moc_dt_day_1.html#calibration-targets-pd",
+    "title": "MoC & Downturn LGD",
+    "section": "Calibration Targets (PD)",
+    "text": "Calibration Targets (PD)\n\n\n\nLength of historical period\n\n(up to) a length that reflects the likely range of variability of default rates of that type of exposures\n\nMethodology\n\noverlapping versus non-overlapping\n\nReference dates \\(t_{r}\\)\n\nsample over historical data over observation dates of performing exposures\n\nCalibration level (L)\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target \\(DR\\)\n\naverage of default rates per (yearly) reference date\n\n\n\n\n\\(\\text{DR}(\\mathbf{L}) = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} D_i(t_r)\\)"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation",
+    "href": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation",
+    "title": "MoC & Downturn LGD",
+    "section": "Long-run average LGD calculation",
+    "text": "Long-run average LGD calculation\n\n\n\nLength of historical period\n\nall available internal loss data on exposures of that type considered relevant\n\nReference dates \\(t_r\\)\n\n\\(t_{def}-12 \\le t_{r} < t_{def}\\)\n\n\n(assignment to grade)\n\n\n\n\nRealised LGD\n\nRatio of economic loss to outstanding at default\n\n\n\n\n\nObserved Average LGD\n\nAverage realised LGD of closed recovery processes\n\n\n\n\n\nLong-run Average LGD\n\nAverage RLGD of closed+open recoveries"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Long-run average LGD calculation",
+    "text": "Long-run average LGD calculation\n\n\n\n\nMaximum Recovery Period (MRP)\n\nDetermine MRP to distinguish open/closed recoveries\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd",
+    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd",
+    "title": "MoC & Downturn LGD",
+    "section": "Realised LGD",
+    "text": "Realised LGD\n\\(RLGD = \\frac{\\max(O-R,0)}{O}\\)\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\n\n\n\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Realised LGD",
+    "text": "Realised LGD\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\n\n\n\nirrespective of prior write-offs or forgiveness\nexcluding fees/payments not capitalised at \\(t_{def}\\) and v.v.\nincluding costs of recovery discounted to \\(t_{def}\\)\n(retail/Basel IV): including additional drawings after default\n\n\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments\n\n\n\n\n\\(RLGD = \\frac{\\max(O-R,0)}{O}\\)"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-2",
+    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-2",
+    "title": "MoC & Downturn LGD",
+    "section": "Realised LGD",
+    "text": "Realised LGD\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\n\n\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments\n\n\n\n\nUnsecured as well as secured (eligible+ineligible)\nIncluding regular contractual payments\nIncluding discounted outstanding at default end in case of return to performing (“artificial cash flow”)\n\n\n\\(RLGD = \\frac{\\max(O-R,0)}{O}\\)\n\n\n\n\nDiscounting of cash flows at 3-month euribor + 5% or equivalent."
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-example-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-example-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Realised LGD: example 1",
+    "text": "Realised LGD: example 1"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-example-2",
+    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-example-2",
+    "title": "MoC & Downturn LGD",
+    "section": "Realised LGD: example 2",
+    "text": "Realised LGD: example 2"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-2",
+    "href": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-2",
+    "title": "MoC & Downturn LGD",
+    "section": "Long-run average LGD calculation",
+    "text": "Long-run average LGD calculation\n\n\n\n\nMaximum Recovery Period (MRP)\n\nDetermine MRP to distinguish open/closed recoveries\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#observed-average-lgd",
+    "href": "slides/moc_dt/moc_dt_day_1.html#observed-average-lgd",
+    "title": "MoC & Downturn LGD",
+    "section": "Observed Average LGD",
+    "text": "Observed Average LGD\nDefault-weighted1 average of realised LGD, including\n\nclosed recoveries\nrecoveries where \\(t_{end} - t_{def} > \\text{MRP}\\)\nrepaid/written-off exposures\nexposures returned to performing status (“cured”)\n\n\n\nReturn to performing (cure) following Definition of Default (DoD) policy, including probation period and after multiple default treatment.\ni.e., number of defaults weighted"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd",
+    "href": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd",
+    "title": "MoC & Downturn LGD",
+    "section": "Long-run average LGD",
+    "text": "Long-run average LGD"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#margin-of-conservatism-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#margin-of-conservatism-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Margin of Conservatism",
+    "text": "Margin of Conservatism\n\n\n\nBasel III and CRR prescribe a Margin of Conservatism in general terms only\nEBA Guidelines on PD & LGD more specific\n\nSpecification and clarification of general idea\nPrescribes additional steps in estimation\nIntroduces (harmonizing) minimal requirements (MoC A, B, C>0)\n\n\n\n\n\n\nCRE 36.67\n\n\nIn general, estimates of PDs, LGDs, and EADs are likely to involve unpredictable errors. In order to avoid over-optimism, a bank must add to its estimates a margin of conservatism that is related to the likely range of errors. Where methods and data are less satisfactory and the likely range of errors is larger, the margin of conservatism must be larger.\n\n\n\n\n\n\nCRR Article 179(f)\n\n\nAn institution shall add to its estimates a margin of conservatism that is related to the expected range of estimation errors. Where methods and data are considered to be less satisfactory, the expected range of errors is larger, the margin of conservatism shall be larger.\n\n\n\n\n\n\nEBA/GL/2017/16 43\n\n\nIn order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies […] ensuring that: (i) where appropriate adjustments […] are used, the MoC accounts for any increase in the uncertainty […] (b) quantify the general estimation error […]"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#crr-article-179",
+    "href": "slides/moc_dt/moc_dt_day_1.html#crr-article-179",
+    "title": "MoC & Downturn LGD",
+    "section": "CRR Article 179",
+    "text": "CRR Article 179\n(f) An institution shall add to its estimates a margin of conservatism that is related to the expected range of estimation errors. Where methods and data are considered to be less satisfactory, the expected range of errors is larger, the margin of conservatism shall be larger."
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#ebagl201716-43",
+    "href": "slides/moc_dt/moc_dt_day_1.html#ebagl201716-43",
+    "title": "MoC & Downturn LGD",
+    "section": "EBA/GL/2017/16 43",
+    "text": "EBA/GL/2017/16 43\nIn order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies […] ensuring that: (i) where appropriate adjustments […] are used, the MoC accounts for any increase in the uncertainty […] (b) quantify the general estimation error […]"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#conceptual-basis",
+    "href": "slides/moc_dt/moc_dt_day_1.html#conceptual-basis",
+    "title": "MoC & Downturn LGD",
+    "section": "Conceptual Basis",
+    "text": "Conceptual Basis\n\n\nBob\n\nHigh-wealth client with excellent lawyers\nHas nuclear decay detector experiment in basement\n50% full loss/repayment by guaranteed fair quantum coin toss\n\n\n\n\nElmo\n\nLending/recovery via Pandimensional Originator LLC\nRandom entity picked from across space-time\nMay have concept of money/time"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "eduquant-courses",
+    "section": "",
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nOct 31, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#crr-article-179f",
+    "href": "slides/moc_dt/moc_dt_day_1.html#crr-article-179f",
+    "title": "MoC & Downturn LGD",
+    "section": "CRR Article 179(f)",
+    "text": "CRR Article 179(f)\n\nIn order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies […] ensuring that: (i) where appropriate adjustments […] are used, the MoC accounts for any increase in the uncertainty […] (b) quantify the general estimation error […]"
+  },
+  {
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#conceptual-basis-1",
+    "href": "slides/moc_dt/moc_dt_day_1.html#conceptual-basis-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Conceptual Basis",
+    "text": "Conceptual Basis\n\n\nBob\n\n\n\nElmo\n\n\n\n\n\n\n\n\n\n\n\\[D\\sim \\text{Bernoulli}(p)\\] \\[E\\lbrack p_{Bob} \\rbrack = E\\lbrack p_{Elmo} \\rbrack=50%\\]\n\n\n\nWho would you rather lend to?\nHow much capital should you hold?\n\n\nBetter title"
   }
 ]
