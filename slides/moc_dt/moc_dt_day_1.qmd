@@ -1428,7 +1428,7 @@ $\S$ 158-159 EBA/GL/2017/16
 
 ::::
 
-## Calibration Targets (**PD**) {auto-animate=true}
+## Calibration Targets (**LGD**) {auto-animate=true}
 
 :::: columns
 

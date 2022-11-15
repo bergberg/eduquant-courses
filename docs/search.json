@@ -273,11 +273,11 @@
     "text": "Long-run average LGD calculation\n\n\n\n\nIdentify open/closed recoveries\n\nMaximum Recovery Period & Multiple default treatment\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#calibration-targets-pd-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#calibration-targets-pd-1",
+    "objectID": "slides/moc_dt/moc_dt_day_1.html#calibration-targets-lgd",
+    "href": "slides/moc_dt/moc_dt_day_1.html#calibration-targets-lgd",
     "title": "MoC & Downturn LGD",
-    "section": "Calibration Targets (PD)",
-    "text": "Calibration Targets (PD)\n\n\n\nLength of historical period\n\nat least 5/7 years, all internal data considered relevant\n\nReference date methodology\n\ntime-to-default (performing), time-in-default (in-default)\n\nReference dates \\(t_{r}\\)\n\nsample over historical data over observation dates of defaulted exposures\n\nCalibration level (L)\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target \\(\\text{LRA-LGD}\\)\n\ndefault-weighted average over LGD values, both realised and based on estimated future recoveries (RLGD)\n\n\n\n\\(\\text{LRA-LGD}(\\mathbf{L}) = \\frac{1}{N_\\mathbf{L}}\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i\\)\n\n\n\n16:00"
+    "section": "Calibration Targets (LGD)",
+    "text": "Calibration Targets (LGD)\n\n\n\nLength of historical period\n\nat least 5/7 years, all internal data considered relevant\n\nReference date methodology\n\ntime-to-default (performing), time-in-default (in-default)\n\nReference dates \\(t_{r}\\)\n\nsample over historical data over observation dates of defaulted exposures\n\nCalibration level (L)\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target \\(\\text{LRA-LGD}\\)\n\ndefault-weighted average over LGD values, both realised and based on estimated future recoveries (RLGD)\n\n\n\n\\(\\text{LRA-LGD}(\\mathbf{L}) = \\frac{1}{N_\\mathbf{L}}\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i\\)\n\n\n\n16:00"
   },
   {
     "objectID": "slides/moc_dt/moc_dt_day_1.html#margin-of-conservatism-1",
