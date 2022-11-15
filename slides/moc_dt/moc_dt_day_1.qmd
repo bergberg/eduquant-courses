@@ -21,7 +21,9 @@ format: eduquant-slides-revealjs
 ::: {.column width="55%"}
 IRB Regulation
 
-Risk Parameter quantification
+Risk Parameter Quantification
+
+LGD Quantification
 :::
 :::
 
@@ -199,13 +201,15 @@ Q&A
 
 # Introduction
 
+# Overview of IRB Regulation
+
 ## Overview of IRB Regulation {auto-animate=true center=true}
 
 ![](/media/basel_crr_egim_bare.drawio.svg){data-id="fig1" fig-align="center"}
 
 
 ::: notes
-Diagram: basel -\> CRR/RTS/GL -\> EGIM \]
+13:30
 :::
 
 ## Overview of IRB Regulation {auto-animate=true}
@@ -410,6 +414,11 @@ _(1) “rating system” means all of the methods, processes, controls, data col
 
 :::
 ::::
+
+
+::: notes
+13:45
+:::
 
 
 ## Rating Systems {auto-animate=true}
@@ -653,6 +662,11 @@ Risk Quantification
 Diagram: differentiation -\> quantification
 :::
 
+::: notes
+14:00
+:::
+
+
 ## Risk Parameter Estimation {auto-animate=true}
 
 :::: columns
@@ -769,10 +783,11 @@ _3. Where an institution uses direct estimates of risk parameters for individual
 :::
 ::::
 
-
+::: notes
+14:15
+:::
 
 # Risk Parameter Quantification
-
 
 ## Risk Parameter Quantification
 
@@ -804,6 +819,10 @@ Appropriately Adjusted Calibration Target
 Diagram: Type of Exposures -\> RDS -\> Initial Calibration Target -\> Appr. Adjusted Target
 
 Par 12 PD&LGD
+:::
+
+::: notes
+15:15
 :::
 
 ## Reference Data Sets {auto-animate=true}
@@ -840,6 +859,8 @@ Observation windows
 :::
 :::
 ::::
+
+
 
 ## Realised Risk Parameter Values {auto-animate=true}
 
@@ -939,6 +960,9 @@ $\text{DR}(\mathbf{L}) = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}
 
 ::::
 
+::: notes
+15:15
+:::
 
 # LGD Quantification
 
@@ -1433,6 +1457,11 @@ $\text{LRA-LGD}(\mathbf{L}) = \frac{1}{N_\mathbf{L}}\sum_{i\in\mathbf{L}} \text{
 :::
 
 ::::
+
+::: notes
+16:00
+:::
+
 
 # Margin of Conservatism
 
