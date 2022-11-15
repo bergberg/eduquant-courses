@@ -14,10 +14,11 @@ contributes:
        resources: "*-speaker.html"
        mermaid-format: svg
        css: style.css
+       filters: [style_filter.lua]
        center: false
        callout-appearance: minimal
-       embed-resources: false
-       standalone: false
+       embed-resources: true
+       standalone: true
        navigation-mode: linear
        title-slide-attributes: 
           data-background-color: "#defafc"
