@@ -199,14 +199,11 @@ Q&A
 :::
 ::: -->
 
-# Introduction
-
 # Overview of IRB Regulation
 
 ## Overview of IRB Regulation {auto-animate=true center=true}
 
 ![](/media/basel_crr_egim_bare.drawio.svg){data-id="fig1" fig-align="center"}
-
 
 ::: notes
 13:30

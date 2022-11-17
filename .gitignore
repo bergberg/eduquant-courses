@@ -4,3 +4,4 @@
 #ignore targets remaining in source dirs
 /slides/**/*.html
 .Rproj.user
+/.luarc.json
