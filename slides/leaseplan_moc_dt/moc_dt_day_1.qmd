@@ -1551,7 +1551,7 @@ Risk parameter densities based on estimated parameters $r$:
 
 $$p_{\text{R}}(x_i) \sim p_\text{R}(x_i|r)p(r|\text{data})$$
 
-Therefore, $\text{RWA} \sim \int^{\alpha} \int^{\alpha^\prime}\text{Loss}(x)p(x|r)p(r) \text{d}x \text{d}a$
+Therefore, $\text{RWA} \sim \int^{\alpha} \int^{\alpha^\prime}\text{Loss}(x)p(x|r)p(r) \text{d}x \text{d}r \approx \int^{\alpha}\text{Loss}(x)p(x|r=F_r^{-1}(\alpha^{\prime})) \text{d}x $
 
 ::: {.callout-note}
 
@@ -1621,10 +1621,9 @@ Better title
 $$D\sim \text{Bernoulli}(p)$$
 $$E\lbrack p_{Bob} \rbrack = E\lbrack p_{Elmo} \rbrack=50\% $$
 
-```{r }
+```{r bob_elmo_dist}
 #| cache: TRUE
-#| fig-format: "retina"
-#| fig-align: "center"
+#| fig-align: "center" 
 library(ggplot2)
 N<-1000
 prob = seq(0,1, length=N)

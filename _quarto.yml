@@ -7,7 +7,7 @@ project:
 
 
 website:
-  title: "eduquant-courses"
+  title: "Eduquant course slides"
   navbar:
     left:
       - href: index.qmd

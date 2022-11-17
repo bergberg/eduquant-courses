@@ -1,0 +1,241 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="559px" height="335px" viewBox="-0.5 -0.5 559 335" content="&lt;mxfile&gt;&lt;diagram id=&quot;qPmF2TFwYpAl6lm8iScA&quot; name=&quot;Page-1&quot;&gt;7ZpNc5swEIZ/jY/JID5sfEydpD00M524054VWGNNBWKE/NVfXykSGBA0bmwTt00PKVpWAnafXV6UjLxZuv3Icb58YDHQkevE25F3O3Jd5E3G8j9l2WnL1PG1IeEkNk57w5z8BG0MjHFFYigafoIxKkjeNEYsyyASDRvmnG2abgtGmxfNcWIu6OwN8whTsNy+k1gstTUMat6fgCTL8srIMWdSXDobQ7HEMdvUTN7dyJtxxoQ+SrczoCp2ZVj0vPues9WNccjEIROmnp6xxnRlHu4RC5Il0jbfFQJSeXAz8m5G7pjKFT88cXmUqKMHxkUin7QwTyJ2ZXg2SyJgnuNIjTeSAOm9FCmVIyQPq2dWgwXLxD1OCVUkfAK6BkEibE7MGGX8eU1P/zP2ubmWo1YTnP2A0jNjGSgnQmljcujd3ilneVPq4cxUPfrK8qbhMyxU8Py95dEkU5k4W2UxxOb+E4qLwkyHbJUCxwLa428mum55/xpopMZMXUGop5+qOXYCTU7XwAVsayaT0I/AUhB8J13M2SsfGbpMdfmBqZvNHlbkG59lDVTP+GFTH0m19h4heWAo6iHKP4CoD51EzTjERMjTM8zjM2LVj49kJXSfvPHYZigOIIz9/4YhCc0bMhRYDJXdRlphm7Nixf/jxuNcKDTtxhOU40GgGVvQNBrKMOT8KSFnaiuXSki7rQxLSGgRIiwSIItvlESUo0gFkEQtFATmovQoc7oPnJSoKrqlZkUTPbwntFygN4wFW/GoVJiOoRniUor+PrLOtY9Q2IjtVSkyOVD5Bl43xWtXIM3qXxjJRL2s/WZZe6WcLdfQd26m1dXmSysF01ZaZXATENZKMt54V3PLlUPRfa3Shy0WBTRWeeajCt1ByCDHljM2MpTKLw8FwgttBBe5/hxZkK0q01bBRixVtN2erB0HrbwFdrG5HbXmttL7mlpDjv0O/12tmUqqBas3Ai+WxKl5d8MjeL9GQXcSjkb+VTjbL8m/Fmd/OiTOkyNx7npvHPgqMC1Ig/Kn74eTN39/ct1q2q9u/2P/VO3/NbWA7FqYr3Lga1Kw59Dd5Dln8qyV6GJDUop1hhknP+XrH1NDevPTLsbFshrUC6KutbyWLKyripqcjBilOC/IU2XhTMjcskwOr1B4OhXf7Fju1L22P/4q5VYvNXQKmeYjKy/ve1IXtp9Q1c7BWLWY6kLqbMI/nB5A1Pue1MUzhCbOG1I0tfvS+67U8HsOx7aeyWRQaFwLmrdvKf/iVtTx3WRYMKrdmn9Pflop6FCk/fIzbP3iwetISngu7YmQXa+PIDBRTvOHO/mTys88LR0ucTsZQ7iI/toaDnsA6q/hVgkPWsD2loCtKmedqrIPqTdRl+MohKfFYCydT12+1Hc0Xoey5J7vNxNyuP8TD711sf87Ge/uFw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="53" y="175" width="140" height="35" rx="5.25" ry="5.25" fill-opacity="0.9" fill="#000000" stroke="none" pointer-events="all" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="53" y="175" width="140" height="35" rx="5.25" ry="5.25" fill-opacity="0.9" fill="#3383de" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 193px; margin-left: 56px;">
+                        <div data-drawio-colors="color: #333333; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Rating System A:
+                                <br/>
+                                Mortgages
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="123" y="196" fill="#333333" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Rating System A:...
+                </text>
+            </switch>
+        </g>
+        <rect x="218" y="175" width="140" height="35" rx="5.25" ry="5.25" fill-opacity="0.9" fill="#000000" stroke="#000000" stroke-opacity="0.9" pointer-events="all" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="218" y="175" width="140" height="35" rx="5.25" ry="5.25" fill-opacity="0.9" fill="#d5e8d4" stroke="#82b366" stroke-opacity="0.9" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 193px; margin-left: 221px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Rating System B:
+                                <br/>
+                                Credit Cards
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="288" y="196" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Rating System B:...
+                </text>
+            </switch>
+        </g>
+        <rect x="53" y="230" width="140" height="35" fill-opacity="0.9" fill="#000000" stroke="none" pointer-events="all" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="53" y="230" width="140" height="35" fill-opacity="0.9" fill="#3383de" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 248px; margin-left: 56px;">
+                        <div data-drawio-colors="color: #333333; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Mortgage exposures
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="123" y="251" fill="#333333" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Mortgage exposures
+                </text>
+            </switch>
+        </g>
+        <rect x="218" y="230" width="140" height="35" fill-opacity="0.9" fill="#000000" stroke="none" pointer-events="all" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="218" y="230" width="140" height="35" fill-opacity="0.9" fill="#d5e8d4" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 248px; margin-left: 221px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Credit Card exposures
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="288" y="251" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Credit Card exposures
+                </text>
+            </switch>
+        </g>
+        <path d="M 23 230 L 23 300.38" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 23 313.88 L 14 295.88 L 23 300.38 L 32 295.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 290px; margin-left: 3px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">
+                                t
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="3" y="298" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="25px" text-anchor="middle">
+                    t
+                </text>
+            </switch>
+        </g>
+        <ellipse cx="23" cy="80" rx="10" ry="10" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <path d="M 23 0 L 22.85 70" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <ellipse cx="23" cy="220" rx="10" ry="10" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <path d="M 23 90 L 23 210" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 71 12.5 L 58.35 12.5 Q 48 12.5 48 22.85 L 48 137.15 Q 48 147.5 58.35 147.5 L 71 147.5" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" transform="rotate(-180,303,80)" pointer-events="all"/>
+        <path d="M 71 147.5 L 547.65 147.5 Q 558 147.5 558 137.15 L 558 22.85 Q 558 12.5 547.65 12.5 L 71 12.5" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" transform="rotate(-180,303,80)" pointer-events="none"/>
+        <path d="M 71 12.5 L 71 147.5" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" transform="rotate(-180,303,80)" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="13px" transform="rotate(-270,546.5,80)">
+            <text x="546" y="85">
+                Supervisory Approval
+            </text>
+        </g>
+        <rect x="53" y="35" width="140" height="35" rx="5.25" ry="5.25" fill-opacity="0.9" fill="#000000" stroke="none" pointer-events="none" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="53" y="35" width="140" height="35" rx="5.25" ry="5.25" fill-opacity="0.9" fill="#3383de" stroke="none" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 53px; margin-left: 56px;">
+                        <div data-drawio-colors="color: #333333; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                Rating System A:
+                                <br/>
+                                Mortgages
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="123" y="56" fill="#333333" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Rating System A:...
+                </text>
+            </switch>
+        </g>
+        <rect x="218" y="35" width="140" height="35" rx="5.25" ry="5.25" fill-opacity="0.9" fill="#000000" stroke="#000000" stroke-opacity="0.9" pointer-events="none" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="218" y="35" width="140" height="35" rx="5.25" ry="5.25" fill-opacity="0.9" fill="#d5e8d4" stroke="#82b366" stroke-opacity="0.9" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 53px; margin-left: 221px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                Rating System B:
+                                <br/>
+                                Credit Cards
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="288" y="56" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Rating System B:...
+                </text>
+            </switch>
+        </g>
+        <rect x="53" y="90" width="140" height="35" fill-opacity="0.9" fill="#000000" stroke="none" pointer-events="none" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="53" y="90" width="140" height="35" fill-opacity="0.9" fill="#3383de" stroke="none" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 108px; margin-left: 56px;">
+                        <div data-drawio-colors="color: #333333; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(51, 51, 51); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                Mortgage exposures
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="123" y="111" fill="#333333" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Mortgage exposures
+                </text>
+            </switch>
+        </g>
+        <rect x="218" y="90" width="140" height="35" fill-opacity="0.9" fill="#000000" stroke="none" pointer-events="none" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="218" y="90" width="140" height="35" fill-opacity="0.9" fill="#d5e8d4" stroke="none" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 108px; margin-left: 221px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                Credit Cards
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="288" y="111" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Credit Cards
+                </text>
+            </switch>
+        </g>
+        <path d="M 401 155 L 388.35 155 Q 378 155 378 165.35 L 378 279.65 Q 378 290 388.35 290 L 401 290" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" transform="rotate(-180,468,222.5)" pointer-events="none"/>
+        <path d="M 401 290 L 547.65 290 Q 558 290 558 279.65 L 558 165.35 Q 558 155 547.65 155 L 401 155" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" transform="rotate(-180,468,222.5)" pointer-events="none"/>
+        <path d="M 401 155 L 401 290" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" transform="rotate(-180,468,222.5)" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="13px" transform="rotate(-270,546.5,222.5)">
+            <text x="546" y="227.5">
+                Supervisory Approval
+            </text>
+        </g>
+        <rect x="388" y="230" width="140" height="35" fill-opacity="0.9" fill="#000000" stroke="none" pointer-events="none" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="388" y="230" width="140" height="35" fill-opacity="0.9" fill="#dae8fc" stroke="none" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 248px; margin-left: 391px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                Retail SME lending exposures
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="458" y="251" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Retail SME lending exp...
+                </text>
+            </switch>
+        </g>
+        <rect x="388" y="175" width="140" height="35" rx="5.25" ry="5.25" fill-opacity="0.9" fill="#000000" stroke="#000000" stroke-opacity="0.9" pointer-events="none" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="388" y="175" width="140" height="35" rx="5.25" ry="5.25" fill-opacity="0.9" fill="#dae8fc" stroke="#6c8ebf" stroke-opacity="0.9" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 134px; height: 1px; padding-top: 193px; margin-left: 391px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                Rating System C:
+                                <br/>
+                                Retail SME lending
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="458" y="196" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Rating System C:...
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>

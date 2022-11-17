@@ -298,7 +298,7 @@
     "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-3",
     "title": "MoC & Downturn LGD",
     "section": "Margin of Conservatism",
-    "text": "Margin of Conservatism\nCapital requirements based on unexpected losses:\n\\[\\text{RWA} \\sim \\int^{\\alpha} \\text{Loss}(x)p(x) \\text{d}x\\]\nLoss distribution assumed factorized over risk parameters and exposures \\(i\\):\n\\[p(\\mathbf{x}) = \\prod_i p_\\text{PD}(x_i) p_\\text{LGD}(x_i) p_\\text{EAD}(x_i)\\]\nRisk parameter densities based on estimated parameters \\(r\\):\n\\[p_{\\text{R}}(x_i) \\sim p_\\text{R}(x_i|r)p(r|\\text{data})\\]\nTherefore, \\(\\text{RWA} \\sim \\int^{\\alpha} \\int^{\\alpha^\\prime}\\text{Loss}(x)p(x|r)p(r) \\text{d}x \\text{d}a\\)\n\n\n\n\\(\\alpha\\) : risk appetite\n\\(\\alpha^\\prime\\) : “model risk” appetite"
+    "text": "Margin of Conservatism\nCapital requirements based on unexpected losses:\n\\[\\text{RWA} \\sim \\int^{\\alpha} \\text{Loss}(x)p(x) \\text{d}x\\]\nLoss distribution assumed factorized over risk parameters and exposures \\(i\\):\n\\[p(\\mathbf{x}) = \\prod_i p_\\text{PD}(x_i) p_\\text{LGD}(x_i) p_\\text{EAD}(x_i)\\]\nRisk parameter densities based on estimated parameters \\(r\\):\n\\[p_{\\text{R}}(x_i) \\sim p_\\text{R}(x_i|r)p(r|\\text{data})\\]\nTherefore, $ ^{} {}(x)p(x|r)p(r) x r {}(x)p(x|r=F_r{-1}(^{})) x $\n\n\n\n\\(\\alpha\\) : risk appetite\n\\(\\alpha^\\prime\\) : “model risk” appetite"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-uncertainty",
@@ -333,6 +333,6 @@
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 17, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 17, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

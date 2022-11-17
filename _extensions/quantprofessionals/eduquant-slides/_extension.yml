@@ -17,7 +17,7 @@ contributes:
        filters: [style_filter.lua]
        center: false
        callout-appearance: minimal
-       embed-resources: true
+       embed-resources: false
        standalone: true
        navigation-mode: linear
        title-slide-attributes: 
