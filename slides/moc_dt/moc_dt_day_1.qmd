@@ -1260,16 +1260,16 @@ $$\frac{100+15+\frac{50}{(105\%)^6}}{100+15} \approx 132\%$$
 
 
 
-## Realised LGD: example 2 - No loss {.smaller}
+## Realised LGD: example 2 {.smaller}
 
-* Loan of EUR 100, interest EUR 5 / month, linear amortizing at 1 / month
+* Loan of EUR 100 at $t_{def}$, interest EUR 5 / month, linear amortizing at 1 / month
 * Customer declared in default on loan at $t=t_{def}$, keeps paying bills
 * Returned to performing at $t=t_{def} + 6 \text{ months}$
 * Euribor 3 month = 1%
 
 ##### What is the realized LGD? {{< li shiwicyv >}}
 ::: {.fragment .highlight-block-compl}
-$$\frac{100 - \sum_{t=1}^{6}\frac{5+1}{105\%^i} - \frac{94}{105\%^6}}{100} \approx 4\%$$
+$$\frac{100 - \sum_{t=1}^{6}\frac{5+1}{106\%^i} - \frac{94}{106\%^6}}{100} \approx 4\%$$
 :::
 
 ## Long-run average LGD calculation {auto-animate=true}
