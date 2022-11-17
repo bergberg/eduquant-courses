@@ -5,3 +5,5 @@
 /slides/**/*.html
 .Rproj.user
 /.luarc.json
+/slides/**/*cache*
+/slides/**/*_files/

@@ -7,323 +7,323 @@
     "text": "About this site"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#introductions",
-    "href": "slides/moc_dt/moc_dt_day_1.html#introductions",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#introductions",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#introductions",
     "title": "MoC & Downturn LGD",
     "section": "Introductions",
     "text": "Introductions\n Who are we\n Who are you\n What do you want\n What do you get"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#course-outline-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#course-outline-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#course-outline-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#course-outline-1",
     "title": "MoC & Downturn LGD",
     "section": "Course outline",
     "text": "Course outline\n\n\nGeneral topics\n\nIRB Regulation\nRisk Parameter Quantification\nLGD Quantification\n\n\n\n\nMargin of Conservatism\n\nDeficiencies\nAppropriate Adjustments\nMoC Quantification\n\n\n\n\nDownturn LGD\n\nDownturn Identification\nDownturn LGD Quantification"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#day-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#day-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#day-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#day-1",
     "title": "MoC & Downturn LGD",
     "section": "Day 1",
     "text": "Day 1\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nIntroduction\nOverview of IRB Regulation\nRisk Parameter Quantification\nBreak\nLGD Quantification\nMargin of Conservatism\nDay Recap"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-1",
     "title": "MoC & Downturn LGD",
     "section": "Overview of IRB Regulation",
     "text": "Overview of IRB Regulation\n\n\n13:30"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-2",
-    "href": "slides/moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-2",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-2",
     "title": "MoC & Downturn LGD",
     "section": "Overview of IRB Regulation",
     "text": "Overview of IRB Regulation\n\n\nLayers of regulation\n\nBasel Framework\n\nBIS recommendations on banking regulations\n\nCRR (Part 3/II, Chapter III)\n\nCapital Requirements Regulation (Internal Ratings Based Approach )\n\n\n\n\nRTS \\(\\rightarrow\\) CDR\n\nRegulatory Technical Standards adopted as Comm. Del. Regulation\n\n\n\n\n\nEBA Guidelines and Q&A\n\nClarification, specifications\n\n\n\n\nECB Guide to Internal Models\n\nSupervisory expectations\n\n\n\n\n\n\n\nDiagram: basel -> CRR/RTS/GL -> EGIM ]"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-3",
-    "href": "slides/moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-3",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-3",
     "title": "MoC & Downturn LGD",
     "section": "Overview of IRB Regulation",
     "text": "Overview of IRB Regulation\n\n\n\n\nRTS \\(\\rightarrow\\) CDR\n\nRegulatory Technical Standards adopted as Comm. Del. Regulation\n\n\n\n\n\nCDR 2022/439 Assessment of IRB approach\nCDR 2021/930 Identification of economic downturn\n\n\n\n\nEBA Guidelines and Q&A\n\nClarification, specifications\n\n\n\n\n\nEBA/GL/2017/16 PD & LGD estimation\nEBA/GL/2019/03 DT LGD estimation\nEBA/GL/2020/05 Credit Risk Mitigation (CRM)"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#example-1-economic-downturn",
-    "href": "slides/moc_dt/moc_dt_day_1.html#example-1-economic-downturn",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-1-economic-downturn",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-1-economic-downturn",
     "title": "MoC & Downturn LGD",
     "section": "Example 1: Economic Downturn",
     "text": "Example 1: Economic Downturn\n\n\n\nEconomic Downturn not specified in Basel Framework or CRR\nEBA has drafted an RTS, elevated into regulation CDR 2021/930\nEGIM is not more specific\n\n\n\n\n\nCRE 36.85\n\n\n\\(\\small{[\\cdots]}\\) A bank must estimate an LGD for each facility that aims to reflect economic downturn conditions where necessary to capture the relevant risks. \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCRR Article 181\n\n\n(1)(b) institutions shall use LGD estimates that are appropriate for an economic downturn if those are more conservative than the long-run average. \\(\\small{[\\cdots]}\\)\n(3) EBA shall develop draft regulatory technical standards to specify the following: (a) the nature, severity and duration of an economic downturn referred to in paragraph 1; \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCDR 2021/930 Article 1\n\n\nSpecification of the nature, severity and duration of an economic downturn \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nShow Basel CRE36.64, article 4(78), GL PD/LGD par 73ff"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#example-2-type-of-exposures",
-    "href": "slides/moc_dt/moc_dt_day_1.html#example-2-type-of-exposures",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-2-type-of-exposures",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-2-type-of-exposures",
     "title": "MoC & Downturn LGD",
     "section": "Example 2: Type of exposures",
     "text": "Example 2: Type of exposures\n\n\n\nBasel vaguely refers to concept\nCRR sets out general principles\nEBA GL on PD&LGD specifies these\n\n\n\n\n\nCRE 36.10\n\n\nWithin each asset class, a bank may utilise multiple rating methodologies/systems. For example, a bank may have customised rating systems for specific industries or market segments (eg middle market, and large corporate). \\(\\small{[\\cdots]}\\) the rationale for assigning a borrower to a rating system \\(\\small{[\\cdots]}\\) reflects the level of risk of the borrower. \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCRR Article 142(1)\n\n\n(1) “rating system” means all of the methods, processes, controls, data collection and IT systems that support the \\(\\small{[\\cdots]}\\) quantification of default and loss estimates that have been developed for a certain type of exposures;\n(2) “type of exposures” means a group of homogeneously managed exposures which are formed by a certain type of facilities and which may be limited to a single entity \\(\\small{[\\cdots]}\\) provided that the same type of exposures is managed differently in other entities of the group;\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n12. A rating system \\(\\small{[\\cdots]}\\) should cover all those exposures where the obligors or facilities show common drivers of risk and credit-worthiness and fundamentally comparable availability of credit-related information. \\(\\small{[\\cdots]}\\)\n13. Exposures covered by the same rating system should be treated similarly by the institution in terms of risk management, decision making and credit approval process and should be assigned to a common obligor rating scale \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nShow Basel CRE36.64, article 4(78), GL PD/LGD par 73ff"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems",
-    "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems",
     "title": "MoC & Downturn LGD",
     "section": "Rating Systems",
     "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles\n\n\n\n\n\n\n\nCRR Article 142\n\n\n(1) “rating system” means all of the methods, processes, controls, data collection and IT systems that support the assessment of credit risk, the assignment of exposures to rating grades or pools, and the quantification of default and loss estimates that have been developed for a certain type of exposures; \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\n13:45"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-1",
     "title": "MoC & Downturn LGD",
     "section": "Rating Systems",
     "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles\n\n\n\n\n\n\n\nCRR Article 142\n\n\n“type of exposures” means a group of homogeneously managed exposures which are formed by a certain type of facilities \\(\\small{[\\cdots]}\\)"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems-2",
-    "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems-2",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-2",
     "title": "MoC & Downturn LGD",
     "section": "Rating Systems",
     "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles\n\n\n\n\n\n\n\nEBA/GL/2017/16 par. 12\n\n\nA rating system in the sense of point (1) of Article 142(1) of Regulation (EU) No 575/2013 should cover all those exposures where the obligors or facilities show common drivers of risk and credit-worthiness and fundamentally comparable availability of credit-related information. \\(\\small{[\\cdots]}\\)"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems-3",
-    "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems-3",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-3",
     "title": "MoC & Downturn LGD",
     "section": "Rating Systems",
     "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles\n\n\n\n\n\n\n\nEBA/GL/2017/16 par. 13\n\n\nExposures covered by the same rating system should be treated similarly by the institution in terms of risk management, decision making and credit approval process and should be assigned to a common obligor rating scale \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nmultiple slides with definitions + article\nexposure class rating system type of exposure range of application IRB approval"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#example-two-rating-systems",
-    "href": "slides/moc_dt/moc_dt_day_1.html#example-two-rating-systems",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-two-rating-systems",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-two-rating-systems",
     "title": "MoC & Downturn LGD",
     "section": "Example: two rating systems",
     "text": "Example: two rating systems\n\n\n\n\n\n\n\n\n\n\nNot based on exposure characteristics!"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#rating-systems-4",
-    "href": "slides/moc_dt/moc_dt_day_1.html#rating-systems-4",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-4",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-4",
     "title": "MoC & Downturn LGD",
     "section": "Rating Systems",
     "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles\n\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n12. \\(\\small{[\\cdots]}\\) The PD and LGD model within a rating system may comprise various calibration segments.\\(\\small{[\\cdots]}\\)"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#irb-implementation",
-    "href": "slides/moc_dt/moc_dt_day_1.html#irb-implementation",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#irb-implementation",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#irb-implementation",
     "title": "MoC & Downturn LGD",
     "section": "IRB implementation",
     "text": "IRB implementation\n\n\nImplementation\n\nIRB roll-out per exposure class\n3 years experience test\nRisk Parameter Estimation\nSubmission per rating system\n\nReview\n\nRegular review of estimates\nConservative Adjustments\n\nChange\n\nOutcome of review\nChanges to range of application\nSubmission of change\n\nReversion"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation",
-    "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation",
     "title": "MoC & Downturn LGD",
     "section": "Risk Parameter Estimation",
     "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on (internal) risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification\n\n\n14:00"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-1",
     "title": "MoC & Downturn LGD",
     "section": "Risk Parameter Estimation",
     "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nTypical approach: \\(\\sim\\) into-default / realized LGD closed cases / realized CCF\nConditional on risk drivers, based on data set representative of application portfolio\nRegulatory requirements focus on meaningful differentiation\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation-2",
-    "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation-2",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-2",
     "title": "MoC & Downturn LGD",
     "section": "Risk Parameter Estimation",
     "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\nEstimates of long-run default/loss experience\nRegulatory requirements focus on calculation method and quantification process\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification\n\n\nRisk quantification is the primary focus of this course"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation-3",
-    "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-estimation-3",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-3",
     "title": "MoC & Downturn LGD",
     "section": "Risk Parameter Estimation",
     "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nDirect estimation: special case\nContinuous estimation: effectively same requirements, materal\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nCRR Article 169\n\n\n3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale.\n\n\n\n\n\n\n14:15"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-quantification-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#risk-parameter-quantification-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-quantification-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-quantification-1",
     "title": "MoC & Downturn LGD",
     "section": "Risk Parameter Quantification",
     "text": "Risk Parameter Quantification\n\n\n\nReference dates\n\nDate to which realised values are aggregated\n\nCalibration Target\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness & other sources of bias\n\nAppropriately Adjusted Calibration Target\n\nCalibration Target adjusted for biases\n\n\n\n\n\n\n\nDiagram: Type of Exposures -> RDS -> Initial Calibration Target -> Appr. Adjusted Target\nPar 12 PD&LGD\n\n\n15:15"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#reference-data-sets",
-    "href": "slides/moc_dt/moc_dt_day_1.html#reference-data-sets",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#reference-data-sets",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#reference-data-sets",
     "title": "MoC & Downturn LGD",
     "section": "Reference Data Sets",
     "text": "Reference Data Sets\n\n\n\nLength of historical period\n\nmin. requirements (5 or 7 yr) + available relevant internal data on comparable exposures\n\nReference date methodology\n\n(non-)overlapping [PD], time-to-default [LGD, CCF], recovery process [in-default]\n\nExposure attributes\n\nidentify exposures of given type at historical observation dates\n\nDefault/loss characteristics\n\nObserved default/loss data aggregated by exposure over observation period at reference date (target variable)\n\nRisk characteristics\n\nRisk drivers, appropriate adjustment variables\n\nObservation windows\n\naggregate to obtain targets (fwd) or variables (bwd)"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-risk-parameter-values",
-    "href": "slides/moc_dt/moc_dt_day_1.html#realised-risk-parameter-values",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-risk-parameter-values",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-risk-parameter-values",
     "title": "MoC & Downturn LGD",
     "section": "Realised Risk Parameter Values",
     "text": "Realised Risk Parameter Values\n\n\n\nReference date methodology\n\n(non-)overlapping [PD], time-to-default [LGD, CCF], time-in-default/recovery process [in-default]\n\nReference dates \\(t_r\\)\n\nset of dates over which calibration target is calculated, either as an average (LRA LGD), average of yearly averages (PD & LRA CCF), or an estimated downturn effect (DT LGD/CCF)\n\nDefault/Loss characteristics\n\nexposure-level into-default flag, (partially) realised LGD values, realised credit conversion factors, intermediate components\n\n\n\n\n\n\n\n\n\nTypical approach: realised values also targets of (statistical) ranking method (model)"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#calibration-targets",
-    "href": "slides/moc_dt/moc_dt_day_1.html#calibration-targets",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets",
     "title": "MoC & Downturn LGD",
     "section": "Calibration Targets",
     "text": "Calibration Targets\n\n\n\nLength of historical period\n\nreflecting variability of economic conditions\n\nMethodology\n\noverlapping versus non-overlapping\n\nReference dates \\(t_{r}\\)\n\nSample over historical data representative of application portfolio conditioned on target\n\nCalibration level (L)\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target\n\nPrescribed estimator of LRA/DT risk parameter values: (adjusted/weighted) average of realised risk parameter values"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#calibration-targets-pd",
-    "href": "slides/moc_dt/moc_dt_day_1.html#calibration-targets-pd",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets-pd",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets-pd",
     "title": "MoC & Downturn LGD",
     "section": "Calibration Targets (PD)",
     "text": "Calibration Targets (PD)\n\n\n\nLength of historical period\n\n(up to) a length that reflects the likely range of variability of default rates of that type of exposures\n\nReference date methodology\n\noverlapping versus non-overlapping\n\nReference dates \\(t_{r}\\)\n\nsample over historical data over observation dates of performing exposures\n\nCalibration level (L)\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target \\(DR\\)\n\naverage of default rates per (yearly) reference date\n\n\n\n\n\\(\\text{DR}(\\mathbf{L}) = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} D_i(t_r)\\)\n\n\n\n15:15"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation",
-    "href": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation",
     "title": "MoC & Downturn LGD",
     "section": "Long-run average LGD calculation",
     "text": "Long-run average LGD calculation\n\n\n\nLength of historical period\n\nall available internal loss data on exposures of that type considered relevant\n\nReference dates \\(t_r\\)\n\n\\(t_{def}-12 \\le t_{r} < t_{def}\\)\n\n\n(assignment to grade)\n\n\n\n\nRealised LGD\n\nRatio of economic loss to outstanding at default\n\n\n\n\n\nObserved Average LGD\n\nAverage realised LGD of closed recovery processes\n\n\n\n\n\nLong-run Average LGD\n\nAverage RLGD of closed+open recoveries"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-1",
     "title": "MoC & Downturn LGD",
     "section": "Long-run average LGD calculation",
     "text": "Long-run average LGD calculation\n\n\n\n\nIdentify open/closed recoveries\n\nMaximum Recovery Period & Multiple default treatment\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd",
-    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd",
     "title": "MoC & Downturn LGD",
     "section": "Realised LGD",
     "text": "Realised LGD\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\n\n\n\n\nAdditional drawings (A)\n\nDrawings after \\(t_{def}\\)\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments\n\n\n\n\n\nCosts (C)\n\nDirect or material indirect costs of recovery\n\n\n\n\n\n\\(RLGD = \\frac{\\max(O+A+C-R,0)}{O}\\)\n\n\n\n\n\n\n\nAggregation is over all cash flows related to recovery of defaulted credit obligation."
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-in-default",
-    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-in-default",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-in-default",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-in-default",
     "title": "MoC & Downturn LGD",
     "section": "Realised LGD (in-default)",
     "text": "Realised LGD (in-default)\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{\\mathbf{ref}}\\)\n\n\n\n\n\nAdditional drawings (A)\n\nDrawings after \\(t_{\\mathbf{ref}}\\)\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments after \\(t_{\\mathbf{ref}}\\)\n\n\n\n\n\nCosts (C)\n\nDirect or material indirect costs of recovery after \\(t_{\\mathbf{ref}}\\)\n\n\n\n\n\\(RLGD = \\frac{\\max(O+A+C-R,0)}{O}\\) \n\n\n\n\n(summary)"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-1",
     "title": "MoC & Downturn LGD",
     "section": "Realised LGD",
     "text": "Realised LGD\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\n\n\nirrespective of prior write-offs or forgiveness\nexcluding fees/payments not capitalised at \\(t_{def}\\)\n(additional drawings after default, if reflected in CCF)\n\n\n\n\n\nAdditional drawings (A)\n\nDrawings after \\(t_{def}\\)\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments\n\n\n\n\nCosts (C)\n\nDirect or material indirect costs of recovery\n\n\n\n\n\n\\[ RLGD = \\frac{\\max(O+A+C-R,0)}{O} \\]"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-2",
-    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-2",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-2",
     "title": "MoC & Downturn LGD",
     "section": "Realised LGD",
     "text": "Realised LGD\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\n\n\n\n\nAdditional drawings (A)\n\nDrawings after \\(t_{def}\\)\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments\n\n\n\nUnsecured as well as secured (eligible+ineligible)\nIncluding regular contractual payments\nIncluding discounted outstanding at default end in case of return to performing (“artificial cash flow”)\n\n\n\n\nCosts (C)\n\nDirect or material indirect costs of recovery\n\n\n\n\n\n\\[ RLGD = \\frac{\\max(O+A+C-R,0)}{O} \\]\n\n\n\n\n\n\nDiscounting of cash flows at 3-month euribor + 5% or equivalent."
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-3",
-    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-3",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-3",
     "title": "MoC & Downturn LGD",
     "section": "Realised LGD",
     "text": "Realised LGD\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\nAdditional drawings (A)\n\nDrawings after \\(t_{def}\\)\n\n\n\n\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments\n\n\n\n\n\nCosts (C)\n\nDirect or material indirect costs of recovery\n\n\n\nall direct costs of recovery discounted to \\(t_{def}\\)\n(material) indirect costs allocated to recovery process \\(i\\)\n\n\n\n\n\\[ RLGD = \\frac{\\max(O+A+C-R,0)}{O} \\]\n\n\n\n\n\n\nDiscounting of cash flows at 3-month euribor + 5% or equivalent."
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-example-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-example-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-example-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-example-1",
     "title": "MoC & Downturn LGD",
     "section": "Realised LGD: example 1",
     "text": "Realised LGD: example 1\n\nInterest-only loan of EUR 100, interest EUR 5 / month\nStops paying at \\(t=t_{def} - 3 \\text{ months}\\)\nCustomer declared in default on loan at \\(t=t_{def}\\)\nUntraceable, local P.I. charges EUR 50 (\\(t=t_{def}+6\\text{ months}\\))\n100% writtten off at \\(t_{def}+12\\text{ months}\\)\nEuribor 3 month = 0%\n\nWhat is the realized LGD? \n\n\\[\\frac{100+15+\\frac{50}{(105\\%)^6}}{100+15} \\approx 132\\%\\]"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-example-2---no-loss",
-    "href": "slides/moc_dt/moc_dt_day_1.html#realised-lgd-example-2---no-loss",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-example-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-example-2",
     "title": "MoC & Downturn LGD",
-    "section": "Realised LGD: example 2 - No loss",
-    "text": "Realised LGD: example 2 - No loss\n\nLoan of EUR 100, interest EUR 5 / month, linear amortizing at 1 / month\nCustomer declared in default on loan at \\(t=t_{def}\\), keeps paying bills\nReturned to performing at \\(t=t_{def} + 6 \\text{ months}\\)\nEuribor 3 month = 1%\n\nWhat is the realized LGD? \n\n\\[\\frac{100 - \\sum_{t=1}^{6}\\frac{5+1}{105\\%^i} - \\frac{94}{105\\%^6}}{100} \\approx 4\\%\\]"
+    "section": "Realised LGD: example 2",
+    "text": "Realised LGD: example 2\n\nLoan of EUR 100 at \\(t_{def}\\), interest EUR 5 / month, linear amortizing at 1 / month\nCustomer declared in default on loan at \\(t=t_{def}\\), keeps paying bills\nReturned to performing at \\(t=t_{def} + 6 \\text{ months}\\)\nEuribor 3 month = 1%\n\nWhat is the realized LGD? \n\n\\[\\frac{100 - \\sum_{t=1}^{6}\\frac{5+1}{106\\%^i} - \\frac{94}{106\\%^6}}{100} \\approx 4\\%\\]"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-2",
-    "href": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-2",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-2",
     "title": "MoC & Downturn LGD",
     "section": "Long-run average LGD calculation",
     "text": "Long-run average LGD calculation\n\n\n\n\nIdentify open/closed recoveries\n\nMaximum Recovery Period & Multiple default treatment\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#observed-average-lgd",
-    "href": "slides/moc_dt/moc_dt_day_1.html#observed-average-lgd",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#observed-average-lgd",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#observed-average-lgd",
     "title": "MoC & Downturn LGD",
     "section": "Observed Average LGD",
     "text": "Observed Average LGD\nDefault-weighted1 average of realised LGD, including\n\nclosed recoveries\nrecoveries where \\(t_{end} - t_{def} > \\text{MRP}\\)\nrepaid/written-off exposures\nexposures returned to performing status (“cured”)\n\n\n\n\nImportant decision: maximum recovery period (\\(\\S\\) 156 EBA/GL/2017/16)\n\nper type of exposure\nvast majority of recoveries realized, based on observed recovery patterns\n\n\n\n\n\n\nReturn to performing (cure) following Definition of Default (DoD) policy, including probation period and after multiple default treatment.\ni.e., number of defaults weighted"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-3",
-    "href": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-3",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-3",
     "title": "MoC & Downturn LGD",
     "section": "Long-run average LGD calculation",
     "text": "Long-run average LGD calculation\n\n\n\n\nIdentify open/closed recoveries\n\nMaximum Recovery Period & Multiple default treatment\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#future-recoveries",
-    "href": "slides/moc_dt/moc_dt_day_1.html#future-recoveries",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#future-recoveries",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#future-recoveries",
     "title": "MoC & Downturn LGD",
     "section": "Future recoveries",
     "text": "Future recoveries\n\\(\\S\\) 158-159 EBA/GL/2017/16\n\nRealised LGD on closed recovery processes right-censored\nCensoring bias is time-in-default dependent\nCalibration target should be adjusted for bias by estimating future recoveries\n\nApproaches\n\nAt individual exposure or aggregated level\nBased on case-by-case assessments / provisions\nImputation with in-default LGD estimates\nJoint estimation\n\n\n\n(summary)"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-4",
-    "href": "slides/moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-4",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-4",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-4",
     "title": "MoC & Downturn LGD",
     "section": "Long-run average LGD calculation",
     "text": "Long-run average LGD calculation\n\n\n\n\nIdentify open/closed recoveries\n\nMaximum Recovery Period & Multiple default treatment\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#calibration-targets-lgd",
-    "href": "slides/moc_dt/moc_dt_day_1.html#calibration-targets-lgd",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets-lgd",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets-lgd",
     "title": "MoC & Downturn LGD",
     "section": "Calibration Targets (LGD)",
     "text": "Calibration Targets (LGD)\n\n\n\nLength of historical period\n\nat least 5/7 years, all internal data considered relevant\n\nReference date methodology\n\ntime-to-default (performing), time-in-default (in-default)\n\nReference dates \\(t_{r}\\)\n\nsample over historical data over observation dates of defaulted exposures\n\nCalibration level (L)\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target \\(\\text{LRA-LGD}\\)\n\ndefault-weighted average over LGD values, both realised and based on estimated future recoveries (RLGD)\n\n\n\n\\(\\text{LRA-LGD}(\\mathbf{L}) = \\frac{1}{N_\\mathbf{L}}\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i\\)\n\n\n\n16:00"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#margin-of-conservatism-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#margin-of-conservatism-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-1",
     "title": "MoC & Downturn LGD",
     "section": "Margin of Conservatism",
     "text": "Margin of Conservatism\n\n\n\nBasel framework and CRR prescribe a Margin of Conservatism in general terms only\n\n\n\nEBA Guidelines on PD & LGD more specific\n\nSpecification and clarification of concept\nPrescribes additional steps in risk quantification (appropriate adjustments)\nIntroduces (harmonizing) minimal requirements (MoC A, B, C>0)\n\n\n\n\n\n\n\nCRE 36.67\n\n\nIn general, estimates of PDs, LGDs, and EADs are likely to involve unpredictable errors. In order to avoid over-optimism, a bank must add to its estimates a margin of conservatism that is related to the likely range of errors. Where methods and data are less satisfactory and the likely range of errors is larger, the margin of conservatism must be larger.\n\n\n\n\n\n\nCRR Article 179(f)\n\n\nAn institution shall add to its estimates a margin of conservatism that is related to the expected range of estimation errors. Where methods and data are considered to be less satisfactory, the expected range of errors is larger, the margin of conservatism shall be larger.\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\n43. In order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies \\(\\small{[\\cdots]}\\) ensuring that: (i) where appropriate adjustments \\(\\small{[\\cdots]}\\) are used, the MoC accounts for any increase in the uncertainty \\(\\small{[\\cdots]}\\) (b) quantify the general estimation error \\(\\small{[\\cdots]}\\)"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#margin-of-conservatism-2",
-    "href": "slides/moc_dt/moc_dt_day_1.html#margin-of-conservatism-2",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-2",
     "title": "MoC & Downturn LGD",
     "section": "Margin of Conservatism",
     "text": "Margin of Conservatism\n\n\n\n\nEBA Guidelines on PD & LGD more specific\n\nSpecification and clarification of concept\nPrescribes additional steps in risk quantification (appropriate adjustments)\nIntroduces (harmonizing) minimal requirements (MoC A, B, C>0 factorization)\n\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\n41. \\(\\small{[\\cdots]}\\)institutions should implement a framework for quantification, documentation and monitoring of estimation errors \\(\\small{[\\cdots]}\\)\n42. The final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories:\n\nCategory A: \\(\\small{[\\cdots]}\\)data and methodological deficiencies\nCategory B: \\(\\small{[\\cdots]}\\)changes to underwriting standards, risk appetite,collection and recovery policies and any other \\(\\small{[\\cdots]}\\)\nCategory C: the general estimation error.\n\n43. In order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies \\(\\small{[\\cdots]}\\) ensuring that: (i) where appropriate adjustments \\(\\small{[\\cdots]}\\) are used, the MoC accounts for any increase in the uncertainty \\(\\small{[\\cdots]}\\) (b) quantify the general estimation error \\(\\small{[\\cdots]}\\)"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#margin-of-conservatism-3",
-    "href": "slides/moc_dt/moc_dt_day_1.html#margin-of-conservatism-3",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-3",
     "title": "MoC & Downturn LGD",
     "section": "Margin of Conservatism",
     "text": "Margin of Conservatism\nCapital requirements based on unexpected losses:\n\\[\\text{RWA} \\sim \\int^{\\alpha} \\text{Loss}(x)p(x) \\text{d}x\\]\nLoss distribution assumed factorized over risk parameters and exposures \\(i\\):\n\\[p(\\mathbf{x}) = \\prod_i p_\\text{PD}(x_i) p_\\text{LGD}(x_i) p_\\text{EAD}(x_i)\\]\nRisk parameter densities based on estimated parameters \\(r\\):\n\\[p_{\\text{R}}(x_i) \\sim p_\\text{R}(x_i|r)p(r|\\text{data})\\]\nTherefore, \\(\\text{RWA} \\sim \\int^{\\alpha} \\int^{\\alpha^\\prime}\\text{Loss}(x)p(x|r)p(r) \\text{d}x \\text{d}a\\)\n\n\n\n\\(\\alpha\\) : risk appetite\n\\(\\alpha^\\prime\\) : “model risk” appetite"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-uncertainty",
-    "href": "slides/moc_dt/moc_dt_day_1.html#risk-uncertainty",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-uncertainty",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-uncertainty",
     "title": "MoC & Downturn LGD",
     "section": "Risk & Uncertainty",
     "text": "Risk & Uncertainty\n\n\nBob\n\nHigh-wealth client with excellent lawyers\nHas nuclear decay detector experiment in basement\n50% full loss/repayment by guaranteed fair quantum coin toss\n\n\n\n\nElmo\n\nLending/recovery via Pandimensional Originator LLC\nRandom entity picked from across space-time\nMay have concept of money/time\n\n\n\n\nWho would you rather lend to?\nHow much capital should you hold in either case?\n\n\nBetter title"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#risk-uncertainty-1",
-    "href": "slides/moc_dt/moc_dt_day_1.html#risk-uncertainty-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-uncertainty-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-uncertainty-1",
     "title": "MoC & Downturn LGD",
     "section": "Risk & Uncertainty",
     "text": "Risk & Uncertainty\n\n\nBob\n\n\n\nElmo\n\n\n\nWho would you rather lend to?\nHow much capital should you hold in either case?\n\n\\[D\\sim \\text{Bernoulli}(p)\\] \\[E\\lbrack p_{Bob} \\rbrack = E\\lbrack p_{Elmo} \\rbrack=50\\% \\]\n\n\nBetter title"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#moc-quantification",
-    "href": "slides/moc_dt/moc_dt_day_1.html#moc-quantification",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#moc-quantification",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#moc-quantification",
     "title": "MoC & Downturn LGD",
     "section": "MoC Quantification",
     "text": "MoC Quantification\n\n\n\nInitial Calibration Target (CT)\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated estimated based on RDS prior to adjustments\n\nMoC C\n\nMargin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies\n\nDeficiency\n\nSource of bias relative to initial calibration target\n\nAppropriately adjusted calibration target\n\nCalibration target adjusted for biases due to deficiencies\n\nMoC B\n\nMargin to account for additional uncertainty due to adjustment for non-representativeness\n\nMoC A\n\nMargin to account for other deficiencies"
   },
   {
-    "objectID": "slides/moc_dt/moc_dt_day_1.html#day-2",
-    "href": "slides/moc_dt/moc_dt_day_1.html#day-2",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#day-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#day-2",
     "title": "MoC & Downturn LGD",
     "section": "Day 2",
     "text": "Day 2\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nQuiz & Recap\nGeneral Estimation Error\nDeficiencies\nBreak\nAppropriate Adjustments\nAdditional Uncertainties\nCase Study Explanation"
@@ -333,6 +333,6 @@
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 15, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 17, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
