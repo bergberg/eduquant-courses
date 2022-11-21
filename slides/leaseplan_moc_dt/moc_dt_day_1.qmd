@@ -363,21 +363,7 @@ _13. Exposures covered by the same rating system should be treated similarly by 
 Show Basel CRE36.64, article 4(78), GL PD/LGD par 73ff
 :::
 
-
-<!-- ## Implementing IRB
-
-::: notes
-Diagram: \[ CRR/RTS/GL + EGIM \] -\> policy -\> standard -\> rating system
-::: -->
-
-<!-- ## Example: Review of estimates
-
-::: notes
-Maybe find a simpler example
-::: -->
-
 ## Rating Systems {auto-animate=true}
-
 
 :::: columns
 
@@ -1623,21 +1609,23 @@ $$E\lbrack p_{Bob} \rbrack = E\lbrack p_{Elmo} \rbrack=50\% $$
 
 ```{r bob_elmo_dist}
 #| cache: TRUE
+#| dev.args:
+#|   bg: "transparent"
 #| fig-align: "center" 
 library(ggplot2)
+# bg <- rgb(255,255,230,maxColorValue = 255)
+bg <- 'transparent'
 N<-1000
 prob = seq(0,1, length=N)
 df<-tibble::tibble(p = c(prob,prob), density = c(dbeta(prob,1000,1000), dbeta(prob,0.5,0.5)), who=c(rep_len("Bob",N),rep_len("Elmo",N)))
 
 ggplot(df,aes(p,density))+geom_line(aes(color=who)) + theme_minimal()+scale_x_continuous(labels=scales::label_percent())+scale_y_continuous(guide="none", name="")+scale_color_discrete(name="") +
-theme(
-    panel.background = element_rect(fill='transparent'), #transparent panel bg
-    plot.background = element_rect(fill='transparent', color=NA), #transparent plot bg
-    panel.grid.major = element_blank(), #remove major gridlines
-    panel.grid.minor = element_blank(), #remove minor gridlines
-    legend.background = element_rect(fill='transparent'), #transparent legend bg
-    legend.box.background = element_rect(fill='transparent') #transparent legend panel
-  )
+ theme(panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
 ```
 
 
