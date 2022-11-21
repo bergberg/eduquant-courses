@@ -14,6 +14,13 @@
     "text": "Day 2\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nQuiz & Recap\nGeneral Estimation Error\nDeficiencies\nBreak\nAppropriate Adjustments\nAdditional Uncertainties\nCase Study Explanation"
   },
   {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#risk-parameter-quantification",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#risk-parameter-quantification",
+    "title": "MoC & Downturn LGD",
+    "section": "Risk Parameter Quantification",
+    "text": "Risk Parameter Quantification\n\n\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nReference dates\n\nDate to which realised values are aggregated\n\nCalibration Target\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness & other sources of bias\n\nAppropriately Adjusted Calibration Target\n\nCalibration Target adjusted for biases"
+  },
+  {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-1",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-1",
     "title": "MoC & Downturn LGD",
@@ -91,18 +98,81 @@
     "text": "General Estimation Error\n\n\n\n\\[\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\\[\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}-1}s^2(\\text{RLGD})\\]\n\\[\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}s_r^2(CCF_r))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{X}_r,\\text{X}_s)_{r\\neq s}\\rightarrow 0\\))\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nUnbiased estimators of the variance of the mean (Bessel’s)"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#overall-process",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#overall-process",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-10",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-10",
     "title": "MoC & Downturn LGD",
-    "section": "Overall process",
-    "text": "Overall process"
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) \n\nCond. independence of \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) assumed by required statistical estimator\nConnected clients\n\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nUnbiased estimators of the variance of the mean"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-11",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-11",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nUnbiased estimators of the variance of the mean\n\n\n\n\n\n\nECB Guide to Internal Models (CR) \\(\\S\\) 140\n\n\n(a) \\(\\small{[\\cdots]}\\) Institutions need to be aware of and deal adequately with the dependency between default rates over time on the quantification of the MoC, e.g. when using overlapping windows for the calculation of default rates."
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-12",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-12",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\nAssuming \\(R\\) independent draws\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\n\n\n\n\n\nStrategies\n\nNon-overlapping sample\nNon-overlapping resampling scheme\nExplicitly model / correct for auto-correlation bias\n\n\n\n\npros\n\nsimple\nnon-parametric\nexplicit\n\n\ncons\n\nbiased\ncomplex\npossibly not identifiable"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-13",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-13",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\n\nSampling without replacement \\(\\text{D}_r \\sim \\text{Hypergeometric}(N_r,\\pi^{\\prime}_r)\\)\n\nUnbiased estimators of the variance of the mean\n\n\n\n\n\n\nDue to fast convergence \\(\\text{Hypergeometric}\\rightarrow\\text{Binomial}\\), relevant for small \\(N_r\\), large \\(\\pi_r\\) only."
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-14",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-14",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nBiased estimators of the std err of the mean"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-15",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-15",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\\[\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\\[\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}-1}s^2(\\text{RLGD})\\]\n\\[\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}s_r^2(CCF_r))\\]\n\n\n\n\nBiased estimators of the std err of the mean\n\nE.g. if \\(s^2=0\\) or \\(\\text{DR}_r=0\\)\nAsympotically unbiased estimators \\(\\nsim\\) uncertainty of specific estimate"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-16",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-16",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\\[\\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\n\n\n\nBiased estimators of the std err of the mean\n\n\n\n\n\n\n\n\\[\\int^\\alpha \\text{Beta}(D_r + \\frac{1}{2}, N_r – D_r + \\frac{1}{2})\\]\n\n\n\n\nPosterior interval based on non-informative (conservative) Jeffrey’s prior for binomial parameter"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#deficiencies-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#deficiencies-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Deficiencies",
+    "text": "Deficiencies\n\n\n\n\nDeficiency\n\nany driver of potential bias and increased uncertainty\n\nBias in the quantification\n\nEffect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be \\(\\approx 0\\))\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 36.\n\n\nInstitutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#deficiencies-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#deficiencies-2",
+    "title": "MoC & Downturn LGD",
+    "section": "Deficiencies",
+    "text": "Deficiencies\n\n\n\n\nDeficiency\n\nany driver of potential bias and increased uncertainty\n\nBias in the quantification\n\nEffect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be \\(\\approx 0\\))\n\n\n\n\n\nAdditional uncertainty\n\nuncertainty attributed to uncertainty in the estimated effect size\n\nNot captured by the general estimation error\n\nnon-zero for \\(N_r, R \\rightarrow \\infty\\)\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 36.\n\n\nInstitutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#generic-process",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#generic-process",
+    "title": "MoC & Downturn LGD",
+    "section": "Generic process",
+    "text": "Generic process\n\n\n\n\nDeficiency\n\nany driver of (potential) bias of the statistical estimator relative to the estimated risk parameter\n\nRemediation\n\nthe deficiency is removed\n\nMitigation\n\nappropriate adjustment + MoC; the deficiency is not removed"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#identification",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#identification",
     "title": "MoC & Downturn LGD",
     "section": "Identification",
-    "text": "Identification"
+    "text": "Identification\n\n\n\n\nIdentification\n\na process that provides a guarantee for identifying all deficiencies\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 36.\n\n\nInstitutions should identify all deficiencies related to the estimation of risk parameters\n\n\n\n\n\n\n\n\n\nLeverage existing controls (Review of Est., DQ monitoring, MV)\nEnsure & document minimally considered deficiencies\nIdentify requirements in order to establish deficiencies"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#remediation",
@@ -448,136 +518,101 @@
     "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-10",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-10",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) \n\nCond. independence of \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) assumed by required statistical estimator\nConnected clients\n\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nUnbiased estimators of the variance of the mean"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-11",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-11",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nUnbiased estimators of the variance of the mean\n\n\n\n\n\n\nECB Guide to Internal Models (CR) \\(\\S\\) 140\n\n\n(a) \\(\\small{[\\cdots]}\\) Institutions need to be aware of and deal adequately with the dependency between default rates over time on the quantification of the MoC, e.g. when using overlapping windows for the calculation of default rates."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-12",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-12",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\nAssuming \\(R\\) independent draws\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\n\n\n\n\n\nStrategies\n\nNon-overlapping sample\nNon-overlapping resampling scheme\nExplicitly model / correct for auto-correlation bias\n\n\n\n\npros\n\nsimple\nnon-parametric\nexplicit\n\n\ncons\n\nbiased\ncomplex\npossibly not identifiable"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-3",
-    "title": "MoC & Downturn LGD",
-    "section": "MoC Quantification",
-    "text": "MoC Quantification"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-13",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-13",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\n\nSampling without replacement \\(\\text{D}_r \\sim \\text{Hypergeometric}(N_r,\\pi^{\\prime}_r)\\)\n\nUnbiased estimators of the variance of the mean\n\n\n\n\n\n\nDue to fast convergence \\(\\text{Hypergeometric}\\rightarrow\\text{Binomial}\\), relevant for small \\(N_r\\), large \\(\\pi_r\\) only."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-14",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-14",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nBiased estimators of the std err of the mean"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-15",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-15",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\\[\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\\[\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}-1}s^2(\\text{RLGD})\\]\n\\[\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}s_r^2(CCF_r))\\]\n\n\n\n\nBiased estimators of the std err of the mean\n\nE.g. if \\(s^2=0\\) or \\(\\text{DR}_r=0\\)\nAsympotically unbiased estimators \\(\\nsim\\) uncertainty of specific estimate"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-16",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-16",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\\[\\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\n\n\n\nBiased estimators of the std err of the mean\n\n\n\n\n\n\n\n\\[\\int^\\alpha \\text{Beta}(D_r + \\frac{1}{2}, N_r – D_r + \\frac{1}{2})\\]\n\n\n\n\nPosterior interval based on non-informative (conservative) Jeffrey’s prior for binomial parameter"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-17",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-17",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\\[\\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\n\n\n\nBiased estimators of the std err of the mean\n\n\n\n\n\n\n\n\\[\\int^\\alpha \\text{Beta}(D_r + \\frac{1}{2}, N_r – D_r + \\frac{1}{2})\\]\n\n\n\n\nPosterior interval based on non-informative (conservative) Jeffrey’s prior for binomial parameter\n\n\n\n\n\n\nBayesian perspective more useful to understand uncertainty\nHowever, ECB requires only that \\(\\sigma\\propto N_r^{-1},R^{-1}\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-18",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-18",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n:::: columns\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 43.\n\n\nIn order to quantify MoC institutions should \\(\\small{[\\cdots]}\\) quantify the general estimation error of category C referred to in paragraph 42 associated with the underlying estimation method at least for every calibration segment; the MoC for the general estimation error should reflect the dispersion of the distribution of the statistical estimator.\n\n\n\n\n\n\nEGIM \\(\\S\\) 140\n\n\n(a) This MoC should be based on the distribution of the estimator, which is the average of one-year default rates of the grade/pool across time (i.e. the distribution of \\((\\Sigma\\text{DR}_t)/T\\) , considering that the uncertainty is primarily driven by the statistical uncertainty of each one-year default rate and the length of the time series. As a result, it is expected that the lower the number of observations per grade and the shorter the time series are, the higher the MoC of the grade should be."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#xyz",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#xyz",
-    "title": "MoC & Downturn LGD",
-    "section": "xyz",
-    "text": "xyz"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-2-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-2-1",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error 2",
-    "text": "General Estimation Error 2\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) \n\nCond. independence of \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) assumed by required statistical estimator\nConnected clients\n\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nUnbiased estimators of the variance of the mean"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-c-quantification",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-c-quantification",
-    "title": "MoC & Downturn LGD",
-    "section": "MoC C quantification",
-    "text": "MoC C quantification\n\n\n\n\nMoC C “reflects” general estimation error\nEBA explicitly allows for flexibility in how to reflect this; ECB more explicit\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 43\n\n\n\\(\\small{[\\cdots]}\\) the MoC for the general estimation error should reflect the dispersion of the distribution of the statistical estimator. (p18) The reference to statistical variance has been avoided in order to not impose a fixed methodology, which might for example lead to disproportionate MoC for low default portfolios.\n\n\n\n\n\n\nECB Guide to Internal Models (CR) \\(\\S\\) 140\n\n\n\\(\\small{[\\cdots]}\\) it is expected that the lower the number of observations per grade and the shorter the time series are, the higher the MoC of the grade should be \\(\\small{[\\cdots]}\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#egim",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#egim",
-    "title": "MoC & Downturn LGD",
-    "section": "EGIM",
-    "text": "EGIM\n140. \\(\\small{[\\cdots]}\\) it is expected that the lower the number of observations per grade and the shorter the time series are, the higher the MoC of the grade should be \\(\\small{[\\cdots]}\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#egim-s-140-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#egim-s-140-2",
-    "title": "MoC & Downturn LGD",
-    "section": "EGIM \\(\\S\\) 140",
-    "text": "EGIM \\(\\S\\) 140\n\\(\\small{[\\cdots]}\\) it is expected that the lower the number of observations per grade and the shorter the time series are, the higher the MoC of the grade should be \\(\\small{[\\cdots]}\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#risk-parameter-quantification",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#risk-parameter-quantification",
-    "title": "MoC & Downturn LGD",
-    "section": "Risk Parameter Quantification",
-    "text": "Risk Parameter Quantification\n\n\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nReference dates\n\nDate to which realised values are aggregated\n\nCalibration Target\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness & other sources of bias\n\nAppropriately Adjusted Calibration Target\n\nCalibration Target adjusted for biases"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#deficiencies-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#deficiencies-1",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#deficiencies-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#deficiencies-3",
     "title": "MoC & Downturn LGD",
     "section": "Deficiencies",
-    "text": "Deficiencies\n\n\n\n\nDeficiency\n\nany driver of (potential) bias of the statistical estimator relative to the estimated risk parameter\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 36.\n\n\nInstitutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error"
+    "text": "Deficiencies\n\n\n\n\nIdentification\n\na process that provides a guarantee of identifying all deficiencies\n\nEffect quantification\n\nEstimation of effect of the deficiency on the statistical estimator\n\nAdditional uncertainty\n\nuncertainty attributed to uncertainty in the estimated effect size\n\nClassification / allocation\n\nAttribution of additional uncertainty to specific types of deficiencies"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#generic-process",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#generic-process",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#ebagl201716-s-36.-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#ebagl201716-s-36.-2",
     "title": "MoC & Downturn LGD",
-    "section": "Generic process",
-    "text": "Generic process\n\n\n\n\nDeficiency\n\nany driver of (potential) bias of the statistical estimator relative to the estimated risk parameter\n\nRemediation\n\nthe deficiency is removed\n\nMitigation\n\nappropriate adjustment + MoC; the deficiency is not removed"
+    "section": "EBA/GL/2017/16 \\(\\S\\) 36.",
+    "text": "EBA/GL/2017/16 \\(\\S\\) 36.\nInstitutions should identify all deficiencies \\(\\small{[\\cdots]}\\)"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-generic",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-generic",
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness",
     "title": "MoC & Downturn LGD",
-    "section": "MoC Quantification (generic)",
-    "text": "MoC Quantification (generic)\n\n\n\nLevel of conservatism\n\nhow the MoC relates the estimation uncertainty"
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\nMissing or inaccurate…\n\nreference dates\nattributes identifying type of exposures\n(risk) characteristics \\(X_{ir}\\) for assigning exposures\nloss & default characteristics \\(\\text{y}_{i}(t_r)\\)\n\nover observation windows\ncash flows"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies",
+    "title": "MoC & Downturn LGD",
+    "section": "Treatment of deficiencies",
+    "text": "Treatment of deficiencies\n\n\n\n\nDeficiency\n\nany driver of potential bias and increased uncertainty\n\nBias in the quantification\n\nEffect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be \\(\\approx 0\\))\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 36.\n\n\nInstitutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Treatment of deficiencies",
+    "text": "Treatment of deficiencies\n\n\n\n\nDeficiency\n\nany driver of potential bias and increased uncertainty\n\nBias in the quantification\n\nEffect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be \\(\\approx 0\\))\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 36.\n\n\nInstitutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-2",
+    "title": "MoC & Downturn LGD",
+    "section": "Treatment of deficiencies",
+    "text": "Treatment of deficiencies\n\n\n\n\nDeficiency\n\nany driver of potential bias and increased uncertainty\n\nBias in the quantification\n\nEffect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be \\(\\approx 0\\))\n\n\n\n\n\nAdditional uncertainty\n\nuncertainty attributed to uncertainty in the estimated effect size\n\nNot captured by the general estimation error\n\nnon-zero for \\(N_r, R \\rightarrow \\infty\\)\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 36.\n\n\nInstitutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-3",
+    "title": "MoC & Downturn LGD",
+    "section": "Treatment of deficiencies",
+    "text": "Treatment of deficiencies\n\n\n\n\nIdentification\n\na process that provides a guarantee of identifying all deficiencies\n\nEffect quantification\n\nEstimation of effect of the deficiency on the statistical estimator\n\nAdditional uncertainty\n\nuncertainty attributed to uncertainty in the estimated effect size\n\nClassification / allocation\n\nAttribution of additional uncertainty to specific types of deficiencies"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#methodology",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#methodology",
+    "title": "MoC & Downturn LGD",
+    "section": "Methodology",
+    "text": "Methodology"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#accuracy",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#accuracy",
+    "title": "MoC & Downturn LGD",
+    "section": "Accuracy",
+    "text": "Accuracy"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness",
+    "title": "MoC & Downturn LGD",
+    "section": "Representativeness",
+    "text": "Representativeness"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#methodological-deficiencies",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#methodological-deficiencies",
+    "title": "MoC & Downturn LGD",
+    "section": "Methodological deficiencies",
+    "text": "Methodological deficiencies"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#accuracy-model-performance",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#accuracy-model-performance",
+    "title": "MoC & Downturn LGD",
+    "section": "Accuracy & model performance",
+    "text": "Accuracy & model performance"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy",
+    "title": "MoC & Downturn LGD",
+    "section": "Model performance & accuracy",
+    "text": "Model performance & accuracy\n\n\nIn case of…\n\nBiases at level of calibration\n\n\\(\\rightarrow\\) change method of calibration (remediation)\n\nBiases at more granular level\nNon-homogeneity of grades /\n\n\\(\\rightarrow\\) representativeness in terms of risk characteristics (see next)\n\n\n\n\n\n\n\nNo double-counting with general estimation error!"
   }
 ]

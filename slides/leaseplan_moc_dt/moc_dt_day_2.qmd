@@ -137,7 +137,6 @@ MoC A, B, C
 ::::
 
 
-
 # General Estimation Error
 
 ## General Estimation Error {auto-animate=true}
@@ -187,7 +186,7 @@ General estimation error
 
 ::: {.column width="50%" .r-fit-text}
 
-```{r adj-dist}
+```{r unadj-dist}
 #| dev.args:
 #|   bg: "transparent"
 #| fig.asp: 1
@@ -199,24 +198,19 @@ library(distributional)
 #bg <- rgb(255,255,230, maxColorValue = 255)
 bg <- 'transparent'
 df <- data.frame(
-  group = c("initial", "adjusted", "adjusted"), mu = c(0,0.5,0.5), sd = c(0.1,0.1,0.2), alpha=c(1, 0,1))
+  group = c("initial", "adjusted"), mu = c(0,0.5), sd = c(0.1,0.1))
 
 ggplot(df, aes(y = group, xdist = dist_normal(mu, sd))) +
-  stat_halfeye(aes(fill = stat(level), alpha=alpha)) +
+  stat_halfeye(aes(fill = stat(level))) +
   geom_segment(data=df[2,],
     aes(x = 0, xend = mu, yend = group), 
     color = "rosybrown", 
     arrow = arrow(angle=20,length = unit(0.03, "npc"), type="closed"), position=position_nudge(y=-0.05)) +
-  geom_segment(data=df[3,],
-    aes(x = mu-0.5*sd, xend = mu+0.5*sd, yend = group), 
-    color = "skyblue", 
-    arrow = arrow(angle=20,length = unit(0.03, "npc"), type="closed", ends="both" ), position=position_nudge(y=-0.1)) +
   geom_vline(xintercept = df[1,]$mu, color = "gray", linetype="dashed" )+
   geom_vline(xintercept = df[2,]$mu, color = "rosybrown", linetype="dashed" )+
   scale_fill_manual(values = c("gray85", "skyblue"), na.value = "gray85", guide = "none") +
   scale_y_discrete() +
-  scale_alpha(guide="none", range = c(0.33,0.75)) +
-  scale_x_continuous(guide = "none") +
+  scale_x_continuous(guide = "none",  limits = c(-0.5,1.25)) +
   labs(x = "", y = "") + 
   theme(
     panel.background = element_rect(fill=bg), 
@@ -293,7 +287,7 @@ $$\text{CCF}_{\text{LRA}} = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_
 
 ::: {.column width="50%" .r-fit-text}
 
-![](`r knitr::fig_chunk('adj-dist', 'png')`)
+![](`r knitr::fig_chunk('unadj-dist', 'png')`)
 
 
 :::
@@ -318,7 +312,7 @@ $$\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\text{var}
 
 ::: {.column width="30%" .r-fit-text}
 
-![](`r knitr::fig_chunk('adj-dist', 'png')`)
+![](`r knitr::fig_chunk('unadj-dist', 'png')`)
 
 :::
 ::::
@@ -345,7 +339,7 @@ $$\text{var}(\text{LGD}_{\text{LRA}}) = \frac{1}{N^2_\mathbf{L}}\text{var}(\sum_
 
 ::: {.column width="30%" .r-fit-text}
 
-![](`r knitr::fig_chunk('adj-dist', 'png')`)
+![](`r knitr::fig_chunk('unadj-dist', 'png')`)
 
 
 :::
@@ -374,7 +368,7 @@ $$\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N
 
 ::: {.column width="30%" .r-fit-text}
 
-![](`r knitr::fig_chunk('adj-dist', 'png')`)
+![](`r knitr::fig_chunk('unadj-dist', 'png')`)
 
 :::
 ::::
@@ -405,7 +399,7 @@ $$\text{var}(\text{LGD}_{\text{LRA}}) = \frac{1}{N_\mathbf{L}}\sigma^2(\text{RLG
 
 ::: {.column width="30%" .r-fit-text}
 
-![](`r knitr::fig_chunk('adj-dist', 'png')`)
+![](`r knitr::fig_chunk('unadj-dist', 'png')`)
 
 :::
 ::::
@@ -437,7 +431,7 @@ $$\hat{\sigma}^2(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{
 :::
 
 ::: {.column width="30%" .r-fit-text}
-![](`r knitr::fig_chunk('adj-dist', 'png')`)
+![](`r knitr::fig_chunk('unadj-dist', 'png')`)
 :::
 ::::
 
@@ -628,64 +622,246 @@ Posterior interval based on non-informative ([conservative]{style="color:indianr
 :::
 ::::
 
-# Deficiencies
+# Treatment of deficiencies
 
-## Deficiencies {auto-animate=true}
+## Treatment of deficiencies {auto-animate=true}
 
 :::: columns
 
 ::: {.column width="50%" .r-fit-text }
 
-::: {data-id="qwe" }
+::: data-id="qwe" 
 Deficiency
-: any driver of (potential) bias of the statistical estimator relative to the estimated risk parameter
+: any driver of potential bias and increased uncertainty
 
+Bias in the quantification
+: Effect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be $\approx 0$)
 :::
 
 :::
 
 ::: {.column width="50%" .r-fit-text}
 ::: {.callout-note data-id="tre"}
-## EBA/GL/2017/16 $\S$ 36. 
+
+### EBA/GL/2017/16 $\S$ 36. 
 _Institutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error_
 :::
+
+::: fragment
+![](`r knitr::fig_chunk('unadj-dist', 'png')`)
+:::
+
 :::
 ::::
 
-
-## Generic process
-
+## Treatment of deficiencies {auto-animate=true}
 
 :::: columns
 
 ::: {.column width="50%" .r-fit-text }
 
-::: {data-id="qwe" }
+::: data-id="qwe" 
 Deficiency
-: any driver of (potential) bias of the statistical estimator relative to the estimated risk parameter
+: any driver of potential bias and increased uncertainty
 
-Remediation
-: the deficiency is removed
+Bias in the quantification
+: Effect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be $\approx 0$)
+:::
 
-Mitigation
-: appropriate adjustment + MoC; the deficiency is not removed
+::: data-id="qwe2" 
+Additional uncertainty
+: uncertainty attributed to uncertainty in the estimated effect size
+
+Not captured by the general estimation error
+: non-zero for $N_r, R \rightarrow \infty$
+:::
+:::
+
+::: {.column width="50%" .r-fit-text}
+::: {.callout-note data-id="tre"}
+### EBA/GL/2017/16 $\S$ 36. 
+_Institutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error_
+:::
+
+
+```{r adj-dist}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+library(ggplot2) 
+library(ggdist)
+library(distributional)
+#bg <- rgb(255,255,230, maxColorValue = 255)
+bg <- 'transparent'
+df <- data.frame(
+  group = c("initial", "adjusted", "adjusted"), mu = c(0,0.5,0.5), sd = c(0.1,0.1,0.2), alpha=c(1, 0,1))
+
+ggplot(df, aes(y = group, xdist = dist_normal(mu, sd))) +
+  stat_halfeye(aes(fill = stat(level), alpha=alpha)) +
+  geom_segment(data=df[2,],
+    aes(x = 0, xend = mu, yend = group), 
+    color = "rosybrown", 
+    arrow = arrow(angle=20,length = unit(0.03, "npc"), type="closed"), position=position_nudge(y=-0.05)) +
+  geom_segment(data=df[3,],
+    aes(x = mu-0.5*sd, xend = mu+0.5*sd, yend = group), 
+    color = "skyblue", 
+    arrow = arrow(angle=20,length = unit(0.03, "npc"), type="closed", ends="both" ), position=position_nudge(y=-0.1)) +
+  geom_vline(xintercept = df[1,]$mu, color = "gray", linetype="dashed" )+
+  geom_vline(xintercept = df[2,]$mu, color = "rosybrown", linetype="dashed" )+
+  scale_fill_manual(values = c("gray85", "skyblue"), na.value = "gray85", guide = "none") +
+  scale_y_discrete() +
+  scale_alpha(guide="none", range = c(0.33,0.75)) +
+  scale_x_continuous(guide = "none",  limits = c(-0.5,1.25)) +
+  labs(x = "", y = "") + 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+
+:::
+::::
+
+
+## Treatment of deficiencies {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+
+::: data-id="aspdlf" 
+Identification
+: a _process_ that provides a guarantee of identifying all deficiencies 
+
+Effect quantification
+: Estimation of effect of the deficiency on the statistical estimator
+
+Additional uncertainty
+: uncertainty attributed to uncertainty in the estimated effect size
+
+Classification / allocation
+: Attribution of additional uncertainty to specific types of deficiencies
+
+:::
+:::
+
+::: {.column width="50%" .r-fit-text}
+
+![](/media/moc_aa_generic.drawio.svg)
+
+:::
+::::
+
+## Identification {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+::: data-id="aspdlf" 
+Identification
+: a _process_ that provides a guarantee for identifying all deficiencies 
 :::
 
 :::
 
 ::: {.column width="50%" .r-fit-text}
-![](/media/moc_aa_generic.drawio.drawio.svg)
+
+::: {.callout-note data-id="tre"}
+### EBA/GL/2017/16 $\S$ 36. 
+_Institutions should identify **all** deficiencies related to the estimation of risk parameters_
+:::
 :::
 ::::
 
+::: {.callout-warning}
+ * Leverage existing controls (Review of Est., DQ monitoring, MV)
+ * Ensure & document minimally considered deficiencies
+ * Identify requirements in order to establish deficiencies
+:::
 
-## Identification
+## Data Quality & Completeness
 
-## Remediation
+:::: columns
 
-## Mitigation
+::: {.column width="50%" .r-fit-text }
+### Missing or inaccurate...
+
+ * reference dates
+ * attributes identifying type of exposures
+ * (risk) characteristics $X_{ir}$ for assigning exposures
+ * loss & default characteristics $\text{y}_{i}(t_r)$
+   + over observation windows
+   + cash flows
+
+:::
+
+::: {.column width="50%" .r-fit-text }
+![](/media/data_requirements.drawio.svg)
+:::
+
+::::
+
+![](/media/rds_aggr_general_cond.drawio.svg){fig-align="center"}
+
+## Model performance & accuracy
+
+<!-- :::: columns -->
+
+<!-- ::: {.column width="50%" .r-fit-text } -->
+In case of...
+
+ * Biases at level of calibration
+
+$\rightarrow$ change method of calibration (remediation)
+
+ * Biases at more granular level 
+ * Non-homogeneity of grades / 
+
+$\rightarrow$ representativeness in terms of risk characteristics (see next)
+
+<!-- ::: -->
+<!-- ::: {.column width="50%" .r-fit-text } -->
+<!-- ::: -->
+<!-- :::: -->
+
+::: {.callout-warning}
+No double-counting with general estimation error!
+:::
+
+## Accuracy & model performance
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+
+:::
+::: {.column width="50%" .r-fit-text }
+
+:::
+::::
+
+## Representativeness
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+
+:::
+::: {.column width="50%" .r-fit-text }
+
+:::
+::::
 
 # Appropriate Adjustments
+
+## Data Quality & Completeness
+
+
 
 # Additional Uncertainties
 

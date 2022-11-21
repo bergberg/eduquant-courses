@@ -520,9 +520,9 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 </dl>
 </div>
 </div><div class="column r-fit-text" style="width:50%;">
-<div class="cell" data-fig.asp="1" data-hash="moc_dt_day_2_cache/revealjs/adj-dist_b3efcad1a5f268cde7fd695cc5a00dc5">
+<div class="cell" data-fig.asp="1" data-hash="moc_dt_day_2_cache/revealjs/unadj-dist_a4f52ac474a72f691d0215dd8656179b">
 <div class="cell-output-display">
-<p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png" width="480"></p>
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/unadj-dist-1.png" width="480"></p>
 </div>
 </div>
 </div>
@@ -596,7 +596,7 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <p><span class="math display">\[\text{CCF}_{\text{LRA}} = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}\sum_{i\in\mathbf{L}} \text{CCF}_i(t_r)\]</span></p>
 </div>
 </div><div class="column r-fit-text" style="width:50%;">
-<p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png"></p>
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/unadj-dist-1.png"></p>
 </div>
 </div>
 </section>
@@ -610,7 +610,7 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <p><span class="math display">\[\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\text{var}(\frac{1}{N_L(t_r)}\sum_{i\in\mathbf{L}} \text{CCF}_i(t_r))\]</span></p>
 </div>
 </div><div class="column r-fit-text" style="width:30%;">
-<p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png"></p>
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/unadj-dist-1.png"></p>
 </div>
 </div>
 <div class="callout callout-note no-icon callout-style-simple">
@@ -631,7 +631,7 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <p><span style="color: steelblue"><span class="math display">\[\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\text{var}(\sum_{i\in\mathbf{L}}\text{CCF}_{ir}))\]</span></span></p>
 </div>
 </div><div class="column r-fit-text" style="width:30%;">
-<p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png"></p>
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/unadj-dist-1.png"></p>
 </div>
 </div>
 <div class="callout callout-note no-icon callout-style-simple">
@@ -653,7 +653,7 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <p><span class="math display">\[\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\sigma_r^2(CCF))\]</span></p>
 </div>
 </div><div class="column r-fit-text" style="width:30%;">
-<p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png"></p>
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/unadj-dist-1.png"></p>
 </div>
 </div>
 <div class="callout callout-note no-icon callout-style-simple">
@@ -676,7 +676,7 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <p><span style="color: steelblue"><span class="math display">\[\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\sigma_r^2(CCF))\]</span></span></p>
 </div>
 </div><div class="column r-fit-text" style="width:30%;">
-<p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png"></p>
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/unadj-dist-1.png"></p>
 </div>
 </div>
 <div class="callout callout-note no-icon callout-style-simple">
@@ -700,7 +700,7 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <p><span class="math display">\[\hat{\sigma}^2(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r-1}s_r^2(CCF_r))\]</span></p>
 </div>
 </div><div class="column r-fit-text" style="width:30%;">
-<p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png"></p>
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/unadj-dist-1.png"></p>
 </div>
 </div>
 <div class="callout callout-note no-icon callout-style-simple">
@@ -893,19 +893,23 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 </div>
 </section></section>
 <section>
-<section id="deficiencies" class="title-slide slide level1 inverse center" data-background-color="teal">
-<h1>Deficiencies</h1>
+<section id="treatment-of-deficiencies" class="title-slide slide level1 inverse center" data-background-color="teal">
+<h1>Treatment of deficiencies</h1>
 
 </section>
-<section id="deficiencies-1" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Deficiencies</h2>
+<section id="treatment-of-deficiencies-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Treatment of deficiencies</h2>
 <div class="columns">
 <div class="column r-fit-text" style="width:50%;">
-<div data-id="qwe">
+<div class="data-id=&quot;qwe&quot;">
 <dl>
 <dt>Deficiency</dt>
 <dd>
-any driver of (potential) bias of the statistical estimator relative to the estimated risk parameter
+any driver of potential bias and increased uncertainty
+</dd>
+<dt>Bias in the quantification</dt>
+<dd>
+Effect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be <span class="math inline">\(\approx 0\)</span>)
 </dd>
 </dl>
 </div>
@@ -920,48 +924,204 @@ any driver of (potential) bias of the statistical estimator relative to the esti
 </div>
 </div>
 </div>
+<div class="fragment">
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/unadj-dist-1.png"></p>
+</div>
 </div>
 </div>
 </section>
-<section id="generic-process" class="slide level2">
-<h2>Generic process</h2>
+<section id="treatment-of-deficiencies-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Treatment of deficiencies</h2>
 <div class="columns">
 <div class="column r-fit-text" style="width:50%;">
-<div data-id="qwe">
+<div class="data-id=&quot;qwe&quot;">
 <dl>
 <dt>Deficiency</dt>
 <dd>
-any driver of (potential) bias of the statistical estimator relative to the estimated risk parameter
+any driver of potential bias and increased uncertainty
 </dd>
-<dt>Remediation</dt>
+<dt>Bias in the quantification</dt>
 <dd>
-the deficiency is removed
+Effect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be <span class="math inline">\(\approx 0\)</span>)
 </dd>
-<dt>Mitigation</dt>
+</dl>
+</div>
+<div class="data-id=&quot;qwe2&quot;">
+<dl>
+<dt>Additional uncertainty</dt>
 <dd>
-appropriate adjustment + MoC; the deficiency is not removed
+uncertainty attributed to uncertainty in the estimated effect size
+</dd>
+<dt>Not captured by the general estimation error</dt>
+<dd>
+non-zero for <span class="math inline">\(N_r, R \rightarrow \infty\)</span>
 </dd>
 </dl>
 </div>
 </div><div class="column r-fit-text" style="width:50%;">
-<p><img data-src="../../media/moc_aa_generic.drawio.drawio.svg"></p>
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>EBA/GL/2017/16 <span class="math inline">\(\S\)</span> 36.</strong></p>
+</div>
+<div class="callout-content">
+<p><em>Institutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error</em></p>
+</div>
+</div>
+</div>
+<div class="cell" data-fig.asp="1" data-hash="moc_dt_day_2_cache/revealjs/adj-dist_2e20757692cdb8fb64d7820603c34e72">
+<div class="cell-output-display">
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png" width="480"></p>
+</div>
+</div>
 </div>
 </div>
 </section>
-<section id="identification" class="slide level2">
-<h2>Identification</h2>
+<section id="treatment-of-deficiencies-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Treatment of deficiencies</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+<div class="data-id=&quot;aspdlf&quot;">
+<dl>
+<dt>Identification</dt>
+<dd>
+a <em>process</em> that provides a guarantee of identifying all deficiencies
+</dd>
+<dt>Effect quantification</dt>
+<dd>
+Estimation of effect of the deficiency on the statistical estimator
+</dd>
+<dt>Additional uncertainty</dt>
+<dd>
+uncertainty attributed to uncertainty in the estimated effect size
+</dd>
+<dt>Classification / allocation</dt>
+<dd>
+Attribution of additional uncertainty to specific types of deficiencies
+</dd>
+</dl>
+</div>
+</div><div class="column r-fit-text" style="width:50%;">
+<p><img data-src="../../media/moc_aa_generic.drawio.svg"></p>
+</div>
+</div>
 </section>
-<section id="remediation" class="slide level2">
-<h2>Remediation</h2>
+<section id="identification" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Identification</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+<div class="data-id=&quot;aspdlf&quot;">
+<dl>
+<dt>Identification</dt>
+<dd>
+a <em>process</em> that provides a guarantee for identifying all deficiencies
+</dd>
+</dl>
+</div>
+</div><div class="column r-fit-text" style="width:50%;">
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>EBA/GL/2017/16 <span class="math inline">\(\S\)</span> 36.</strong></p>
+</div>
+<div class="callout-content">
+<p><em>Institutions should identify <strong>all</strong> deficiencies related to the estimation of risk parameters</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-warning no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<ul>
+<li>Leverage existing controls (Review of Est., DQ monitoring, MV)</li>
+<li>Ensure &amp; document minimally considered deficiencies</li>
+<li>Identify requirements in order to establish deficiencies</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-<section id="mitigation" class="slide level2">
-<h2>Mitigation</h2>
+<section id="data-quality-completeness" class="slide level2">
+<h2>Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+<h3 id="missing-or-inaccurate">Missing or inaccurate…</h3>
+<ul>
+<li>reference dates</li>
+<li>attributes identifying type of exposures</li>
+<li>(risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</li>
+<li>loss &amp; default characteristics <span class="math inline">\(\text{y}_{i}(t_r)\)</span>
+<ul>
+<li>over observation windows</li>
+<li>cash flows</li>
+</ul></li>
+</ul>
+</div><div class="column r-fit-text" style="width:50%;">
+<p><img data-src="../../media/data_requirements.drawio.svg"></p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../../media/rds_aggr_general_cond.drawio.svg"></p>
+</figure>
+</div>
+</section>
+<section id="model-performance-accuracy" class="slide level2">
+<h2>Model performance &amp; accuracy</h2>
+<!-- :::: columns -->
+<!-- ::: {.column width="50%" .r-fit-text } -->
+<p>In case of…</p>
+<ul>
+<li>Biases at level of calibration</li>
+</ul>
+<p><span class="math inline">\(\rightarrow\)</span> change method of calibration (remediation)</p>
+<ul>
+<li>Biases at more granular level</li>
+<li>Non-homogeneity of grades /</li>
+</ul>
+<p><span class="math inline">\(\rightarrow\)</span> representativeness in terms of risk characteristics (see next)</p>
+<!-- ::: -->
+<!-- ::: {.column width="50%" .r-fit-text } -->
+<!-- ::: -->
+<!-- :::: -->
+<div class="callout callout-warning no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>No double-counting with general estimation error!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="accuracy-model-performance" class="slide level2">
+<h2>Accuracy &amp; model performance</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+
+</div><div class="column r-fit-text" style="width:50%;">
+
+</div>
+</div>
+</section>
+<section id="representativeness" class="slide level2">
+<h2>Representativeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+
+</div><div class="column r-fit-text" style="width:50%;">
+
+</div>
+</div>
 </section></section>
+<section>
 <section id="appropriate-adjustments" class="title-slide slide level1 inverse center" data-background-color="teal">
 <h1>Appropriate Adjustments</h1>
 
 </section>
-
+<section id="data-quality-completeness-1" class="slide level2">
+<h2>Data Quality &amp; Completeness</h2>
+</section></section>
 <section id="additional-uncertainties" class="title-slide slide level1 inverse center" data-background-color="teal">
 <h1>Additional Uncertainties</h1>
 
