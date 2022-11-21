@@ -355,20 +355,51 @@
 </div>
 </div>
 </section>
+<section>
 <section id="recap-of-day-1" class="title-slide slide level1 inverse center" data-background-color="teal">
 <h1>Recap of day 1</h1>
 
 </section>
-
+<section id="risk-parameter-quantification" class="slide level2">
+<h2>Risk Parameter Quantification</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+<dl>
+<dt>Type of Exposures</dt>
+<dd>
+homogeneously managed, comparable risk characteristics
+</dd>
+<dt>Reference dates</dt>
+<dd>
+Date to which realised values are aggregated
+</dd>
+<dt>Calibration Target</dt>
+<dd>
+long-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments
+</dd>
+<dt>Appropriate Adjustment</dt>
+<dd>
+Modeled effect on CT of drivers of non-representativeness &amp; other sources of bias
+</dd>
+<dt>Appropriately Adjusted Calibration Target</dt>
+<dd>
+Calibration Target adjusted for biases
+</dd>
+</dl>
+</div><div class="column r-fit-text" style="width:50%;">
+<p><img data-src="../../media/risk_quantification.drawio.svg"></p>
+</div>
+</div>
+</section></section>
 <section>
 <section id="moc-quantification" class="title-slide slide level1 inverse center" data-background-color="teal">
 <h1>MoC Quantification</h1>
 
 </section>
-<section id="moc-quantification-1" class="slide level2">
-<h2>MoC Quantification</h2>
+<section id="moc-quantification-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">MoC Quantification</h2>
 <div class="columns">
-<div class="column r-fit-text" style="width:65%;">
+<div class="column r-fit-text" data-id="plo" style="width:65%;">
 <dl>
 <dt><em>Initial</em> Calibration Target (CT)</dt>
 <dd>
@@ -396,12 +427,36 @@ Margin to account for additional uncertainty due to other deficiencies
 </dd>
 </dl>
 </div><div class="column r-fit-text" style="width:35%;">
-<p><img data-src="../../media/risk_quantification.drawio.svg"></p>
+<p><img data-src="../../media/risk_quantification_moc.drawio.svg"></p>
 </div>
 </div>
 </section>
-<section id="moc-quantification-2" class="slide level2">
-<h2>MoC Quantification</h2>
+<section id="moc-quantification-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">MoC Quantification</h2>
+<div class="columns">
+<div class="column r-fit-text" data-id="plo" style="width:65%;">
+<dl>
+<dt>MoC Categories (A, B, C)</dt>
+<dd>
+allocation of uncertainties for MoC quantification
+</dd>
+<dt>(Model) Risk Appetite</dt>
+<dd>
+Sets (additional) capital requirements in relation to credit risk due to model uncertainty
+</dd>
+<dt>Level of conservatism</dt>
+<dd>
+how the MoC relates to the estimation uncertainty; e.g., a <em>confidence level</em>
+</dd>
+<dt>MoC A, B, C</dt>
+<dd>
+required to be quantified, applied, reported, monitored separately
+</dd>
+</dl>
+</div><div class="column r-fit-text" data-id="plo" style="width:35%;">
+<p><img data-src="../../media/moc_unc_cons.drawio.svg"></p>
+</div>
+</div>
 </section></section>
 <section>
 <section id="general-estimation-error" class="title-slide slide level1 inverse center" data-background-color="teal">
@@ -424,7 +479,7 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 </dd>
 </dl>
 </div>
-</div><div id="vcenter" class="column r-fit-text" style="width:50%;">
+</div><div class="column r-fit-text" style="width:50%;">
 <div class="callout callout-note no-icon callout-captioned callout-style-simple">
 <div class="callout-body">
 <div class="callout-caption">
@@ -479,6 +534,52 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <div class="column r-fit-text" style="width:50%;">
 <div data-id="sdf">
 <dl>
+<dt>The statistical estimator</dt>
+<dd>
+Calibration Target; (weighted) average default/loss/conversion rate
+</dd>
+<dt>General estimation error</dt>
+<dd>
+Uncertainty not due to deficiencies; standard error of statistical estimator
+</dd>
+</dl>
+</div>
+<ul>
+<li>MoC C “reflects” general estimation error</li>
+<li>EBA explicitly allows for flexibility</li>
+<li>ECB more explicit</li>
+</ul>
+</div><div class="column r-fit-text" style="width:50%;">
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>EBA/GL/2017/16 <span class="math inline">\(\S\)</span> 43.</strong></p>
+</div>
+<div class="callout-content">
+<p><em>In order to quantify MoC institutions should <span class="math inline">\(\small{[\cdots]}\)</span> quantify the general estimation error of category C referred to in paragraph 42 associated with the underlying estimation method at least for every calibration segment; the MoC for the general estimation error should reflect the dispersion of the distribution of the <strong>statistical estimator</strong>.</em></p>
+</div>
+</div>
+</div>
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>ECB Guide to Internal Models (CR) <span class="math inline">\(\S\)</span> 140</strong></p>
+</div>
+<div class="callout-content">
+<p><em>(a) This MoC should be based on the distribution of the estimator, which is the average of one-year default rates of the grade/pool across time (i.e.&nbsp;the distribution of <span class="math inline">\((\Sigma\text{DR}_t)/T\)</span>, considering that the uncertainty is primarily driven by the statistical uncertainty of each one-year default rate and the length of the time series. As a result, it is expected that <strong>the lower the number of observations per grade and the shorter the time series are, the higher the MoC</strong> of the grade should be.</em></p>
+<p><em>(b) Similarly, for LGD and CCF, <span class="math inline">\(\small{[\cdots]}\)</span> uncertainty is primarily driven by the statistical uncertainty of the observations used to compute the long-run and downturn estimates and the length of the time series</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="general-estimation-error-4" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">General Estimation Error</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+<div data-id="sdf">
+<dl>
 <dt><span style="color: teal;">The statistical estimator</span></dt>
 <dd>
 Calibration Target; (weighted) average default/loss/conversion rate
@@ -489,7 +590,7 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 </dd>
 </dl>
 </div>
-<div data-id="rty">
+<div data-id="ert32">
 <p><span class="math display">\[\text{DR}_{\text{LRA}} = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}\sum_{i\in\mathbf{L}} \text{D}_i(t_r)\]</span></p>
 <p><span class="math display">\[\text{LGD}_{\text{LRA}} = \frac{1}{N_\mathbf{L}}\sum_{i\in\mathbf{L}} \text{RLGD}_i\]</span></p>
 <p><span class="math display">\[\text{CCF}_{\text{LRA}} = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}\sum_{i\in\mathbf{L}} \text{CCF}_i(t_r)\]</span></p>
@@ -499,28 +600,16 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 </div>
 </div>
 </section>
-<section id="general-estimation-error-4" class="slide level2" data-auto-animate="true">
+<section id="general-estimation-error-5" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">General Estimation Error</h2>
 <div class="columns">
-<div class="column r-fit-text" style="width:50%;">
-<div data-id="sdf">
-<dl>
-<dt>The statistical estimator</dt>
-<dd>
-Calibration Target; (weighted) average default/loss/conversion rate
-</dd>
-<dt><span style="color: teal;">General estimation error</span></dt>
-<dd>
-Uncertainty not due to deficiencies; standard error of statistical estimator
-</dd>
-</dl>
-</div>
-<div data-id="rty">
+<div class="column r-fit-text" style="width:70%;">
+<div data-id="ert32">
 <p><span class="math display">\[\text{var}(\text{DR}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\text{var}(\frac{1}{N_L(t_r)}\sum_{i\in\mathbf{L}} \text{D}_i(t_r))\]</span></p>
 <p><span class="math display">\[\text{var}(\text{LGD}_{\text{LRA}}) = \frac{1}{N_\mathbf{L}}\text{var}(\sum_{i\in\mathbf{L}} \text{RLGD}_i)\]</span></p>
 <p><span class="math display">\[\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\text{var}(\frac{1}{N_L(t_r)}\sum_{i\in\mathbf{L}} \text{CCF}_i(t_r))\]</span></p>
 </div>
-</div><div class="column r-fit-text" style="width:50%;">
+</div><div class="column r-fit-text" style="width:30%;">
 <p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png"></p>
 </div>
 </div>
@@ -532,14 +621,14 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 </div>
 </div>
 </section>
-<section id="general-estimation-error-5" class="slide level2" data-auto-animate="true">
+<section id="general-estimation-error-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">General Estimation Error</h2>
 <div class="columns">
 <div class="column r-fit-text" style="width:70%;">
-<div data-id="rty">
+<div data-id="ert32">
 <p><span style="color: steelblue"><span class="math display">\[\text{var}(\text{DR}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N^2_r}\text{var}(\sum_{i\in\mathbf{L}}\text{D}_{ir}))\]</span></span></p>
 <p><span class="math display">\[\text{var}(\text{LGD}_{\text{LRA}}) = \frac{1}{N^2_\mathbf{L}}\text{var}(\sum_{i\in\mathbf{L}} \text{RLGD}_i)\]</span></p>
-<p><span class="math display">\[\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\text{var}(\sum_{i\in\mathbf{L}}\text{CCF}_{ir}))\]</span></p>
+<p><span style="color: steelblue"><span class="math display">\[\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\text{var}(\sum_{i\in\mathbf{L}}\text{CCF}_{ir}))\]</span></span></p>
 </div>
 </div><div class="column r-fit-text" style="width:30%;">
 <p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png"></p>
@@ -549,16 +638,16 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <div class="callout-body">
 <div class="callout-content">
 <p>Assuming i.i.d. <span class="math inline">\(\text{D}_{ir}\)</span>, <span class="math inline">\(\text{RLGD}_i\)</span>, <span class="math inline">\(\text{CCF}_{ir}\)</span></p>
-<p><span style="color: steelblue">Assuming <span class="math inline">\(R\)</span> independent draws (<span class="math inline">\(\text{cov}(\text{DR}_r,\text{DR}_s)_{r\neq s}\rightarrow 0\)</span>)</span></p>
+<p><span style="color: steelblue">Assuming <span class="math inline">\(R\)</span> independent draws (<span class="math inline">\(\text{cov}(\text{X}_r,\text{X}_s)_{r\neq s}\rightarrow 0\)</span>)</span></p>
 </div>
 </div>
 </div>
 </section>
-<section id="general-estimation-error-6" class="slide level2" data-auto-animate="true">
+<section id="general-estimation-error-7" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">General Estimation Error</h2>
 <div class="columns">
 <div class="column r-fit-text" style="width:70%;">
-<div data-id="ert">
+<div data-id="ert32">
 <p><span style="color: steelblue"><span class="math display">\[\text{var}(\text{DR}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\pi_{r}(1-\pi_{r})\]</span></span></p>
 <p><span class="math display">\[\text{var}(\text{LGD}_{\text{LRA}}) = \frac{1}{N_\mathbf{L}}\sigma^2(\text{RLGD})\]</span></p>
 <p><span class="math display">\[\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\sigma_r^2(CCF))\]</span></p>
@@ -571,18 +660,41 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <div class="callout-body">
 <div class="callout-content">
 <p>Assuming i.i.d. <span class="math inline">\(\text{D}_{ir}\)</span>, <span class="math inline">\(\text{RLGD}_{ir}\)</span>, <span class="math inline">\(\text{CCF}_{ir}\)</span></p>
-<p>Assuming <span class="math inline">\(R\)</span> independent draws (<span class="math inline">\(\text{cov}(\text{DR}_r,\text{DR}_s)_{r\neq s}\rightarrow 0\)</span>)</p>
+<p>Assuming <span class="math inline">\(R\)</span> independent draws (<span class="math inline">\(\text{cov}(\text{X}_r,\text{X}_s)_{r\neq s}\rightarrow 0\)</span>)</p>
 <p><span style="color: steelblue">Assuming <span class="math inline">\(\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)\)</span></span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="general-estimation-error-8" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">General Estimation Error</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:70%;">
+<div data-id="ert32">
+<p><span style="color: steelblue"><span class="math display">\[\text{var}(\text{DR}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\pi_{r}(1-\pi_{r})\]</span></span></p>
+<p><span class="math display">\[\text{var}(\text{LGD}_{\text{LRA}}) = \frac{1}{N_\mathbf{L}}\sigma^2(\text{RLGD})\]</span></p>
+<p><span style="color: steelblue"><span class="math display">\[\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\sigma_r^2(CCF))\]</span></span></p>
+</div>
+</div><div class="column r-fit-text" style="width:30%;">
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/adj-dist-1.png"></p>
+</div>
+</div>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Assuming i.i.d. <span class="math inline">\(\text{D}_{ir}\)</span>, <span class="math inline">\(\text{RLGD}_{ir}\)</span>, <span class="math inline">\(\text{CCF}_{ir}\)</span></p>
+<p>Assuming <span class="math inline">\(R\)</span> independent draws (<span class="math inline">\(\text{cov}(\text{X}_r,\text{X}_s)_{r\neq s}\rightarrow 0\)</span>)</p>
+<p>Assuming <span class="math inline">\(\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)\)</span></p>
 <p><span style="color: steelblue">Assuming known <span class="math inline">\(N_r\)</span>, <span class="math inline">\(R\)</span></span></p>
 </div>
 </div>
 </div>
 </section>
-<section id="general-estimation-error-7" class="slide level2" data-auto-animate="true">
+<section id="general-estimation-error-9" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">General Estimation Error</h2>
 <div class="columns">
 <div class="column r-fit-text" style="width:70%;">
-<div class="{data-id&quot;ert&quot;}">
+<div data-id="ert32">
 <p><span class="math display">\[\hat{\sigma}^2(\text{DR}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r-1}\text{DR}_{r}(1-\text{DR}_{r})\]</span></p>
 <p><span class="math display">\[\hat{\sigma}^2(\text{LGD}_{\text{LRA}}) = \frac{1}{N_\mathbf{L}-1}s^2(\text{RLGD})\]</span></p>
 <p><span class="math display">\[\hat{\sigma}^2(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r-1}s_r^2(CCF_r))\]</span></p>
@@ -595,7 +707,7 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <div class="callout-body">
 <div class="callout-content">
 <p>Assuming i.i.d. <span class="math inline">\(\text{D}_i\)</span>, <span class="math inline">\(\text{RLGD}_i\)</span>, <span class="math inline">\(\text{CCF}_i\)</span></p>
-<p>Assuming <span class="math inline">\(R\)</span> independent draws (<span class="math inline">\(\text{cov}(\text{DR}_r,\text{DR}_s)_{r\neq s}\rightarrow 0\)</span>)</p>
+<p>Assuming <span class="math inline">\(R\)</span> independent draws (<span class="math inline">\(\text{cov}(\text{X}_r,\text{X}_s)_{r\neq s}\rightarrow 0\)</span>)</p>
 <p>Assuming <span class="math inline">\(\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)\)</span></p>
 <p>Assuming known <span class="math inline">\(N_r\)</span>, <span class="math inline">\(R\)</span></p>
 <p><span style="color: steelblue">Unbiased estimators of the variance of the mean (Bessel’s)</span></p>
@@ -603,69 +715,177 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 </div>
 </div>
 </section>
-<section id="general-estimation-error-8" class="slide level2" data-auto-animate="true">
+<section id="general-estimation-error-10" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">General Estimation Error</h2>
-<div class="{data-id&quot;ert&quot;}">
+<div data-id="ert32">
 <p><span class="math inline">\(\hat{\sigma}^2(\text{DR}_{\text{LRA}})\)</span>, <span class="math inline">\(\hat{\sigma}^2(\text{LGD}_{\text{LRA}})\)</span>, <span class="math inline">\(\hat{\sigma}^2(\text{CCF}_{\text{LRA}})\)</span></p>
 </div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><span style="color: indianred">Assuming</span> i.i.d. <span class="math inline">\(\text{D}_i\)</span>, <span class="math inline">\(\text{RLGD}_i\)</span>, <span class="math inline">\(\text{CCF}_i\)</span></p>
-<p><span style="color: indianred">Assuming</span> <span class="math inline">\(R\)</span> independent draws</p>
-<p><span style="color: indianred">Assuming</span> <span class="math inline">\(\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)\)</span></p>
-<p><span style="color: indianred">Assuming</span> known <span class="math inline">\(N_r\)</span>, <span class="math inline">\(R\)</span></p>
-<p><span style="color: indianred">Unbiased</span> estimators of the variance of the mean (Bessel’s)</p>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
 <div class="callout callout-warning no-icon callout-style-simple">
 <div class="callout-body">
 <div class="callout-content">
-<p><span style="color: darkolivegreen">Independence of <span class="math inline">\(\text{D}_i\)</span>, <span class="math inline">\(\text{RLGD}_i\)</span>, <span class="math inline">\(\text{CCF}_i\)</span> assumed by required statistical estimator</span></p>
-<p><span style="color: indianred">Overlapping observation windows <span class="math inline">\(\rightarrow\)</span> auto-correlation</span></p>
-<p><span style="color: orange">Sampling without replacement <span class="math inline">\(\text{D}_r \sim \text{Hypergeometric}(N_r,\pi^{\prime}_r)\)</span></span></p>
-<p><span style="color: darkolivegreen">Variability of <span class="math inline">\(N_r\)</span>, <span class="math inline">\(R\)</span> assumed to vanish in ASRF model</span></p>
-<p><span style="color: indianred"><em>Asympotically</em> unbiased estimators <span class="math inline">\(\nsim\)</span> uncertainty of specific estimate, e.g.&nbsp;for small <span class="math inline">\(N\)</span></span></p>
+<p><strong>Assuming i.i.d. <span class="math inline">\(\text{D}_i\)</span>, <span class="math inline">\(\text{RLGD}_i\)</span>, <span class="math inline">\(\text{CCF}_i\)</span> </strong></p>
+<ul>
+<li><span style="color: darkolivegreen">Cond. independence of <span class="math inline">\(\text{D}_i\)</span>, <span class="math inline">\(\text{RLGD}_i\)</span>, <span class="math inline">\(\text{CCF}_i\)</span> assumed by required statistical estimator</span></li>
+<li><span style="color: indianred">Connected clients</span></li>
+</ul>
+<p>Assuming <span class="math inline">\(R\)</span> independent draws</p>
+<p>Assuming <span class="math inline">\(\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)\)</span></p>
+<p>Unbiased estimators of the variance of the mean</p>
+</div>
+</div>
+</div>
+</section>
+<section id="general-estimation-error-11" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">General Estimation Error</h2>
+<div class="callout callout-warning no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Assuming i.i.d. <span class="math inline">\(\text{D}_i\)</span>, <span class="math inline">\(\text{RLGD}_i\)</span>, <span class="math inline">\(\text{CCF}_i\)</span></p>
+<p><strong>Assuming <span class="math inline">\(R\)</span> independent draws</strong></p>
+<ul>
+<li><span style="color: indianred">Overlapping observation windows <span class="math inline">\(\rightarrow\)</span> auto-correlation</span></li>
+</ul>
+<p>Assuming <span class="math inline">\(\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)\)</span></p>
+<p>Unbiased estimators of the variance of the mean</p>
+</div>
+</div>
+</div>
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>ECB Guide to Internal Models (CR) <span class="math inline">\(\S\)</span> 140</strong></p>
+</div>
+<div class="callout-content">
+<p><em>(a) <span class="math inline">\(\small{[\cdots]}\)</span> Institutions need to be aware of and deal adequately with the dependency between default rates over time on the quantification of the MoC, e.g.&nbsp;when using overlapping windows for the calculation of default rates.</em></p>
+</div>
+</div>
+</div>
+</section>
+<section id="general-estimation-error-12" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">General Estimation Error</h2>
+
+<img data-src="../../media/rds_aggr_pd_overlap.drawio.svg" class="r-stretch"><div class="callout callout-warning no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><strong>Assuming <span class="math inline">\(R\)</span> independent draws</strong></p>
+<ul>
+<li><span style="color: indianred">Overlapping observation windows <span class="math inline">\(\rightarrow\)</span> auto-correlation</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+<h4 id="strategies">Strategies</h4>
+<ul>
+<li>Non-overlapping sample</li>
+<li>Non-overlapping resampling scheme</li>
+<li>Explicitly model / correct for auto-correlation bias</li>
+</ul>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column r-fit-text" style="width:22.5%;">
+<h4 id="pros"><span style="color: darkolivegreen">pros</span></h4>
+<ul>
+<li>simple</li>
+<li>non-parametric</li>
+<li>explicit</li>
+</ul>
+</div><div class="column r-fit-text" style="width:22.5%;">
+<h4 id="cons"><span style="color: indianred">cons</span></h4>
+<ul>
+<li>biased</li>
+<li>complex</li>
+<li>possibly not identifiable</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="general-estimation-error-13" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">General Estimation Error</h2>
+<div class="callout callout-warning no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Assuming i.i.d. <span class="math inline">\(\text{D}_i\)</span>, <span class="math inline">\(\text{RLGD}_i\)</span>, <span class="math inline">\(\text{CCF}_i\)</span></p>
+<p>Assuming <span class="math inline">\(R\)</span> independent draws</p>
+<p><strong>Assuming <span class="math inline">\(\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)\)</span></strong></p>
+<ul>
+<li>Sampling without replacement <span class="math inline">\(\text{D}_r \sim \text{Hypergeometric}(N_r,\pi^{\prime}_r)\)</span></li>
+</ul>
+<p>Unbiased estimators of the variance of the mean</p>
+</div>
+</div>
+</div>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Due to fast convergence <span class="math inline">\(\text{Hypergeometric}\rightarrow\text{Binomial}\)</span>, relevant for small <span class="math inline">\(N_r\)</span>, large <span class="math inline">\(\pi_r\)</span> only.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="general-estimation-error-14" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">General Estimation Error</h2>
+<div data-id="ert32">
+<p><span class="math inline">\(\hat{\sigma}^2(\text{DR}_{\text{LRA}})\)</span>, <span class="math inline">\(\hat{\sigma}^2(\text{LGD}_{\text{LRA}})\)</span>, <span class="math inline">\(\hat{\sigma}^2(\text{CCF}_{\text{LRA}})\)</span></p>
+</div>
+<div class="callout callout-warning no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Assuming i.i.d. <span class="math inline">\(\text{D}_i\)</span>, <span class="math inline">\(\text{RLGD}_i\)</span>, <span class="math inline">\(\text{CCF}_i\)</span></p>
+<p>Assuming <span class="math inline">\(R\)</span> independent draws</p>
+<p>Assuming <span class="math inline">\(\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)\)</span></p>
+<p>Assuming known <span class="math inline">\(N_r\)</span>, <span class="math inline">\(R\)</span></p>
+<p><strong>Biased estimators of the std err of the mean</strong></p>
+</div>
+</div>
+</div>
+</section>
+<section id="general-estimation-error-15" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">General Estimation Error</h2>
+<div class="columns">
+<div class="column r-fit-text" data-id="ert32" style="width:60%;">
+<p><span class="math display">\[\hat{\sigma}^2(\text{DR}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r-1}\text{DR}_{r}(1-\text{DR}_{r})\]</span></p>
+<p><span class="math display">\[\hat{\sigma}^2(\text{LGD}_{\text{LRA}}) = \frac{1}{N_\mathbf{L}-1}s^2(\text{RLGD})\]</span></p>
+<p><span class="math display">\[\hat{\sigma}^2(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r-1}s_r^2(CCF_r))\]</span></p>
+</div><div class="column" style="width:40%;">
+<div class="callout callout-warning no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Biased estimators of the std err of the mean</p>
+<ul>
+<li>E.g. if <span class="math inline">\(s^2=0\)</span> or <span class="math inline">\(\text{DR}_r=0\)</span></li>
+<li><em>Asympotically</em> unbiased estimators <span class="math inline">\(\nsim\)</span> uncertainty of specific estimate</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="general-estimation-error-9" class="slide level2" data-auto-animate="true">
+<section id="general-estimation-error-16" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">General Estimation Error</h2>
-<div class="{data-id&quot;ert&quot;}">
-<p><span class="math inline">\(\hat{\sigma}^2(\text{DR}_{\text{LRA}})\)</span>, <span class="math inline">\(\hat{\sigma}^2(\text{LGD}_{\text{LRA}})\)</span>, <span class="math inline">\(\hat{\sigma}^2(\text{CCF}_{\text{LRA}})\)</span></p>
-</div>
 <div class="columns">
-<div class="column" style="width:50%;">
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><span style="color: indianred">Assuming</span> <span class="math inline">\(R\)</span> independent draws</p>
-<p><span style="color: indianred">Unbiased</span> estimators of the variance of the mean (Bessel’s)</p>
-</div>
-</div>
-</div>
+<div class="column r-fit-text" data-id="ert32" style="width:50%;">
+<p><span class="math display">\[\frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r-1}\text{DR}_{r}(1-\text{DR}_{r})\]</span></p>
 </div><div class="column" style="width:50%;">
 <div class="callout callout-warning no-icon callout-style-simple">
 <div class="callout-body">
 <div class="callout-content">
-<p><span style="color: indianred">Overlapping observation windows <span class="math inline">\(\rightarrow\)</span> auto-correlation</span></p>
-<ul>
-<li>Use non-overlapping sample <span style="color: indianred">(conservative)</span></li>
-<li>Use non-overlapping resampling scheme (bootstrap estimator) <span style="color: orange">(complex)</span></li>
-<li>Explicitly model or correct for bias due to auto-correlation <span style="color: indianred">(not identifiable)</span></li>
-</ul>
-<p><span style="color: indianred"><em>Asympotically</em> unbiased estimators <span class="math inline">\(\nsim\)</span> uncertainty of specific estimate, e.g.&nbsp;for small <span class="math inline">\(N\)</span></span></p>
-<ul>
-<li>Construct C.I. with good Bayesian properties / coverage (Jeffrey’s)</li>
-<li></li>
-</ul>
+<p>Biased estimators of the std err of the mean</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" data-id="ert32" style="width:50%;">
+<p><span class="math display">\[\int^\alpha \text{Beta}(D_r&nbsp;+&nbsp;\frac{1}{2},&nbsp;N_r&nbsp;–&nbsp;D_r&nbsp;+&nbsp;\frac{1}{2})\]</span></p>
+</div><div id="vcenter" class="column" style="width:50%;">
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Posterior interval based on non-informative (<span style="color:indianred">conservative</span>) Jeffrey’s prior for binomial parameter</p>
 </div>
 </div>
 </div>
@@ -677,8 +897,56 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <h1>Deficiencies</h1>
 
 </section>
-<section id="overall-process" class="slide level2">
-<h2>Overall process</h2>
+<section id="deficiencies-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Deficiencies</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+<div data-id="qwe">
+<dl>
+<dt>Deficiency</dt>
+<dd>
+any driver of (potential) bias of the statistical estimator relative to the estimated risk parameter
+</dd>
+</dl>
+</div>
+</div><div class="column r-fit-text" style="width:50%;">
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>EBA/GL/2017/16 <span class="math inline">\(\S\)</span> 36.</strong></p>
+</div>
+<div class="callout-content">
+<p><em>Institutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="generic-process" class="slide level2">
+<h2>Generic process</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+<div data-id="qwe">
+<dl>
+<dt>Deficiency</dt>
+<dd>
+any driver of (potential) bias of the statistical estimator relative to the estimated risk parameter
+</dd>
+<dt>Remediation</dt>
+<dd>
+the deficiency is removed
+</dd>
+<dt>Mitigation</dt>
+<dd>
+appropriate adjustment + MoC; the deficiency is not removed
+</dd>
+</dl>
+</div>
+</div><div class="column r-fit-text" style="width:50%;">
+<p><img data-src="../../media/moc_aa_generic.drawio.drawio.svg"></p>
+</div>
+</div>
 </section>
 <section id="identification" class="slide level2">
 <h2>Identification</h2>
