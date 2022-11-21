@@ -49,6 +49,48 @@
     "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\\[\\text{DR}_{\\text{LRA}} = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{D}_i(t_r)\\]\n\\[\\text{LGD}_{\\text{LRA}} = \\frac{1}{N_\\mathbf{L}}\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i\\]\n\\[\\text{CCF}_{\\text{LRA}} = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{CCF}_i(t_r)\\]"
   },
   {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-4",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-4",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\text{var}(\\frac{1}{N_L(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{D}_i(t_r))\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}}\\text{var}(\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i)\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\text{var}(\\frac{1}{N_L(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{CCF}_i(t_r))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-5",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-5",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N^2_r}\\text{var}(\\sum_{i\\in\\mathbf{L}}\\text{D}_{ir}))\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N^2_\\mathbf{L}}\\text{var}(\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i)\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\text{var}(\\sum_{i\\in\\mathbf{L}}\\text{CCF}_{ir}))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_{ir}\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_{ir}\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{DR}_r,\\text{DR}_s)_{r\\neq s}\\rightarrow 0\\))"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-6",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-6",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\pi_{r}(1-\\pi_{r})\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}}\\sigma^2(\\text{RLGD})\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\sigma_r^2(CCF))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_{ir}\\), \\(\\text{RLGD}_{ir}\\), \\(\\text{CCF}_{ir}\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{DR}_r,\\text{DR}_s)_{r\\neq s}\\rightarrow 0\\))\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-7",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-7",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\\[\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\\[\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}-1}s^2(\\text{RLGD})\\]\n\\[\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}s_r^2(CCF_r))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{DR}_r,\\text{DR}_s)_{r\\neq s}\\rightarrow 0\\))\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nUnbiased estimators of the variance of the mean (Bessel’s)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-8",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-8",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nUnbiased estimators of the variance of the mean (Bessel’s)\n\n\n\n\n\n\n\nIndependence of \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) assumed by required statistical estimator\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\nSampling without replacement \\(\\text{D}_r \\sim \\text{Hypergeometric}(N_r,\\pi^{\\prime}_r)\\)\nVariability of \\(N_r\\), \\(R\\) assumed to vanish in ASRF model\nAsympotically unbiased estimators \\(\\nsim\\) uncertainty of specific estimate, e.g. for small \\(N\\)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-9",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-9",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\n\n\nAssuming \\(R\\) independent draws\nUnbiased estimators of the variance of the mean (Bessel’s)\n\n\n\n\n\n\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\nUse non-overlapping sample (conservative)\nUse non-overlapping resampling scheme (bootstrap estimator) (complex)\nExplicitly model or correct for bias due to auto-correlation (not identifiable)\n\nAsympotically unbiased estimators \\(\\nsim\\) uncertainty of specific estimate, e.g. for small \\(N\\)\n\nConstruct C.I. with good Bayesian properties / coverage (Jeffrey’s)"
+  },
+  {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#overall-process",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#overall-process",
     "title": "MoC & Downturn LGD",
@@ -403,48 +445,6 @@
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 20, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-4",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-4",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\text{var}(\\frac{1}{N_L(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{D}_i(t_r))\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}}\\text{var}(\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i)\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\text{var}(\\frac{1}{N_L(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{CCF}_i(t_r))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-5",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-5",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N^2_r}\\text{var}(\\sum_{i\\in\\mathbf{L}}\\text{D}_{ir}))\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N^2_\\mathbf{L}}\\text{var}(\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i)\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\text{var}(\\sum_{i\\in\\mathbf{L}}\\text{CCF}_{ir}))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_{ir}\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_{ir}\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{DR}_r,\\text{DR}_s)_{r\\neq s}\\rightarrow 0\\))"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-6",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-6",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\pi_{r}(1-\\pi_{r})\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}}\\sigma^2(\\text{RLGD})\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\sigma_r^2(CCF))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_{ir}\\), \\(\\text{RLGD}_{ir}\\), \\(\\text{CCF}_{ir}\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{DR}_r,\\text{DR}_s)_{r\\neq s}\\rightarrow 0\\))\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-7",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-7",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\\[\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\\[\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}-1}s^2(\\text{RLGD})\\]\n\\[\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}s_r^2(CCF_r))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{DR}_r,\\text{DR}_s)_{r\\neq s}\\rightarrow 0\\))\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nUnbiased estimators of the variance of the mean (Bessel’s)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-8",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-8",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nUnbiased estimators of the variance of the mean (Bessel’s)\n\n\n\n\n\n\n\nIndependence of \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) assumed by required statistical estimator\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\nSampling without replacement, \\(\\text{D}_r\\sim \\text{Hypergeometric}(N_r,\\pi^{\\prime}_r)\\)\n[Variability of \\(N_r\\), \\(R\\) assumed to vanish in ASRF model]{style= “color:darkolivegreen”}\nAsympotically unbiased estimators \\(\\nsim\\) uncertainty of specific estimate, e.g. for small \\(N\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-9",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-9",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\n\n\nAssuming \\(R\\) independent draws\nUnbiased estimators of the variance of the mean (Bessel’s)\n\n\n\n\n\n\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\nUse non-overlapping sample (conservative)\nUse non-overlapping resampling scheme (bootstrap estimator) (complex)\nExplicitly model or correct for bias due to auto-correlation (not identifiable)\n\nAsympotically unbiased estimators \\(\\nsim\\) uncertainty of specific estimate, e.g. for small \\(N\\)\n\nConstruct C.I. with good Bayesian properties / coverage (Jeffrey’s)"
+    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
