@@ -20,6 +20,8 @@ contributes:
        embed-resources: false
        standalone: true
        navigation-mode: linear
+       execute:
+         cache: true
        title-slide-attributes: 
           data-background-color: "#defafc"
           data-background-position: bottom 5% center

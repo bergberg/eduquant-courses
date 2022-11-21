@@ -1,0 +1,441 @@
+---
+title: "MoC & Downturn LGD"
+subtitle: "Day 2"
+# author: "Pieter van den Berg"
+date: last-modified
+date-format: long
+format: eduquant-slides-revealjs
+---
+
+## Day 2
+
+::: columns
+::: {.column width="40%"}
+*13:00*
+
+*13:30*
+
+*14:15*
+
+*15:00*
+
+*15:15*
+
+*16:00*
+
+*16:45*
+:::
+
+::: {.column width="60%"}
+Quiz & Recap
+
+General Estimation Error
+
+Deficiencies
+
+*Break*
+
+Appropriate Adjustments
+
+Additional Uncertainties
+
+Case Study Explanation
+:::
+:::
+
+# Recap of day 1
+
+# MoC Quantification
+
+## MoC Quantification
+
+:::: columns
+
+::: {.column width="65%" .r-fit-text}
+
+*Initial* Calibration Target (CT)
+: long-run average (LRA) default rate, (LRA/DT) LGD, CCF ~calculated~ estimated based on RDS prior to adjustments
+
+MoC C
+: Margin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies
+
+Deficiency
+: Source of bias relative to initial calibration target
+
+Appropriately adjusted calibration target
+: Calibration target adjusted for biases due to deficiencies
+
+MoC B
+: Margin to account for additional uncertainty due to adjustment for non-representativeness
+
+MoC A
+: Margin to account for additional uncertainty due to other deficiencies
+:::
+
+::: {.column width="35%" .r-fit-text}
+![](/media/risk_quantification.drawio.svg)
+:::
+
+::::
+
+
+## MoC Quantification
+
+# General Estimation Error
+
+## General Estimation Error {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+
+::: {data-id="sdf" }
+The statistical estimator
+: Calibration Target; (weighted) average default/loss/conversion rate
+
+General estimation error
+: Uncertainty not due to deficiencies; standard error of statistical estimator
+:::
+
+:::
+
+
+::: {.column width="50%" #vcenter .r-fit-text}
+::: {.callout-note}
+## EBA/GL/2017/16 $\S$ 42
+_The final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories: $\small{[\cdots]}$ Category C: the **general estimation error**._
+:::
+::: {data-id="ert" .callout-note}
+## EBA/GL/2017/16 $\S$ 43. 
+_In order to quantify MoC institutions should $\small{[\cdots]}$ quantify the general estimation error of category C referred to in paragraph 42 associated with the underlying estimation method at least for every calibration segment; the MoC for the general estimation error should reflect the dispersion of the distribution of the **statistical estimator**._
+:::
+:::
+::::
+
+
+## General Estimation Error {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+
+::: {data-id="sdf" }
+The statistical estimator
+: Calibration Target; (weighted) average default/loss/conversion rate
+
+General estimation error
+: Uncertainty not due to deficiencies; standard error of statistical estimator
+:::
+
+:::
+
+
+::: {.column width="50%" .r-fit-text}
+
+```{r adj-dist}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+library(ggplot2) 
+library(ggdist)
+library(distributional)
+#bg <- rgb(255,255,230, maxColorValue = 255)
+bg <- 'transparent'
+df <- data.frame(
+  group = c("initial", "adjusted", "adjusted"), mu = c(0,0.5,0.5), sd = c(0.1,0.1,0.2), alpha=c(1, 0,1))
+
+ggplot(df, aes(y = group, xdist = dist_normal(mu, sd))) +
+  stat_halfeye(aes(fill = stat(level), alpha=alpha)) +
+  geom_segment(data=df[2,],
+    aes(x = 0, xend = mu, yend = group), 
+    color = "rosybrown", 
+    arrow = arrow(angle=20,length = unit(0.03, "npc"), type="closed"), position=position_nudge(y=-0.05)) +
+  geom_segment(data=df[3,],
+    aes(x = mu-0.5*sd, xend = mu+0.5*sd, yend = group), 
+    color = "skyblue", 
+    arrow = arrow(angle=20,length = unit(0.03, "npc"), type="closed", ends="both" ), position=position_nudge(y=-0.1)) +
+  geom_vline(xintercept = df[1,]$mu, color = "gray", linetype="dashed" )+
+  geom_vline(xintercept = df[2,]$mu, color = "rosybrown", linetype="dashed" )+
+  scale_fill_manual(values = c("gray85", "skyblue"), na.value = "gray85", guide = "none") +
+  scale_y_discrete() +
+  scale_alpha(guide="none", range = c(0.33,0.75)) +
+  scale_x_continuous(guide = "none") +
+  labs(x = "", y = "") + 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+
+:::
+::::
+
+
+## General Estimation Error {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+::: {data-id="sdf" }
+[The statistical estimator]{style="color: teal;"}
+: Calibration Target; (weighted) average default/loss/conversion rate
+
+General estimation error
+: Uncertainty not due to deficiencies; standard error of statistical estimator
+:::
+
+:::{data-id="rty"}
+$$\text{DR}_{\text{LRA}} = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}\sum_{i\in\mathbf{L}} \text{D}_i(t_r)$$
+
+$$\text{LGD}_{\text{LRA}} = \frac{1}{N_\mathbf{L}}\sum_{i\in\mathbf{L}} \text{RLGD}_i$$
+
+$$\text{CCF}_{\text{LRA}} = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}\sum_{i\in\mathbf{L}} \text{CCF}_i(t_r)$$
+:::
+:::
+
+
+::: {.column width="50%" .r-fit-text}
+
+![](`r knitr::fig_chunk('adj-dist', 'png')`)
+
+
+:::
+::::
+
+
+
+## General Estimation Error {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+::: {data-id="sdf" }
+The statistical estimator
+: Calibration Target; (weighted) average default/loss/conversion rate
+
+[General estimation error]{style="color: teal;"}
+: Uncertainty not due to deficiencies; standard error of statistical estimator
+:::
+
+:::{data-id="rty"}
+$$\text{var}(\text{DR}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\text{var}(\frac{1}{N_L(t_r)}\sum_{i\in\mathbf{L}} \text{D}_i(t_r))$$
+
+$$\text{var}(\text{LGD}_{\text{LRA}}) = \frac{1}{N_\mathbf{L}}\text{var}(\sum_{i\in\mathbf{L}} \text{RLGD}_i)$$
+
+$$\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\text{var}(\frac{1}{N_L(t_r)}\sum_{i\in\mathbf{L}} \text{CCF}_i(t_r))$$
+:::
+:::
+
+::: {.column width="50%" .r-fit-text}
+
+![](`r knitr::fig_chunk('adj-dist', 'png')`)
+
+
+:::
+::::
+
+::: {.callout-note data-id="cvb"}
+Assuming i.i.d. $\text{D}_i$, $\text{RLGD}_i$, $\text{CCF}_i$ 
+:::
+
+
+## General Estimation Error {auto-animate=true}
+
+:::: columns
+
+::: {.column width="70%" .r-fit-text}
+
+:::{data-id="rty"}
+[$$\text{var}(\text{DR}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N^2_r}\text{var}(\sum_{i\in\mathbf{L}}\text{D}_{ir}))$$]{style="color: steelblue"}
+
+$$\text{var}(\text{LGD}_{\text{LRA}}) = \frac{1}{N^2_\mathbf{L}}\text{var}(\sum_{i\in\mathbf{L}} \text{RLGD}_i)$$
+
+$$\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\text{var}(\sum_{i\in\mathbf{L}}\text{CCF}_{ir}))$$
+:::
+:::
+
+::: {.column width="30%" .r-fit-text}
+
+![](`r knitr::fig_chunk('adj-dist', 'png')`)
+
+
+:::
+::::
+
+::: {.callout-note data-id="cvb"}
+Assuming i.i.d. $\text{D}_{ir}$, $\text{RLGD}_i$, $\text{CCF}_{ir}$ 
+
+[Assuming $R$ independent draws ($\text{cov}(\text{DR}_r,\text{DR}_s)_{r\neq s}\rightarrow 0$)]{style="color: steelblue"}
+:::
+
+## General Estimation Error {auto-animate=true}
+
+:::: columns
+
+::: {.column width="70%" .r-fit-text}
+
+:::{data-id="ert"}
+[$$\text{var}(\text{DR}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\pi_{r}(1-\pi_{r})$$]{style="color: steelblue"}
+
+$$\text{var}(\text{LGD}_{\text{LRA}}) = \frac{1}{N_\mathbf{L}}\sigma^2(\text{RLGD})$$
+
+$$\text{var}(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r}\sigma_r^2(CCF))$$
+:::
+:::
+
+::: {.column width="30%" .r-fit-text}
+
+![](`r knitr::fig_chunk('adj-dist', 'png')`)
+
+:::
+::::
+
+::: {.callout-note data-id="cvb"}
+Assuming i.i.d. $\text{D}_{ir}$, $\text{RLGD}_{ir}$, $\text{CCF}_{ir}$ 
+
+Assuming $R$ independent draws ($\text{cov}(\text{DR}_r,\text{DR}_s)_{r\neq s}\rightarrow 0$)
+
+[Assuming $\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)$]{style="color: steelblue"}
+
+[Assuming known $N_r$, $R$]{style="color: steelblue"}
+:::
+
+
+## General Estimation Error {auto-animate=true}
+
+:::: columns
+
+::: {.column width="70%" .r-fit-text}
+
+:::{data-id"ert"}
+$$\hat{\sigma}^2(\text{DR}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r-1}\text{DR}_{r}(1-\text{DR}_{r})$$
+
+$$\hat{\sigma}^2(\text{LGD}_{\text{LRA}}) = \frac{1}{N_\mathbf{L}-1}s^2(\text{RLGD})$$
+
+$$\hat{\sigma}^2(\text{CCF}_{\text{LRA}}) = \frac{1}{R^2}\sum_{r=1\dots R}\frac{1}{N_r-1}s_r^2(CCF_r))$$
+:::
+:::
+
+::: {.column width="30%" .r-fit-text}
+![](`r knitr::fig_chunk('adj-dist', 'png')`)
+:::
+::::
+
+
+::: {.callout-note data-id="cvb"}
+Assuming i.i.d. $\text{D}_i$, $\text{RLGD}_i$, $\text{CCF}_i$ 
+
+Assuming $R$ independent draws ($\text{cov}(\text{DR}_r,\text{DR}_s)_{r\neq s}\rightarrow 0$)
+
+Assuming $\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)$
+
+Assuming known $N_r$, $R$
+
+[Unbiased estimators of the variance of the mean (Bessel's)]{style="color: steelblue"}
+
+:::
+
+
+
+## General Estimation Error {auto-animate=true}
+
+:::{data-id"ert"}
+$\hat{\sigma}^2(\text{DR}_{\text{LRA}})$, $\hat{\sigma}^2(\text{LGD}_{\text{LRA}})$, $\hat{\sigma}^2(\text{CCF}_{\text{LRA}})$
+:::
+
+:::: columns
+
+::: {.column width="50%"}
+::: {.callout-note data-id="cvb"}
+[Assuming]{style="color: indianred"} i.i.d. $\text{D}_i$, $\text{RLGD}_i$, $\text{CCF}_i$ 
+
+[Assuming]{style="color: indianred"} $R$ independent draws
+
+[Assuming]{style="color: indianred"} $\text{D}_{ir} \sim \text{Binomial}(1,\pi_r)$
+
+[Assuming]{style="color: indianred"} known $N_r$, $R$
+
+[Unbiased]{style="color: indianred"} estimators of the variance of the mean (Bessel's)
+:::
+
+:::
+
+::: {.column width="50%" }
+::: {.callout-warning data-id="fgh" .smaller}
+[Independence of $\text{D}_i$, $\text{RLGD}_i$, $\text{CCF}_i$ assumed by required statistical estimator]{style="color: darkolivegreen"}
+
+[Overlapping observation windows $\rightarrow$ auto-correlation]{style="color: indianred"}
+
+[Sampling without replacement $\text{D}_r \sim \text{Hypergeometric}(N_r,\pi^{\prime}_r)$]{style="color: orange"}
+
+[Variability of $N_r$, $R$ assumed to vanish in ASRF model]{style="color: darkolivegreen"}
+
+[*Asympotically* unbiased estimators $\nsim$ uncertainty of specific estimate, e.g. for small $N$]{style="color: indianred"}
+:::
+
+:::
+::::
+
+
+## General Estimation Error {auto-animate=true}
+
+:::{data-id"ert"}
+$\hat{\sigma}^2(\text{DR}_{\text{LRA}})$, $\hat{\sigma}^2(\text{LGD}_{\text{LRA}})$, $\hat{\sigma}^2(\text{CCF}_{\text{LRA}})$
+:::
+
+:::: columns
+
+::: {.column width="50%"}
+::: {.callout-note data-id="cvb"}
+[Assuming]{style="color: indianred"} $R$ independent draws
+
+[Unbiased]{style="color: indianred"} estimators of the variance of the mean (Bessel's)
+:::
+
+:::
+
+::: {.column width="50%" }
+::: {.callout-warning data-id="fgh"}
+[Overlapping observation windows $\rightarrow$ auto-correlation]{style="color: indianred"}
+
+ * Use non-overlapping sample [(conservative)]{style="color: indianred"}
+ * Use non-overlapping resampling scheme (bootstrap estimator) [(complex)]{style="color: orange"}
+ * Explicitly model or correct for bias due to auto-correlation [(not identifiable)]{style="color: indianred"}
+
+[*Asympotically* unbiased estimators $\nsim$ uncertainty of specific estimate, e.g. for small $N$]{style="color: indianred"}
+
+ * Construct C.I. with good Bayesian properties / coverage (Jeffrey's)
+ * 
+
+:::
+
+
+:::
+::::
+
+
+
+
+
+# Deficiencies
+
+## Overall process
+
+## Identification
+
+## Remediation
+
+## Mitigation
+
+# Appropriate Adjustments
+
+# Additional Uncertainties
+
+# MoC Quantification
+
+# Case Study Explanation

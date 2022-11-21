@@ -7,6 +7,76 @@
     "text": "About this site"
   },
   {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#day-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#day-2",
+    "title": "MoC & Downturn LGD",
+    "section": "Day 2",
+    "text": "Day 2\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nQuiz & Recap\nGeneral Estimation Error\nDeficiencies\nBreak\nAppropriate Adjustments\nAdditional Uncertainties\nCase Study Explanation"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-1",
+    "title": "MoC & Downturn LGD",
+    "section": "MoC Quantification",
+    "text": "MoC Quantification\n\n\n\nInitial Calibration Target (CT)\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated estimated based on RDS prior to adjustments\n\nMoC C\n\nMargin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies\n\nDeficiency\n\nSource of bias relative to initial calibration target\n\nAppropriately adjusted calibration target\n\nCalibration target adjusted for biases due to deficiencies\n\nMoC B\n\nMargin to account for additional uncertainty due to adjustment for non-representativeness\n\nMoC A\n\nMargin to account for additional uncertainty due to other deficiencies"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-2",
+    "title": "MoC & Downturn LGD",
+    "section": "MoC Quantification",
+    "text": "MoC Quantification"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-1",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 42\n\n\nThe final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories: \\(\\small{[\\cdots]}\\) Category C: the general estimation error.\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 43.\n\n\nIn order to quantify MoC institutions should \\(\\small{[\\cdots]}\\) quantify the general estimation error of category C referred to in paragraph 42 associated with the underlying estimation method at least for every calibration segment; the MoC for the general estimation error should reflect the dispersion of the distribution of the statistical estimator."
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-2",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-3",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\\[\\text{DR}_{\\text{LRA}} = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{D}_i(t_r)\\]\n\\[\\text{LGD}_{\\text{LRA}} = \\frac{1}{N_\\mathbf{L}}\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i\\]\n\\[\\text{CCF}_{\\text{LRA}} = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{CCF}_i(t_r)\\]"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#overall-process",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#overall-process",
+    "title": "MoC & Downturn LGD",
+    "section": "Overall process",
+    "text": "Overall process"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#identification",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#identification",
+    "title": "MoC & Downturn LGD",
+    "section": "Identification",
+    "text": "Identification"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#remediation",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#remediation",
+    "title": "MoC & Downturn LGD",
+    "section": "Remediation",
+    "text": "Remediation"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#mitigation",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#mitigation",
+    "title": "MoC & Downturn LGD",
+    "section": "Mitigation",
+    "text": "Mitigation"
+  },
+  {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#introductions",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#introductions",
     "title": "MoC & Downturn LGD",
@@ -333,6 +403,48 @@
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 17, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 20, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-4",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-4",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\text{var}(\\frac{1}{N_L(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{D}_i(t_r))\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}}\\text{var}(\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i)\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\text{var}(\\frac{1}{N_L(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{CCF}_i(t_r))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-5",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-5",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N^2_r}\\text{var}(\\sum_{i\\in\\mathbf{L}}\\text{D}_{ir}))\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N^2_\\mathbf{L}}\\text{var}(\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i)\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\text{var}(\\sum_{i\\in\\mathbf{L}}\\text{CCF}_{ir}))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_{ir}\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_{ir}\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{DR}_r,\\text{DR}_s)_{r\\neq s}\\rightarrow 0\\))"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-6",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-6",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\pi_{r}(1-\\pi_{r})\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}}\\sigma^2(\\text{RLGD})\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\sigma_r^2(CCF))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_{ir}\\), \\(\\text{RLGD}_{ir}\\), \\(\\text{CCF}_{ir}\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{DR}_r,\\text{DR}_s)_{r\\neq s}\\rightarrow 0\\))\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-7",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-7",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\\[\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\\[\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}-1}s^2(\\text{RLGD})\\]\n\\[\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}s_r^2(CCF_r))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{DR}_r,\\text{DR}_s)_{r\\neq s}\\rightarrow 0\\))\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nUnbiased estimators of the variance of the mean (Bessel’s)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-8",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-8",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nUnbiased estimators of the variance of the mean (Bessel’s)\n\n\n\n\n\n\n\nIndependence of \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) assumed by required statistical estimator\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\nSampling without replacement, \\(\\text{D}_r\\sim \\text{Hypergeometric}(N_r,\\pi^{\\prime}_r)\\)\n[Variability of \\(N_r\\), \\(R\\) assumed to vanish in ASRF model]{style= “color:darkolivegreen”}\nAsympotically unbiased estimators \\(\\nsim\\) uncertainty of specific estimate, e.g. for small \\(N\\)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-9",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-9",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\n\n\nAssuming \\(R\\) independent draws\nUnbiased estimators of the variance of the mean (Bessel’s)\n\n\n\n\n\n\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\nUse non-overlapping sample (conservative)\nUse non-overlapping resampling scheme (bootstrap estimator) (complex)\nExplicitly model or correct for bias due to auto-correlation (not identifiable)\n\nAsympotically unbiased estimators \\(\\nsim\\) uncertainty of specific estimate, e.g. for small \\(N\\)\n\nConstruct C.I. with good Bayesian properties / coverage (Jeffrey’s)"
   }
 ]
