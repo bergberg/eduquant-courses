@@ -1955,7 +1955,7 @@ For each of these two scenarios,
 
  1) Estimate $\alpha$ resp. $\beta$ based on the overlapping period.
  2) Based on your estimates, derive appropriately adjusted default rates.
- 3) Also estimate the uncertainty[^1] of $\alpha$ resp. $\beta$.
+ 3) Also estimate the uncertainty of $\alpha$ resp. $\beta$.
  4) Using error propagation, derive the corresponding **additional** uncertainty of the estimated appropriately adjusted long-run average default rate in either case.
 
 ## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
