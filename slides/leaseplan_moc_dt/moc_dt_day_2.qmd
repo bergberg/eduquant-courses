@@ -27,7 +27,7 @@ format: eduquant-slides-revealjs
 :::
 
 ::: {.column width="60%"}
-Recap
+Q&A + Recap
 
 MoC Quantification
 
@@ -41,6 +41,28 @@ Data quality & completeness
 
 Representativeness + Case Study
 :::
+:::
+
+# Q & A
+
+## Q & A
+
+
+:::: columns
+::: {.column .r-fit-text}
+ > For the LGD model risk drivers should be taken 12 months before default. However, you mentioned that it is not best practice to take them exactly 12 months prior to default as then representativeness to the application portfolio may become an issue. Could you elaborate on that?
+:::
+::: {.column .r-fit-text}
+::: {.callout-note}
+## EBA/GL/2017/16 $\S$ 122
+_122. Institutions should analyse the risk drivers not only at the moment of default but also at least within a year before default. Institutions should use a reference date for a risk driver that is representative of the realisations of the risk driver within a year before default. When choosing the appropriate reference date for a risk driver institutions should take into account its volatility over time. $\small{[\cdots]}$_
+:::
+:::
+::::
+
+::: {.smaller}
+ * Exposures in the performing portfolio may be up to 1 year before default, given default within one year.
+ * Bias due to time-to-default dependence of $LGD|X_{t_r}$, short-term contracts / early defaults
 :::
 
 # Recap of day 1

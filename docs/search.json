@@ -11,7 +11,14 @@
     "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#day-2",
     "title": "MoC & Downturn LGD",
     "section": "Day 2",
-    "text": "Day 2\n\n\n13:00\n13:30\n14:00\n15:00\n15:15\n16:00\n16:45\n\nRecap\nMoC Quantification\nGeneral Estimation Error\nBreak\nTreatment of deficiencies\nData quality & completeness\nRepresentativeness + Case Study"
+    "text": "Day 2\n\n\n13:00\n13:30\n14:00\n15:00\n15:15\n16:00\n16:45\n\nQ&A + Recap\nMoC Quantification\nGeneral Estimation Error\nBreak\nTreatment of deficiencies\nData quality & completeness\nRepresentativeness + Case Study"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#q-a-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#q-a-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Q & A",
+    "text": "Q & A\n\n\n\nFor the LGD model risk drivers should be taken 12 months before default. However, you mentioned that it is not best practice to take them exactly 12 months prior to default as then representativeness to the application portfolio may become an issue. Could you elaborate on that?\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 122\n\n\n122. Institutions should analyse the risk drivers not only at the moment of default but also at least within a year before default. Institutions should use a reference date for a risk driver that is representative of the realisations of the risk driver within a year before default. When choosing the appropriate reference date for a risk driver institutions should take into account its volatility over time. \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\n\nExposures in the performing portfolio may be up to 1 year before default, given default within one year.\nBias due to time-to-default dependence of \\(LGD|X_{t_r}\\), short-term contracts / early defaults"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#risk-parameter-quantification",
@@ -389,7 +396,7 @@
     "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-6",
     "title": "MoC & Downturn LGD",
     "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\nScenario A: \\(\\bar{R}^{(new)}_{(12)} = \\alpha \\bar{R}^{(old)}_{(12)} + \\epsilon\\)\nScenario B: \\(R^{(new)}_{(1)}(t) = \\beta R^{(old)}_{(1)}(t) + \\epsilon\\)\n\n\nChallenge\nFor each of these two scenarios,\n\nEstimate \\(\\alpha\\) resp. \\(\\beta\\) based on the overlapping period.\nBased on your estimates, derive appropriately adjusted default rates.\nAlso estimate the uncertainty1 of \\(\\alpha\\) resp. \\(\\beta\\).\nUsing error propagation, derive the corresponding additional uncertainty of the estimated appropriately adjusted long-run average default rate in either case.\n\nSee Rubin, D. B. (1987) Multiple Imputation for Nonresponse in Surveys"
+    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\nScenario A: \\(\\bar{R}^{(new)}_{(12)} = \\alpha \\bar{R}^{(old)}_{(12)} + \\epsilon\\)\nScenario B: \\(R^{(new)}_{(1)}(t) = \\beta R^{(old)}_{(1)}(t) + \\epsilon\\)\n\n\nChallenge\nFor each of these two scenarios,\n\nEstimate \\(\\alpha\\) resp. \\(\\beta\\) based on the overlapping period.\nBased on your estimates, derive appropriately adjusted default rates.\nAlso estimate the uncertainty of \\(\\alpha\\) resp. \\(\\beta\\).\nUsing error propagation, derive the corresponding additional uncertainty of the estimated appropriately adjusted long-run average default rate in either case."
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-7",
@@ -732,6 +739,6 @@
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
