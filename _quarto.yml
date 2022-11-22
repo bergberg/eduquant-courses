@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: docs
+  resources:
+   - "*.csv"
+   - "*.csv.gz"
+   - "*.xlsx"
+
   preview:
     port: 4200
     browser: true

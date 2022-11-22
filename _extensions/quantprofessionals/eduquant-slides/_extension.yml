@@ -20,6 +20,7 @@ contributes:
        embed-resources: false
        standalone: true
        navigation-mode: linear
+       df-print: paged
        execute:
          cache: true
        title-slide-attributes: 

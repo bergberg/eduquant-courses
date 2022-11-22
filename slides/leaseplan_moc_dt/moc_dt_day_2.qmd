@@ -15,7 +15,7 @@ format: eduquant-slides-revealjs
 
 *13:30*
 
-*14:15*
+*14:00*
 
 *15:00*
 
@@ -27,19 +27,19 @@ format: eduquant-slides-revealjs
 :::
 
 ::: {.column width="60%"}
-Quiz & Recap
+Recap
+
+MoC Quantification
 
 General Estimation Error
 
-Deficiencies
-
 *Break*
 
-Appropriate Adjustments
+Treatment of deficiencies
 
-Additional Uncertainties
+Data quality & completeness
 
-Case Study Explanation
+Representativeness + Case Study
 :::
 :::
 
@@ -136,6 +136,39 @@ MoC A, B, C
 
 ::::
 
+## MoC Quantification {auto-animate=true}
+
+
+:::: columns
+
+::: {.column width="65%" .r-fit-text data-id="plo"}
+
+::: {.callout-note}
+## EBA/GL/2017/16 $\S$ 42
+_The final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories: $\small{[\cdots]}$_
+:::
+::: {.callout-note}
+## EBA/GL/2017/16 $\S$ 43
+_(ii) the MoC at category level related to the appropriate adjustments is proportionate to the uncertainty around these adjustments;_
+::: 
+::: {.callout-note}
+## EBA/GL/2017/16 $\S$ 43
+_(ii) the MoC at category level related to the appropriate adjustments is proportionate to the uncertainty around these adjustments;_
+::: 
+
+:::
+
+::: {.column width="35%" .r-fit-text data-id="plo"}
+![](/media/moc_unc_cons.drawio.svg)
+:::
+
+::::
+
+::: {.callout-warning}
+ * MoC should reflect uncertainty attributed to all deficiencies in category
+ * **not**: Each deficiency should have separate MoC/adjustment
+::: 
+
 
 # General Estimation Error
 
@@ -159,10 +192,11 @@ General estimation error
 ::: {.callout-note}
 ## EBA/GL/2017/16 $\S$ 42
 _The final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories: $\small{[\cdots]}$ Category C: the **general estimation error**._
-:::
-::: {data-id="ert" .callout-note}
-## EBA/GL/2017/16 $\S$ 43. 
-_In order to quantify MoC institutions should $\small{[\cdots]}$ quantify the general estimation error of category C referred to in paragraph 42 associated with the underlying estimation method at least for every calibration segment; the MoC for the general estimation error should reflect the dispersion of the distribution of the **statistical estimator**._
+::: 
+
+::: {.callout-note}
+## EBA/GL/2017/16 $\S$ (p18)
+_The reference to statistical variance has been avoided in order to not impose a fixed methodology, which might for example lead to disproportionate MoC for low default portfolios._
 :::
 :::
 ::::
@@ -181,6 +215,9 @@ General estimation error
 : Uncertainty not due to deficiencies; standard error of statistical estimator
 :::
 
+::: {.callout-warning }
+The MoC C should reflect the general estimation error *after adjustments*.
+:::
 :::
 
 
@@ -224,6 +261,8 @@ ggplot(df, aes(y = group, xdist = dist_normal(mu, sd))) +
 :::
 ::::
 
+
+
 ## General Estimation Error {auto-animate=true}
 
 :::: columns
@@ -237,23 +276,26 @@ The statistical estimator
 General estimation error
 : Uncertainty not due to deficiencies; standard error of statistical estimator
 :::
+::: {.callout-warning }
+MoC C *reflects* general estimation error
 
- * MoC C "reflects" general estimation error
- * EBA explicitly allows for flexibility
- * ECB more explicit
+EBA GL explicitly allows for flexibility
 
+EGIM adds proportionality requirement
+:::
 :::
 
 
 ::: {.column width="50%" .r-fit-text}
 
-::: {data-id="ert" .callout-note}
-## EBA/GL/2017/16 $\S$ 43. 
-_In order to quantify MoC institutions should $\small{[\cdots]}$ quantify the general estimation error of category C referred to in paragraph 42 associated with the underlying estimation method at least for every calibration segment; the MoC for the general estimation error should reflect the dispersion of the distribution of the **statistical estimator**._
-:::
+::: {.callout-note}
+## EBA/GL/2017/16 $\S$ 42
+_The final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories: $\small{[\cdots]}$ Category C: the **general estimation error**._
+::: 
+
 ::: {data-id="ert2" .callout-note}
 ## ECB Guide to Internal Models (CR) $\S$ 140 
-*(a) This MoC should be based on the distribution of the estimator, which is the average of one-year default rates of the grade/pool across time (i.e. the distribution of $(\Sigma\text{DR}_t)/T$, considering that the uncertainty is primarily driven by the statistical uncertainty of each one-year default rate and the length of the time series. As a result, it is expected that **the lower the number of observations per grade and the shorter the time series are, the higher the MoC** of the grade should be.*
+*(a) This MoC should be based on the distribution of the estimator $\small{[\cdots]}$  considering that the uncertainty is primarily driven by the statistical uncertainty of each one-year default rate and the length of the time series. As a result, it is expected that **the lower the number of observations per grade and the shorter the time series are, the higher the MoC** of the grade should be.*
 
 _(b) Similarly, for LGD and CCF, $\small{[\cdots]}$  uncertainty is primarily driven by the statistical uncertainty of the observations used to compute the long-run and downturn estimates and the length of the time series_
 :::
@@ -629,7 +671,7 @@ Posterior interval based on non-informative ([conservative]{style="color:indianr
 
 ## General Estimation Error {auto-animate=true}
 
-### Level of quantification
+#### Level of quantification
 
  *  calibration level $\rightarrow$ level of MoC quantification
  * support assumption of constant estimation error
@@ -642,7 +684,7 @@ _(a) $\small{[\cdots]}$ When calibration is performed at calibration segment lev
 
 ## General Estimation Error {auto-animate=true}
 
-
+::: fragment
 ::: {.callout-important icon=true appearance="default" .r-fit-text}
 ## Common pitfalls
  * Calculating general estimation error before appropriate adjustments
@@ -650,6 +692,7 @@ _(a) $\small{[\cdots]}$ When calibration is performed at calibration segment lev
  * MoC C of zero in zero-default grades
  * MoC C proportional to risk parameter values without proper substantiation
  * Constant MoC C without proper substantiation
+:::
 :::
 
 # Treatment of deficiencies
@@ -814,30 +857,17 @@ _Institutions should identify **all** deficiencies related to the estimation of 
  * Identify requirements in order to establish deficiencies
 :::
 
-## Data Quality & Completeness
 
-:::: columns
-
-::: {.column width="50%" .r-fit-text }
-### Missing or inaccurate...
-
- * reference dates
- * attributes identifying type of exposures
- * (risk) characteristics $X_{ir}$ for assigning exposures
- * loss & default characteristics $\text{y}_{i}(t_r)$
-   + over observation windows
-   + cash flows
-
+::: fragment
+::: {.callout-important icon=true appearance="default" .r-fit-text}
+## Common pitfalls
+ * Forgetting/not documenting one of the required dimensions
+ * Including *issues* that are not *deficiencies*
+ * In particular, non-compliance
+:::
 :::
 
-::: {.column width="50%" .r-fit-text }
-![](/media/data_requirements.drawio.svg)
-:::
-
-::::
-
-![](/media/rds_aggr_general_cond.drawio.svg){fig-align="center"}
-
+# Model performance & accuracy
 
 ## Model performance & accuracy {auto-animate=true .smaller}
 
@@ -1061,6 +1091,32 @@ ggplot(df, aes(y = group, xdist = dist_normal(mu, sd))) +
  * Still need to fullfill requirements w.r.t. meaningful differentiation
 :::
 
+# Data Quality & Completeness
+
+## Data Quality & Completeness
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+### Missing or inaccurate...
+
+ * reference dates
+ * attributes identifying type of exposures
+ * (risk) characteristics $X_{ir}$ for assigning exposures
+ * loss & default characteristics $\text{y}_{i}(t_r)$
+   + over observation windows
+   + cash flows
+
+:::
+
+::: {.column width="50%" .r-fit-text }
+![](/media/data_requirements.drawio.svg)
+:::
+
+::::
+
+![](/media/rds_aggr_general_cond.drawio.svg){fig-align="center"}
+
 
 ## Data Quality & Completeness  {auto-animate=true}
 
@@ -1110,11 +1166,14 @@ For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not
 _Data exclusions may be a tool to quantify adjustments to the observed average default and loss rates where these are necessary; however, they should never be taken into account for the purpose of calculating the observed average default rate_
 :::
 
+
 ::: fragment
-::: {style="color:teal" .smaller}
-**Example: missing completely at random**
+::: {.callout-important icon=true appearance="default" .r-fit-text}
+## Common pitfall
+ * Exclusion due to low-quality data without estimation of adjustment and MoC
 :::
 :::
+
 
 ## Data Quality & Completeness  {auto-animate=true}
 
@@ -1519,12 +1578,12 @@ Approximate $\bar{y}^{(e)}(X^{(f)},\dots)P(X^{(f)},\dots)$ with univariate resam
  1. Calculate $\bar{y}_a^{\prime(b)}=\bar{y}_a^{(e)}|_{X^{(f)}\leftarrow X^{(b)}}$, $y_a^{\prime}=\frac{1}{M}\sum_b y_a^{\prime(b)}$ (adj. calib. targets)
  1. Obtain the *excess variance*[^1] due to missing values as $\hat{\sigma}_M(\bar{y})=(1+\frac{1}{M})\sum_b\frac{(y_a^{\prime} -y_a^{\prime(b)})}{M-1}$
 
+[^1]: See Rubin, D. B. (1987) *Multiple Imputation for Nonresponse in Surveys*
 
 :::
 ::::
 :::::
 
-[^1]: See Rubin, D. B. (1987) *Multiple Imputation for Nonresponse in Surveys*
 
 
 ## Data Quality & Completeness  {auto-animate=true}
@@ -1577,7 +1636,15 @@ For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not
 :::
 
 
+::: fragment
+::: {.callout-important icon=true appearance="default" .r-fit-text}
+## Common pitfalls
+ * Reliance on strong assumptions irrespective of materiality
+:::
+:::
 
+
+# Representativeness
 
 ## Representativeness {auto-animate=true}
 
@@ -1750,4 +1817,166 @@ Default
 ::::
 
 
-# Case Study Explanation
+# Case Study Explanation 
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
+
+#### Introduction
+
+In this exercise, you will estimate an appropriate adjustment and MoC A to account for a difference between the `New` DoD to be used in application and the `Old` DoD available in historical data. Fortunately, some data is available that was collected under both definitions. This is a (simulated) data set of a homogeneous portfolio, and there are no risk drivers, grades or other features to distinguish the exposures by. Lucky you!
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+:::
+
+#### Data
+
+You are given a panel data set with a set of $\approx$ 2k exposures `i` at 120 dates (months) `t` and default flags `d` according to a `New` and `Old` definition of default (`DoD`). The `New` definition is available only for the last 26 dates (months) whereas the `Old` definition default flag is available for the entire period. Two other derived variables are included for your convenience: a 12-month forward-looking into-default flag `into_d_12`, and a `status`: `enter`, `stock`, `default` or `exit`.
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+:::
+
+#### Data
+
+You are given a panel data set with a set of $\approx$ 2k exposures `i` at 120 dates (months) `t` and default flags `d` according to a `New` and `Old` definition of default (`DoD`). The `New` definition is available only for the last 26 dates (months) whereas the `Old` definition default flag is available for the entire period. Two other derived variables are included for your convenience: a 12-month forward-looking into-default flag `into_d_12`, and a `status`: `enter`, `stock`, `default` or `exit`.
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+:::: columns
+::: {.column width="50%" .r-fit-text }
+::: {style="color:darkgrey"}
+
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+:::
+
+`i`: exposure id
+
+`t`: time
+
+`DoD`: "Old" or "New"
+
+`d`: in-default
+
+`into_d_12`: into default within 12 months
+
+`status`: `enter`, `stock`, `default` or `exit`
+:::
+::: {.column width="50%" .r-fit-text .smaller}
+
+```{r}
+library(dplyr)
+case_study_1_data <- read.csv("../../media/case_study_1_data.csv.gz")
+``` 
+
+```{r echo=FALSE}
+#| tbl-cap: "sample of 10 exposures" 
+
+case_study_1_data |>
+  filter(i %in% sample(i,10)) |> 
+  as.data.frame()
+```
+
+:::
+::::
+
+
+```{r }
+library(downloadthis)
+case_study_1_data |>
+  download_this( 
+    output_name = "case study 1 data",
+    output_extension = ".csv",
+    button_label = " Download data as csv",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+``` 
+```{r}
+case_study_1_data |>
+  download_this( 
+    output_name = "case study 1 data",
+    output_extension = ".xlsx",
+    button_label = "Download data as xlsx",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+```
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+:::
+
+#### Challenge
+
+ * Estimate **appropriate adjustment** to the `Old` DoD data to estimate the appropriately adjusted long-run average default rate, 
+ * Also estimate the additional uncertainty due to this adjustment. 
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+:::
+
+#### Challenge
+Do so under different assumptions/scenarios:
+
+ A) First, assume that $\bar{R}^{(new)}_{(12)} = \alpha \bar{R}^{(old)}_{(12)} + \epsilon$, where $\bar{R}_{(n)}$ is an observed average $n$-month into-default rate. In words, assume that any average default rate over a fixed period under the new default definition is a constant factor times that under the old one.
+
+ B) Alternatively, assume that $R^{(new)}_{(1)}(t) = \beta R^{(old)}_{(1)}(t) + \epsilon$, where $R_{(n)}(t)$ is the observed $n$-month into-default rate at reference date $t$. In words, assume that not the long-run average 12-month, but the monthly into-default rate under the new definition is related to the old one with a constant scale factor $\beta$.
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+ * Scenario A: $\bar{R}^{(new)}_{(12)} = \alpha \bar{R}^{(old)}_{(12)} + \epsilon$
+ * Scenario B: $R^{(new)}_{(1)}(t) = \beta R^{(old)}_{(1)}(t) + \epsilon$
+:::
+
+#### Challenge
+For each of these two scenarios,
+
+ 1) Estimate $\alpha$ resp. $\beta$ based on the overlapping period.
+ 2) Based on your estimates, derive appropriately adjusted default rates.
+ 3) Also estimate the uncertainty[^1] of $\alpha$ resp. $\beta$.
+ 4) Using error propagation, derive the corresponding **additional** uncertainty of the estimated appropriately adjusted long-run average default rate in either case.
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+ * Scenario A: $\bar{R}^{(new)}_{(12)} = \alpha \bar{R}^{(old)}_{(12)} + \epsilon$
+ * Scenario B: $R^{(new)}_{(1)}(t) = \beta R^{(old)}_{(1)}(t) + \epsilon$
+:::
+
+#### BONUS QUESTIONS
+
+ 5) Would you consider the assumptions A) and B) to be reasonable in a real-life situation? Can you verify these assumptions using the given data?
+ 6) Can you come up with an alternative approach?
+ 7) Your appropriately adjusted LRA DR may be more uncertain due to model misspecification. Can you think of some ways to quantify that uncertainty?
+ 8) This simulated data set has only idiosyncratic variability, i.e., there is no systemic risk factor! Do your answers to the previous questions change?
+
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+ 1. Download the data from slides or ask for email
+ 1. Use your favorite tool to get an answer.
+ 1. Share your answers by coming Friday
