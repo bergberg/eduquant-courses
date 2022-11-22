@@ -17,11 +17,15 @@ format: eduquant-slides-revealjs
 
 *14:00*
 
+*14:45*
+
 *15:00*
 
 *15:15*
 
-*16:00*
+*15:45*
+
+*16:15*
 
 *16:45*
 :::
@@ -33,13 +37,17 @@ MoC Quantification
 
 General Estimation Error
 
+Treatment of deficiencies
+
 *Break*
 
-Treatment of deficiencies
+Model performance
 
 Data quality & completeness
 
-Representativeness + Case Study
+Representativeness 
+
+Case Study
 :::
 :::
 
