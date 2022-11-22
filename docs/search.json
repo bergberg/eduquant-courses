@@ -116,7 +116,7 @@
     "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-12",
     "title": "MoC & Downturn LGD",
     "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\nAssuming \\(R\\) independent draws\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\n\n\n\n\n\nStrategies\n\nNon-overlapping sample\nNon-overlapping resampling scheme\nExplicitly model / correct for auto-correlation bias\n\n\n\n\npros\n\nsimple\nnon-parametric\nexplicit\n\n\ncons\n\nbiased\ncomplex\npossibly not identifiable"
+    "text": "General Estimation Error\n\n\n\n\nAssuming \\(R\\) independent draws\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\n\n\n\n\n\nStrategies\n\nNon-overlapping sample\nNon-overlapping resampling scheme\nExplicitly model / correct for auto-correlation bias\n\n\n\n\npros\n\nsimple\nnon-parametric\nexplicit\n\n\ncons\n\nbiased\ncomplex\npossibly not identifiable\n\n\n\n\n\n\n\n\n\nDeficiency\n\n\nMethod of selecting reference dates leads to a bias \\(\\rightarrow\\) methodological deficiency (MoC A)"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-13",
@@ -515,7 +515,7 @@
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#deficiencies-3",
@@ -585,14 +585,14 @@
     "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness",
     "title": "MoC & Downturn LGD",
     "section": "Representativeness",
-    "text": "Representativeness"
+    "text": "Representativeness\n\n\n\nData should be representative of application portfolio\n\nExposures, risk characteristics\n(Risk management) processes (origination, DoD, recovery)\nEconomic/market conditions\n\nEBA specifies dimensions minimally to be considered\nOver all reference dates and exposures, per risk parameter\n\n\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 34\n\n\nWhere the representativeness of data \\(\\small{\\dots}\\) is insufficient and leads to a bias or increased uncertainty of risk quantification, institutions should introduce an appropriate adjustment to correct the bias and they should apply a margin of conservatism"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-1",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-1",
     "title": "MoC & Downturn LGD",
     "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness"
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\n\nReference data set \\(e:\\{i,t\\}\\) with \\(y_{it},X_{it}, Z_{it}, \\dots\\)\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\nRating grade cannot be determined \\(\\rightarrow\\) potential bias at rating grade level\n\n(no model for missing \\(X\\) in ranking method)\n\n\n\n\n\n\n\n\nEBA/GL/2017/16 (p16)\n\n\nData exclusions may be a tool to quantify adjustments to the observed average default and loss rates where these are necessary; however, they should never be taken into account for the purpose of calculating the observed average default rate"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#methodological-deficiencies",
@@ -613,6 +613,167 @@
     "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy",
     "title": "MoC & Downturn LGD",
     "section": "Model performance & accuracy",
-    "text": "Model performance & accuracy\n\n\nIn case of…\n\nBiases at level of calibration\n\n\\(\\rightarrow\\) change method of calibration (remediation)\n\nBiases at more granular level\nNon-homogeneity of grades /\n\n\\(\\rightarrow\\) representativeness in terms of risk characteristics (see next)\n\n\n\n\n\n\n\nNo double-counting with general estimation error!"
+    "text": "Model performance & accuracy\n\nIn case of…\n\nBiases at level of calibration\nBiases at more granular level\nNon-homogeneity of grades / sub-ranges\nNon-heterogeneous grades\n\n\n\n\n\n\nEBA/GL/2017/16 (Q&A p128)\n\n\nThe reference to ‘rank order estimation error’ has been deleted from the final GL. Instead, it has been clarified that, while data and methodological deficiencies in the model development should be identified, they should be covered by MoC to the extent that they lead to bias in the quantification of risk parameters or to increased uncertainty that is not fully captured by general estimation error."
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Model performance & accuracy",
+    "text": "Model performance & accuracy\n\n\n\nIn case of…\n\n\nBiases at level of calibration\n\n\\(\\rightarrow\\) change method of calibration (remediation)\n\n\nBiases at more granular level\nNon-homogeneity of grades / sub-ranges\nNon-heterogeneous grades\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommon pitfalls\n\n\n\nBias at calibration level \\(=\\) deficiency in model calibration method\nCorrection of calibration method \\(\\neq\\) appropriate adjustment\n\nNo MoC for bias at calibration level!"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-2",
+    "title": "MoC & Downturn LGD",
+    "section": "Model performance & accuracy",
+    "text": "Model performance & accuracy\n\n\nIn case of…\n\nBiases at level of calibration\n\n\n\nBiases at more granular level\nNon-homogeneity of grades / sub-ranges\n\n\\(\\rightarrow\\) representativeness in terms of risk characteristics\n\n\nNon-heterogeneous grades\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEffect on calibration target?\n\n\n\neffect on calibration target if distribution over grades/sub-ranges is non-representative of application portfolio\nRepresentativeness assessments + accuracy tests \\(\\rightarrow\\) identification"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-3",
+    "title": "MoC & Downturn LGD",
+    "section": "Model performance & accuracy",
+    "text": "Model performance & accuracy\n\n\nIn case of…\n\nBiases at level of calibration\nBiases at more granular level\nNon-homogeneity of grades / sub-ranges\n\n\n\nNon-heterogeneous grades\n\n\\(\\rightarrow\\) nothing (no effect on risk quantification)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStill deficient\n\n\n\nReflected in general estimation error \\(\\rightarrow\\) not a “deficiency”\nStill need to fullfill requirements w.r.t. meaningful differentiation"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-17",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-17",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\nLevel of quantification\n\ncalibration level \\(\\rightarrow\\) level of MoC quantification\nsupport assumption of constant estimation error\n\nin particular for continuous estimates\n\n\n\n\n\nECB Guide to Internal Models (CR) \\(\\S\\) 140\n\n\n(a) \\(\\small{[\\cdots]}\\) When calibration is performed at calibration segment level, the general estimation error may be computed at that level when the statistical uncertainty/sampling error is not significantly different across grades or PD sub-ranges."
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-18",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-18",
+    "title": "MoC & Downturn LGD",
+    "section": "General Estimation Error",
+    "text": "General Estimation Error\n\n\n\n\n\n\nCommon pitfalls\n\n\n\nCalculating general estimation error before appropriate adjustments\nOverrides / waivers on general estimation errors for low-default portfolios\nMoC C of zero in zero-default grades\nMoC C proportional to risk parameter values without proper substantiation\nConstant MoC C without proper substantiation"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#appropriate-adjustments-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#appropriate-adjustments-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Appropriate Adjustments",
+    "text": "Appropriate Adjustments"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-2",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nEBA/GL/2017/16 (p16)\n\n\nData exclusions may be a tool to quantify adjustments to the observed average default and loss rates where these are necessary; however, they should never be taken into account for the purpose of calculating the observed average default rate\n\n\n\n\n\nExample: missing completely at random"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-example",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-example",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness (example)",
+    "text": "Data Quality & Completeness (example)\n:::: columns\n\nMissing\n\n\n(risk) characteristics \\(X_{ir}\\) for assigning exposures at historical reference dates\n\n\n\n\nExample\n\nReference data set \\(X_{it}, y_{it}\\)\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing\nRating grade cannot be determined \\(\\rightarrow\\) potential bias at rating grade level"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-example-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-example-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness (example)",
+    "text": "Data Quality & Completeness (example)\n:::: columns\n\nMissing\n\n\n(risk) characteristics \\(X_{ir}\\) for assigning exposures at historical reference dates\n\n\n\n\nExample\n\nReference data set \\(X_{it}, y_{it}\\)\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing\nRating grade cannot be determined \\(\\rightarrow\\) potential bias at rating grade level"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-3",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\nExample: missing completely at random\n\nmechanism consistent with MCAR\ndistributions \\(y_{it}|Z_{it}\\) similar over \\(f\\), \\(g\\)\n\\(\\bar{y}^{(g)} \\approx \\bar{y}^{(e)}\\) at calibration segment level"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#additional-uncertainties",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#additional-uncertainties",
+    "title": "MoC & Downturn LGD",
+    "section": "Additional Uncertainties",
+    "text": "Additional Uncertainties"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-4",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-4",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\n\nCalculate grade \\(a\\) adjusted calibration target \\(\\bar{y}_{a}^{(g)}\\)\n\\(\\hat{\\sigma}_{a}^{(g)}(y)=(N_{a}^{(g)}-1)^{-\\tfrac{1}{2}} s_a^{(g)}\\) includes addn. uncertainty\nImpute \\(X^{(f)} \\sim X^{(g)}\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-5",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-5",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\nImpute \\(X^{(f)} \\sim X^{(g)}\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)\n\n\n\n\nExample (2): missing at random, linear estimates"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-6",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-6",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\nImpute \\(X_{js} \\sim \\text{Normal}(\\bar{X}^{(g)}_a,\\hat{\\sigma}^{(g)}_a(X))\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)\n\n\n\n\n\n\nExample (2): missing at random, linear estimates\n\n\\(P(\\text{missing})=P(\\text{missing}|X,Z,\\dots)\\)\nHowever, distributions \\(y_{it}\\) not similar over \\(f\\) vs \\(g\\)\nTherefore, \\(\\bar{y}_{a}^{(g)}\\) is biased and cannot be used\nAssume in addition that \\(p(a)\\sim \\alpha X + \\beta\\) (linear ranking model)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-7",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-7",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\nImpute \\(X_{js} \\sim \\text{Normal}(\\bar{X}^{(g)}_a,\\hat{\\sigma}^{(g)}_a(X))\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)\n\n\n\n\n\n\nExample (2): missing at random, linear estimates\n(naive imputation)\n\n\nImpute \\(X_{js} \\leftarrow \\bar{X}^{(g)}_a\\) to obtain \\(\\bar{y}_{a}^{\\prime(e)}\\)\nImpute \\(X_{js} \\leftarrow \\bar{X}^{(g)} + z_\\alpha \\hat{\\sigma}^{(g)}_a\\) to obtain \\(\\bar{y}_{a}^{\\prime(e)(\\text{upper})}\\)\nMoC A \\(\\propto \\bar{y}_{a}^{\\prime(e)(\\text{upper})}-\\bar{y}_{a}^{\\prime(e)}\\)\n\n\n\n\n\n\n\n\nEBA/GL/2017/16 (p178)\n\n\n\\(\\small{\\dots}\\) adjusting the data where deficiencies have been identified may involve rectifying the identified errors, for instance where missing data points are filled in with the most probable information."
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-8",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-8",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\nImpute \\(X_{js} \\sim \\text{Normal}(\\bar{X}^{(g)}_a,\\hat{\\sigma}^{(g)}_a(X))\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)\n\n\n\n\n\n\nExample (2): missing at random, linear estimates\n(naive imputation)\n\nImpute \\(X_{js} \\leftarrow \\bar{X}^{(g)}_a\\), \\(X_{js} \\leftarrow \\bar{X}^{(g)} + z_\\alpha \\hat{\\sigma}^{(g)}_a\\)\n\\(\\Delta\\) MoC A \\(\\propto \\bar{y}_{a}^{\\prime(e)(\\text{upper})}-\\bar{y}_{a}^{\\prime(e)}\\)\n\n\n\n\nExample (3): missing at random, non-linear"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-9",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-9",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\nImpute \\(X_{js} \\sim \\text{Normal}(\\bar{X}^{(g)}_a,\\hat{\\sigma}^{(g)}_a(X))\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)\n\n\n\n\n\n\nExample (2): missing at random, linear estimates\n(naive imputation)\n\nImpute \\(X_{js} \\leftarrow \\bar{X}^{(g)}_a\\), \\(X_{js} \\leftarrow \\bar{X}^{(g)} + z_\\alpha \\hat{\\sigma}^{(g)}_a\\)\n\\(\\Delta\\) MoC A \\(\\propto \\bar{y}_{a}^{\\prime(e)(\\text{upper})}-\\bar{y}_{a}^{\\prime(e)}\\)\n\n\n\n\n\n\nExample (3): missing at random\n\n\\(P(\\text{missing})=P(\\text{missing}|X,Z,\\dots)\\)\nDistributions \\(y_{it}\\) not similar over \\(f\\) vs \\(g\\)\nCalibration targets not linear in \\(X^{(f)}\\) so that \\(E(\\bar{y}_{a}^{(e)})\\neq \\bar{y}_{a}^{(e)}|_{X^{(f)}=\\bar{X}^{(g)}}\\)"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-10",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-10",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n\n(imputation)\n\n\nExample (2): missing at random, linear estimates\n\n(naive imputation)\n\n\n\n\n\n\n\nExample (3): missing at random\n(multiple imputation)\n\nApproximate \\(\\bar{y}^{(e)}(X^{(f)},\\dots)P(X^{(f)},\\dots)\\) with univariate resampling:\n\nRandomly sample \\(X^{(b)}\\) from \\(X^{(g)}\\) with replacement \\(M\\) times\nCalculate \\(\\bar{y}_a^{\\prime(b)}=\\bar{y}_a^{(e)}|_{X^{(f)}\\leftarrow X^{(b)}}\\), \\(y_a^{\\prime}=\\frac{1}{M}\\sum_b y_a^{\\prime(b)}\\) (adj. calib. targets)\nObtain the excess variance1 due to missing values as \\(\\hat{\\sigma}_M(\\bar{y})=(1+\\frac{1}{M})\\sum_b\\frac{(y_a^{\\prime} -y_a^{\\prime(b)})}{M-1}\\)\n\n\n\n\nSee Rubin, D. B. (1987) Multiple Imputation for Nonresponse in Surveys"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-11",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-11",
+    "title": "MoC & Downturn LGD",
+    "section": "Data Quality & Completeness",
+    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n\n(imputation)\n\n\nExample (2): missing at random, linear estimates\n\n(naive imputation)\n\n\nExample (3): missing at random\n\n(multiple imputation)\n\n\n\n\n\n\n\n\nReal life\n\n\n\nReal life usually not so fortunate \nIdentification of missingness mechanism important\nSmall effect expected \\(\\rightarrow\\) less sophisticated approaches"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\nData should be representative of application portfolio\n\nExposures, risk characteristics\n(Risk management) processes (origination, DoD, recovery)\nEconomic/market conditions\n\nEBA specifies dimensions minimally to be considered\nOver all reference dates and exposures, per risk parameter\n\n\n\n\n\n\n\n\nChallenges\n\n\n\nMany potential deficiencies\nEffects hard to model / quantify\nOften no data available to estimate\n\n\n\n\n\n\n\n\n\n\n\n\nStrategies\n\n\nall Qualitative assessment of potential drivers\nif so Quantitative assessment of non-representativeness (according to some simple metric)\nfinally Quantitative estimate of effect of non-representativeness"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-2",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-2",
+    "title": "MoC & Downturn LGD",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n(Risk management) processes (origination, DoD, recovery)\n\n\n\n\n\n\n\nChallenges\n\n\n\nMany potential deficiencies\nEffects hard to model / quantify\nOften no data available to estimate\n\n\n\n\n\n\n\n\nOrigination\n\nlending/underwriting standards, risk appetite,\n\nDefault\n\ndefinition of default, policy and processes\n\nRecovery\n\nrecovery, restructuring, forbearance policies and processes"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-3",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-3",
+    "title": "MoC & Downturn LGD",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\n\nOrigination\n\nlending/underwriting standards, risk appetite,\n\nDefault\n\ndefinition of default, policy and processes\n\nRecovery\n\nrecovery, restructuring, forbearance policies and processes\n\n\n\n\n\n\n\n\n\n\nChallenges\n\n\n\nMany potential deficiencies\nEffects hard to model / quantify\nOften no data available to estimate"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-4",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-4",
+    "title": "MoC & Downturn LGD",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\n\n\nDefault\n\ndefinition of default, policy and processes\n\n\n\n\n\n\n\n\n\n\n\nDefinition of default\n\n\n\nEBA harmonization of DoD\n\n\n\n\n\n\n\n\nCommon strategies (DoD)\n\nSimulation based on historical data\nAdjustments modelled on data collected under new DoD\nCombinations\n\nsimulated materiality threshold\nadditional adjustment for UtP based on recent data\n\n\n\n\n\n\n\n\n\n\nPay attention\n\n\n\nSimulation = appropriate adjustment\nRecovery processes also affected"
   }
 ]

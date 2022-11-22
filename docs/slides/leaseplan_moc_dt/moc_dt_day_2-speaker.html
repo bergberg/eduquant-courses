@@ -6,10 +6,12 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.269">
 
-  <meta name="dcterms.date" content="2022-11-21">
+  <meta name="dcterms.date" content="2022-11-22">
   <title>Eduquant course slides - MoC &amp; Downturn LGD</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -331,7 +333,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">November 21, 2022</p>
+  <p class="date">November 22, 2022</p>
 </section>
 <section id="day-2" class="slide level2">
 <h2>Day 2</h2>
@@ -800,6 +802,19 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 </ul>
 </div>
 </div>
+<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Deficiency</strong></p>
+</div>
+<div class="callout-content">
+<p>Method of selecting reference dates leads to a bias <span class="math inline">\(\rightarrow\)</span> methodological deficiency (MoC A)</p>
+</div>
+</div>
+</div>
 </section>
 <section id="general-estimation-error-13" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">General Estimation Error</h2>
@@ -888,6 +903,49 @@ Uncertainty not due to deficiencies; standard error of statistical estimator
 <p>Posterior interval based on non-informative (<span style="color:indianred">conservative</span>) Jeffrey’s prior for binomial parameter</p>
 </div>
 </div>
+</div>
+</div>
+</div>
+</section>
+<section id="general-estimation-error-17" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">General Estimation Error</h2>
+<h3 id="level-of-quantification">Level of quantification</h3>
+<ul>
+<li>calibration level <span class="math inline">\(\rightarrow\)</span> level of MoC quantification</li>
+<li>support assumption of constant estimation error
+<ul>
+<li>in particular for continuous estimates</li>
+</ul></li>
+</ul>
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>ECB Guide to Internal Models (CR) <span class="math inline">\(\S\)</span> 140</strong></p>
+</div>
+<div class="callout-content">
+<p><em>(a) <span class="math inline">\(\small{[\cdots]}\)</span> When calibration is performed at calibration segment level, the general estimation error may be computed at that level when the statistical uncertainty/sampling error is not significantly different across grades or PD sub-ranges.</em></p>
+</div>
+</div>
+</div>
+</section>
+<section id="general-estimation-error-18" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">General Estimation Error</h2>
+<div class="callout callout-important callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Common pitfalls</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Calculating general estimation error before appropriate adjustments</li>
+<li>Overrides / waivers on general estimation errors for low-default portfolios</li>
+<li>MoC C of zero in zero-default grades</li>
+<li>MoC C proportional to risk parameter values without proper substantiation</li>
+<li>Constant MoC C without proper substantiation</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1068,70 +1126,783 @@ a <em>process</em> that provides a guarantee for identifying all deficiencies
 </figure>
 </div>
 </section>
-<section id="model-performance-accuracy" class="slide level2">
-<h2>Model performance &amp; accuracy</h2>
-<!-- :::: columns -->
-<!-- ::: {.column width="50%" .r-fit-text } -->
+<section id="model-performance-accuracy" class="slide level2 smaller" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Model performance &amp; accuracy</h2>
+<div data-id="rty123">
 <p>In case of…</p>
+<ul>
+<li><p>Biases at level of calibration</p></li>
+<li><p>Biases at more granular level</p></li>
+<li><p>Non-homogeneity of grades / sub-ranges</p></li>
+<li><p>Non-heterogeneous grades</p></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>EBA/GL/2017/16 (Q&amp;A p128)</strong></p>
+</div>
+<div class="callout-content">
+<p><em>The reference to ‘rank order estimation error’ has been deleted from the final GL. Instead, it has been clarified that, while data and methodological deficiencies in the model development should be identified, they should be covered by MoC to the extent that they lead to bias in the quantification of risk parameters or to increased uncertainty that is not fully captured by general estimation error.</em></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="model-performance-accuracy-1" class="slide level2 smaller" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Model performance &amp; accuracy</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:66%;">
+<div data-id="rty123">
+<p>In case of…</p>
+<div class="highlight-block" data-id="sdf">
 <ul>
 <li>Biases at level of calibration</li>
 </ul>
 <p><span class="math inline">\(\rightarrow\)</span> change method of calibration (remediation)</p>
+</div>
+<ul>
+<li><p>Biases at more granular level</p></li>
+<li><p>Non-homogeneity of grades / sub-ranges</p></li>
+<li><p>Non-heterogeneous grades</p></li>
+</ul>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="cell" data-fig.asp="1" data-hash="moc_dt_day_2_cache/revealjs/wrong-adj-dist_73bbe7f38f80b6cf8d6f0d03143a4217">
+<div class="cell-output-display">
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/wrong-adj-dist-1.png" width="480"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-important callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Common pitfalls</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Bias at calibration level <span class="math inline">\(=\)</span> deficiency in model calibration method</li>
+<li>Correction of calibration method <span class="math inline">\(\neq\)</span> appropriate adjustment</li>
+</ul>
+<p><span style="color:indianred">No MoC for bias at calibration level!</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="model-performance-accuracy-2" class="slide level2 smaller" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Model performance &amp; accuracy</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:66%;">
+<p>In case of…</p>
+<ul>
+<li>Biases at level of calibration</li>
+</ul>
+<div class="highlight-block" data-id="sdf">
 <ul>
 <li>Biases at more granular level</li>
-<li>Non-homogeneity of grades /</li>
+<li>Non-homogeneity of grades / sub-ranges</li>
 </ul>
-<p><span class="math inline">\(\rightarrow\)</span> representativeness in terms of risk characteristics (see next)</p>
-<!-- ::: -->
-<!-- ::: {.column width="50%" .r-fit-text } -->
-<!-- ::: -->
-<!-- :::: -->
-<div class="callout callout-warning no-icon callout-style-simple">
+<p><span class="math inline">\(\rightarrow\)</span> representativeness in terms of risk characteristics</p>
+</div>
+<ul>
+<li>Non-heterogeneous grades</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<div class="cell" data-fig.asp="1" data-hash="moc_dt_day_2_cache/revealjs/non-hom-grade_4e8c4ac622c6a957e64ee35af261ff0c">
+<div class="cell-output-display">
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/non-hom-grade-1.png" width="480"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-note callout-captioned callout-style-default">
 <div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Effect on calibration target?</strong></p>
+</div>
 <div class="callout-content">
-<p>No double-counting with general estimation error!</p>
+<ul>
+<li>effect on calibration target if distribution over grades/sub-ranges is non-representative of application portfolio</li>
+<li>Representativeness assessments + accuracy tests <span class="math inline">\(\rightarrow\)</span> identification</li>
+</ul>
 </div>
 </div>
 </div>
 </section>
-<section id="accuracy-model-performance" class="slide level2">
-<h2>Accuracy &amp; model performance</h2>
+<section id="model-performance-accuracy-3" class="slide level2 smaller" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Model performance &amp; accuracy</h2>
 <div class="columns">
-<div class="column r-fit-text" style="width:50%;">
-
-</div><div class="column r-fit-text" style="width:50%;">
-
+<div class="column r-fit-text" style="width:66%;">
+<p>In case of…</p>
+<ul>
+<li><p>Biases at level of calibration</p></li>
+<li><p>Biases at more granular level</p></li>
+<li><p>Non-homogeneity of grades / sub-ranges</p></li>
+</ul>
+<div class="highlight-block" data-id="sdf">
+<ul>
+<li>Non-heterogeneous grades</li>
+</ul>
+<p><span class="math inline">\(\rightarrow\)</span> nothing (no effect on risk quantification)</p>
+</div>
+</div><div class="column r-fit-text" style="width:33%;">
+<div class="cell" data-fig.asp="1" data-hash="moc_dt_day_2_cache/revealjs/non-het-grade_7b9d0962cb480a9fe332ac182ba4aadb">
+<div class="cell-output-display">
+<p><img data-src="moc_dt_day_2_files/figure-revealjs/non-het-grade-1.png" width="480"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Still deficient</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Reflected in general estimation error <span class="math inline">\(\rightarrow\)</span> not a “deficiency”</li>
+<li>Still need to fullfill requirements w.r.t. meaningful differentiation</li>
+</ul>
+</div>
 </div>
 </div>
 </section>
-<section id="representativeness" class="slide level2">
-<h2>Representativeness</h2>
+<section id="data-quality-completeness-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
 <div class="columns">
-<div class="column r-fit-text" style="width:50%;">
+<div id="vcenter" class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<ul>
+<li>Reference data set <span class="math inline">\(e:\{i,t\}\)</span> with <span class="math inline">\(y_{it},X_{it}, Z_{it}, \dots\)</span></li>
+<li>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</li>
+<li>Rating grade cannot be determined <span class="math inline">\(\rightarrow\)</span> potential bias at rating grade level
+<ul>
+<li>(no model for missing <span class="math inline">\(X\)</span> in ranking method)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>EBA/GL/2017/16 (p16)</strong></p>
+</div>
+<div class="callout-content">
+<p><em>Data exclusions may be a tool to quantify adjustments to the observed average default and loss rates where these are necessary; however, they should never be taken into account for the purpose of calculating the observed average default rate</em></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="data-quality-completeness-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<p>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</p>
+</div>
+</div>
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>EBA/GL/2017/16 (p16)</strong></p>
+</div>
+<div class="callout-content">
+<p><em>Data exclusions may be a tool to quantify adjustments to the observed average default and loss rates where these are necessary; however, they should never be taken into account for the purpose of calculating the observed average default rate</em></p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="smaller" style="color:teal">
+<p><strong>Example: missing completely at random</strong></p>
+</div>
+</div>
+</section>
+<section id="data-quality-completeness-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<p>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</p>
+</div>
+</div>
+<div class="smaller" style="color:teal">
+<p><strong>Example: missing completely at random</strong></p>
+<ul>
+<li>mechanism consistent with MCAR</li>
+<li>distributions <span class="math inline">\(y_{it}|Z_{it}\)</span> similar over <span class="math inline">\(f\)</span>, <span class="math inline">\(g\)</span></li>
+<li><span class="math inline">\(\bar{y}^{(g)} \approx \bar{y}^{(e)}\)</span> at calibration segment level</li>
+</ul>
+</div>
+</section>
+<section id="data-quality-completeness-4" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<p>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</p>
+</div>
+</div>
+<div style="color:teal">
+<div class="columns">
+<div class="column r-fit-text" style="width:25%;">
+<p><strong>Example: missing completely at random</strong></p>
+<h4 id="imputation">(imputation)</h4>
+</div><div class="column r-fit-text" style="width:75%;">
+<ol type="1">
+<li>Calculate grade <span class="math inline">\(a\)</span> adjusted calibration target <span class="math inline">\(\bar{y}_{a}^{(g)}\)</span></li>
+<li><span class="math inline">\(\hat{\sigma}_{a}^{(g)}(y)=(N_{a}^{(g)}-1)^{-\tfrac{1}{2}} s_a^{(g)}\)</span> includes addn. uncertainty</li>
+<li>Impute <span class="math inline">\(X^{(f)} \sim X^{(g)}\)</span> to obtain <span class="math inline">\(\hat{\sigma}_{a}^{\prime(e)}(y)\)</span></li>
+<li>Attribute <span class="math inline">\(\Delta\)</span> MoC A <span class="math inline">\(\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="data-quality-completeness-5" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<p>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</p>
+</div>
+</div>
+<div style="color:teal">
+<div class="columns">
+<div class="column r-fit-text" style="width:25%;">
+<p><strong>Example: missing completely at random</strong></p>
+<h4 id="imputation-1">(imputation)</h4>
+</div><div class="column r-fit-text" style="width:75%;">
+<p>Impute <span class="math inline">\(X^{(f)} \sim X^{(g)}\)</span> to obtain <span class="math inline">\(\hat{\sigma}_{a}^{\prime(e)}(y)\)</span></p>
+<p>Attribute <span class="math inline">\(\Delta\)</span> MoC A <span class="math inline">\(\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})\)</span></p>
+</div>
+</div>
+</div>
+<div class="smaller" style="color:sienna">
+<p><strong>Example (2): missing at random, linear estimates</strong></p>
+</div>
+</section>
+<section id="data-quality-completeness-6" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<p>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</p>
+</div>
+</div>
+<div style="color:teal">
+<div class="columns">
+<div class="column r-fit-text" style="width:25%;">
+<p><strong>Example: missing completely at random</strong></p>
+<h4 id="imputation-2">(imputation)</h4>
+</div><div class="column r-fit-text" style="width:75%;">
+<p>Impute <span class="math inline">\(X_{js} \sim \text{Normal}(\bar{X}^{(g)}_a,\hat{\sigma}^{(g)}_a(X))\)</span> to obtain <span class="math inline">\(\hat{\sigma}_{a}^{\prime(e)}(y)\)</span></p>
+<p>Attribute <span class="math inline">\(\Delta\)</span> MoC A <span class="math inline">\(\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})\)</span></p>
+</div>
+</div>
+</div>
+<div class="smaller" style="color:sienna">
+<div class="columns">
+<div class="column r-fit-text" style="width:75%;">
+<p><strong>Example (2): missing at random, linear estimates</strong></p>
+<ul>
+<li><span class="math inline">\(P(\text{missing})=P(\text{missing}|X,Z,\dots)\)</span></li>
+<li>However, distributions <span class="math inline">\(y_{it}\)</span> <strong>not</strong> similar over <span class="math inline">\(f\)</span> vs <span class="math inline">\(g\)</span></li>
+<li>Therefore, <span class="math inline">\(\bar{y}_{a}^{(g)}\)</span> is biased and cannot be used</li>
+<li>Assume in addition that <span class="math inline">\(p(a)\sim \alpha X + \beta\)</span> (linear ranking model)</li>
+</ul>
+</div><div class="column r-fit-text" style="width:25%;">
 
-</div><div class="column r-fit-text" style="width:50%;">
+</div>
+</div>
+</div>
+</section>
+<section id="data-quality-completeness-7" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<p>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</p>
+</div>
+</div>
+<div style="color:teal">
+<div class="columns">
+<div class="column r-fit-text" style="width:25%;">
+<p><strong>Example: missing completely at random</strong></p>
+<h4 id="imputation-3">(imputation)</h4>
+</div><div class="column r-fit-text" style="width:75%;">
+<p>Impute <span class="math inline">\(X_{js} \sim \text{Normal}(\bar{X}^{(g)}_a,\hat{\sigma}^{(g)}_a(X))\)</span> to obtain <span class="math inline">\(\hat{\sigma}_{a}^{\prime(e)}(y)\)</span></p>
+<p>Attribute <span class="math inline">\(\Delta\)</span> MoC A <span class="math inline">\(\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})\)</span></p>
+</div>
+</div>
+</div>
+<div class="smaller" style="color:sienna">
+<div class="columns">
+<div class="column r-fit-text" style="width:25%;">
+<p><strong>Example (2): missing at random, linear estimates</strong></p>
+<h4 id="naive-imputation">(naive imputation)</h4>
+</div><div class="column r-fit-text" style="width:75%;">
+<ol type="1">
+<li>Impute <span class="math inline">\(X_{js} \leftarrow \bar{X}^{(g)}_a\)</span> to obtain <span class="math inline">\(\bar{y}_{a}^{\prime(e)}\)</span></li>
+<li>Impute <span class="math inline">\(X_{js} \leftarrow \bar{X}^{(g)} + z_\alpha \hat{\sigma}^{(g)}_a\)</span> to obtain <span class="math inline">\(\bar{y}_{a}^{\prime(e)(\text{upper})}\)</span></li>
+<li>MoC A <span class="math inline">\(\propto \bar{y}_{a}^{\prime(e)(\text{upper})}-\bar{y}_{a}^{\prime(e)}\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>EBA/GL/2017/16 (p178)</strong></p>
+</div>
+<div class="callout-content">
+<p><em><span class="math inline">\(\small{\dots}\)</span> adjusting the data where deficiencies have been identified may involve rectifying the identified errors, for instance where missing data points are filled in with the most probable information.</em></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="data-quality-completeness-8" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<p>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</p>
+</div>
+</div>
+<div style="color:teal">
+<div class="columns">
+<div class="column r-fit-text" style="width:25%;">
+<p><strong>Example: missing completely at random</strong></p>
+<h4 id="imputation-4">(imputation)</h4>
+</div><div class="column r-fit-text" style="width:75%;">
+<p>Impute <span class="math inline">\(X_{js} \sim \text{Normal}(\bar{X}^{(g)}_a,\hat{\sigma}^{(g)}_a(X))\)</span> to obtain <span class="math inline">\(\hat{\sigma}_{a}^{\prime(e)}(y)\)</span></p>
+<p>Attribute <span class="math inline">\(\Delta\)</span> MoC A <span class="math inline">\(\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})\)</span></p>
+</div>
+</div>
+</div>
+<div class="smaller" style="color:sienna">
+<div class="columns">
+<div class="column r-fit-text" style="width:25%;">
+<p><strong>Example (2): missing at random, linear estimates</strong></p>
+<h4 id="naive-imputation-1">(naive imputation)</h4>
+</div><div class="column r-fit-text" style="width:75%;">
+<p>Impute <span class="math inline">\(X_{js} \leftarrow \bar{X}^{(g)}_a\)</span>, <span class="math inline">\(X_{js} \leftarrow \bar{X}^{(g)} + z_\alpha \hat{\sigma}^{(g)}_a\)</span></p>
+<p><span class="math inline">\(\Delta\)</span> MoC A <span class="math inline">\(\propto \bar{y}_{a}^{\prime(e)(\text{upper})}-\bar{y}_{a}^{\prime(e)}\)</span></p>
+</div>
+</div>
+</div>
+<div class="smaller" style="color:olive">
+<p><strong>Example (3): missing at random, non-linear</strong></p>
+</div>
+</section>
+<section id="data-quality-completeness-9" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<p>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</p>
+</div>
+</div>
+<div style="color:teal">
+<div class="columns">
+<div class="column r-fit-text" style="width:25%;">
+<p><strong>Example: missing completely at random</strong></p>
+<h4 id="imputation-5">(imputation)</h4>
+</div><div class="column r-fit-text" style="width:75%;">
+<p>Impute <span class="math inline">\(X_{js} \sim \text{Normal}(\bar{X}^{(g)}_a,\hat{\sigma}^{(g)}_a(X))\)</span> to obtain <span class="math inline">\(\hat{\sigma}_{a}^{\prime(e)}(y)\)</span></p>
+<p>Attribute <span class="math inline">\(\Delta\)</span> MoC A <span class="math inline">\(\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})\)</span></p>
+</div>
+</div>
+</div>
+<div class="smaller" style="color:sienna">
+<div class="columns">
+<div class="column r-fit-text" style="width:25%;">
+<p><strong>Example (2): missing at random, linear estimates</strong></p>
+<h4 id="naive-imputation-2">(naive imputation)</h4>
+</div><div class="column r-fit-text" style="width:75%;">
+<p>Impute <span class="math inline">\(X_{js} \leftarrow \bar{X}^{(g)}_a\)</span>, <span class="math inline">\(X_{js} \leftarrow \bar{X}^{(g)} + z_\alpha \hat{\sigma}^{(g)}_a\)</span></p>
+<p><span class="math inline">\(\Delta\)</span> MoC A <span class="math inline">\(\propto \bar{y}_{a}^{\prime(e)(\text{upper})}-\bar{y}_{a}^{\prime(e)}\)</span></p>
+</div>
+</div>
+</div>
+<div class="smaller" style="color:olive">
+<div class="columns">
+<div class="column r-fit-text" style="width:85%;">
+<p><strong>Example (3): missing at random</strong></p>
+<ul>
+<li><span class="math inline">\(P(\text{missing})=P(\text{missing}|X,Z,\dots)\)</span></li>
+<li>Distributions <span class="math inline">\(y_{it}\)</span> <strong>not</strong> similar over <span class="math inline">\(f\)</span> vs <span class="math inline">\(g\)</span></li>
+<li>Calibration targets not linear in <span class="math inline">\(X^{(f)}\)</span> so that <span class="math inline">\(E(\bar{y}_{a}^{(e)})\neq \bar{y}_{a}^{(e)}|_{X^{(f)}=\bar{X}^{(g)}}\)</span></li>
+</ul>
+</div><div class="column r-fit-text" style="width:15%;">
 
+</div>
+</div>
+</div>
+
+<aside><div>
+
+</div></aside></section>
+<section id="data-quality-completeness-10" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<p>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</p>
+</div>
+</div>
+<div class="columns">
+<div class="column r-fit-text" style="width:33%;">
+<div style="color:teal">
+<p><strong>Example: missing completely at random</strong></p>
+</div>
+<h4 id="imputation-6">(imputation)</h4>
+</div><div class="column r-fit-text" style="width:33%;">
+<div style="color:sienna">
+<p><strong>Example (2): missing at random, linear estimates</strong></p>
+</div>
+<h4 id="naive-imputation-3">(naive imputation)</h4>
+</div><div class="column r-fit-text" style="width:33%;">
+
+</div>
+</div>
+<div style="color:olive">
+<div class="columns">
+<div class="column r-fit-text" style="width:25%;">
+<p><strong>Example (3): missing at random</strong></p>
+<h4 id="multiple-imputation">(multiple imputation)</h4>
+</div><div class="column r-fit-text" style="width:75%;">
+<p>Approximate <span class="math inline">\(\bar{y}^{(e)}(X^{(f)},\dots)P(X^{(f)},\dots)\)</span> with univariate resampling:</p>
+<ol type="1">
+<li>Randomly sample <span class="math inline">\(X^{(b)}\)</span> from <span class="math inline">\(X^{(g)}\)</span> with replacement <span class="math inline">\(M\)</span> times</li>
+<li>Calculate <span class="math inline">\(\bar{y}_a^{\prime(b)}=\bar{y}_a^{(e)}|_{X^{(f)}\leftarrow X^{(b)}}\)</span>, <span class="math inline">\(y_a^{\prime}=\frac{1}{M}\sum_b y_a^{\prime(b)}\)</span> (adj. calib. targets)</li>
+<li>Obtain the <em>excess variance</em><sup>1</sup> due to missing values as <span class="math inline">\(\hat{\sigma}_M(\bar{y})=(1+\frac{1}{M})\sum_b\frac{(y_a^{\prime} -y_a^{\prime(b)})}{M-1}\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>See Rubin, D. B. (1987) <em>Multiple Imputation for Nonresponse in Surveys</em></p></li></ol></aside></section>
+<section id="data-quality-completeness-11" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Data Quality &amp; Completeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:33%;">
+<div class="highlight-block">
+<p>Missing (risk) characteristics <span class="math inline">\(X_{ir}\)</span> for assigning exposures</p>
+</div>
+</div><div class="column r-fit-text" style="width:67%;">
+<p>For exposures at reference dates <span class="math inline">\(f:\{j,s\}\)</span>, variable <span class="math inline">\(X_{js}\)</span> missing (<span class="math inline">\(g\)</span> not missing)</p>
+</div>
+</div>
+<div class="columns">
+<div class="column r-fit-text" style="width:33%;">
+<div style="color:teal">
+<p><strong>Example: missing completely at random</strong></p>
+</div>
+<h4 id="imputation-7">(imputation)</h4>
+</div><div class="column r-fit-text" style="width:33%;">
+<div style="color:sienna">
+<p><strong>Example (2): missing at random, linear estimates</strong></p>
+</div>
+<h4 id="naive-imputation-4">(naive imputation)</h4>
+</div><div class="column r-fit-text" style="width:33%;">
+<div style="color:olive">
+<p><strong>Example (3): missing at random</strong></p>
+</div>
+<h4 id="multiple-imputation-1">(multiple imputation)</h4>
+</div>
+</div>
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Real life</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Real life usually not so fortunate <i class="fa-solid fa-frown" aria-label="frown"></i></li>
+<li>Identification of missingness mechanism important</li>
+<li>Small effect expected <span class="math inline">\(\rightarrow\)</span> less sophisticated approaches</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="representativeness" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Representativeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:67%;">
+<ul>
+<li>Data should be <em>representative</em> of application portfolio
+<ul>
+<li>Exposures, risk characteristics</li>
+<li>(Risk management) processes (origination, DoD, recovery)</li>
+<li>Economic/market conditions</li>
+</ul></li>
+<li>EBA specifies dimensions minimally to be considered</li>
+<li>Over all reference dates and exposures, per risk parameter</li>
+</ul>
+</div><div class="column r-fit-text" style="width:33%;">
+
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-note no-icon callout-captioned callout-style-simple">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>EBA/GL/2017/16 <span class="math inline">\(\S\)</span> 34</strong></p>
+</div>
+<div class="callout-content">
+<p><em>Where the representativeness of data <span class="math inline">\(\small{\dots}\)</span> is insufficient and leads to a bias or increased uncertainty of risk quantification, institutions should introduce an appropriate adjustment to correct the bias and they should apply a margin of conservatism</em></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="representativeness-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Representativeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:67%;">
+<ul>
+<li>Data should be <em>representative</em> of application portfolio
+<ul>
+<li>Exposures, risk characteristics</li>
+<li><span style="color:indianred">(Risk management) processes (origination, DoD, recovery)</span></li>
+<li>Economic/market conditions</li>
+</ul></li>
+<li>EBA specifies dimensions minimally to be considered</li>
+<li>Over all reference dates and exposures, per risk parameter</li>
+</ul>
+</div><div class="column r-fit-text" style="width:33%;">
+<div class="callout callout-important callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Challenges</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Many potential deficiencies</li>
+<li>Effects hard to model / quantify</li>
+<li>Often no data available to estimate</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Strategies</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>all</strong> Qualitative assessment of potential drivers</p>
+<p><strong>if so</strong> Quantitative assessment of <em>non-representativeness</em> (according to some simple metric)</p>
+<p><strong>finally</strong> Quantitative estimate of <em>effect</em> of non-representativeness</p>
+</div>
+</div>
+</div>
+</section>
+<section id="representativeness-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Representativeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:67%;">
+<p><span style="color:indianred">(Risk management) processes (origination, DoD, recovery)</span></p>
+</div><div class="column r-fit-text" style="width:33%;">
+<div class="callout callout-important callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Challenges</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Many potential deficiencies</li>
+<li>Effects hard to model / quantify</li>
+<li>Often no data available to estimate</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="smaller r-fit-text" data-id="sdfsdf">
+<dl>
+<dt>Origination</dt>
+<dd>
+lending/underwriting standards, risk appetite,
+</dd>
+<dt>Default</dt>
+<dd>
+definition of default, policy and processes
+</dd>
+<dt>Recovery</dt>
+<dd>
+recovery, restructuring, forbearance policies and processes
+</dd>
+</dl>
+</div>
+</section>
+<section id="representativeness-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Representativeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:67%;">
+<div class="smaller r-fit-text" data-id="sdfsdf">
+<dl>
+<dt>Origination</dt>
+<dd>
+lending/underwriting standards, risk appetite,
+</dd>
+<dt>Default</dt>
+<dd>
+definition of default, policy and processes
+</dd>
+<dt>Recovery</dt>
+<dd>
+recovery, restructuring, forbearance policies and processes
+</dd>
+</dl>
+</div>
+</div><div class="column r-fit-text" style="width:33%;">
+<div class="callout callout-important callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Challenges</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Many potential deficiencies</li>
+<li>Effects hard to model / quantify</li>
+<li>Often no data available to estimate</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="representativeness-4" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Representativeness</h2>
+<div class="columns">
+<div class="column r-fit-text" style="width:67%;">
+<div class="smaller" data-id="sdfsdf">
+<div style="color:teal">
+<dl>
+<dt>Default</dt>
+<dd>
+definition of default, policy and processes
+</dd>
+</dl>
+</div>
+</div>
+</div><div class="column r-fit-text" style="width:33%;">
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Definition of default</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>EBA harmonization of DoD</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column r-fit-text" style="width:67%;">
+<h3 id="common-strategies-dod">Common strategies (DoD)</h3>
+<ul>
+<li>Simulation based on historical data</li>
+<li>Adjustments modelled on data collected under new DoD</li>
+<li>Combinations
+<ul>
+<li>simulated materiality threshold</li>
+<li>additional adjustment for UtP based on recent data</li>
+</ul></li>
+</ul>
+</div><div class="column r-fit-text" style="width:33%;">
+<div class="fragment">
+<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Pay attention</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Simulation = appropriate adjustment</li>
+<li>Recovery processes also affected</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section></section>
-<section>
-<section id="appropriate-adjustments" class="title-slide slide level1 inverse center" data-background-color="teal">
-<h1>Appropriate Adjustments</h1>
-
-</section>
-<section id="data-quality-completeness-1" class="slide level2">
-<h2>Data Quality &amp; Completeness</h2>
-</section></section>
-<section id="additional-uncertainties" class="title-slide slide level1 inverse center" data-background-color="teal">
-<h1>Additional Uncertainties</h1>
-
-</section>
-
-<section id="moc-quantification-3" class="title-slide slide level1 inverse center" data-background-color="teal">
-<h1>MoC Quantification</h1>
-
-</section>
-
 <section id="case-study-explanation" class="title-slide slide level1 inverse center" data-background-color="teal">
 <h1>Case Study Explanation</h1>
 
@@ -1140,6 +1911,8 @@ a <em>process</em> that provides a guarantee for identifying all deficiencies
 
 </div>
 </section>
+
+
     </div>
   </div>
 

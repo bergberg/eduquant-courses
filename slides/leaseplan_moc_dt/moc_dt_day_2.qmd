@@ -530,6 +530,10 @@ _(a) $\small{[\cdots]}$ Institutions need to be aware of and deal adequately wit
 :::
 ::::
 
+::: {.callout-warning appearance="default"}
+## Deficiency
+Method of selecting reference dates leads to a bias $\rightarrow$ methodological deficiency (MoC A)
+:::
 
 ## General Estimation Error {auto-animate=true}
 
@@ -621,6 +625,32 @@ Posterior interval based on non-informative ([conservative]{style="color:indianr
 ::: 
 :::
 ::::
+
+
+## General Estimation Error {auto-animate=true}
+
+### Level of quantification
+
+ *  calibration level $\rightarrow$ level of MoC quantification
+ * support assumption of constant estimation error
+    + in particular for continuous estimates
+
+::: {.callout-note}
+## ECB Guide to Internal Models (CR) $\S$ 140 
+_(a) $\small{[\cdots]}$ When calibration is performed at calibration segment level, the general estimation error may be computed at that level when the statistical uncertainty/sampling error is not significantly different across grades or PD sub-ranges._
+:::
+
+## General Estimation Error {auto-animate=true}
+
+
+::: {.callout-important icon=true appearance="default" .r-fit-text}
+## Common pitfalls
+ * Calculating general estimation error before appropriate adjustments
+ * Overrides / waivers on general estimation errors for low-default portfolios
+ * MoC C of zero in zero-default grades
+ * MoC C proportional to risk parameter values without proper substantiation
+ * Constant MoC C without proper substantiation
+:::
 
 # Treatment of deficiencies
 
@@ -808,63 +838,916 @@ _Institutions should identify **all** deficiencies related to the estimation of 
 
 ![](/media/rds_aggr_general_cond.drawio.svg){fig-align="center"}
 
-## Model performance & accuracy
 
-<!-- :::: columns -->
+## Model performance & accuracy {auto-animate=true .smaller}
 
-<!-- ::: {.column width="50%" .r-fit-text } -->
+::: {data-id="rty123"}
 In case of...
 
  * Biases at level of calibration
 
+ * Biases at more granular level 
+
+ * Non-homogeneity of grades / sub-ranges
+
+ * Non-heterogeneous grades
+:::
+
+::: fragment
+::: {.callout-note}
+### EBA/GL/2017/16 (Q&A p128) 
+_The reference to ‘rank order estimation error’ has been deleted from the final GL. Instead, it has been clarified that, while data and methodological deficiencies in the model development should be identified, they should be covered by MoC to the extent that they lead to bias in the quantification of risk parameters or to increased uncertainty that is not fully captured by general estimation error._
+:::
+:::
+
+
+## Model performance & accuracy {auto-animate=true .smaller}
+
+:::: columns
+:::{.column width="66%" .r-fit-text}
+::: {data-id="rty123"}
+In case of...
+
+::: {.highlight-block data-id="sdf"}
+
+ * Biases at level of calibration
+
 $\rightarrow$ change method of calibration (remediation)
+:::
 
  * Biases at more granular level 
- * Non-homogeneity of grades / 
 
-$\rightarrow$ representativeness in terms of risk characteristics (see next)
+ * Non-homogeneity of grades / sub-ranges
 
-<!-- ::: -->
-<!-- ::: {.column width="50%" .r-fit-text } -->
-<!-- ::: -->
-<!-- :::: -->
-
-::: {.callout-warning}
-No double-counting with general estimation error!
-:::
-
-## Accuracy & model performance
-
-:::: columns
-
-::: {.column width="50%" .r-fit-text }
+ * Non-heterogeneous grades
 
 :::
-::: {.column width="50%" .r-fit-text }
+:::
+:::{.column width="33%"}
+
+```{r wrong-adj-dist}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+library(ggplot2) 
+library(ggdist)
+library(distributional)
+#bg <- rgb(255,255,230, maxColorValue = 255)
+bg <- 'transparent'
+df <- data.frame(
+  group = c("initial", "inappropriate", "inappropriate"), mu = c(0,0.5,0.8), sd = c(0.1,0.1,0.2), alpha=c(1, 0,1))
+
+ggplot(df, aes(y = group, xdist = dist_normal(mu, sd))) +
+  stat_halfeye(data=df[c(1,3),],aes(fill = stat(level), alpha=alpha)) +
+  geom_segment(data=df[3,],
+    aes(x = 0, xend = mu, yend = group), 
+    color = "rosybrown", 
+    arrow = arrow(angle=20,length = unit(0.03, "npc"), type="closed"), position=position_nudge(y=-0.05)) +
+  geom_segment(data=df[3,],
+    aes(x = mu, xend = mu-0.3, yend = group), 
+    color = "skyblue", 
+    arrow = arrow(angle=20,length = unit(0.03, "npc"), type="closed" ), position=position_nudge(y=-0.1)) +
+  geom_vline(xintercept = df[1,]$mu, color = "gray", linetype="dashed" )+
+  geom_vline(xintercept = df[2,]$mu, color = "rosybrown", linetype="dashed" )+
+  scale_fill_manual(values = c("gray85", "skyblue"), na.value = "gray85", guide = "none") +
+  scale_y_discrete() +
+  scale_alpha(guide="none", range = c(0.33,0.75)) +
+  scale_x_continuous(guide = "none",  limits = c(-0.5,1.25)) +
+  labs(x = "", y = "") + 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+
 
 :::
 ::::
 
-## Representativeness
+::: {.callout-important icon=true appearance="default" .r-fit-text}
+## Common pitfalls
+ * Bias at calibration level $=$ deficiency in model calibration method
+ * Correction of calibration method $\neq$ appropriate adjustment
+
+[No MoC for bias at calibration level!]{style="color:indianred"}
+:::
+
+## Model performance & accuracy {auto-animate=true .smaller}
 
 :::: columns
+:::{.column width="66%" .r-fit-text}
+In case of...
 
-::: {.column width="50%" .r-fit-text }
+ * Biases at level of calibration
 
+::: {.highlight-block data-id="sdf"}
+
+ * Biases at more granular level 
+ * Non-homogeneity of grades / sub-ranges
+
+$\rightarrow$ representativeness in terms of risk characteristics
+
+::: 
+
+ * Non-heterogeneous grades
 :::
-::: {.column width="50%" .r-fit-text }
+:::{.column width="33%"}
+```{r non-hom-grade}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+library(ggplot2) 
+library(ggdist)
+library(distributional)
+#bg <- rgb(255,255,230, maxColorValue = 255)
+bg <- 'transparent'
+df <- data.frame(
+  group = c("calibration level", "grade 1", "grade 2"), mu = c(0.5,0,1), sd = c(0.1,0.2,0.2), alpha=c(1, 0,0))
+
+ggplot(df, aes(y = group, xdist = dist_normal(mu, sd))) +
+  stat_halfeye(aes(fill = stat(level), alpha=alpha)) +
+  geom_segment(data=df[2:3,],
+    aes(x = 0.5, xend = mu, yend = group), 
+    color = "rosybrown", 
+    arrow = arrow(angle=20,length = unit(0.03, "npc"), type="closed"), position=position_nudge(y=-0.05)) +
+  geom_vline(xintercept = df[1,]$mu, color = "gray", linetype="dashed" )+
+  scale_fill_manual(values = c("gray85", "skyblue"), na.value = "gray85", guide = "none") +
+  scale_y_discrete() +
+  scale_alpha(guide="none", range = c(0.33,0.75)) +
+  scale_x_continuous(guide = "none",  limits = c(-0.5,1.5)) +
+  labs(x = "", y = "") + 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+
 
 :::
 ::::
 
-# Appropriate Adjustments
+::: {.callout-note icon=true appearance="default" .r-fit-text}
+## Effect on calibration target?
+ * effect on calibration target if distribution over grades/sub-ranges is non-representative of application portfolio
+ * Representativeness assessments + accuracy tests $\rightarrow$ identification
+:::
 
-## Data Quality & Completeness
+## Model performance & accuracy {auto-animate=true .smaller}
+:::: columns
+:::{.column width="66%" .r-fit-text}
+In case of...
+
+
+ * Biases at level of calibration
+
+ * Biases at more granular level 
+ * Non-homogeneity of grades / sub-ranges
+
+::: {.highlight-block data-id="sdf"}
+ * Non-heterogeneous grades
+
+$\rightarrow$ nothing (no effect on risk quantification)
+:::
+:::
+::: {.column width="33%" .r-fit-text }
+
+```{r non-het-grade}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+library(ggplot2) 
+library(ggdist)
+library(distributional)
+#bg <- rgb(255,255,230, maxColorValue = 255)
+bg <- 'transparent'
+df <- data.frame(
+  group = c("grade 2", "grade 1"), mu = c(0.55,0.45), sd = c(0.2,0.2), alpha=c(1, 1))
+
+ggplot(df, aes(y = group, xdist = dist_normal(mu, sd))) +
+  stat_halfeye(aes(fill = stat(level), alpha=alpha)) +
+  geom_vline(aes(xintercept = mu), color = "gray", linetype="dashed" )+
+  scale_fill_manual(values = c("gray85", "skyblue"), na.value = "gray85", guide = "none") +
+  scale_y_discrete() +
+  scale_alpha(guide="none", range = c(0.33,0.75)) +
+  scale_x_continuous(guide = "none",  limits = c(-0.5,1.5)) +
+  labs(x = "", y = "") + 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+
+:::
+::::
+
+::: {.callout-warning appearance="default" .r-fit-text}
+## Still deficient
+ * Reflected in general estimation error $\rightarrow$ not a "deficiency"
+ * Still need to fullfill requirements w.r.t. meaningful differentiation
+:::
+
+
+## Data Quality & Completeness  {auto-animate=true}
+
+:::: columns
+
+::: {.column width="33%" .r-fit-text #vcenter }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+ * Reference data set $e:\{i,t\}$ with $y_{it},X_{it}, Z_{it}, \dots$
+ * For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+ * Rating grade cannot be determined $\rightarrow$ potential bias at rating grade level
+    + (no model for missing $X$ in ranking method)
+:::
+::::
+::: fragment
+::: {.callout-note .smaller}
+### EBA/GL/2017/16 (p16)
+_Data exclusions may be a tool to quantify adjustments to the observed average default and loss rates where these are necessary; however, they should never be taken into account for the purpose of calculating the observed average default rate_
+:::
+:::
+
+## Data Quality & Completeness  {auto-animate=true}
+
+:::: columns
+
+::: {.column width="33%" .r-fit-text #vcenter }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+:::
+::::
+
+::: {.callout-note .smaller}
+### EBA/GL/2017/16 (p16)
+_Data exclusions may be a tool to quantify adjustments to the observed average default and loss rates where these are necessary; however, they should never be taken into account for the purpose of calculating the observed average default rate_
+:::
+
+::: fragment
+::: {style="color:teal" .smaller}
+**Example: missing completely at random**
+:::
+:::
+
+## Data Quality & Completeness  {auto-animate=true}
+
+:::: columns
+
+::: {.column width="33%" .r-fit-text #vcenter }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+:::
+::::
+
+::: {style="color:teal" .smaller}
+**Example: missing completely at random**
+
+ * mechanism consistent with MCAR
+ * distributions $y_{it}|Z_{it}$ similar over $f$, $g$
+ * $\bar{y}^{(g)} \approx \bar{y}^{(e)}$ at calibration segment level
+
+:::
+
+## Data Quality & Completeness  {auto-animate=true}
+
+:::: columns
+
+::: {.column width="33%" .r-fit-text }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+:::
+::::
+
+::: {style="color:teal"}
+:::: columns
+::: {.column width="25%" .r-fit-text }
+**Example: missing completely at random**
+
+#### (imputation)
+
+:::
+
+::: {.column width="75%" .r-fit-text }
+ 1. Calculate grade $a$ adjusted calibration target $\bar{y}_{a}^{(g)}$
+ 1. $\hat{\sigma}_{a}^{(g)}(y)=(N_{a}^{(g)}-1)^{-\tfrac{1}{2}} s_a^{(g)}$ includes addn. uncertainty
+ 1. Impute $X^{(f)} \sim X^{(g)}$ to obtain $\hat{\sigma}_{a}^{\prime(e)}(y)$
+ 1. Attribute $\Delta$ MoC A $\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})$ 
+:::
+::::
+:::
+
+
+## Data Quality & Completeness  {auto-animate=true}
+
+:::: columns
+
+::: {.column width="33%" .r-fit-text }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+:::
+::::
+
+::: {style="color:teal"}
+:::: columns
+::: {.column width="25%" .r-fit-text }
+**Example: missing completely at random**
+
+#### (imputation)
+
+:::
+
+::: {.column width="75%" .r-fit-text }
+Impute $X^{(f)} \sim X^{(g)}$ to obtain $\hat{\sigma}_{a}^{\prime(e)}(y)$
+
+Attribute $\Delta$ MoC A $\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})$ 
+:::
+::::
+:::
+
+::: {style="color:sienna" .smaller}
+**Example (2): missing at random, linear estimates**
+
+:::
+
+
+## Data Quality & Completeness  {auto-animate=true}
+
+:::: columns
+
+::: {.column width="33%" .r-fit-text }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+:::
+::::
+
+::: {style="color:teal"}
+:::: columns
+::: {.column width="25%" .r-fit-text }
+**Example: missing completely at random**
+
+#### (imputation)
+
+:::
+
+::: {.column width="75%" .r-fit-text }
+Impute $X_{js} \sim \text{Normal}(\bar{X}^{(g)}_a,\hat{\sigma}^{(g)}_a(X))$ to obtain $\hat{\sigma}_{a}^{\prime(e)}(y)$
+
+Attribute $\Delta$ MoC A $\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})$ 
+:::
+::::
+:::
+
+::: {style="color:sienna" .smaller}
+:::: columns
+
+::: {.column width="75%" .r-fit-text }
+
+**Example (2): missing at random, linear estimates**
+
+ * $P(\text{missing})=P(\text{missing}|X,Z,\dots)$
+ * However, distributions $y_{it}$ **not** similar over $f$ vs $g$
+ * Therefore, $\bar{y}_{a}^{(g)}$ is biased and cannot be used
+ * Assume in addition that $p(a)\sim \alpha X + \beta$ (linear ranking model) 
+:::
+
+::: {.column width="25%" .r-fit-text }
+:::
+::::
+:::
+
+
+## Data Quality & Completeness  {auto-animate=true}
+
+:::: columns
+
+::: {.column width="33%" .r-fit-text }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+:::
+::::
+
+::: {style="color:teal"}
+:::: columns
+::: {.column width="25%" .r-fit-text }
+**Example: missing completely at random**
+
+#### (imputation)
+
+:::
+
+::: {.column width="75%" .r-fit-text }
+Impute $X_{js} \sim \text{Normal}(\bar{X}^{(g)}_a,\hat{\sigma}^{(g)}_a(X))$ to obtain $\hat{\sigma}_{a}^{\prime(e)}(y)$
+
+Attribute $\Delta$ MoC A $\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})$ 
+:::
+::::
+:::
+
+::: {style="color:sienna" .smaller}
+:::: columns
+
+::: {.column width="25%" .r-fit-text }
+
+**Example (2): missing at random, linear estimates**
+
+#### (naive imputation)
+:::
+
+::: {.column width="75%" .r-fit-text }
+ 1. Impute $X_{js} \leftarrow \bar{X}^{(g)}_a$ to obtain $\bar{y}_{a}^{\prime(e)}$
+ 1. Impute $X_{js} \leftarrow \bar{X}^{(g)} + z_\alpha \hat{\sigma}^{(g)}_a$ to obtain $\bar{y}_{a}^{\prime(e)(\text{upper})}$
+ 1. MoC A $\propto \bar{y}_{a}^{\prime(e)(\text{upper})}-\bar{y}_{a}^{\prime(e)}$
+
+:::
+::::
+:::
+
+:::fragment
+::: {.callout-note .smaller}
+### EBA/GL/2017/16 (p178)
+_$\small{\dots}$ adjusting the data where deficiencies have been identified may involve rectifying the identified errors, for instance where missing data points are filled in with the most probable information._
+:::
+:::
 
 
 
-# Additional Uncertainties
+## Data Quality & Completeness  {auto-animate=true}
 
-# MoC Quantification
+:::: columns
+
+::: {.column width="33%" .r-fit-text }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+:::
+::::
+
+::: {style="color:teal"}
+:::: columns
+::: {.column width="25%" .r-fit-text }
+**Example: missing completely at random**
+
+#### (imputation)
+
+:::
+
+::: {.column width="75%" .r-fit-text }
+Impute $X_{js} \sim \text{Normal}(\bar{X}^{(g)}_a,\hat{\sigma}^{(g)}_a(X))$ to obtain $\hat{\sigma}_{a}^{\prime(e)}(y)$
+
+Attribute $\Delta$ MoC A $\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})$ 
+:::
+::::
+:::
+
+::: {style="color:sienna" .smaller}
+:::: columns
+
+::: {.column width="25%" .r-fit-text }
+
+**Example (2): missing at random, linear estimates**
+
+#### (naive imputation)
+:::
+
+::: {.column width="75%" .r-fit-text }
+Impute $X_{js} \leftarrow \bar{X}^{(g)}_a$, $X_{js} \leftarrow \bar{X}^{(g)} + z_\alpha \hat{\sigma}^{(g)}_a$
+
+$\Delta$ MoC A $\propto \bar{y}_{a}^{\prime(e)(\text{upper})}-\bar{y}_{a}^{\prime(e)}$
+:::
+::::
+:::
+
+
+::: {style="color:olive" .smaller}
+**Example (3): missing at random, non-linear**
+
+:::
+
+
+## Data Quality & Completeness  {auto-animate=true}
+
+:::: columns
+
+::: {.column width="33%" .r-fit-text }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+:::
+::::
+
+::: {style="color:teal"}
+:::: columns
+::: {.column width="25%" .r-fit-text }
+**Example: missing completely at random**
+
+#### (imputation)
+
+:::
+
+::: {.column width="75%" .r-fit-text }
+Impute $X_{js} \sim \text{Normal}(\bar{X}^{(g)}_a,\hat{\sigma}^{(g)}_a(X))$ to obtain $\hat{\sigma}_{a}^{\prime(e)}(y)$
+
+Attribute $\Delta$ MoC A $\propto (\hat{\sigma}_{a}^{(g)}-\hat{\sigma}_{a}^{\prime(e)})$ 
+:::
+::::
+:::
+
+::: {style="color:sienna" .smaller}
+:::: columns
+
+::: {.column width="25%" .r-fit-text }
+
+**Example (2): missing at random, linear estimates**
+
+#### (naive imputation)
+:::
+
+::: {.column width="75%" .r-fit-text }
+Impute $X_{js} \leftarrow \bar{X}^{(g)}_a$, $X_{js} \leftarrow \bar{X}^{(g)} + z_\alpha \hat{\sigma}^{(g)}_a$
+
+$\Delta$ MoC A $\propto \bar{y}_{a}^{\prime(e)(\text{upper})}-\bar{y}_{a}^{\prime(e)}$
+:::
+::::
+:::
+
+
+
+::: {style="color:olive" .smaller}
+:::: columns
+
+::: {.column width="85%" .r-fit-text }
+
+**Example (3): missing at random**
+
+ * $P(\text{missing})=P(\text{missing}|X,Z,\dots)$
+ * Distributions $y_{it}$ **not** similar over $f$ vs $g$
+ * Calibration targets not linear in $X^{(f)}$ so that $E(\bar{y}_{a}^{(e)})\neq \bar{y}_{a}^{(e)}|_{X^{(f)}=\bar{X}^{(g)}}$
+
+:::
+::: {.column width="15%" .r-fit-text }
+:::
+::::
+:::
+
+::: aside
+:::
+
+
+## Data Quality & Completeness  {auto-animate=true}
+
+:::: columns
+
+::: {.column width="33%" .r-fit-text }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+:::
+::::
+
+:::: columns
+::: {.column width="33%" .r-fit-text }
+::::: {style="color:teal"}
+**Example: missing completely at random**
+:::::
+#### (imputation)
+
+:::
+
+::: {.column width="33%" .r-fit-text }
+::::: {style="color:sienna"}
+**Example (2): missing at random, linear estimates**
+:::::
+#### (naive imputation)
+:::
+::: {.column width="33%" .r-fit-text }
+:::
+::::
+
+::::: {style="color:olive"}
+:::: columns
+::: {.column width="25%" .r-fit-text }
+**Example (3): missing at random**
+
+#### (multiple imputation)
+
+:::
+
+::: {.column width="75%" .r-fit-text }
+Approximate $\bar{y}^{(e)}(X^{(f)},\dots)P(X^{(f)},\dots)$ with univariate resampling:
+
+ 1. Randomly sample $X^{(b)}$ from $X^{(g)}$ with replacement $M$ times
+ 1. Calculate $\bar{y}_a^{\prime(b)}=\bar{y}_a^{(e)}|_{X^{(f)}\leftarrow X^{(b)}}$, $y_a^{\prime}=\frac{1}{M}\sum_b y_a^{\prime(b)}$ (adj. calib. targets)
+ 1. Obtain the *excess variance*[^1] due to missing values as $\hat{\sigma}_M(\bar{y})=(1+\frac{1}{M})\sum_b\frac{(y_a^{\prime} -y_a^{\prime(b)})}{M-1}$
+
+
+:::
+::::
+:::::
+
+[^1]: See Rubin, D. B. (1987) *Multiple Imputation for Nonresponse in Surveys*
+
+
+## Data Quality & Completeness  {auto-animate=true}
+
+:::: columns
+
+::: {.column width="33%" .r-fit-text }
+
+::: {.highlight-block} 
+Missing (risk) characteristics $X_{ir}$ for assigning exposures
+:::
+
+:::
+
+::: {.column width="67%" .r-fit-text }
+For exposures at reference dates $f:\{j,s\}$, variable $X_{js}$ missing ($g$ not missing)
+:::
+::::
+
+:::: columns
+::: {.column width="33%" .r-fit-text }
+::::: {style="color:teal"}
+**Example: missing completely at random**
+:::::
+#### (imputation)
+
+:::
+
+::: {.column width="33%" .r-fit-text }
+::::: {style="color:sienna"}
+**Example (2): missing at random, linear estimates**
+:::::
+#### (naive imputation)
+:::
+::: {.column width="33%" .r-fit-text }
+::::: {style="color:olive"}
+
+**Example (3): missing at random**
+:::::
+#### (multiple imputation)
+
+:::
+::::
+
+:::{.callout-note appearance="default"}
+## Real life
+ * Real life usually not so fortunate {{< fa frown >}}
+ * Identification of missingness mechanism important
+ * Small effect expected $\rightarrow$ less sophisticated approaches
+:::
+
+
+
+
+## Representativeness {auto-animate=true}
+
+:::: columns
+
+::: {.column width="67%" .r-fit-text }
+
+ * Data should be *representative* of application portfolio 
+   + Exposures, risk characteristics
+   + (Risk management) processes (origination, DoD, recovery)
+   + Economic/market conditions
+ * EBA specifies dimensions minimally to be considered
+ * Over all reference dates and exposures, per risk parameter
+ 
+:::
+::: {.column width="33%" .r-fit-text }
+:::
+::::
+
+:::fragment
+::: {.callout-note}
+### EBA/GL/2017/16 $\S$ 34
+_Where the representativeness of data $\small{\dots}$ is insufficient and leads to a bias or increased uncertainty of risk quantification, institutions should introduce an appropriate adjustment to correct the bias and they should apply a margin of conservatism_
+:::
+:::
+
+## Representativeness {auto-animate=true}
+
+:::: columns
+
+::: {.column width="67%" .r-fit-text }
+
+ * Data should be *representative* of application portfolio 
+   + Exposures, risk characteristics
+   + [(Risk management) processes (origination, DoD, recovery)]{style="color:indianred"}
+   + Economic/market conditions
+ * EBA specifies dimensions minimally to be considered
+ * Over all reference dates and exposures, per risk parameter
+ 
+:::
+::: {.column width="33%" .r-fit-text }
+::: {.callout-important appearance="default"}
+### Challenges
+ * Many potential deficiencies
+ * Effects hard to model / quantify
+ * Often no data available to estimate
+:::
+:::
+::::
+
+::: {.callout-tip appearance="default" .smaller}
+## Strategies
+**all** Qualitative assessment of potential drivers
+
+**if so** Quantitative assessment of *non-representativeness* (according to some simple metric)
+
+**finally** Quantitative estimate of *effect* of non-representativeness
+:::
+
+
+## Representativeness {auto-animate=true}
+
+:::: columns
+
+::: {.column width="67%" .r-fit-text }
+
+ [(Risk management) processes (origination, DoD, recovery)]{style="color:indianred"}
+ 
+:::
+::: {.column width="33%" .r-fit-text }
+::: {.callout-important appearance="default"}
+### Challenges
+ * Many potential deficiencies
+ * Effects hard to model / quantify
+ * Often no data available to estimate
+:::
+:::
+::::
+
+::: {.smaller .r-fit-text data-id="sdfsdf"}
+Origination
+: lending/underwriting standards, risk appetite, 
+
+Default
+: definition of default, policy and processes
+
+Recovery
+: recovery, restructuring, forbearance policies and processes
+:::
+
+
+
+## Representativeness {auto-animate=true}
+
+:::: columns
+
+::: {.column width="67%" .r-fit-text }
+
+::: {.smaller .r-fit-text data-id="sdfsdf"}
+Origination
+: lending/underwriting standards, risk appetite, 
+
+Default
+: definition of default, policy and processes
+
+Recovery
+: recovery, restructuring, forbearance policies and processes
+:::
+ 
+:::
+::: {.column width="33%" .r-fit-text }
+::: {.callout-important appearance="default"}
+### Challenges
+ * Many potential deficiencies
+ * Effects hard to model / quantify
+ * Often no data available to estimate
+:::
+:::
+::::
+
+
+
+
+## Representativeness {auto-animate=true}
+
+:::: columns
+
+::: {.column width="67%" .r-fit-text }
+
+::: {.smaller data-id="sdfsdf"}
+
+:::{style="color:teal"}
+Default
+: definition of default, policy and processes
+:::
+
+:::
+ 
+:::
+::: {.column width="33%" .r-fit-text }
+::: {.callout-note appearance="default"}
+### Definition of default
+ * EBA harmonization of DoD
+
+:::
+:::
+::::
+
+:::: columns
+
+::: {.column width="67%" .r-fit-text }
+
+### Common strategies (DoD)
+ * Simulation based on historical data
+ * Adjustments modelled on data collected under new DoD
+ * Combinations
+   + simulated materiality threshold
+   + additional adjustment for UtP based on recent data
+
+:::
+::: {.column width="33%" .r-fit-text }
+::: fragment
+::: {.callout-warning appearance="default"}
+### Pay attention
+ * Simulation = appropriate adjustment
+ * Recovery processes also affected
+:::
+:::
+:::
+::::
+
 
 # Case Study Explanation
