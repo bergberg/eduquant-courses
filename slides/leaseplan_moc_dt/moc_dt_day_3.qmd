@@ -1,0 +1,592 @@
+---
+title: "MoC & Downturn LGD"
+subtitle: "Day 3 (case study review)"
+# author: "Pieter van den Berg"
+date: last-modified
+date-format: long
+format: eduquant-slides-revealjs
+---
+
+# Case Study 
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
+
+#### Introduction
+
+In this exercise, you estimated an appropriate adjustment and MoC A to account for a difference between the `New` DoD to be used in application and the `Old` DoD available in historical data. Fortunately, some data is available that was collected under both definitions. This is a (simulated) data set of a homogeneous portfolio, and there are no risk drivers, grades or other features to distinguish the exposures by. Lucky you!
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+:::
+
+#### Data
+
+You were given a panel data set with a set of $\approx$ 2k exposures `i` at 120 dates (months) `t` and default flags `d` according to a `New` and `Old` definition of default (`DoD`). The `New` definition is available only for the last 26 dates (months) whereas the `Old` definition default flag is available for the entire period. Two other derived variables are included for your convenience: a 12-month forward-looking into-default flag `into_d_12`, and a `status`: `enter`, `stock`, `default` or `exit`.
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+:::: columns
+::: {.column width="50%" .r-fit-text }
+::: {style="color:darkgrey"}
+
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+:::
+
+`i`: exposure id
+
+`t`: time
+
+`DoD`: "Old" or "New"
+
+`d`: in-default
+
+`into_d_12`: into default within 12 months
+
+`status`: `enter`, `stock`, `default` or `exit`
+:::
+::: {.column width="50%" .r-fit-text .smaller}
+
+```{r}
+library(dplyr)
+case_study_1_data <- read.csv("../../media/case_study_1_data.csv.gz")
+``` 
+
+```{r echo=FALSE}
+#| tbl-cap: "sample of 10 exposures" 
+
+case_study_1_data |>
+  filter(i %in% sample(i,10)) |> 
+  as.data.frame()
+```
+
+:::
+::::
+
+
+```{r }
+library(downloadthis)
+case_study_1_data |>
+  download_this( 
+    output_name = "case study 1 data",
+    output_extension = ".csv",
+    button_label = " Download data as csv",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+``` 
+```{r}
+case_study_1_data |>
+  download_this( 
+    output_name = "case study 1 data",
+    output_extension = ".xlsx",
+    button_label = "Download data as xlsx",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+```
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+:::
+
+#### Challenge
+
+ * Estimate **appropriate adjustment** to the `Old` DoD data to estimate the appropriately adjusted long-run average default rate, 
+ * Also estimate the additional uncertainty due to this adjustment. 
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+:::
+
+#### Challenge
+Do so under different assumptions/scenarios:
+
+ A) First, assume that $\bar{R}^{(new)}_{(12)} = \alpha \bar{R}^{(old)}_{(12)} + \epsilon$, where $\bar{R}_{(n)}$ is an observed average $n$-month into-default rate. In words, assume that any average default rate over a fixed period under the new default definition is a constant factor times that under the old one.
+
+ B) Alternatively, assume that $R^{(new)}_{(1)}(t) = \beta R^{(old)}_{(1)}(t) + \epsilon$, where $R_{(n)}(t)$ is the observed $n$-month into-default rate at reference date $t$. In words, assume that not the long-run average 12-month, but the monthly into-default rate under the new definition is related to the old one with a constant scale factor $\beta$.
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+ * Scenario A: $\bar{R}^{(new)}_{(12)} = \alpha \bar{R}^{(old)}_{(12)} + \epsilon$
+ * Scenario B: $R^{(new)}_{(1)}(t) = \beta R^{(old)}_{(1)}(t) + \epsilon$
+:::
+
+#### Challenge
+For each of these two scenarios,
+
+ 1) Estimate $\alpha$ resp. $\beta$ based on the overlapping period.
+ 2) Based on your estimates, derive appropriately adjusted default rates.
+ 3) Also estimate the uncertainty of $\alpha$ resp. $\beta$.
+ 4) Using error propagation, derive the corresponding **additional** uncertainty of the estimated appropriately adjusted long-run average default rate in either case.
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {style="color:darkgrey"}
+ * `New` DoD to be used in application and the `Old` DoD available in historical data
+ * Estimate an appropriate adjustment and MoC A
+ * Scenario A: $\bar{D}^{(new)}_{(12)} = \alpha \bar{D}^{(old)}_{(12)} + \epsilon$
+ * Scenario B*: $D^{(new)}_{(12)}(t) = \beta D^{(old)}_{(12)}(t) + \epsilon$
+:::
+
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+ (A) Constant ratio of averages of 12-month into-default rates
+
+:::: columns
+::: {.column width="50%" .r-fit-text }
+Here, we assume
+
+$$\text{D}^{\prime}_{\text{LRA}}=(\alpha\pm \sigma_{\alpha})\cdot\text{D}^{(old)}_{\text{LRA}} $$
+
+with
+
+$$\alpha = \frac{\bar{\text{D}}^{(new)}}{\bar{\text{D}}^{(old)}}$$ 
+
+:::
+::: {.column width="50%" .r-fit-text }
+```{r unadj-dist_1}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+library(dplyr)
+library(ggplot2) 
+library(ggdist)
+bg <- 'transparent'
+df_3_B_adj <- read.csv("../../media/case_study_1_3_B.csv.gz")
+df_3_B_adj_summary_all <- read.csv("../../media/case_study_1_3_B_summary.csv.gz")
+
+df_3_B_adj |>
+  filter(DoD!="New (unmasked)",DoD!="Adjusted_B") |>
+  ggplot(aes(t,into_dr_12, color=DoD)) + 
+  geom_hline(data = df_3_B_adj_summary_all |> filter(DoD=="Adjusted_A"),aes(yintercept = mean_into_dr_12, color = DoD), alpha=0.5, linetype = "dashed")+
+  geom_lineribbon(data=df_3_B_adj_summary_all |> filter(DoD!="Adjusted_A",DoD!="Adjusted_B",DoD!="New (unmasked)"), aes(x=t,y = mean_into_dr_12, ymin = mean_into_dr_12_lower, ymax = mean_into_dr_12_upper, color = DoD, fill=DoD), alpha=0.5, linetype = "dashed") +
+  geom_pointrange(
+  aes(
+    ymin=into_dr_12-sqrt(var_into_dr_12),
+    ymax=into_dr_12+sqrt(var_into_dr_12)),
+  shape = 'o',alpha=0.5, position = position_dodge(width = 1)) +
+  #scale_color_viridis_d()+scale_fill_viridis_d()+
+  scale_color_brewer(type = "qual", palette = "Set2") + scale_fill_brewer(type = "qual", palette = "Set2") +
+  scale_y_continuous(labels = scales::label_percent()) + 
+  labs(caption=stringr::str_wrap("Stationary portfolio simulated default rate, DoD threshold at 0 (Old) and 1 (New). All but the last 25 periods are masked for the New DoD.", 60)) + ylab("12-month into-default rate")+ 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+:::
+::::
+
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+ (A) Constant ratio of averages of 12-month into-default rates
+
+:::: columns
+::: {.column width="50%" .r-fit-text }
+Here, we assume
+
+$$\bar{D}^{\prime}_{\text{LRA}}=(\alpha\pm \sigma_{\alpha})\cdot\bar{D}^{(old)}_{\text{LRA}} $$
+
+with
+
+$$\alpha = \frac{\bar{\text{D}}^{(new)}}{\bar{\text{D}}^{(old)}}|_{overlapping\ period}$$ 
+
+and
+
+$$\sigma_\alpha^2 \approx \alpha^2(\frac{\sigma_{(new)}^2}{\bar{\text{D}}_{(new)}^2} +\frac{\sigma_{(old)}^2}{\bar{\text{D}}_{(old)}^2} $$
+
+$$-2\rho_{(old),(new)}\frac{\sigma_{(old)}\sigma_{(new)}}{\bar{\text{D}}_{(old)} \bar{\text{D}}_{(new)}})$$
+
+:::
+::: {.column width="50%" .r-fit-text }
+```{r unadj-dist_11}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+df_3_B_adj |>
+  filter(DoD!="New (unmasked)",DoD!="Adjusted_B") |>
+  ggplot(aes(t,into_dr_12, color=DoD)) + 
+  geom_lineribbon(data=df_3_B_adj_summary_all |> filter( DoD!="Adjusted_B",DoD!="New (unmasked)"), aes(x=t,y = mean_into_dr_12, ymin = mean_into_dr_12_lower, ymax = mean_into_dr_12_upper, color = DoD, fill=DoD), alpha=0.5, linetype = "dashed") +
+  geom_pointrange(
+  aes(
+    ymin=into_dr_12-sqrt(var_into_dr_12),
+    ymax=into_dr_12+sqrt(var_into_dr_12)),
+  shape = 'o',alpha=0.5, position = position_dodge(width = 1)) +
+  #scale_color_viridis_d()+scale_fill_viridis_d()+
+  scale_color_brewer(type = "qual", palette = "Set2") + scale_fill_brewer(type = "qual", palette = "Set2") +
+  scale_y_continuous(labels = scales::label_percent()) + 
+  labs(caption=stringr::str_wrap("Stationary portfolio simulated default rate, DoD threshold at 0 (Old) and 1 (New). All but the last 25 periods are masked for the New DoD.", 60)) + ylab("12-month into-default rate")+ 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+
+:::
+::::
+
+
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+ (A) Constant ratio of averages of 12-month into-default rates
+
+:::: columns
+::: {.column width="50%" .r-fit-text }
+Here, we assume
+
+$$\text{DR}^{\prime}_{\text{LRA}}=(\alpha\pm \sigma_{\alpha})\cdot\text{DR}^{(old)}_{\text{LRA}} $$
+
+with
+
+$$\alpha = \frac{\bar{\text{D}}^{(new)}}{\bar{\text{D}}^{(old)}} = 1.7 \pm 0.42$$ 
+
+::: {.callout-warning appearance="default"}
+Rather large additional uncertainty!
+:::
+
+:::
+::: {.column width="50%" .r-fit-text }
+```{r unadj-dist_3}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+library(ggplot2) 
+library(ggdist)
+bg <- 'transparent'
+df_3_B_adj |>
+  filter(DoD!="Adjusted_B") |>
+  ggplot(aes(t,into_dr_12, color=DoD)) + 
+  geom_lineribbon(data=df_3_B_adj_summary_all |> filter(DoD!="Adjusted_B"), aes(x=t,y = mean_into_dr_12, ymin = mean_into_dr_12_lower, ymax = mean_into_dr_12_upper, color = DoD, fill=DoD), alpha=0.5, linetype = "dashed") +
+  geom_pointrange(
+  aes(
+    ymin=into_dr_12-sqrt(var_into_dr_12),
+    ymax=into_dr_12+sqrt(var_into_dr_12)),
+  shape = 'o',alpha=0.5, position = position_dodge(width = 1)) +
+  #scale_color_viridis_d()+scale_fill_viridis_d()+
+  scale_color_brewer(type = "qual", palette = "Set2") + scale_fill_brewer(type = "qual", palette = "Set2") +
+  scale_y_continuous(labels = scales::label_percent()) + 
+  labs(title = "(unmasked)",caption=stringr::str_wrap("Stationary portfolio simulated default rate, DoD threshold at 0 (Old) and 1 (New). All but the last 25 periods are masked for the New DoD.", 60)) + ylab("12-month into-default rate")+ 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+:::
+::::
+
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+
+::: {.callout-important icon=true appearance="default" .r-fit-text}
+## Common pitfalls
+ * Standard error of the adjusted default rate $\neq$ *additional uncertainty*
+ * Standard error of the ratio of correlated parameters 
+:::
+
+::: {.callout-info icon=true appearance="default" .r-fit-text}
+ * Simpler approaches may inflate estimated additional uncertainty $\rightarrow €€€$ capital
+:::
+
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+ (B*) Constant ratio of monthly into-default rate
+ 
+:::: columns
+::: {.column width="50%" .r-fit-text }
+Here, we assume
+
+$$D^{(new)}_{(12)}(t) = \beta \cdot D^{(old)}_{(12)}(t) + constant$$
+
+
+:::
+::: {.column width="50%" .r-fit-text }
+```{r dr1_scatter}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+library(ggplot2) 
+library(ggdist)
+bg <- 'transparent'
+read.csv("../../media/case_study_1_3_B_plot.csv.gz") |>
+ ggplot(aes(into_dr_12_Old, into_dr_12_New)) + 
+  geom_errorbar(aes(
+      ymin=into_dr_12_New-sd_into_dr_12_New, 
+      ymax = into_dr_12_New+sd_into_dr_12_New), color = "steelblue1", alpha = 0.5)+
+  geom_errorbarh(aes(
+      xmin=into_dr_12_Old-sd_into_dr_12_Old, 
+      xmax = into_dr_12_Old+sd_into_dr_12_Old
+      ), color = "steelblue1", alpha = 0.5) + 
+  scale_x_continuous(trans = scales::logit_trans()) + scale_y_continuous(trans = scales::logit_trans()) + 
+  geom_abline(slope=1,intercept=0,linetype="dashed")+
+  geom_smooth(method="lm", formula = y ~ x) + 
+  xlab("Old monthly into-default rate") + ylab("New monthly into-default rate")+theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+:::
+::::
+
+
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+ (B*) Constant ratio of 1-month into-default rate
+ 
+:::: columns
+::: {.column width="50%" .r-fit-text }
+Here, we assume
+
+$$D^{(new)}_{(12)}(t) = \beta \cdot D^{(old)}_{(12)}(t) + constant$$
+
+
+:::
+::: {.column width="50%" .r-fit-text }
+```{r unadj-dist_4}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+library(ggplot2) 
+library(ggdist)
+bg <- 'transparent'
+df_3_B_adj |>
+  filter(DoD!="Adjusted_A",DoD!="New (unmasked)") |>
+  ggplot(aes(t,into_dr_12, color=DoD)) + 
+  # geom_lineribbon(data=df_2_B_adj_summary_all |> filter(DoD!="Adjusted_A",DoD!="New (unmasked)"), aes(x=t,y = mean_into_dr_12, ymin = mean_into_dr_12_lower, ymax = mean_into_dr_12_upper, color = DoD, fill=DoD), alpha=0.5, linetype = "dashed") +
+  geom_pointrange(
+  aes(
+    ymin=into_dr_12-sqrt(var_into_dr_12),
+    ymax=into_dr_12+sqrt(var_into_dr_12)),
+  shape = 'o',alpha=0.5, position = position_dodge(width = 1)) +
+  #scale_color_viridis_d()+scale_fill_viridis_d()+
+  scale_color_brewer(type = "qual", palette = "Set2") + scale_fill_brewer(type = "qual", palette = "Set2") +
+  scale_y_continuous(labels = scales::label_percent()) + 
+  labs(caption=stringr::str_wrap("Stationary portfolio simulated default rate, DoD threshold at 0 (Old) and 1 (New). All but the last 25 periods are masked for the New DoD.", 60)) + ylab("12-month into-default rate")+ 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+:::
+::::
+
+
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+ (B) Constant ratio of monthly into-default rate
+ 
+:::: columns
+::: {.column width="50%" .r-fit-text }
+Here, we assume
+$$D^{(adj)}_{(12)}(t) = constant + \beta\cdot D^{(old)}_{(12)}(t) +\epsilon$$
+ 
+$$\bar{D}^{(adj)} = \sum_t D^{(adj)}_{(12)}(t) / T^{\prime} $$
+
+
+
+:::
+::: {.column width="50%" .r-fit-text }
+```{r unadj-dist_5}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+library(ggplot2) 
+library(ggdist)
+bg <- 'transparent'
+df_3_B_adj |>
+  filter(DoD!="Adjusted_A") |>
+  ggplot(aes(t,into_dr_12, color=DoD)) + 
+  # geom_lineribbon(data=df_2_B_adj_summary_all |> filter(DoD!="Adjusted_A",DoD!="New (unmasked)"), aes(x=t,y = mean_into_dr_12, ymin = mean_into_dr_12_lower, ymax = mean_into_dr_12_upper, color = DoD, fill=DoD), alpha=0.5, linetype = "dashed") +
+  geom_pointrange(
+  aes(
+    ymin=into_dr_12-sqrt(var_into_dr_12),
+    ymax=into_dr_12+sqrt(var_into_dr_12)),
+  shape = 'o',alpha=0.5, position = position_dodge(width = 1)) +
+  #scale_color_viridis_d()+scale_fill_viridis_d()+
+  scale_color_brewer(type = "qual", palette = "Set2") + scale_fill_brewer(type = "qual", palette = "Set2") +
+  scale_y_continuous(labels = scales::label_percent()) + 
+  labs(title="(unmasked)",caption=stringr::str_wrap("Stationary portfolio simulated default rate, DoD threshold at 0 (Old) and 1 (New). All but the last 25 periods are masked for the New DoD.", 60)) + ylab("12-month into-default rate")+ 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+:::
+::::
+
+
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
+ (B) Constant ratio of monthly into-default rate
+ 
+:::: columns
+::: {.column width="50%" .r-fit-text }
+Here, we assume[^ert]
+
+$$D^{(adj)}_{(12)}(t) = constant + \beta\cdot D^{(old)}_{(12)}(t) +\epsilon$$
+ 
+$$\bar{D}^{(adj)} = \sum_t D^{(adj)}_{(12)}(t) / T^{\prime} $$
+
+$$\sigma^2(\bar{D}^{(adj)}) = \frac{1}{\tilde{T}^2}\sum_t\sigma^2(t)$$
+
+The regression standard errors are propagated to the 12-month adjusted default rate to obtain the *additional* uncertainty due to the adjustment.
+
+[^ert]: Correction $\tilde{T}^2 \approx $ to account for bias due to autocorrelation.
+
+:::
+::: {.column width="50%" .r-fit-text }
+```{r unadj-dist_6}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+
+library(ggplot2) 
+library(ggdist)
+bg <- 'transparent'
+df_3_B_adj |>
+  filter(DoD!="Adjusted_A") |>
+  ggplot(aes(t,into_dr_12, color=DoD)) + 
+  geom_lineribbon(data=df_3_B_adj_summary_all |> filter(DoD!="Adjusted_A"), aes(x=t,y = mean_into_dr_12, ymin = mean_into_dr_12_lower, ymax = mean_into_dr_12_upper, color = DoD, fill=DoD), alpha=0.5, linetype = "dashed") +
+  geom_pointrange(
+  aes(
+    ymin=into_dr_12-sqrt(var_into_dr_12),
+    ymax=into_dr_12+sqrt(var_into_dr_12)),
+  shape = 'o',alpha=0.5, position = position_dodge(width = 1)) +
+  #scale_color_viridis_d()+scale_fill_viridis_d()+
+  scale_color_brewer(type = "qual", palette = "Set2") + scale_fill_brewer(type = "qual", palette = "Set2") +
+  scale_y_continuous(labels = scales::label_percent()) + 
+  labs(title="(unmasked)",caption=stringr::str_wrap("Stationary portfolio simulated default rate, DoD threshold at 0 (Old) and 1 (New). All but the last 25 periods are masked for the New DoD.", 60)) + ylab("12-month into-default rate")+ 
+  theme(
+    panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+:::
+::::
+
+## Case study 1: reflection
+
+::: {.callout-info icon=true appearance="default" .r-fit-text}
+
+ * Simpler approaches may inflate estimated additional uncertainty $\rightarrow €€€$ capital
+ * The second approach ignores that $cov(\epsilon_t,\epsilon_{t+1..12})>>0$ and therefore underestimates $\sigma(\bar{D}^{adj})$
+ * More generally, the assumption that the relation is constant is not realistic
+:::
+
+
+## BONUS QUESTIONS
+
+ 5) Would you consider the assumptions A) and B) to be reasonable in a real-life situation? Can you verify these assumptions using the given data?
+
+ 6) Can you come up with an alternative approach?
+
+ 7) Your appropriately adjusted LRA DR may be more uncertain due to model misspecification. Can you think of some ways to quantify that uncertainty?
+
+ 8) This simulated data set has only idiosyncratic variability, i.e., there is no systemic risk factor! Do your answers to the previous questions change?
+
+# Recap and link to DT
+
+## Downturn Quantification
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+
+Reference dates
+: Date to which realised values are aggregated [selected based on identified Downturn]{style="color:teal"}
+
+Calibration Segment
+: Jointly calibrated set of exposures with same *level of risk*, [including Downturn risk]{style="color:teal"} 
+
+Calibration Target
+: Downturn LGD, CCF estimated [based on observed DT impact, extrapolation or fall-back approach]{style="color:teal"}
+
+Appropriate Adjustment
+: Modeled effect on CT of drivers of non-representativeness & other sources of bias
+
+Appropriately Adjusted Calibration Target
+: Calibration Target adjusted for biases
+
+:::
+
+::: {.column width="50%" .r-fit-text}
+![](/media/risk_quantification_link_dt.drawio.svg)
+:::
+::::
+
+# Switch {{< li qvzrpodt trigger=loop colors="primary:#f4a09c,secondary:#9cf4df" >}} Operator 
+
+## Material for Case Study 2
+
+
+```{r }
+case_study_2_data <- read.csv("../../media/Case_DT_identification_data.csv.gz")
+
+library(downloadthis)
+case_study_2_data |>
+  download_this( 
+    output_name = "case study 2 data",
+    output_extension = ".csv",
+    button_label = " Download data as csv",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+``` 
+```{r}
+case_study_2_data |>
+  download_this( 
+    output_name = "case study 2 data",
+    output_extension = ".xlsx",
+    button_label = "Download data as xlsx",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+```
