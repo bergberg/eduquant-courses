@@ -53,21 +53,21 @@
     "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-7",
     "title": "MoC & Downturn LGD",
     "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\nConstant ratio of averages of 12-month into-default rates\n\n\n\nHere, we assume\n\\[\\text{D}^{\\prime}_{\\text{LRA}}=(\\alpha\\pm \\sigma_{\\alpha})\\cdot\\text{D}^{(old)}_{\\text{LRA}} \\]\nwith\n\\[\\alpha = \\frac{\\bar{\\text{D}}^{(new)}}{\\bar{\\text{D}}^{(old)}}\\]"
+    "text": "Case study 1: one Dod, two Dod\n(A) Constant ratio of averages of 12-month into-default rates\n\n\nHere, we assume\n\\[\\text{D}^{\\prime}_{\\text{LRA}}=(\\alpha\\pm \\sigma_{\\alpha})\\cdot\\text{D}^{(old)}_{\\text{LRA}} \\]\nwith\n\\[\\alpha = \\frac{\\bar{\\text{D}}^{(new)}}{\\bar{\\text{D}}^{(old)}}\\]"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-8",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-8",
     "title": "MoC & Downturn LGD",
     "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\nConstant ratio of averages of 12-month into-default rates\n\n\n\nHere, we assume\n\\[\\bar{D}^{\\prime}_{\\text{LRA}}=(\\alpha\\pm \\sigma_{\\alpha})\\cdot\\bar{D}^{(old)}_{\\text{LRA}} \\]\nwith\n\\[\\alpha = \\frac{\\bar{\\text{D}}^{(new)}}{\\bar{\\text{D}}^{(old)}}|_{overlapping\\ period}\\]\nand\n\\[\\sigma_\\alpha^2 \\approx \\alpha^2(\\frac{\\sigma_{(new)}^2}{\\bar{\\text{D}}_{(new)}^2} +\\frac{\\sigma_{(old)}^2}{\\bar{\\text{D}}_{(old)}^2} \\]\n\\[-2\\rho_{(old),(new)}\\frac{\\sigma_{(old)}\\sigma_{(new)}}{\\bar{\\text{D}}_{(old)} \\bar{\\text{D}}_{(new)}})\\]"
+    "text": "Case study 1: one Dod, two Dod\n(A) Constant ratio of averages of 12-month into-default rates\n\n\nHere, we assume\n\\[\\bar{D}^{\\prime}_{\\text{LRA}}=(\\alpha\\pm \\sigma_{\\alpha})\\cdot\\bar{D}^{(old)}_{\\text{LRA}} \\]\nwith\n\\[\\alpha = \\frac{\\bar{\\text{D}}^{(new)}}{\\bar{\\text{D}}^{(old)}}|_{overlapping\\ period}\\]\nand\n\\[\\sigma_\\alpha^2 \\approx \\alpha^2(\\frac{\\sigma_{(new)}^2}{\\bar{\\text{D}}_{(new)}^2} +\\frac{\\sigma_{(old)}^2}{\\bar{\\text{D}}_{(old)}^2} \\]\n\\[-2\\rho_{(old),(new)}\\frac{\\sigma_{(old)}\\sigma_{(new)}}{\\bar{\\text{D}}_{(old)} \\bar{\\text{D}}_{(new)}})\\]"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-9",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-9",
     "title": "MoC & Downturn LGD",
     "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\nConstant ratio of averages of 12-month into-default rates\n\n\n\nHere, we assume\n\\[\\text{DR}^{\\prime}_{\\text{LRA}}=(\\alpha\\pm \\sigma_{\\alpha})\\cdot\\text{DR}^{(old)}_{\\text{LRA}} \\]\nwith\n\\[\\alpha = \\frac{\\bar{\\text{D}}^{(new)}}{\\bar{\\text{D}}^{(old)}} = 1.7 \\pm 0.42\\]\n\n\n\n\n\n\nWarning\n\n\nRather large additional uncertainty!"
+    "text": "Case study 1: one Dod, two Dod\n(A) Constant ratio of averages of 12-month into-default rates\n\n\nHere, we assume\n\\[\\text{DR}^{\\prime}_{\\text{LRA}}=(\\alpha\\pm \\sigma_{\\alpha})\\cdot\\text{DR}^{(old)}_{\\text{LRA}} \\]\nwith\n\\[\\alpha = \\frac{\\bar{\\text{D}}^{(new)}}{\\bar{\\text{D}}^{(old)}} = 1.7 \\pm 0.42\\]\n\n\n\n\n\n\nWarning\n\n\nRather large additional uncertainty!"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-10",
@@ -81,35 +81,35 @@
     "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-11",
     "title": "MoC & Downturn LGD",
     "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n(B*) Constant ratio of monthly into-default rate\n\n\nHere, we assume\n\\[D^{(new)}_{(12)}(t) = \\beta \\cdot D^{(old)}_{(12)}(t) + constant\\]"
+    "text": "Case study 1: one Dod, two Dod\n(B) Monthly into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(old)}_{(12)}(t) +\\epsilon\\]"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-12",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-12",
     "title": "MoC & Downturn LGD",
     "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n(B*) Constant ratio of 1-month into-default rate\n\n\nHere, we assume\n\\[D^{(new)}_{(12)}(t) = \\beta \\cdot D^{(old)}_{(12)}(t) + constant\\]"
+    "text": "Case study 1: one Dod, two Dod\n(B) Monthly into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(old)}_{(12)}(t) +\\epsilon\\]"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-13",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-13",
     "title": "MoC & Downturn LGD",
     "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\nConstant ratio of monthly into-default rate\n\n\n\nHere, we assume \\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(old)}_{(12)}(t) +\\epsilon\\]\n\\[\\bar{D}^{(adj)} = \\sum_t D^{(adj)}_{(12)}(t) / T^{\\prime} \\]"
+    "text": "Case study 1: one Dod, two Dod\n(B) Monthly into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(old)}_{(12)}(t) +\\epsilon\\]\n\\[\\bar{D}^{(adj)} = \\sum_t D^{(adj)}_{(12)}(t) / T^{\\prime} \\]"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-14",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-14",
     "title": "MoC & Downturn LGD",
     "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\nConstant ratio of monthly into-default rate\n\n\n\nHere, we assume1\n\\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(old)}_{(12)}(t) +\\epsilon\\]\n\\[\\bar{D}^{(adj)} = \\sum_t D^{(adj)}_{(12)}(t) / T^{\\prime} \\]\n\\[\\sigma^2(\\bar{D}^{(adj)}) = \\frac{1}{\\tilde{T}^2}\\sum_t\\sigma^2(t)\\]\nThe regression standard errors are propagated to the 12-month adjusted default rate to obtain the additional uncertainty due to the adjustment.\n\n\n\n\n\n\n\n\nCorrection $^2 $ to account for bias due to autocorrelation."
+    "text": "Case study 1: one Dod, two Dod\n(B) Monthly into-default rates\n\n\nHere, we assume1\n\\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(old)}_{(12)}(t) +\\epsilon\\]\n\\[\\bar{D}^{(adj)} = \\sum_t D^{(adj)}_{(12)}(t) / T^{\\prime} \\]\n\\[\\sigma^2(\\bar{D}^{(adj)}) = \\frac{1}{\\tilde{T}^2}\\sum_t\\sigma^2(t)\\]\nThe regression standard errors are propagated to the 12-month adjusted default rate to obtain the additional uncertainty due to the adjustment.\n\n\n\n\n\n\n\n\nCorrection $^2 $ to account for bias due to autocorrelation."
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-reflection",
     "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-reflection",
     "title": "MoC & Downturn LGD",
     "section": "Case study 1: reflection",
-    "text": "Case study 1: reflection\n\n\n\n\n\n\nInfo\n\n\n\nSimpler approaches may inflate estimated additional uncertainty \\(\\rightarrow €€€\\) capital\nThe second approach ignores that \\(cov(\\epsilon_t,\\epsilon_{t+1..12})>>0\\) and therefore underestimates \\(\\sigma(\\bar{D}^{adj})\\)\nMore generally, the assumption that the relation is constant is not realistic"
+    "text": "Case study 1: reflection\n\n\n\n\n\n\nImportant\n\n\n\nSimpler approaches may inflate estimated additional uncertainty \\(\\rightarrow €€€\\) capital\nThe second approach ignores that \\(cov(\\epsilon_t,\\epsilon_{t+1..12})>>0\\) and therefore underestimates \\(\\sigma(\\bar{D}^{adj})\\)\nMore generally, the assumption that the relation is constant is not realistic"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#bonus-questions",
@@ -460,5 +460,12 @@
     "title": "eduquant-courses",
     "section": "",
     "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 29, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-reflection-1",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-reflection-1",
+    "title": "MoC & Downturn LGD",
+    "section": "Case study 1: reflection",
+    "text": "Case study 1: reflection\nBONUS QUESTIONS\n\n\nWould you consider the assumptions A) and B) to be reasonable in a real-life situation? Can you verify these assumptions using the given data?\n\n\n\nCan you come up with an alternative approach?\n\n\n\nYour appropriately adjusted LRA DR may be more uncertain due to model misspecification. Can you think of some ways to quantify that uncertainty?\n\n\n\nThis simulated data set has only idiosyncratic variability, i.e., there is no systemic risk factor! Do your answers to the previous questions change?"
   }
 ]

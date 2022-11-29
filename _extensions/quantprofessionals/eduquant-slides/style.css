@@ -10,11 +10,17 @@
   }
 
 .highlight-block {
+  margin-left: -2%;
+  padding-left: 2%;
+  margin-right: -2%;
+  padding-right: 2%;
   background-color:rgb(167, 191, 215);
   color:rgb(255, 255, 230);
 }
 
 .highlight-block-compl {
+  padding-left: 2%;
+  padding-right: 2%;
   background-color:rgb(215, 193, 167);
   color:rgb(255, 255, 230);
 }

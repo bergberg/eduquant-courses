@@ -15,7 +15,7 @@ format: eduquant-slides-revealjs
 
 In this exercise, you estimated an appropriate adjustment and MoC A to account for a difference between the `New` DoD to be used in application and the `Old` DoD available in historical data. Fortunately, some data is available that was collected under both definitions. This is a (simulated) data set of a homogeneous portfolio, and there are no risk drivers, grades or other features to distinguish the exposures by. Lucky you!
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
 
 ::: {style="color:darkgrey"}
 
@@ -27,7 +27,7 @@ In this exercise, you estimated an appropriate adjustment and MoC A to account f
 
 You were given a panel data set with a set of $\approx$ 2k exposures `i` at 120 dates (months) `t` and default flags `d` according to a `New` and `Old` definition of default (`DoD`). The `New` definition is available only for the last 26 dates (months) whereas the `Old` definition default flag is available for the entire period. Two other derived variables are included for your convenience: a 12-month forward-looking into-default flag `into_d_12`, and a `status`: `enter`, `stock`, `default` or `exit`.
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
 
 :::: columns
 ::: {.column width="50%" .r-fit-text }
@@ -92,7 +92,7 @@ case_study_1_data |>
   )
 ```
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
 
 ::: {style="color:darkgrey"}
 
@@ -104,7 +104,7 @@ case_study_1_data |>
  * Estimate **appropriate adjustment** to the `Old` DoD data to estimate the appropriately adjusted long-run average default rate, 
  * Also estimate the additional uncertainty due to this adjustment. 
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
 
 ::: {style="color:darkgrey"}
 
@@ -119,7 +119,7 @@ Do so under different assumptions/scenarios:
 
  B) Alternatively, assume that $R^{(new)}_{(1)}(t) = \beta R^{(old)}_{(1)}(t) + \epsilon$, where $R_{(n)}(t)$ is the observed $n$-month into-default rate at reference date $t$. In words, assume that not the long-run average 12-month, but the monthly into-default rate under the new definition is related to the old one with a constant scale factor $\beta$.
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
 
 ::: {style="color:darkgrey"}
  * `New` DoD to be used in application and the `Old` DoD available in historical data
@@ -136,7 +136,7 @@ For each of these two scenarios,
  3) Also estimate the uncertainty of $\alpha$ resp. $\beta$.
  4) Using error propagation, derive the corresponding **additional** uncertainty of the estimated appropriately adjusted long-run average default rate in either case.
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
 
 ::: {style="color:darkgrey"}
  * `New` DoD to be used in application and the `Old` DoD available in historical data
@@ -146,8 +146,8 @@ For each of these two scenarios,
 :::
 
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
- (A) Constant ratio of averages of 12-month into-default rates
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
+#### (A) Constant ratio of averages of 12-month into-default rates
 
 :::: columns
 ::: {.column width="50%" .r-fit-text }
@@ -199,8 +199,8 @@ df_3_B_adj |>
 ::::
 
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
- (A) Constant ratio of averages of 12-month into-default rates
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
+#### (A) Constant ratio of averages of 12-month into-default rates
 
 :::: columns
 ::: {.column width="50%" .r-fit-text }
@@ -253,8 +253,8 @@ df_3_B_adj |>
 
 
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
- (A) Constant ratio of averages of 12-month into-default rates
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
+#### (A) Constant ratio of averages of 12-month into-default rates
 
 :::: columns
 ::: {.column width="50%" .r-fit-text }
@@ -306,7 +306,7 @@ df_3_B_adj |>
 ::::
 
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
 
 ::: {.callout-important icon=true appearance="default" .r-fit-text}
 ## Common pitfalls
@@ -319,14 +319,14 @@ df_3_B_adj |>
 :::
 
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
- (B*) Constant ratio of monthly into-default rate
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
+##### (B) Monthly into-default rates
  
 :::: columns
 ::: {.column width="50%" .r-fit-text }
 Here, we assume
 
-$$D^{(new)}_{(12)}(t) = \beta \cdot D^{(old)}_{(12)}(t) + constant$$
+$$D^{(adj)}_{(12)}(t) = constant + \beta\cdot D^{(old)}_{(12)}(t) +\epsilon$$
 
 
 :::
@@ -363,14 +363,14 @@ read.csv("../../media/case_study_1_3_B_plot.csv.gz") |>
 
 
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
- (B*) Constant ratio of 1-month into-default rate
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
+##### (B) Monthly into-default rates
  
 :::: columns
 ::: {.column width="50%" .r-fit-text }
 Here, we assume
 
-$$D^{(new)}_{(12)}(t) = \beta \cdot D^{(old)}_{(12)}(t) + constant$$
+$$D^{(adj)}_{(12)}(t) = constant + \beta\cdot D^{(old)}_{(12)}(t) +\epsilon$$
 
 
 :::
@@ -410,12 +410,13 @@ df_3_B_adj |>
 
 
 
-## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=truie}
- (B) Constant ratio of monthly into-default rate
+## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
+##### (B) Monthly into-default rates
  
 :::: columns
 ::: {.column width="50%" .r-fit-text }
 Here, we assume
+
 $$D^{(adj)}_{(12)}(t) = constant + \beta\cdot D^{(old)}_{(12)}(t) +\epsilon$$
  
 $$\bar{D}^{(adj)} = \sum_t D^{(adj)}_{(12)}(t) / T^{\prime} $$
@@ -459,7 +460,7 @@ df_3_B_adj |>
 
 
 ## Case study 1: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
- (B) Constant ratio of monthly into-default rate
+##### (B) Monthly into-default rates
  
 :::: columns
 ::: {.column width="50%" .r-fit-text }
@@ -512,21 +513,28 @@ df_3_B_adj |>
 
 ## Case study 1: reflection
 
-::: {.callout-info icon=true appearance="default" .r-fit-text}
+::: {.callout-important icon=true appearance="default" .r-fit-text}
 
  * Simpler approaches may inflate estimated additional uncertainty $\rightarrow €€€$ capital
  * The second approach ignores that $cov(\epsilon_t,\epsilon_{t+1..12})>>0$ and therefore underestimates $\sigma(\bar{D}^{adj})$
  * More generally, the assumption that the relation is constant is not realistic
 :::
 
+## Case study 1: reflection {.smaller}
 
-## BONUS QUESTIONS
+### BONUS QUESTIONS
 
+::: {.highlight-block} 
  5) Would you consider the assumptions A) and B) to be reasonable in a real-life situation? Can you verify these assumptions using the given data?
+:::
+
+
 
  6) Can you come up with an alternative approach?
 
+::: {.highlight-block-compl}
  7) Your appropriately adjusted LRA DR may be more uncertain due to model misspecification. Can you think of some ways to quantify that uncertainty?
+:::
 
  8) This simulated data set has only idiosyncratic variability, i.e., there is no systemic risk factor! Do your answers to the previous questions change?
 
