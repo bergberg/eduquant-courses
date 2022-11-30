@@ -459,7 +459,7 @@
     "href": "index.html",
     "title": "eduquant-courses",
     "section": "",
-    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 29, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "MoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMoC & Downturn LGD\n\n\n\n\n\n\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-reflection-1",
@@ -467,5 +467,12 @@
     "title": "MoC & Downturn LGD",
     "section": "Case study 1: reflection",
     "text": "Case study 1: reflection\nBONUS QUESTIONS\n\n\nWould you consider the assumptions A) and B) to be reasonable in a real-life situation? Can you verify these assumptions using the given data?\n\n\n\nCan you come up with an alternative approach?\n\n\n\nYour appropriately adjusted LRA DR may be more uncertain due to model misspecification. Can you think of some ways to quantify that uncertainty?\n\n\n\nThis simulated data set has only idiosyncratic variability, i.e., there is no systemic risk factor! Do your answers to the previous questions change?"
+  },
+  {
+    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#links",
+    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#links",
+    "title": "MoC & Downturn LGD",
+    "section": "Links",
+    "text": "Links\nSlides for part 2\nLink to pdf\nMaterial for Case Study 2\nCase Study 2 (DT identification) data"
   }
 ]
