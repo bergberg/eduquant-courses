@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-About this site
+This is a temporary [eduquant](https://eduquant.nl) course site. This site was generated for the Leaseplan MoC & DT course that ended on December 7, 2022.

@@ -1,8 +1,8 @@
 ---
 title: "MoC & Downturn LGD"
-subtitle: "Day 3 (case study review)"
-# author: "Pieter van den Berg"
-date: last-modified
+subtitle: "Day 3"
+author: "Pieter van den Berg, Ryan van Lamoen"
+date: 2022-11-22
 date-format: long
 format: eduquant-slides-revealjs
 ---

@@ -1,10 +1,12 @@
 project:
   type: website
   output-dir: docs
+  
   resources:
    - "*.csv"
    - "*.csv.gz"
    - "*.xlsx"
+   - "*.pdf"
 
   preview:
     port: 4200
@@ -13,7 +15,12 @@ project:
 
 website:
   title: "Eduquant course slides"
+  favicon: /media/icon.png
+  image: /media/logo_transparent.svg
+  cookie-consent: true
+  page-footer: "(all materials on this site) copyright 2022, Pieter van den Berg" 
   navbar:
+    logo: /media/icon.png
     left:
       - href: index.qmd
         text: Home
@@ -21,7 +28,7 @@ website:
 
 format:
   html:
-    theme: moon
+    theme: flatly
     css: webpage_styles.css
     toc: true
 

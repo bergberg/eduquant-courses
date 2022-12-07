@@ -1,8 +1,8 @@
 ---
 title: "MoC & Downturn LGD"
 subtitle: "Day 1"
-# author: "Pieter van den Berg"
-date: last-modified
+author: "Pieter van den Berg"
+date: 2022-11-15
 date-format: long
 format: eduquant-slides-revealjs
 ---
