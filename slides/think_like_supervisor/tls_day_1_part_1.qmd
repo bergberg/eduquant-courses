@@ -1,0 +1,12 @@
+---
+title: "Think like a supervisor"
+subtitle: "Day 1"
+author: "Pieter van den Berg"
+date: 2022-11-15
+date-format: long
+format: 
+   pptx:
+      reference-doc: template.pptx
+---
+
+Test title
