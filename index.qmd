@@ -1,5 +1,5 @@
 ---
-title: "Leaseplan MoC / DT LGD Q4 2022"
+title: "Course"
 listing: 
     id: course-listing
     contents: "slides/*/*.qmd"
@@ -16,6 +16,3 @@ Please find the course slides linked below[^1].
 ::: {#course-listing}
 :::
 
-## Please fill out our survey
-
-[Link to survey](https://forms.gle/nPxnCuJqRKscFu827)
