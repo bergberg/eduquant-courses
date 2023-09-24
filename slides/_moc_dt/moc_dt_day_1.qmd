@@ -1,0 +1,1706 @@
+---
+title: "MoC & Downturn LGD"
+subtitle: "Day 1"
+author: "Pieter van den Berg"
+date: 2022-11-15
+date-format: long
+format: eduquant-slides-revealjs
+---
+
+{{< include ../_sections/introductions.qmd >}}
+
+# Course Outline 
+
+## Course outline
+
+::: {#vcenter .columns}
+::: {.column width="45%"}
+[General topics]{style="color: darkseagreen;"}
+:::
+
+::: {.column width="55%"}
+IRB Regulation
+
+Risk Parameter Quantification
+
+LGD Quantification
+:::
+:::
+
+::: columns
+::: {.column width="45%"}
+[Margin of Conservatism]{style="color: darkseagreen;"}
+:::
+
+::: {.column width="55%"}
+Deficiencies 
+
+Appropriate Adjustments
+
+MoC Quantification
+:::
+:::
+
+::: columns
+::: {.column width="45%"}
+[Downturn LGD]{style="color: darkseagreen;"}
+:::
+
+::: {.column width="55%"}
+Downturn Identification
+
+Downturn LGD Quantification
+:::
+:::
+## Day 1
+
+::: columns
+::: {.column width="40%"}
+*13:00*
+
+*13:30*
+
+*14:15*
+
+*15:00*
+
+*15:15*
+
+*16:00*
+
+*16:45*
+:::
+
+::: {.column width="60%"}
+Introduction
+
+Overview of IRB Regulation
+
+Risk Parameter Quantification
+
+*Break*
+
+LGD Quantification
+
+Margin of Conservatism
+
+Day Recap
+:::
+:::
+
+
+<!-- 
+
+## Day 2
+
+::: columns
+::: {.column width="40%"}
+*13:00*
+
+*13:30*
+
+*14:15*
+
+*15:00*
+
+*15:15*
+
+*16:00*
+
+*16:45*
+:::
+
+::: {.column width="60%"}
+Quiz & Recap
+
+General Estimation Error
+
+Deficiencies
+
+*Break*
+
+Appropriate Adjustments
+
+Additional Uncertainties
+
+Case Study Explanation
+:::
+:::
+
+## Day 3
+
+::: columns
+::: {.column width="40%"}
+*13:00*
+
+*13:45*
+
+*14:30*
+
+*15:00*
+
+*15:15*
+
+*16:00*
+
+*16:45*
+:::
+
+::: {.column width="60%"}
+Recap & Discussion Case Study
+
+DT LGD Conceptual Basis
+
+Nature of an Economic Downturn
+
+*Break*
+
+Severity & Duration
+
+DT LGD Quantification
+
+Case Study Explanation
+:::
+:::
+
+## Day 4
+
+::: columns
+::: {.column width="40%"}
+*13:00*
+
+*13:45*
+
+*14:30*
+
+*15:00*
+
+*15:15*
+
+*16:00*
+
+*16:45*
+:::
+
+::: {.column width="60%"}
+Recap & Discussion Case Study
+
+Observed Impact Assessments
+
+Extrapolation & Haircut Approaches
+
+*Break*
+
+DT LGD Calibration
+
+Course Recap & Quiz
+
+Q&A
+:::
+::: -->
+
+# Overview of IRB Regulation
+
+## Overview of IRB Regulation {auto-animate=true center=true}
+
+![](/media/basel_crr_egim_bare.drawio.svg){data-id="fig1" fig-align="center"}
+
+::: notes
+13:30
+:::
+
+## Overview of IRB Regulation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+#### Layers of regulation
+
+Basel Framework
+: BIS recommendations on banking regulations
+
+CRR (Part 3/II, Chapter III)
+: Capital Requirements Regulation (Internal Ratings Based Approach )
+
+::: {data-id="rtstxt"}
+RTS $\rightarrow$ CDR
+: Regulatory Technical Standards adopted as Comm. Del. Regulation
+
+:::
+
+::: {data-id="gltxt"}
+
+EBA Guidelines and Q&A
+: Clarification, specifications
+
+:::
+
+ECB Guide to Internal Models
+: Supervisory expectations
+
+:::
+
+::: {.column width="50%" #vcenter}  
+
+![](/media/basel_crr_egim_highlight.drawio.svg){data-id="fig1"}
+
+:::
+
+::::
+
+::: notes
+Diagram: basel -\> CRR/RTS/GL -\> EGIM \]
+:::
+
+## Overview of IRB Regulation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+::: {data-id="rtstxt"}
+RTS $\rightarrow$ CDR
+: Regulatory Technical Standards adopted as Comm. Del. Regulation
+
+:::
+
+::: {.highlight-block}
+
+ * **CDR 2022/439** Assessment of IRB approach
+ * **CDR 2021/930** Identification of economic downturn
+:::
+
+::: {data-id="gltxt"}
+EBA Guidelines and Q&A
+: Clarification, specifications
+:::
+::: {.highlight-block }
+
+ * **EBA/GL/2017/16** PD & LGD estimation
+ * **EBA/GL/2019/03** DT LGD estimation
+ * **EBA/GL/2020/05** Credit Risk Mitigation (CRM)
+
+:::
+:::
+
+::: {.column width="50%" #vcenter}  
+
+![](/media/basel_crr_egim_highlight.drawio.svg){data-id="fig1"}
+
+
+:::
+
+::::
+
+## Example 1: Economic Downturn
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+ - Economic Downturn not specified in Basel Framework or CRR
+ - EBA has drafted an RTS, elevated into regulation CDR 2021/930
+ - EGIM is not more specific
+:::
+
+
+::: {.column width="50%" #vcenter .r-fit-text}
+::: {.callout-note}
+## CRE 36.85
+$\small{[\cdots]}$ _A bank must estimate an LGD for each facility that aims to reflect economic downturn conditions where necessary to capture the relevant risks._ $\small{[\cdots]}$
+:::
+::: {.callout-note}
+## CRR Article 181
+_(1)(b) institutions shall use LGD estimates that are appropriate for an economic downturn if those are more conservative than the long-run average._ $\small{[\cdots]}$
+
+_(3) EBA shall develop draft regulatory technical standards to specify the following: (a) the nature, severity and duration of an economic downturn referred to in paragraph 1;_ $\small{[\cdots]}$
+:::
+
+::: {.callout-note}
+## CDR 2021/930 Article 1
+_Specification of the nature, severity and duration of an economic downturn_ $\small{[\cdots]}$
+:::
+:::
+::::
+
+::: notes
+Show Basel CRE36.64, article 4(78), GL PD/LGD par 73ff
+:::
+
+
+## Example 2: Type of exposures
+
+:::: columns
+
+::: {.column width="30%" #vcenter .r-fit-text}
+ - Basel vaguely refers to concept
+ - CRR sets out general principles
+ - EBA GL on PD&LGD specifies these
+:::
+
+
+::: {.column width="70%" #vcenter .r-fit-text}
+::: {.callout-note}
+## CRE 36.10
+_Within each asset class, a bank may utilise multiple rating methodologies/systems. For example, a bank may have customised rating systems for specific industries or market segments (eg middle market, and large corporate). $\small{[\cdots]}$ the rationale for assigning a borrower to a rating system $\small{[\cdots]}$ reflects the level of risk of the borrower. $\small{[\cdots]}$_
+:::
+::: {.callout-note}
+## CRR Article 142(1)
+_(1) “rating system” means all of the methods, processes, controls, data collection and IT systems that support the $\small{[\cdots]}$ quantification of default and loss estimates that have been developed for a certain type of exposures;_
+
+_(2) “type of exposures” means a group of homogeneously managed exposures which are formed by a certain type of facilities and which may be limited to a single entity $\small{[\cdots]}$ provided that the same type of exposures is managed differently in other entities of the group;_
+:::
+
+::: {.callout-note}
+## EBA/GL/2017/16
+_12. A rating system $\small{[\cdots]}$ should cover all those exposures where the obligors or facilities show common drivers of risk and credit-worthiness and fundamentally comparable availability of credit-related information. $\small{[\cdots]}$_
+
+_13. Exposures covered by the same rating system should be treated similarly by the institution in terms of risk management, decision making and credit approval process and should be assigned to a common obligor rating scale $\small{[\cdots]}$_
+:::
+:::
+::::
+
+::: notes
+Show Basel CRE36.64, article 4(78), GL PD/LGD par 73ff
+:::
+
+## Rating Systems {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text data-id=x1}
+Rating System
+: assessment methods & processes developed for a certain type of exposures
+
+Type of Exposures
+: homogeneously managed, comparable risk characteristics
+
+Range of Application
+: all exposures of the type in scope of the rating system  
+
+Calibration Segment
+: level of risk quantification $\subset$ scope of application
+
+Ranking method
+: Risk differentiation model
+
+Grades/Pools
+: Exposures with similar risk profiles
+:::
+
+::: {.column width="50%"  .r-fit-text}
+![](/media/irb_overview.drawio.svg)
+
+::::: {.callout-note}
+## CRR Article 142
+_(1) “rating system” means all of the methods, processes, controls, data collection and IT systems that support the assessment of credit risk, the assignment of exposures to rating grades or pools, and the quantification of default and loss estimates that have been developed for a certain **type of exposures**;_ $\small{[\cdots]}$
+:::::
+
+:::
+::::
+
+
+::: notes
+13:45
+:::
+
+
+## Rating Systems {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text  data-id=x1}
+Rating System
+: assessment methods & processes developed for a certain type of exposures
+
+Type of Exposures
+: homogeneously managed, comparable risk characteristics
+
+Range of Application
+: all exposures of the type in scope of the rating system  
+
+Calibration Segment
+: level of risk quantification $\subset$ scope of application
+
+Ranking method
+: Risk differentiation model
+
+Grades/Pools
+: Exposures with similar risk profiles
+:::
+
+::: {.column width="50%"  .r-fit-text}
+![](/media/irb_overview.drawio.svg)
+
+
+
+::::: {.callout-note}
+## CRR Article 142
+_“type of exposures” means a group of **homogeneously managed exposures** which are formed by a certain type of facilities_ $\small{[\cdots]}$
+:::::
+:::
+
+::::
+
+
+
+## Rating Systems {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text  data-id=x1}
+Rating System
+: assessment methods & processes developed for a certain type of exposures
+
+Type of Exposures
+: homogeneously managed, comparable risk characteristics
+
+Range of Application
+: all exposures of the type in scope of the rating system  
+
+Calibration Segment
+: level of risk quantification $\subset$ scope of application
+
+Ranking method
+: Risk differentiation model
+
+Grades/Pools
+: Exposures with similar risk profiles
+:::
+
+::: {.column width="50%"  .r-fit-text}
+![](/media/irb_overview.drawio.svg)
+
+::::: {.callout-note}
+## EBA/GL/2017/16 par. 12
+_A rating system in the sense of point (1) of Article 142(1) of Regulation (EU) No 575/2013 should cover all those exposures where the obligors or facilities show common drivers of risk and credit-worthiness and fundamentally comparable availability of credit-related information._ $\small{[\cdots]}$
+:::::
+:::
+::::
+
+## Rating Systems {auto-animate=true}
+
+:::: columns
+
+::: {.v-center-container width="50%" vertical-align="middle" .r-fit-text data-id=x1}
+Rating System
+: assessment methods & processes developed for a certain type of exposures
+
+Type of Exposures
+: homogeneously managed, comparable risk characteristics
+
+Range of Application
+: all exposures of the type in scope of the rating system  
+
+Calibration Segment
+: level of risk quantification $\subset$ scope of application
+
+Ranking method
+: Risk differentiation model
+
+Grades/Pools
+: Exposures with similar risk profiles
+:::
+
+::: {.column #vcenter width="50%"  .r-fit-text}
+![](/media/irb_overview.drawio.svg)
+
+::::: {.callout-note}
+## EBA/GL/2017/16 par. 13
+_Exposures covered by the same rating system should be treated similarly by the institution in terms of risk management, decision making and credit approval process and should be assigned to a common obligor rating scale_ $\small{[\cdots]}$
+:::::
+:::
+
+::::
+
+
+
+::: notes
+multiple slides with definitions + article
+
+exposure class 
+rating system 
+type of exposure range of application IRB approval
+:::
+
+## Example: two rating systems
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+![](/media/two_rating_system_wrong.drawio.svg)
+
+::: fragment
+::: {.callout-warning appearance="simple"}
+Not based on exposure characteristics!
+:::
+:::
+:::
+
+::: {.column width="50%"}
+::: fragment
+![](/media/two_rating_system_right.drawio.svg)
+:::
+:::
+
+::::
+::: notes
+
+:::
+
+## Rating Systems {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text  data-id=x1}
+Rating System
+: assessment methods & processes developed for a certain type of exposures
+
+Type of Exposures
+: homogeneously managed, comparable risk characteristics
+
+Range of Application
+: all exposures of the type in scope of the rating system  
+
+Calibration Segment
+: level of risk quantification $\subset$ scope of application
+
+Ranking method
+: Risk differentiation model
+
+Grades/Pools
+: Exposures with similar risk profiles
+:::
+
+::: {.column width="50%"  .r-fit-text}
+![](/media/rating_system_calib_segm.drawio.svg)
+
+
+::::: {.callout-note}
+## EBA/GL/2017/16
+**12.** $\small{[\cdots]}$ _The PD and LGD model within a rating system may comprise various calibration segments._$\small{[\cdots]}$ 
+:::::
+:::
+::::
+
+## IRB implementation
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+#### Implementation
+ 1. IRB roll-out per exposure class
+ 2. 3 years experience test
+ 3. [**Risk Parameter Estimation**]{style="color: teal;"}
+ 4. Submission per rating system
+
+#### Review
+ 1. Regular review of estimates
+ 2. Conservative Adjustments
+
+#### Change
+ 1. Outcome of review
+ 2. Changes to range of application
+ 3. Submission of change
+
+#### Reversion
+
+:::
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+![](/media/irb_lifecycle.drawio.svg)
+
+:::
+::::
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+:::{data-id=a1}
+Indirect estimation
+: risk quantification conditional on risk differentiation
+:::
+
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on (internal) risk measure
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::
+
+::: {.column width="50%" #vcenter }
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+:::
+
+::::
+
+::: notes
+Diagram: differentiation -\> quantification
+:::
+
+::: notes
+14:00
+:::
+
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+::: {.column width="50%" #vcenter .r-fit-text}
+:::{data-id=a1}
+Indirect estimation
+: risk quantification conditional on risk differentiation
+:::
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on risk measure
+:::
+:::{.highlight-block}
+ * Typical approach: 
+ $\sim$ into-default / realized LGD closed cases / realized CCF 
+ * Conditional on risk drivers, based on data set representative of application portfolio
+ * Regulatory requirements focus on *meaningful differentiation*
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::
+
+::: {.column width="50%" #vcenter}
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+:::
+
+::::
+
+::: notes
+Diagram: differentiation -\> quantification
+:::
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+:::{data-id=a1}
+Indirect estimation
+: risk quantification conditional on risk differentiation
+:::
+
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on risk measure
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::{.highlight-block}
+ * Estimates of long-run default/loss experience
+ * Regulatory requirements focus on *calculation method* and *quantification process*
+:::
+:::
+
+::: {.column width="50%" #vcenter}
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+:::
+
+::::
+
+::: aside
+Risk quantification is the primary focus of this course
+:::
+
+
+::: notes
+Diagram: differentiation -\> quantification
+:::
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+:::{data-id=a1}
+Indirect estimation
+: risk quantification conditional on risk differentiation
+:::
+
+:::{.highlight-block}
+ * Direct estimation: special case
+ * Continuous estimation: effectively same requirements, materal
+:::
+
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on risk measure
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::
+
+::: {.column width="50%" .r-fit-text #vcenter }
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+
+::: {.callout-note .smaller}
+## CRR Article 169
+_3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale._
+:::
+:::
+::::
+
+::: notes
+14:15
+:::
+
+# Risk Parameter Quantification
+
+## Risk Parameter Quantification
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+
+Reference dates
+: Date to which realised values are aggregated
+
+Calibration Target
+: long-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments
+
+Appropriate Adjustment
+: Modeled effect on CT of drivers of non-representativeness & other sources of bias
+
+Appropriately Adjusted Calibration Target
+: Calibration Target adjusted for biases
+
+:::
+
+::: {.column width="50%" .r-fit-text}
+![](/media/risk_quantification.drawio.svg)
+:::
+
+::::
+
+::: notes
+Diagram: Type of Exposures -\> RDS -\> Initial Calibration Target -\> Appr. Adjusted Target
+
+Par 12 PD&LGD
+:::
+
+::: notes
+15:15
+:::
+
+## Reference Data Sets {auto-animate=true}
+
+:::: columns
+
+::: {.column width="65%" .r-fit-text}
+
+Length of historical period
+: min. requirements (5 or 7 yr) + available relevant internal data on comparable exposures
+
+Reference date methodology
+: (non-)overlapping [**PD**], time-to-default [**LGD**, **CCF**], recovery process [**in-default**]
+
+Exposure attributes
+: identify exposures of given type at historical observation dates
+
+Default/loss characteristics
+: Observed default/loss data aggregated by exposure over observation period at reference date (target variable)
+
+Risk characteristics
+: Risk drivers, appropriate adjustment variables
+
+Observation windows
+: aggregate to obtain targets (fwd) or variables (bwd) 
+
+:::
+
+::: {.column width="35%" .r-fit-text }
+![](/media/reference_data_set.drawio.svg)
+
+::: {.fragment .fade-in}
+![](/media/rds_aggr_general.drawio.svg)
+:::
+:::
+::::
+
+
+
+## Realised Risk Parameter Values {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+
+Reference date methodology
+: (non-)overlapping [**PD**], time-to-default [**LGD**, **CCF**], time-in-default/recovery process [**in-default**]
+
+Reference dates $t_r$
+: set of dates over which calibration target is calculated, either as an average (LRA LGD), average of yearly averages (PD & LRA CCF), or an estimated downturn effect (DT LGD/CCF)
+
+Default/Loss characteristics
+: exposure-level into-default flag, (partially) realised LGD values, realised credit conversion factors, intermediate components
+
+
+:::
+
+::: {.column width="50%" #vcenter .r-fit-text }
+![](/media/rds_aggr_general.drawio.svg)
+
+<!-- $\text{Cal. target} \sim \sum_{r}w_r\sum_{i\in\mathbf{L}}v_i y_i(t_r)$ -->
+
+:::
+
+
+::::
+
+::: aside
+Typical approach: realised values also targets of (statistical) ranking method (model)
+:::
+
+
+## Calibration Targets {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+
+Length of historical period
+: reflecting variability of economic conditions
+
+Methodology
+: overlapping versus non-overlapping
+
+Reference dates $t_{r}$
+: Sample over historical data representative of application portfolio conditioned on target
+
+Calibration level (**L**)
+: level of aggregation (range of appl. $\supseteq$ calibration segment $\supset$ grade/pool)
+
+Calibration target
+: Prescribed estimator of LRA/DT risk parameter values: (adjusted/weighted) average of realised risk parameter values
+
+:::
+
+::: {.column width="50%" #vcenter .r-fit-text }
+![](/media/risk_quantification.drawio.svg)
+
+<!-- $\text{Cal. target} \sim \sum_{r}w_r\sum_{i\in\mathbf{L}}v_i y_i(t_r)$ -->
+
+:::
+
+
+::::
+
+## Calibration Targets (**PD**) {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+Length of historical period
+: (up to) a length that *reflects the likely range of variability of default rates of that type of exposures*
+
+Reference date methodology
+: overlapping versus non-overlapping
+
+Reference dates $t_{r}$
+: sample over historical data over observation dates of performing exposures
+
+Calibration level (**L**)
+: level of aggregation (range of appl. $\supseteq$ calibration segment $\supset$ grade/pool)
+
+Calibration target $DR$
+: average of default rates per (yearly) reference date
+
+:::
+
+::: {.column width="50%" .r-fit-text }
+![](/media/rds_aggr_pd.drawio.svg)
+
+$\text{DR}(\mathbf{L}) = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}\sum_{i\in\mathbf{L}} D_i(t_r)$
+
+:::
+
+
+::::
+
+::: notes
+15:15
+:::
+
+# LGD Quantification
+
+## Long-run average LGD calculation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+Length of historical period
+: *all* available internal loss data on exposures of that type considered relevant
+
+Reference dates $t_r$
+: $t_{def}-12 \le t_{r} < t_{def}$ 
+: (assignment to grade)
+
+::: {data-id="lp1"}
+Realised LGD 
+: Ratio of economic loss to outstanding at default
+:::
+
+::: {data-id="lp2"}
+Observed Average LGD
+: Average realised LGD of closed recovery processes
+:::
+
+::: {data-id="lp3"}
+Long-run Average LGD
+: Average RLGD of closed+open recoveries
+:::
+
+:::
+
+::: {.column width="50%" .r-fit-text }
+![](/media/LGD_quantification.drawio.svg)
+
+:::
+
+::::
+
+## Long-run average LGD calculation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="80%" .r-fit-text}
+
+(0) Identify open/closed recoveries
+: Maximum Recovery Period & Multiple default treatment
+
+::: {data-id="lp1" .highlight-block}
+(1) Realised LGD
+: Calculate realized LGD for each closed recovery
+:::
+
+::: {data-id="lp2"}
+(2) Observed Average LGD
+: Calculate average realised LGD of closed recovery processes
+:::
+
+::: {data-id="lp4"}
+(3) Future recoveries
+: Estimate future recoveries on incomplete workouts
+:::
+
+::: {data-id="lp3"}
+(4) Long-run Average LGD
+: Calculate average LGD of closed + open recoveries
+:::
+
+:::
+
+::: {.column width="20%" #vcenter .r-fit-text }
+![](/media/LGD_quantification.drawio.svg)
+:::
+
+::::
+
+## Realised LGD { auto-animate=true .smaller}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+
+::: {data-id="r0" }
+Outstanding (O)
+: Credit obligation outstanding at $t_{def}$
+:::
+
+::: {data-id="r1"}
+Additional drawings (A)
+: Drawings after $t_{def}$
+
+Recoveries (R)
+: Discounted cash flows from any recoveries and payments
+:::
+
+::: {data-id="r2"} 
+
+Costs (C)
+: Direct or material indirect costs of recovery
+:::
+
+:::
+::: {.column width="50%" .r-fit-text}
+:::{data-id="lp1" .highlight-block}
+$RLGD = \frac{\max(O+A+C-R,0)}{O}$
+:::
+![](/media/rds_aggr_lgd.drawio.svg)
+:::
+
+::::
+::: {.callout-note}
+Aggregation is over all  cash flows related to recovery of defaulted credit obligation. 
+:::
+
+
+## Realised LGD (in-default) { auto-animate=true .smaller}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+
+::: {data-id="r0" }
+Outstanding (O)
+: Credit obligation outstanding at $t_{\mathbf{ref}}$
+:::
+
+::: {data-id="r1"}
+Additional drawings (A)
+: Drawings after $t_{\mathbf{ref}}$
+
+Recoveries (R)
+: Discounted cash flows from any recoveries and payments after $t_{\mathbf{ref}}$
+:::
+
+::: {data-id="r2"} 
+
+Costs (C)
+: Direct or material indirect costs of recovery after $t_{\mathbf{ref}}$
+:::
+
+:::
+::: {.column width="50%" .r-fit-text}
+$RLGD = \frac{\max(O+A+C-R,0)}{O}$
+![](/media/rds_aggr_in_default.drawio.svg)
+:::
+::::
+
+::: aside
+[**_(summary)_**]{style="color: orange;"}
+:::
+
+## Realised LGD {auto-animate=true .smaller}
+
+:::: columns
+
+::: {.column width="60%" .r-fit-text}
+::: {data-id="r0" .highlight-block} 
+Outstanding (O)
+: Credit obligation outstanding at $t_{def}$
+
+ * irrespective of prior write-offs or forgiveness
+ * excluding fees/payments not capitalised at $t_{def}$
+ * (additional drawings after default, if reflected in CCF)
+:::
+
+
+::: {data-id="r1"}
+::: {data-id="r2"} 
+Additional drawings (A)
+: Drawings after $t_{def}$
+
+Recoveries (R)
+: Discounted cash flows from any recoveries and payments
+:::
+
+Costs (C)
+: Direct or material indirect costs of recovery
+:::
+
+:::
+::: {.column width="40%" .r-fit-text }
+
+::: {data-id="lp1"}
+$$ RLGD = \frac{\max(O+A+C-R,0)}{O} $$
+:::
+![](/media/rds_aggr_outstanding.drawio.svg)
+
+:::
+
+::::
+
+## Realised LGD {auto-animate=true .smaller}
+
+:::: columns
+
+::: {.column width="60%" .r-fit-text}
+
+::: {data-id="r0"} 
+Outstanding (O)
+: Credit obligation outstanding at $t_{def}$
+:::
+
+::: {data-id="r1" .highlight-block}
+Additional drawings (A)
+: Drawings after $t_{def}$
+
+Recoveries (R)
+: Discounted cash flows from any recoveries and payments
+
+ * Unsecured as well as secured (eligible+ineligible)
+ * Including regular contractual payments
+ * Including discounted outstanding at default end in case of return to performing ("artificial cash flow")
+
+:::
+::: {data-id="r2"} 
+
+
+Costs (C)
+: Direct or material indirect costs of recovery
+:::
+
+:::
+
+::: {.column width="40%" .r-fit-text}
+::: {data-id="lp1"}
+$$ RLGD = \frac{\max(O+A+C-R,0)}{O} $$
+:::
+![](/media/rds_aggr_recoveries.drawio.svg)
+
+:::
+
+::::
+
+::::: aside
+Discounting of cash flows at 3-month euribor + 5% or equivalent.
+:::::
+
+## Realised LGD {auto-animate=true .smaller}
+
+:::: columns
+
+::: {.column width="60%" .r-fit-text}
+::: {data-id="r0"} 
+Outstanding (O)
+: Credit obligation outstanding at $t_{def}$
+
+Additional drawings (A)
+: Drawings after $t_{def}$
+
+:::
+
+::: {data-id="r1"}
+Recoveries (R)
+: Discounted cash flows from any recoveries and payments
+:::
+::: {data-id="r2" .highlight-block} 
+Costs (C)
+: Direct or material indirect costs of recovery
+
+ * all direct costs of recovery discounted to $t_{def}$
+ * (material) indirect costs allocated to recovery process $i$
+:::
+
+:::
+::: {.column width="40%" .r-fit-text}
+::: {data-id="lp1"}
+$$ RLGD = \frac{\max(O+A+C-R,0)}{O} $$
+:::
+![](/media/rds_aggr_costs_outst.drawio.svg)
+
+:::
+
+::::
+
+::::: aside
+Discounting of cash flows at 3-month euribor + 5% or equivalent.
+:::::
+
+## Realised LGD: example 1 {.smaller}
+
+* Interest-only loan of EUR 100, interest EUR 5 / month
+* Stops paying at $t=t_{def} - 3 \text{ months}$
+* Customer declared in default on loan at $t=t_{def}$
+* Untraceable, local P.I. charges EUR 50 ($t=t_{def}+6\text{ months}$)
+* 100% writtten off at $t_{def}+12\text{ months}$
+* Euribor 3 month = 0%
+
+##### What is the realized LGD? {{< li shiwicyv >}}
+
+
+::: {.fragment .highlight-block-compl}
+
+$$\frac{100+15+\frac{50}{(105\%)^6}}{100+15} \approx 132\%$$
+:::
+
+
+
+## Realised LGD: example 2 {.smaller}
+
+* Loan of EUR 100 at $t_{def}$, interest EUR 5 / month, linear amortizing at 1 / month
+* Customer declared in default on loan at $t=t_{def}$, keeps paying bills
+* Returned to performing at $t=t_{def} + 6 \text{ months}$
+* Euribor 3 month = 1%
+
+##### What is the realized LGD? {{< li shiwicyv >}}
+::: {.fragment .highlight-block-compl}
+$$\frac{100 - \sum_{t=1}^{6}\frac{5+1}{106\%^i} - \frac{94}{106\%^6}}{100} \approx 4\%$$
+:::
+
+## Long-run average LGD calculation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="80%" .r-fit-text}
+
+(0) Identify open/closed recoveries
+: Maximum Recovery Period & Multiple default treatment
+
+::: {data-id="lp1" }
+(1) Realised LGD
+: Calculate realized LGD for each closed recovery
+:::
+
+::: {data-id="lp2" .highlight-block}
+(2) Observed Average LGD
+: Calculate average realised LGD of closed recovery processes
+:::
+
+::: {data-id="lp4"}
+(3) Future recoveries
+: Estimate future recoveries on incomplete workouts
+:::
+
+::: {data-id="lp3"}
+(4) Long-run Average LGD
+: Calculate average LGD of closed + open recoveries
+:::
+
+:::
+
+::: {.column width="20%" .r-fit-text }
+![](/media/LGD_quantification.drawio.svg)
+
+:::
+
+::::
+
+## Observed Average LGD {.smaller}
+
+Default-weighted^[i.e., number of defaults weighted] average of realised LGD, including
+
+ * closed recoveries
+ * recoveries where $t_{end} - t_{def} > \text{MRP}$
+ * repaid/written-off exposures
+ * exposures returned to performing status ("cured")
+
+
+::: {.callout-warning}
+Important decision: maximum recovery period ($\S$ 156 EBA/GL/2017/16)
+
+ * per type of exposure
+ * vast majority of recoveries realized, based on observed recovery patterns
+
+:::
+
+::: aside
+Return to performing (cure) following Definition of Default (DoD) policy, including probation period and after multiple default treatment.
+:::
+
+## Long-run average LGD calculation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="80%" .r-fit-text}
+
+(0) Identify open/closed recoveries
+: Maximum Recovery Period & Multiple default treatment
+
+::: {data-id="lp1" }
+(1) Realised LGD
+: Calculate realized LGD for each closed recovery
+:::
+
+::: {data-id="lp2"}
+(2) Observed Average LGD
+: Calculate average realised LGD of closed recovery processes
+:::
+
+
+::: {data-id="lp4" .highlight-block}
+(3) Future recoveries
+: Estimate future recoveries on incomplete workouts
+:::
+
+::: {data-id="lp3"}
+(4) Long-run Average LGD
+: Calculate average LGD of closed + open recoveries
+:::
+
+:::
+
+::: {.column width="20%" .r-fit-text }
+![](/media/LGD_quantification.drawio.svg)
+
+:::
+
+::::
+
+## Future recoveries {.smaller}
+
+$\S$ 158-159 EBA/GL/2017/16 
+
+ - Realised LGD on closed recovery processes right-censored
+ - Censoring bias is time-in-default dependent
+ - Calibration target should be *adjusted* for bias by estimating future recoveries
+
+#### Approaches
+
+ * At individual exposure or aggregated level
+ * Based on case-by-case assessments / provisions
+ * Imputation with in-default LGD estimates
+ * Joint estimation 
+
+::: aside
+[**_(summary)_**]{style="color: orange;"}
+:::
+
+## Long-run average LGD calculation {auto-animate=true}
+
+:::: columns
+
+::: {.column width="80%" .r-fit-text}
+
+(0) Identify open/closed recoveries
+: Maximum Recovery Period & Multiple default treatment
+
+::: {data-id="lp1" }
+(1) Realised LGD
+: Calculate realized LGD for each closed recovery
+:::
+
+::: {data-id="lp2"}
+(2) Observed Average LGD
+: Calculate average realised LGD of closed recovery processes
+:::
+
+::: {data-id="lp4" .highlight-block}
+(3) Future recoveries
+: Estimate future recoveries on incomplete workouts
+:::
+
+::: {data-id="lp3"}
+(4) Long-run Average LGD
+: Calculate average LGD of closed + open recoveries
+:::
+
+:::
+
+::: {.column width="20%" .r-fit-text }
+![](/media/LGD_quantification.drawio.svg)
+
+:::
+
+::::
+
+## Calibration Targets (**LGD**) {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+Length of historical period
+: at least 5/7 years, all internal data considered relevant
+
+Reference date methodology
+: time-to-default (performing), time-in-default (in-default) 
+
+Reference dates $t_{r}$
+: sample over historical data over observation dates of defaulted exposures
+
+Calibration level (**L**)
+: level of aggregation (range of appl. $\supseteq$ calibration segment $\supset$ grade/pool)
+
+Calibration target $\text{LRA-LGD}$
+: default-weighted average over LGD values, both realised and based on estimated future recoveries (RLGD)
+
+:::
+
+::: {.column width="50%" .r-fit-text }
+
+$\text{LRA-LGD}(\mathbf{L}) = \frac{1}{N_\mathbf{L}}\sum_{i\in\mathbf{L}} \text{RLGD}_i$
+
+:::
+
+::::
+
+::: notes
+16:00
+:::
+
+
+# Margin of Conservatism
+
+## Margin of Conservatism {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+
+ * Basel framework and CRR prescribe a Margin of Conservatism in general terms only
+ 
+:::{data-id="asdfghjk"}
+ * EBA Guidelines on PD & LGD more specific
+   + Specification and clarification of concept
+   + Prescribes additional steps in risk quantification (appropriate adjustments)
+   + Introduces (harmonizing) minimal requirements (MoC A, B, C>0)
+:::
+:::
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+::::: {.callout-note}
+## CRE 36.67
+_In general, estimates of PDs, LGDs, and EADs are likely to involve unpredictable errors. In order to avoid over-optimism, a bank must add to its estimates a margin of conservatism that is related to the likely range of errors. Where methods and data are less satisfactory and the likely range of errors is larger, the margin of conservatism must be larger._
+:::::
+
+::::: {.callout-note}
+## CRR Article 179(f)
+_An institution shall add to its estimates a margin of conservatism that is related to the expected range of estimation errors. Where methods and data are considered to be less satisfactory, the expected range of errors is larger, the margin of conservatism shall be larger._
+:::::
+::::: {.callout-note data-id="glmoc"}
+## EBA/GL/2017/16
+:::{data-id="glmoc"}
+_43. In order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies $\small{[\cdots]}$ ensuring that: (i) where appropriate adjustments $\small{[\cdots]}$ are used, the MoC accounts for any increase in the uncertainty $\small{[\cdots]}$ (b) quantify the general estimation error $\small{[\cdots]}$_ 
+:::
+:::::
+
+:::
+
+::::
+
+## Margin of Conservatism {auto-animate=true}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+:::{data-id="asdfghjk"}
+
+ * EBA Guidelines on PD & LGD more specific
+   + Specification and clarification of concept
+   + Prescribes additional steps in risk quantification [(appropriate adjustments)]{style="color: teal;"}
+   + Introduces (harmonizing) minimal requirements (MoC A, B, C>0 factorization)
+:::
+:::
+
+::: {.column width="50%" #vcenter .r-fit-text}
+
+::::: {.callout-note }
+## EBA/GL/2017/16
+:::{data-id="glmoc"}
+_41. $\small{[\cdots]}$institutions should implement a framework for quantification, documentation and monitoring of estimation errors $\small{[\cdots]}$_
+
+_42. The final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories:_
+
+ - _Category A: $\small{[\cdots]}$data and methodological deficiencies_ 
+
+ - _Category B: $\small{[\cdots]}$changes to underwriting standards, risk appetite,collection and recovery policies and any other $\small{[\cdots]}$_
+
+ - _Category C: the general estimation error._
+
+_43. In order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies $\small{[\cdots]}$ ensuring that: (i) where appropriate adjustments $\small{[\cdots]}$ are used, the MoC accounts for any increase in the uncertainty $\small{[\cdots]}$ (b) quantify the general estimation error $\small{[\cdots]}$_ 
+:::
+:::::
+
+:::
+
+::::
+
+## Margin of Conservatism {.smaller auto-animate=true}
+
+Capital requirements based on unexpected losses:
+
+$$\text{RWA} \sim \int^{\alpha} \text{Loss}(x)p(x) \text{d}x$$
+
+Loss distribution assumed factorized over risk parameters and exposures $i$:
+
+$$p(\mathbf{x}) = \prod_i p_\text{PD}(x_i) p_\text{LGD}(x_i) p_\text{EAD}(x_i)$$
+
+Risk parameter densities based on estimated parameters $r$: 
+
+$$p_{\text{R}}(x_i) \sim p_\text{R}(x_i|r)p(r|\text{data})$$
+
+Therefore, $\text{RWA} \sim \int^{\alpha} \int^{\alpha^\prime}\text{Loss}(x)p(x|r)p(r) \text{d}x \text{d}r \approx \int^{\alpha}\text{Loss}(x)p(x|r=F_r^{-1}(\alpha^{\prime})) \text{d}x $
+
+::: {.callout-note}
+
+$\alpha$ : risk appetite
+
+$\alpha^\prime$ : "model risk" appetite
+
+:::
+
+## Risk & Uncertainty {.smaller auto-animate=true}
+
+:::: columns
+
+::: {.column width="47.5%" .r-fit-text .highlight-block-compl   data-id="bobblk"}
+
+### Bob 
+
+ * High-wealth client with excellent lawyers
+ * Has nuclear decay detector experiment in basement
+ * 50% full loss/repayment by guaranteed fair quantum coin toss
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="47.5%"  .r-fit-text .highlight-block  data-id="elmoblk"}
+
+### Elmo
+
+ * Lending/recovery via Pandimensional Originator LLC
+ * Random entity picked from across space-time
+ * May have concept of money/time
+
+:::
+::::
+
+ * Who would you rather lend to?
+ * How much capital should you hold in either case?
+
+::: notes
+
+Better title
+
+:::
+
+## Risk & Uncertainty {.smaller auto-animate=true}
+
+:::: columns
+
+::: {.column width="47.5%" .r-fit-text .highlight-block-compl   data-id="bobblk"}
+
+### Bob 
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="47.5%"  .r-fit-text .highlight-block  data-id="elmoblk"}
+
+### Elmo
+
+:::
+::::
+
+ * Who would you rather lend to? 
+ * How much capital should you hold in either case?
+
+
+$$D\sim \text{Bernoulli}(p)$$
+$$E\lbrack p_{Bob} \rbrack = E\lbrack p_{Elmo} \rbrack=50\% $$
+
+```{r bob_elmo_dist}
+#| cache: TRUE
+#| dev.args:
+#|   bg: "transparent"
+#| fig-align: "center" 
+library(ggplot2)
+# bg <- rgb(255,255,230,maxColorValue = 255)
+bg <- 'transparent'
+N<-1000
+prob = seq(0,1, length=N)
+df<-tibble::tibble(p = c(prob,prob), density = c(dbeta(prob,1000,1000), dbeta(prob,0.5,0.5)), who=c(rep_len("Bob",N),rep_len("Elmo",N)))
+
+ggplot(df,aes(p,density))+geom_line(aes(color=who)) + theme_minimal()+scale_x_continuous(labels=scales::label_percent())+scale_y_continuous(guide="none", name="")+scale_color_discrete(name="") +
+ theme(panel.background = element_rect(fill=bg), 
+    plot.background = element_rect(fill=bg, color=NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(), 
+    legend.background = element_rect(fill=bg), 
+    legend.box.background = element_rect(fill=bg) )
+```
+
+
+::: notes
+
+Better title
+
+:::
+
+
+## MoC Quantification
+
+:::: columns
+
+::: {.column width="65%" .r-fit-text}
+
+*Initial* Calibration Target (CT)
+: long-run average (LRA) default rate, (LRA/DT) LGD, CCF ~calculated~ estimated based on RDS prior to adjustments
+
+MoC C
+: Margin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies
+
+Deficiency
+: Source of bias relative to initial calibration target
+
+Appropriately adjusted calibration target
+: Calibration target adjusted for biases due to deficiencies
+
+MoC B
+: Margin to account for additional uncertainty due to adjustment for non-representativeness
+
+MoC A
+: Margin to account for other deficiencies
+:::
+
+::: {.column width="35%" .r-fit-text}
+![](/media/risk_quantification.drawio.svg)
+:::
+
+::::
+
+# End of day 1
+
+## Day 2
+
+::: columns
+::: {.column width="40%"}
+*13:00*
+
+*13:30*
+
+*14:15*
+
+*15:00*
+
+*15:15*
+
+*16:00*
+
+*16:45*
+:::
+
+::: {.column width="60%"}
+Quiz & Recap
+
+General Estimation Error
+
+Deficiencies
+
+*Break*
+
+Appropriate Adjustments
+
+Additional Uncertainties
+
+Case Study Explanation
+:::
+:::

@@ -7,906 +7,178 @@
     "text": "This is a temporary eduquant course site. This site was generated for the Leaseplan MoC & DT course that ended on December 7, 2022."
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#day-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#day-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Day 2",
-    "text": "Day 2\n\n\n13:00\n13:30\n14:00\n14:45\n15:00\n15:15\n15:45\n16:15\n16:45\n\nQ&A + Recap\nMoC Quantification\nGeneral Estimation Error\nTreatment of deficiencies\nBreak\nModel performance\nData quality & completeness\nRepresentativeness\nCase Study"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#q-a-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#q-a-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Q & A",
-    "text": "Q & A\n\n\n\nFor the LGD model risk drivers should be taken 12 months before default. However, you mentioned that it is not best practice to take them exactly 12 months prior to default as then representativeness to the application portfolio may become an issue. Could you elaborate on that?\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 122\n\n\n122. Institutions should analyse the risk drivers not only at the moment of default but also at least within a year before default. Institutions should use a reference date for a risk driver that is representative of the realisations of the risk driver within a year before default. When choosing the appropriate reference date for a risk driver institutions should take into account its volatility over time. \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\n\nExposures in the performing portfolio may be up to 1 year before default, given default within one year.\nBias due to time-to-default dependence of \\(LGD|X_{t_r}\\), short-term contracts / early defaults"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#risk-parameter-quantification",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#risk-parameter-quantification",
-    "title": "MoC & Downturn LGD",
-    "section": "Risk Parameter Quantification",
-    "text": "Risk Parameter Quantification\n\n\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nReference dates\n\nDate to which realised values are aggregated\n\nCalibration Target\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness & other sources of bias\n\nAppropriately Adjusted Calibration Target\n\nCalibration Target adjusted for biases"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-1",
-    "title": "MoC & Downturn LGD",
-    "section": "MoC Quantification",
-    "text": "MoC Quantification\n\n\n\nInitial Calibration Target (CT)\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated estimated based on RDS prior to adjustments\n\nMoC C\n\nMargin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies\n\nDeficiency\n\nSource of bias relative to initial calibration target\n\nAppropriately adjusted calibration target\n\nCalibration target adjusted for biases due to deficiencies\n\nMoC B\n\nMargin to account for additional uncertainty due to adjustment for non-representativeness\n\nMoC A\n\nMargin to account for additional uncertainty due to other deficiencies"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-2",
-    "title": "MoC & Downturn LGD",
-    "section": "MoC Quantification",
-    "text": "MoC Quantification\n\n\n\nMoC Categories (A, B, C)\n\nallocation of uncertainties for MoC quantification\n\n(Model) Risk Appetite\n\nSets (additional) capital requirements in relation to credit risk due to model uncertainty\n\nLevel of conservatism\n\nhow the MoC relates to the estimation uncertainty; e.g., a confidence level\n\nMoC A, B, C\n\nrequired to be quantified, applied, reported, monitored separately"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#moc-quantification-3",
-    "title": "MoC & Downturn LGD",
-    "section": "MoC Quantification",
-    "text": "MoC Quantification\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 42\n\n\nThe final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories: \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 43\n\n\n(ii) the MoC at category level related to the appropriate adjustments is proportionate to the uncertainty around these adjustments;\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 43\n\n\n(ii) the MoC at category level related to the appropriate adjustments is proportionate to the uncertainty around these adjustments;\n\n\n\n\n\n\n\n\n\n\n\nMoC should reflect uncertainty attributed to all deficiencies in category\nnot: Each deficiency should have separate MoC/adjustment"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-1",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 42\n\n\nThe final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories: \\(\\small{[\\cdots]}\\) Category C: the general estimation error.\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) (p18)\n\n\nThe reference to statistical variance has been avoided in order to not impose a fixed methodology, which might for example lead to disproportionate MoC for low default portfolios."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-2",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\n\nThe MoC C should reflect the general estimation error after adjustments."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-3",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\n\nMoC C reflects general estimation error\nEBA GL explicitly allows for flexibility\nEGIM adds proportionality requirement\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 42\n\n\nThe final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories: \\(\\small{[\\cdots]}\\) Category C: the general estimation error.\n\n\n\n\n\n\nECB Guide to Internal Models (CR) \\(\\S\\) 140\n\n\n(a) This MoC should be based on the distribution of the estimator \\(\\small{[\\cdots]}\\) considering that the uncertainty is primarily driven by the statistical uncertainty of each one-year default rate and the length of the time series. As a result, it is expected that the lower the number of observations per grade and the shorter the time series are, the higher the MoC of the grade should be.\n(b) Similarly, for LGD and CCF, \\(\\small{[\\cdots]}\\) uncertainty is primarily driven by the statistical uncertainty of the observations used to compute the long-run and downturn estimates and the length of the time series"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-4",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-4",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\nThe statistical estimator\n\nCalibration Target; (weighted) average default/loss/conversion rate\n\nGeneral estimation error\n\nUncertainty not due to deficiencies; standard error of statistical estimator\n\n\n\n\n\\[\\text{DR}_{\\text{LRA}} = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{D}_i(t_r)\\]\n\\[\\text{LGD}_{\\text{LRA}} = \\frac{1}{N_\\mathbf{L}}\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i\\]\n\\[\\text{CCF}_{\\text{LRA}} = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{CCF}_i(t_r)\\]"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-5",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-5",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\text{var}(\\frac{1}{N_L(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{D}_i(t_r))\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}}\\text{var}(\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i)\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\text{var}(\\frac{1}{N_L(t_r)}\\sum_{i\\in\\mathbf{L}} \\text{CCF}_i(t_r))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-6",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-6",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N^2_r}\\text{var}(\\sum_{i\\in\\mathbf{L}}\\text{D}_{ir}))\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N^2_\\mathbf{L}}\\text{var}(\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i)\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\text{var}(\\sum_{i\\in\\mathbf{L}}\\text{CCF}_{ir}))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_{ir}\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_{ir}\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{X}_r,\\text{X}_s)_{r\\neq s}\\rightarrow 0\\))"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-7",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-7",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\pi_{r}(1-\\pi_{r})\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}}\\sigma^2(\\text{RLGD})\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\sigma_r^2(CCF))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_{ir}\\), \\(\\text{RLGD}_{ir}\\), \\(\\text{CCF}_{ir}\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{X}_r,\\text{X}_s)_{r\\neq s}\\rightarrow 0\\))\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-8",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-8",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\\[\\text{var}(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\pi_{r}(1-\\pi_{r})\\]\n\\[\\text{var}(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}}\\sigma^2(\\text{RLGD})\\]\n\\[\\text{var}(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r}\\sigma_r^2(CCF))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_{ir}\\), \\(\\text{RLGD}_{ir}\\), \\(\\text{CCF}_{ir}\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{X}_r,\\text{X}_s)_{r\\neq s}\\rightarrow 0\\))\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-9",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-9",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\\[\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\\[\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}-1}s^2(\\text{RLGD})\\]\n\\[\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}s_r^2(CCF_r))\\]\n\n\n\n\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws (\\(\\text{cov}(\\text{X}_r,\\text{X}_s)_{r\\neq s}\\rightarrow 0\\))\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nUnbiased estimators of the variance of the mean (Bessel’s)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-10",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-10",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) \n\nCond. independence of \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\) assumed by required statistical estimator\nConnected clients\n\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nUnbiased estimators of the variance of the mean"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-11",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-11",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nUnbiased estimators of the variance of the mean\n\n\n\n\n\n\nECB Guide to Internal Models (CR) \\(\\S\\) 140\n\n\n(a) \\(\\small{[\\cdots]}\\) Institutions need to be aware of and deal adequately with the dependency between default rates over time on the quantification of the MoC, e.g. when using overlapping windows for the calculation of default rates."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-12",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-12",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\nAssuming \\(R\\) independent draws\n\nOverlapping observation windows \\(\\rightarrow\\) auto-correlation\n\n\n\n\n\n\nStrategies\n\nNon-overlapping sample\nNon-overlapping resampling scheme\nExplicitly model / correct for auto-correlation bias\n\n\n\n\npros\n\nsimple\nnon-parametric\nexplicit\n\n\ncons\n\nbiased\ncomplex\npossibly not identifiable\n\n\n\n\n\n\n\n\n\nDeficiency\n\n\nMethod of selecting reference dates leads to a bias \\(\\rightarrow\\) methodological deficiency (MoC A)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-13",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-13",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\n\nSampling without replacement \\(\\text{D}_r \\sim \\text{Hypergeometric}(N_r,\\pi^{\\prime}_r)\\)\n\nUnbiased estimators of the variance of the mean\n\n\n\n\n\n\nDue to fast convergence \\(\\text{Hypergeometric}\\rightarrow\\text{Binomial}\\), relevant for small \\(N_r\\), large \\(\\pi_r\\) only."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-14",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-14",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\\(\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}})\\), \\(\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}})\\)\n\n\n\n\nAssuming i.i.d. \\(\\text{D}_i\\), \\(\\text{RLGD}_i\\), \\(\\text{CCF}_i\\)\nAssuming \\(R\\) independent draws\nAssuming \\(\\text{D}_{ir} \\sim \\text{Binomial}(1,\\pi_r)\\)\nAssuming known \\(N_r\\), \\(R\\)\nBiased estimators of the std err of the mean"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-15",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-15",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\\[\\hat{\\sigma}^2(\\text{DR}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\\[\\hat{\\sigma}^2(\\text{LGD}_{\\text{LRA}}) = \\frac{1}{N_\\mathbf{L}-1}s^2(\\text{RLGD})\\]\n\\[\\hat{\\sigma}^2(\\text{CCF}_{\\text{LRA}}) = \\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}s_r^2(CCF_r))\\]\n\n\n\n\nBiased estimators of the std err of the mean\n\nE.g. if \\(s^2=0\\) or \\(\\text{DR}_r=0\\)\nAsympotically unbiased estimators \\(\\nsim\\) uncertainty of specific estimate"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-16",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-16",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\\[\\frac{1}{R^2}\\sum_{r=1\\dots R}\\frac{1}{N_r-1}\\text{DR}_{r}(1-\\text{DR}_{r})\\]\n\n\n\n\nBiased estimators of the std err of the mean\n\n\n\n\n\n\n\n\\[\\int^\\alpha \\text{Beta}(D_r + \\frac{1}{2}, N_r – D_r + \\frac{1}{2})\\]\n\n\n\n\nPosterior interval based on non-informative (conservative) Jeffrey’s prior for binomial parameter"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-17",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-17",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\nLevel of quantification\n\ncalibration level \\(\\rightarrow\\) level of MoC quantification\nsupport assumption of constant estimation error\n\nin particular for continuous estimates\n\n\n\n\n\nECB Guide to Internal Models (CR) \\(\\S\\) 140\n\n\n(a) \\(\\small{[\\cdots]}\\) When calibration is performed at calibration segment level, the general estimation error may be computed at that level when the statistical uncertainty/sampling error is not significantly different across grades or PD sub-ranges."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-18",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#general-estimation-error-18",
-    "title": "MoC & Downturn LGD",
-    "section": "General Estimation Error",
-    "text": "General Estimation Error\n\n\n\n\n\n\n\nCommon pitfalls\n\n\n\nCalculating general estimation error before appropriate adjustments\nOverrides / waivers on general estimation errors for low-default portfolios\nMoC C of zero in zero-default grades\nMoC C proportional to risk parameter values without proper substantiation\nConstant MoC C without proper substantiation"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Treatment of deficiencies",
-    "text": "Treatment of deficiencies\n\n\n\n\nDeficiency\n\nany driver of potential bias and increased uncertainty\n\nBias in the quantification\n\nEffect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be \\(\\approx 0\\))\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 36.\n\n\nInstitutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Treatment of deficiencies",
-    "text": "Treatment of deficiencies\n\n\n\n\nDeficiency\n\nany driver of potential bias and increased uncertainty\n\nBias in the quantification\n\nEffect of the deficiency on the statistical estimator relative to the estimated risk parameter (may be \\(\\approx 0\\))\n\n\n\n\n\nAdditional uncertainty\n\nuncertainty attributed to uncertainty in the estimated effect size\n\nNot captured by the general estimation error\n\nnon-zero for \\(N_r, R \\rightarrow \\infty\\)\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 36.\n\n\nInstitutions should identify all deficiencies related to the estimation of risk parameters that lead to a bias in the quantification of those parameters or to an increased uncertainty that is not fully captured by the general estimation error"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#treatment-of-deficiencies-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Treatment of deficiencies",
-    "text": "Treatment of deficiencies\n\n\n\n\nIdentification\n\na process that provides a guarantee of identifying all deficiencies\n\nEffect quantification\n\nEstimation of effect of the deficiency on the statistical estimator\n\nAdditional uncertainty\n\nuncertainty attributed to uncertainty in the estimated effect size\n\nClassification / allocation\n\nAttribution of additional uncertainty to specific types of deficiencies"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#identification",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#identification",
-    "title": "MoC & Downturn LGD",
-    "section": "Identification",
-    "text": "Identification\n\n\n\n\nIdentification\n\na process that provides a guarantee for identifying all deficiencies\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 36.\n\n\nInstitutions should identify all deficiencies related to the estimation of risk parameters\n\n\n\n\n\n\n\n\n\nLeverage existing controls (Review of Est., DQ monitoring, MV)\nEnsure & document minimally considered deficiencies\nIdentify requirements in order to establish deficiencies\n\n\n\n\n\n\n\n\n\n\n\nCommon pitfalls\n\n\n\nForgetting/not documenting one of the required dimensions\nIncluding issues that are not deficiencies\nIn particular, non-compliance"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Model performance & accuracy",
-    "text": "Model performance & accuracy\n\nIn case of…\n\nBiases at level of calibration\nBiases at more granular level\nNon-homogeneity of grades / sub-ranges\nNon-heterogeneous grades\n\n\n\n\n\n\nEBA/GL/2017/16 (Q&A p128)\n\n\nThe reference to ‘rank order estimation error’ has been deleted from the final GL. Instead, it has been clarified that, while data and methodological deficiencies in the model development should be identified, they should be covered by MoC to the extent that they lead to bias in the quantification of risk parameters or to increased uncertainty that is not fully captured by general estimation error."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Model performance & accuracy",
-    "text": "Model performance & accuracy\n\n\n\nIn case of…\n\n\nBiases at level of calibration\n\n\\(\\rightarrow\\) change method of calibration (remediation)\n\n\nBiases at more granular level\nNon-homogeneity of grades / sub-ranges\nNon-heterogeneous grades\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommon pitfalls\n\n\n\nBias at calibration level \\(=\\) deficiency in model calibration method\nCorrection of calibration method \\(\\neq\\) appropriate adjustment\n\nNo MoC for bias at calibration level!"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Model performance & accuracy",
-    "text": "Model performance & accuracy\n\n\nIn case of…\n\nBiases at level of calibration\n\n\n\nBiases at more granular level\nNon-homogeneity of grades / sub-ranges\n\n\\(\\rightarrow\\) representativeness in terms of risk characteristics\n\n\nNon-heterogeneous grades\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEffect on calibration target?\n\n\n\neffect on calibration target if distribution over grades/sub-ranges is non-representative of application portfolio\nRepresentativeness assessments + accuracy tests \\(\\rightarrow\\) identification"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-4",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#model-performance-accuracy-4",
-    "title": "MoC & Downturn LGD",
-    "section": "Model performance & accuracy",
-    "text": "Model performance & accuracy\n\n\nIn case of…\n\nBiases at level of calibration\nBiases at more granular level\nNon-homogeneity of grades / sub-ranges\n\n\n\nNon-heterogeneous grades\n\n\\(\\rightarrow\\) nothing (no effect on risk quantification)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStill deficient\n\n\n\nReflected in general estimation error \\(\\rightarrow\\) not a “deficiency”\nStill need to fullfill requirements w.r.t. meaningful differentiation"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\nMissing or inaccurate…\n\nreference dates\nattributes identifying type of exposures\n(risk) characteristics \\(X_{ir}\\) for assigning exposures\nloss & default characteristics \\(\\text{y}_{i}(t_r)\\)\n\nover observation windows\ncash flows"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\n\nReference data set \\(e:\\{i,t\\}\\) with \\(y_{it},X_{it}, Z_{it}, \\dots\\)\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\nRating grade cannot be determined \\(\\rightarrow\\) potential bias at rating grade level\n\n(no model for missing \\(X\\) in ranking method)\n\n\n\n\n\n\n\n\nEBA/GL/2017/16 (p16)\n\n\nData exclusions may be a tool to quantify adjustments to the observed average default and loss rates where these are necessary; however, they should never be taken into account for the purpose of calculating the observed average default rate"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nEBA/GL/2017/16 (p16)\n\n\nData exclusions may be a tool to quantify adjustments to the observed average default and loss rates where these are necessary; however, they should never be taken into account for the purpose of calculating the observed average default rate\n\n\n\n\n\n\n\n\n\n\nCommon pitfall\n\n\n\nExclusion due to low-quality data without estimation of adjustment and MoC"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-4",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-4",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\nExample: missing completely at random\n\nmechanism consistent with MCAR\ndistributions \\(y_{it}|Z_{it}\\) similar over \\(f\\), \\(g\\)\n\\(\\bar{y}^{(g)} \\approx \\bar{y}^{(e)}\\) at calibration segment level"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-5",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-5",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\n\nCalculate grade \\(a\\) adjusted calibration target \\(\\bar{y}_{a}^{(g)}\\)\n\\(\\hat{\\sigma}_{a}^{(g)}(y)=(N_{a}^{(g)}-1)^{-\\tfrac{1}{2}} s_a^{(g)}\\) includes addn. uncertainty\nImpute \\(X^{(f)} \\sim X^{(g)}\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-6",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-6",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\nImpute \\(X^{(f)} \\sim X^{(g)}\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)\n\n\n\n\nExample (2): missing at random, linear estimates"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-7",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-7",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\nImpute \\(X_{js} \\sim \\text{Normal}(\\bar{X}^{(g)}_a,\\hat{\\sigma}^{(g)}_a(X))\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)\n\n\n\n\n\n\nExample (2): missing at random, linear estimates\n\n\\(P(\\text{missing})=P(\\text{missing}|X,Z,\\dots)\\)\nHowever, distributions \\(y_{it}\\) not similar over \\(f\\) vs \\(g\\)\nTherefore, \\(\\bar{y}_{a}^{(g)}\\) is biased and cannot be used\nAssume in addition that \\(p(a)\\sim \\alpha X + \\beta\\) (linear ranking model)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-8",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-8",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\nImpute \\(X_{js} \\sim \\text{Normal}(\\bar{X}^{(g)}_a,\\hat{\\sigma}^{(g)}_a(X))\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)\n\n\n\n\n\n\nExample (2): missing at random, linear estimates\n(naive imputation)\n\n\nImpute \\(X_{js} \\leftarrow \\bar{X}^{(g)}_a\\) to obtain \\(\\bar{y}_{a}^{\\prime(e)}\\)\nImpute \\(X_{js} \\leftarrow \\bar{X}^{(g)} + z_\\alpha \\hat{\\sigma}^{(g)}_a\\) to obtain \\(\\bar{y}_{a}^{\\prime(e)(\\text{upper})}\\)\nMoC A \\(\\propto \\bar{y}_{a}^{\\prime(e)(\\text{upper})}-\\bar{y}_{a}^{\\prime(e)}\\)\n\n\n\n\n\n\n\n\nEBA/GL/2017/16 (p178)\n\n\n\\(\\small{\\dots}\\) adjusting the data where deficiencies have been identified may involve rectifying the identified errors, for instance where missing data points are filled in with the most probable information."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-9",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-9",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\nImpute \\(X_{js} \\sim \\text{Normal}(\\bar{X}^{(g)}_a,\\hat{\\sigma}^{(g)}_a(X))\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)\n\n\n\n\n\n\nExample (2): missing at random, linear estimates\n(naive imputation)\n\nImpute \\(X_{js} \\leftarrow \\bar{X}^{(g)}_a\\), \\(X_{js} \\leftarrow \\bar{X}^{(g)} + z_\\alpha \\hat{\\sigma}^{(g)}_a\\)\n\\(\\Delta\\) MoC A \\(\\propto \\bar{y}_{a}^{\\prime(e)(\\text{upper})}-\\bar{y}_{a}^{\\prime(e)}\\)\n\n\n\n\nExample (3): missing at random, non-linear"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-10",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-10",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n(imputation)\n\nImpute \\(X_{js} \\sim \\text{Normal}(\\bar{X}^{(g)}_a,\\hat{\\sigma}^{(g)}_a(X))\\) to obtain \\(\\hat{\\sigma}_{a}^{\\prime(e)}(y)\\)\nAttribute \\(\\Delta\\) MoC A \\(\\propto (\\hat{\\sigma}_{a}^{(g)}-\\hat{\\sigma}_{a}^{\\prime(e)})\\)\n\n\n\n\n\n\nExample (2): missing at random, linear estimates\n(naive imputation)\n\nImpute \\(X_{js} \\leftarrow \\bar{X}^{(g)}_a\\), \\(X_{js} \\leftarrow \\bar{X}^{(g)} + z_\\alpha \\hat{\\sigma}^{(g)}_a\\)\n\\(\\Delta\\) MoC A \\(\\propto \\bar{y}_{a}^{\\prime(e)(\\text{upper})}-\\bar{y}_{a}^{\\prime(e)}\\)\n\n\n\n\n\n\nExample (3): missing at random\n\n\\(P(\\text{missing})=P(\\text{missing}|X,Z,\\dots)\\)\nDistributions \\(y_{it}\\) not similar over \\(f\\) vs \\(g\\)\nCalibration targets not linear in \\(X^{(f)}\\) so that \\(E(\\bar{y}_{a}^{(e)})\\neq \\bar{y}_{a}^{(e)}|_{X^{(f)}=\\bar{X}^{(g)}}\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-11",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-11",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n\n(imputation)\n\n\nExample (2): missing at random, linear estimates\n\n(naive imputation)\n\n\n\n\n\n\n\nExample (3): missing at random\n(multiple imputation)\n\nApproximate \\(\\bar{y}^{(e)}(X^{(f)},\\dots)P(X^{(f)},\\dots)\\) with univariate resampling:\n\nRandomly sample \\(X^{(b)}\\) from \\(X^{(g)}\\) with replacement \\(M\\) times\nCalculate \\(\\bar{y}_a^{\\prime(b)}=\\bar{y}_a^{(e)}|_{X^{(f)}\\leftarrow X^{(b)}}\\), \\(y_a^{\\prime}=\\frac{1}{M}\\sum_b y_a^{\\prime(b)}\\) (adj. calib. targets)\nObtain the excess variance1 due to missing values as \\(\\hat{\\sigma}_M(\\bar{y})=(1+\\frac{1}{M})\\sum_b\\frac{(y_a^{\\prime} -y_a^{\\prime(b)})}{M-1}\\)\n\n\n\n\nSee Rubin, D. B. (1987) Multiple Imputation for Nonresponse in Surveys"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-12",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#data-quality-completeness-12",
-    "title": "MoC & Downturn LGD",
-    "section": "Data Quality & Completeness",
-    "text": "Data Quality & Completeness\n\n\n\nMissing (risk) characteristics \\(X_{ir}\\) for assigning exposures\n\n\nFor exposures at reference dates \\(f:\\{j,s\\}\\), variable \\(X_{js}\\) missing (\\(g\\) not missing)\n\n\n\n\n\nExample: missing completely at random\n\n(imputation)\n\n\nExample (2): missing at random, linear estimates\n\n(naive imputation)\n\n\nExample (3): missing at random\n\n(multiple imputation)\n\n\n\n\n\n\n\n\nReal life\n\n\n\nReal life usually not so fortunate \nIdentification of missingness mechanism important\nSmall effect expected \\(\\rightarrow\\) less sophisticated approaches\n\n\n\n\n\n\n\n\n\n\n\nCommon pitfalls\n\n\n\nReliance on strong assumptions irrespective of materiality"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Representativeness",
-    "text": "Representativeness\n\n\n\nData should be representative of application portfolio\n\nExposures, risk characteristics\n(Risk management) processes (origination, DoD, recovery)\nEconomic/market conditions\n\nEBA specifies dimensions minimally to be considered\nOver all reference dates and exposures, per risk parameter\n\n\n\n\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 34\n\n\nWhere the representativeness of data \\(\\small{\\dots}\\) is insufficient and leads to a bias or increased uncertainty of risk quantification, institutions should introduce an appropriate adjustment to correct the bias and they should apply a margin of conservatism"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Representativeness",
-    "text": "Representativeness\n\n\n\nData should be representative of application portfolio\n\nExposures, risk characteristics\n(Risk management) processes (origination, DoD, recovery)\nEconomic/market conditions\n\nEBA specifies dimensions minimally to be considered\nOver all reference dates and exposures, per risk parameter\n\n\n\n\n\n\n\n\nChallenges\n\n\n\nMany potential deficiencies\nEffects hard to model / quantify\nOften no data available to estimate\n\n\n\n\n\n\n\n\n\n\n\n\nStrategies\n\n\nall Qualitative assessment of potential drivers\nif so Quantitative assessment of non-representativeness (according to some simple metric)\nfinally Quantitative estimate of effect of non-representativeness"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Representativeness",
-    "text": "Representativeness\n\n\n(Risk management) processes (origination, DoD, recovery)\n\n\n\n\n\n\n\nChallenges\n\n\n\nMany potential deficiencies\nEffects hard to model / quantify\nOften no data available to estimate\n\n\n\n\n\n\n\n\nOrigination\n\nlending/underwriting standards, risk appetite,\n\nDefault\n\ndefinition of default, policy and processes\n\nRecovery\n\nrecovery, restructuring, forbearance policies and processes"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-4",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-4",
-    "title": "MoC & Downturn LGD",
-    "section": "Representativeness",
-    "text": "Representativeness\n\n\n\n\nOrigination\n\nlending/underwriting standards, risk appetite,\n\nDefault\n\ndefinition of default, policy and processes\n\nRecovery\n\nrecovery, restructuring, forbearance policies and processes\n\n\n\n\n\n\n\n\n\n\nChallenges\n\n\n\nMany potential deficiencies\nEffects hard to model / quantify\nOften no data available to estimate"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-5",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#representativeness-5",
-    "title": "MoC & Downturn LGD",
-    "section": "Representativeness",
-    "text": "Representativeness\n\n\n\n\n\nDefault\n\ndefinition of default, policy and processes\n\n\n\n\n\n\n\n\n\n\n\nDefinition of default\n\n\n\nEBA harmonization of DoD\n\n\n\n\n\n\n\n\nCommon strategies (DoD)\n\nSimulation based on historical data\nAdjustments modelled on data collected under new DoD\nCombinations\n\nsimulated materiality threshold\nadditional adjustment for UtP based on recent data\n\n\n\n\n\n\n\n\n\n\nPay attention\n\n\n\nSimulation = appropriate adjustment\nRecovery processes also affected"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for a difference between the New DoD to be used in application and the Old DoD available in historical data. Fortunately, some data is available that was collected under both definitions. This is a (simulated) data set of a homogeneous portfolio, and there are no risk drivers, grades or other features to distinguish the exposures by. Lucky you!"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\n\n\nData\nYou are given a panel data set with a set of \\(\\approx\\) 2k exposures i at 120 dates (months) t and default flags d according to a New and Old definition of default (DoD). The New definition is available only for the last 26 dates (months) whereas the Old definition default flag is available for the entire period. Two other derived variables are included for your convenience: a 12-month forward-looking into-default flag into_d_12, and a status: enter, stock, default or exit."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\n\n\nData\nYou are given a panel data set with a set of \\(\\approx\\) 2k exposures i at 120 dates (months) t and default flags d according to a New and Old definition of default (DoD). The New definition is available only for the last 26 dates (months) whereas the Old definition default flag is available for the entire period. Two other derived variables are included for your convenience: a 12-month forward-looking into-default flag into_d_12, and a status: enter, stock, default or exit."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\n\n\ni: exposure id\nt: time\nDoD: “Old” or “New”\nd: in-default\ninto_d_12: into default within 12 months\nstatus: enter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-4",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-4",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\n\n\nChallenge\n\nEstimate appropriate adjustment to the Old DoD data to estimate the appropriately adjusted long-run average default rate,\nAlso estimate the additional uncertainty due to this adjustment."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-5",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-5",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\n\n\nChallenge\nDo so under different assumptions/scenarios:\n\nFirst, assume that \\(\\bar{R}^{(new)}_{(12)} = \\alpha \\bar{R}^{(old)}_{(12)} + \\epsilon\\), where \\(\\bar{R}_{(n)}\\) is an observed average \\(n\\)-month into-default rate. In words, assume that any average default rate over a fixed period under the new default definition is a constant factor times that under the old one.\nAlternatively, assume that \\(R^{(new)}_{(1)}(t) = \\beta R^{(old)}_{(1)}(t) + \\epsilon\\), where \\(R_{(n)}(t)\\) is the observed \\(n\\)-month into-default rate at reference date \\(t\\). In words, assume that not the long-run average 12-month, but the monthly into-default rate under the new definition is related to the old one with a constant scale factor \\(\\beta\\)."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-6",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-6",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\nScenario A: \\(\\bar{R}^{(new)}_{(12)} = \\alpha \\bar{R}^{(old)}_{(12)} + \\epsilon\\)\nScenario B: \\(R^{(new)}_{(1)}(t) = \\beta R^{(old)}_{(1)}(t) + \\epsilon\\)\n\n\nChallenge\nFor each of these two scenarios,\n\nEstimate \\(\\alpha\\) resp. \\(\\beta\\) based on the overlapping period.\nBased on your estimates, derive appropriately adjusted default rates.\nAlso estimate the uncertainty of \\(\\alpha\\) resp. \\(\\beta\\).\nUsing error propagation, derive the corresponding additional uncertainty of the estimated appropriately adjusted long-run average default rate in either case."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-7",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-7",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\nScenario A: \\(\\bar{R}^{(new)}_{(12)} = \\alpha \\bar{R}^{(old)}_{(12)} + \\epsilon\\)\nScenario B: \\(R^{(new)}_{(1)}(t) = \\beta R^{(old)}_{(1)}(t) + \\epsilon\\)\n\n\nBONUS QUESTIONS\n\nWould you consider the assumptions A) and B) to be reasonable in a real-life situation? Can you verify these assumptions using the given data?\nCan you come up with an alternative approach?\nYour appropriately adjusted LRA DR may be more uncertain due to model misspecification. Can you think of some ways to quantify that uncertainty?\nThis simulated data set has only idiosyncratic variability, i.e., there is no systemic risk factor! Do your answers to the previous questions change?"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-8",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_2.html#case-study-1-one-dod-two-dod-8",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\nDownload the data from slides or ask for email\nUse your favorite tool to get an answer.\nShare your answers by coming Friday"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\nIntroduction\nIn this exercise, you estimated an appropriate adjustment and MoC A to account for a difference between the New DoD to be used in application and the Old DoD available in historical data. Fortunately, some data is available that was collected under both definitions. This is a (simulated) data set of a homogeneous portfolio, and there are no risk drivers, grades or other features to distinguish the exposures by. Lucky you!"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\n\n\nData\nYou were given a panel data set with a set of \\(\\approx\\) 2k exposures i at 120 dates (months) t and default flags d according to a New and Old definition of default (DoD). The New definition is available only for the last 26 dates (months) whereas the Old definition default flag is available for the entire period. Two other derived variables are included for your convenience: a 12-month forward-looking into-default flag into_d_12, and a status: enter, stock, default or exit."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\n\n\ni: exposure id\nt: time\nDoD: “Old” or “New”\nd: in-default\ninto_d_12: into default within 12 months\nstatus: enter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\n\n\nChallenge\n\nEstimate appropriate adjustment to the Old DoD data to estimate the appropriately adjusted long-run average default rate,\nAlso estimate the additional uncertainty due to this adjustment."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-4",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-4",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\n\n\nChallenge\nDo so under different assumptions/scenarios:\n\nFirst, assume that \\(\\bar{R}^{(new)}_{(12)} = \\alpha \\bar{R}^{(old)}_{(12)} + \\epsilon\\), where \\(\\bar{R}_{(n)}\\) is an observed average \\(n\\)-month into-default rate. In words, assume that any average default rate over a fixed period under the new default definition is a constant factor times that under the old one.\nAlternatively, assume that \\(R^{(new)}_{(1)}(t) = \\beta R^{(old)}_{(1)}(t) + \\epsilon\\), where \\(R_{(n)}(t)\\) is the observed \\(n\\)-month into-default rate at reference date \\(t\\). In words, assume that not the long-run average 12-month, but the monthly into-default rate under the new definition is related to the old one with a constant scale factor \\(\\beta\\)."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-5",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-5",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\nScenario A: \\(\\bar{R}^{(new)}_{(12)} = \\alpha \\bar{R}^{(old)}_{(12)} + \\epsilon\\)\nScenario B: \\(R^{(new)}_{(1)}(t) = \\beta R^{(old)}_{(1)}(t) + \\epsilon\\)\n\n\nChallenge\nFor each of these two scenarios,\n\nEstimate \\(\\alpha\\) resp. \\(\\beta\\) based on the overlapping period.\nBased on your estimates, derive appropriately adjusted default rates.\nAlso estimate the uncertainty of \\(\\alpha\\) resp. \\(\\beta\\).\nUsing error propagation, derive the corresponding additional uncertainty of the estimated appropriately adjusted long-run average default rate in either case."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-6",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-6",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\nNew DoD to be used in application and the Old DoD available in historical data\nEstimate an appropriate adjustment and MoC A\nScenario A: \\(\\bar{D}^{(new)}_{(12)} = \\alpha \\bar{D}^{(old)}_{(12)} + \\epsilon\\)\nScenario B*: \\(D^{(new)}_{(12)}(t) = \\beta D^{(old)}_{(12)}(t) + \\epsilon\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-7",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-7",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n(A) Constant ratio of averages of 12-month into-default rates\n\n\nHere, we assume\n\\[\\text{D}^{\\prime}_{\\text{LRA}}=(\\alpha\\pm \\sigma_{\\alpha})\\cdot\\text{D}^{(old)}_{\\text{LRA}} \\]\nwith\n\\[\\alpha = \\frac{\\bar{\\text{D}}^{(new)}}{\\bar{\\text{D}}^{(old)}}\\]"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-8",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-8",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n(A) Constant ratio of averages of 12-month into-default rates\n\n\nHere, we assume\n\\[\\bar{D}^{\\prime}_{\\text{LRA}}=(\\alpha\\pm \\sigma_{\\alpha})\\cdot\\bar{D}^{(old)}_{\\text{LRA}} \\]\nwith\n\\[\\alpha = \\frac{\\bar{\\text{D}}^{(new)}}{\\bar{\\text{D}}^{(old)}}|_{overlapping\\ period}\\]\nand\n\\[\\sigma_\\alpha^2 \\approx \\alpha^2(\\frac{\\sigma_{(new)}^2}{\\bar{\\text{D}}_{(new)}^2} +\\frac{\\sigma_{(old)}^2}{\\bar{\\text{D}}_{(old)}^2} \\]\n\\[-2\\rho_{(old),(new)}\\frac{\\sigma_{(old)}\\sigma_{(new)}}{\\bar{\\text{D}}_{(old)} \\bar{\\text{D}}_{(new)}})\\]"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-9",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-9",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n(A) Constant ratio of averages of 12-month into-default rates\n\n\nHere, we assume\n\\[\\text{DR}^{\\prime}_{\\text{LRA}}=(\\alpha\\pm \\sigma_{\\alpha})\\cdot\\text{DR}^{(old)}_{\\text{LRA}} \\]\nwith\n\\[\\alpha = \\frac{\\bar{\\text{D}}^{(new)}}{\\bar{\\text{D}}^{(old)}} = 1.7 \\pm 0.42\\]\n\n\n\n\n\n\nWarning\n\n\nRather large additional uncertainty!"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-10",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-10",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n\n\n\n\n\n\nCommon pitfalls\n\n\n\nStandard error of the adjusted default rate \\(\\neq\\) additional uncertainty\nStandard error of the ratio of correlated parameters\n\n\n\n\n\n\n\n\n\n\nInfo\n\n\n\nSimpler approaches may inflate estimated additional uncertainty \\(\\rightarrow €€€\\) capital"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-11",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-11",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n(B) Monthly into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(old)}_{(12)}(t) +\\epsilon\\]"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-12",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-12",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n(B) Monthly into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(old)}_{(12)}(t) +\\epsilon\\]"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-13",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-13",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n(B) Monthly into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(old)}_{(12)}(t) +\\epsilon\\]\n\\[\\bar{D}^{(adj)} = \\sum_t D^{(adj)}_{(12)}(t) / T^{\\prime} \\]"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-14",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-one-dod-two-dod-14",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: one Dod, two Dod",
-    "text": "Case study 1: one Dod, two Dod\n(B) Monthly into-default rates\n\n\nHere, we assume1\n\\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(old)}_{(12)}(t) +\\epsilon\\]\n\\[\\bar{D}^{(adj)} = \\sum_t D^{(adj)}_{(12)}(t) / T^{\\prime} \\]\n\\[\\sigma^2(\\bar{D}^{(adj)}) = \\frac{1}{\\tilde{T}^2}\\sum_t\\sigma^2(t)\\]\nThe regression standard errors are propagated to the 12-month adjusted default rate to obtain the additional uncertainty due to the adjustment.\n\n\n\n\n\n\n\n\nCorrection $^2 $ to account for bias due to autocorrelation."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-reflection",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-reflection",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: reflection",
-    "text": "Case study 1: reflection\n\n\n\n\n\n\nImportant\n\n\n\nSimpler approaches may inflate estimated additional uncertainty \\(\\rightarrow €€€\\) capital\nThe second approach ignores that \\(cov(\\epsilon_t,\\epsilon_{t+1..12})>>0\\) and therefore underestimates \\(\\sigma(\\bar{D}^{adj})\\)\nMore generally, the assumption that the relation is constant is not realistic"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-reflection-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#case-study-1-reflection-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Case study 1: reflection",
-    "text": "Case study 1: reflection\nBONUS QUESTIONS\n\n\nWould you consider the assumptions A) and B) to be reasonable in a real-life situation? Can you verify these assumptions using the given data?\n\n\n\nCan you come up with an alternative approach?\n\n\n\nYour appropriately adjusted LRA DR may be more uncertain due to model misspecification. Can you think of some ways to quantify that uncertainty?\n\n\n\nThis simulated data set has only idiosyncratic variability, i.e., there is no systemic risk factor! Do your answers to the previous questions change?"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#downturn-quantification",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#downturn-quantification",
-    "title": "MoC & Downturn LGD",
-    "section": "Downturn Quantification",
-    "text": "Downturn Quantification\n\n\n\nReference dates\n\nDate to which realised values are aggregated selected based on identified Downturn\n\nCalibration Segment\n\nJointly calibrated set of exposures with same level of risk, including Downturn risk\n\nCalibration Target\n\nDownturn LGD, CCF estimated based on observed DT impact, extrapolation or fall-back approach\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness & other sources of bias\n\nAppropriately Adjusted Calibration Target\n\nCalibration Target adjusted for biases"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_3.html#links",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_3.html#links",
-    "title": "MoC & Downturn LGD",
-    "section": "Links",
-    "text": "Links\nSlides for part 2\nLink to pdf\nMaterial for Case Study 2\nCase Study 2 (DT identification) data"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#introductions",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#introductions",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#introductions",
+    "href": "slides/representativeness/representativeness_day_1.html#introductions",
+    "title": "Representativeness",
     "section": "Introductions",
     "text": "Introductions\n Who are we\n Who are you\n What do you want\n What do you get"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#course-outline-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#course-outline-1",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#course-outline-1",
+    "href": "slides/representativeness/representativeness_day_1.html#course-outline-1",
+    "title": "Representativeness",
     "section": "Course outline",
-    "text": "Course outline\n\n\nGeneral topics\n\nIRB Regulation\nRisk Parameter Quantification\nLGD Quantification\n\n\n\n\nMargin of Conservatism\n\nDeficiencies\nAppropriate Adjustments\nMoC Quantification\n\n\n\n\nDownturn LGD\n\nDownturn Identification\nDownturn LGD Quantification"
+    "text": "Course outline\n\n\nDay 1\n\nRisk Parameter Estimation Overview\nData Representativeness Overview\nScope of Application\n\n\n\n\nDay 2\n\nGeneral Process Design\nDefinition of Default\nUnderwriting/Recovery Standards \n\n\n\n\nDay 3\n\nEconomic Conditions\nExternal Data/Ratings \n\n\n\n\nDay 4\n\nReview of Estimates & IRB Change\nGovernance"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#day-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#day-1",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#day-1",
+    "href": "slides/representativeness/representativeness_day_1.html#day-1",
+    "title": "Representativeness",
     "section": "Day 1",
-    "text": "Day 1\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nIntroduction\nOverview of IRB Regulation\nRisk Parameter Quantification\nBreak\nLGD Quantification\nMargin of Conservatism\nDay Recap"
+    "text": "Day 1\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nIntroduction\nRisk Parameter Estimation Overview\nData Representativeness in Modelling\nBreak\nGeneral Estimation Methodology\nScope of Application\nCase Study"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Overview of IRB Regulation",
-    "text": "Overview of IRB Regulation\n\n\n13:30"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Overview of IRB Regulation",
-    "text": "Overview of IRB Regulation\n\n\nLayers of regulation\n\nBasel Framework\n\nBIS recommendations on banking regulations\n\nCRR (Part 3/II, Chapter III)\n\nCapital Requirements Regulation (Internal Ratings Based Approach )\n\n\n\n\nRTS \\(\\rightarrow\\) CDR\n\nRegulatory Technical Standards adopted as Comm. Del. Regulation\n\n\n\n\n\nEBA Guidelines and Q&A\n\nClarification, specifications\n\n\n\n\nECB Guide to Internal Models\n\nSupervisory expectations\n\n\n\n\n\n\n\nDiagram: basel -> CRR/RTS/GL -> EGIM ]"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#overview-of-irb-regulation-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Overview of IRB Regulation",
-    "text": "Overview of IRB Regulation\n\n\n\n\nRTS \\(\\rightarrow\\) CDR\n\nRegulatory Technical Standards adopted as Comm. Del. Regulation\n\n\n\n\n\nCDR 2022/439 Assessment of IRB approach\nCDR 2021/930 Identification of economic downturn\n\n\n\n\nEBA Guidelines and Q&A\n\nClarification, specifications\n\n\n\n\n\nEBA/GL/2017/16 PD & LGD estimation\nEBA/GL/2019/03 DT LGD estimation\nEBA/GL/2020/05 Credit Risk Mitigation (CRM)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-1-economic-downturn",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-1-economic-downturn",
-    "title": "MoC & Downturn LGD",
-    "section": "Example 1: Economic Downturn",
-    "text": "Example 1: Economic Downturn\n\n\n\nEconomic Downturn not specified in Basel Framework or CRR\nEBA has drafted an RTS, elevated into regulation CDR 2021/930\nEGIM is not more specific\n\n\n\n\n\nCRE 36.85\n\n\n\\(\\small{[\\cdots]}\\) A bank must estimate an LGD for each facility that aims to reflect economic downturn conditions where necessary to capture the relevant risks. \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCRR Article 181\n\n\n(1)(b) institutions shall use LGD estimates that are appropriate for an economic downturn if those are more conservative than the long-run average. \\(\\small{[\\cdots]}\\)\n(3) EBA shall develop draft regulatory technical standards to specify the following: (a) the nature, severity and duration of an economic downturn referred to in paragraph 1; \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCDR 2021/930 Article 1\n\n\nSpecification of the nature, severity and duration of an economic downturn \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nShow Basel CRE36.64, article 4(78), GL PD/LGD par 73ff"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-2-type-of-exposures",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-2-type-of-exposures",
-    "title": "MoC & Downturn LGD",
-    "section": "Example 2: Type of exposures",
-    "text": "Example 2: Type of exposures\n\n\n\nBasel vaguely refers to concept\nCRR sets out general principles\nEBA GL on PD&LGD specifies these\n\n\n\n\n\nCRE 36.10\n\n\nWithin each asset class, a bank may utilise multiple rating methodologies/systems. For example, a bank may have customised rating systems for specific industries or market segments (eg middle market, and large corporate). \\(\\small{[\\cdots]}\\) the rationale for assigning a borrower to a rating system \\(\\small{[\\cdots]}\\) reflects the level of risk of the borrower. \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCRR Article 142(1)\n\n\n(1) “rating system” means all of the methods, processes, controls, data collection and IT systems that support the \\(\\small{[\\cdots]}\\) quantification of default and loss estimates that have been developed for a certain type of exposures;\n(2) “type of exposures” means a group of homogeneously managed exposures which are formed by a certain type of facilities and which may be limited to a single entity \\(\\small{[\\cdots]}\\) provided that the same type of exposures is managed differently in other entities of the group;\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n12. A rating system \\(\\small{[\\cdots]}\\) should cover all those exposures where the obligors or facilities show common drivers of risk and credit-worthiness and fundamentally comparable availability of credit-related information. \\(\\small{[\\cdots]}\\)\n13. Exposures covered by the same rating system should be treated similarly by the institution in terms of risk management, decision making and credit approval process and should be assigned to a common obligor rating scale \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nShow Basel CRE36.64, article 4(78), GL PD/LGD par 73ff"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems",
-    "title": "MoC & Downturn LGD",
-    "section": "Rating Systems",
-    "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles\n\n\n\n\n\n\n\nCRR Article 142\n\n\n(1) “rating system” means all of the methods, processes, controls, data collection and IT systems that support the assessment of credit risk, the assignment of exposures to rating grades or pools, and the quantification of default and loss estimates that have been developed for a certain type of exposures; \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\n13:45"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Rating Systems",
-    "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles\n\n\n\n\n\n\n\nCRR Article 142\n\n\n“type of exposures” means a group of homogeneously managed exposures which are formed by a certain type of facilities \\(\\small{[\\cdots]}\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Rating Systems",
-    "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles\n\n\n\n\n\n\n\nEBA/GL/2017/16 par. 12\n\n\nA rating system in the sense of point (1) of Article 142(1) of Regulation (EU) No 575/2013 should cover all those exposures where the obligors or facilities show common drivers of risk and credit-worthiness and fundamentally comparable availability of credit-related information. \\(\\small{[\\cdots]}\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Rating Systems",
-    "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles\n\n\n\n\n\n\n\nEBA/GL/2017/16 par. 13\n\n\nExposures covered by the same rating system should be treated similarly by the institution in terms of risk management, decision making and credit approval process and should be assigned to a common obligor rating scale \\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nmultiple slides with definitions + article\nexposure class rating system type of exposure range of application IRB approval"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-two-rating-systems",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#example-two-rating-systems",
-    "title": "MoC & Downturn LGD",
-    "section": "Example: two rating systems",
-    "text": "Example: two rating systems\n\n\n\n\n\n\n\n\n\n\nNot based on exposure characteristics!"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-4",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#rating-systems-4",
-    "title": "MoC & Downturn LGD",
-    "section": "Rating Systems",
-    "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles\n\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n12. \\(\\small{[\\cdots]}\\) The PD and LGD model within a rating system may comprise various calibration segments.\\(\\small{[\\cdots]}\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#irb-implementation",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#irb-implementation",
-    "title": "MoC & Downturn LGD",
-    "section": "IRB implementation",
-    "text": "IRB implementation\n\n\nImplementation\n\nIRB roll-out per exposure class\n3 years experience test\nRisk Parameter Estimation\nSubmission per rating system\n\nReview\n\nRegular review of estimates\nConservative Adjustments\n\nChange\n\nOutcome of review\nChanges to range of application\nSubmission of change\n\nReversion"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation",
+    "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation",
+    "title": "Representativeness",
     "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on (internal) risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification\n\n\n14:00"
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on (internal) risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -&gt; quantification\n\n\n14:00"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-1",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-1",
+    "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-1",
+    "title": "Representativeness",
     "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nTypical approach: \\(\\sim\\) into-default / realized LGD closed cases / realized CCF\nConditional on risk drivers, based on data set representative of application portfolio\nRegulatory requirements focus on meaningful differentiation\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification"
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk measure \\(\\sim\\) into-default / realized LGD closed cases / realized CCF\nConditional on risk drivers, based on data set representative of application portfolio\nRegulatory requirements focus on meaningful differentiation\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -&gt; quantification"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-2",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-2",
+    "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-2",
+    "title": "Representativeness",
     "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\nEstimates of long-run default/loss experience\nRegulatory requirements focus on calculation method and quantification process\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -> quantification\n\n\nRisk quantification is the primary focus of this course"
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\nEstimates of long-run default/loss experience\nRegulatory requirements focus on calculation method and quantification process\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -&gt; quantification"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-estimation-3",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-3",
+    "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-3",
+    "title": "Representativeness",
     "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nDirect estimation: special case\nContinuous estimation: effectively same requirements, materal\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nCRR Article 169\n\n\n3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale.\n\n\n\n\n\n\n14:15"
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nDirect estimation: special case\nContinuous estimation: effectively same requirements\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nCRR Article 169\n\n\n3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale.\n\n\n\n\n\n\nAmendment\n\n\nEBA shall issue guidelines on how to apply in practice the requirements on model design, risk quantification, validation and application of risk parameters using continuous or very granular rating scales for each risk parameter.\n\n\n\n\n\n\n14:15"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-quantification-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-parameter-quantification-1",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-quantification",
+    "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-quantification",
+    "title": "Representativeness",
     "section": "Risk Parameter Quantification",
-    "text": "Risk Parameter Quantification\n\n\n\nReference dates\n\nDate to which realised values are aggregated\n\nCalibration Target\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness & other sources of bias\n\nAppropriately Adjusted Calibration Target\n\nCalibration Target adjusted for biases\n\n\n\n\n\n\n\nDiagram: Type of Exposures -> RDS -> Initial Calibration Target -> Appr. Adjusted Target\nPar 12 PD&LGD\n\n\n15:15"
+    "text": "Risk Parameter Quantification\n\n\n\nExposure type\n\nhomogeneously managed, comparable risk characteristics\n\nReference dates\n\nDate to which realised values are aggregated\n\nCalibration Target\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness & other sources of bias\n\nAppropriately Adjusted Calibration Target\n\nCalibration Target adjusted for biases\n\n\n\n\n\n\n\nDiagram: Type of Exposures -&gt; RDS -&gt; Initial Calibration Target -&gt; Appr. Adjusted Target\nPar 12 PD&LGD\n\n\n15:15"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#reference-data-sets",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#reference-data-sets",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#reference-data-sets",
+    "href": "slides/representativeness/representativeness_day_1.html#reference-data-sets",
+    "title": "Representativeness",
     "section": "Reference Data Sets",
     "text": "Reference Data Sets\n\n\n\nLength of historical period\n\nmin. requirements (5 or 7 yr) + available relevant internal data on comparable exposures\n\nReference date methodology\n\n(non-)overlapping [PD], time-to-default [LGD, CCF], recovery process [in-default]\n\nExposure attributes\n\nidentify exposures of given type at historical observation dates\n\nDefault/loss characteristics\n\nObserved default/loss data aggregated by exposure over observation period at reference date (target variable)\n\nRisk characteristics\n\nRisk drivers, appropriate adjustment variables\n\nObservation windows\n\naggregate to obtain targets (fwd) or variables (bwd)"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-risk-parameter-values",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-risk-parameter-values",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#realised-risk-parameter-values",
+    "href": "slides/representativeness/representativeness_day_1.html#realised-risk-parameter-values",
+    "title": "Representativeness",
     "section": "Realised Risk Parameter Values",
     "text": "Realised Risk Parameter Values\n\n\n\nReference date methodology\n\n(non-)overlapping [PD], time-to-default [LGD, CCF], time-in-default/recovery process [in-default]\n\nReference dates \\(t_r\\)\n\nset of dates over which calibration target is calculated, either as an average (LRA LGD), average of yearly averages (PD & LRA CCF), or an estimated downturn effect (DT LGD/CCF)\n\nDefault/Loss characteristics\n\nexposure-level into-default flag, (partially) realised LGD values, realised credit conversion factors, intermediate components\n\n\n\n\n\n\n\n\n\nTypical approach: realised values also targets of (statistical) ranking method (model)"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets",
-    "title": "MoC & Downturn LGD",
+    "objectID": "slides/representativeness/representativeness_day_1.html#calibration-targets",
+    "href": "slides/representativeness/representativeness_day_1.html#calibration-targets",
+    "title": "Representativeness",
     "section": "Calibration Targets",
-    "text": "Calibration Targets\n\n\n\nLength of historical period\n\nreflecting variability of economic conditions\n\nMethodology\n\noverlapping versus non-overlapping\n\nReference dates \\(t_{r}\\)\n\nSample over historical data representative of application portfolio conditioned on target\n\nCalibration level (L)\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target\n\nPrescribed estimator of LRA/DT risk parameter values: (adjusted/weighted) average of realised risk parameter values"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets-pd",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets-pd",
-    "title": "MoC & Downturn LGD",
-    "section": "Calibration Targets (PD)",
-    "text": "Calibration Targets (PD)\n\n\n\nLength of historical period\n\n(up to) a length that reflects the likely range of variability of default rates of that type of exposures\n\nReference date methodology\n\noverlapping versus non-overlapping\n\nReference dates \\(t_{r}\\)\n\nsample over historical data over observation dates of performing exposures\n\nCalibration level (L)\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target \\(DR\\)\n\naverage of default rates per (yearly) reference date\n\n\n\n\n\\(\\text{DR}(\\mathbf{L}) = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} D_i(t_r)\\)\n\n\n\n15:15"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation",
-    "title": "MoC & Downturn LGD",
-    "section": "Long-run average LGD calculation",
-    "text": "Long-run average LGD calculation\n\n\n\nLength of historical period\n\nall available internal loss data on exposures of that type considered relevant\n\nReference dates \\(t_r\\)\n\n\\(t_{def}-12 \\le t_{r} < t_{def}\\)\n\n\n(assignment to grade)\n\n\n\n\nRealised LGD\n\nRatio of economic loss to outstanding at default\n\n\n\n\n\nObserved Average LGD\n\nAverage realised LGD of closed recovery processes\n\n\n\n\n\nLong-run Average LGD\n\nAverage RLGD of closed+open recoveries"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Long-run average LGD calculation",
-    "text": "Long-run average LGD calculation\n\n\n\n\nIdentify open/closed recoveries\n\nMaximum Recovery Period & Multiple default treatment\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd",
-    "title": "MoC & Downturn LGD",
-    "section": "Realised LGD",
-    "text": "Realised LGD\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\n\n\n\n\nAdditional drawings (A)\n\nDrawings after \\(t_{def}\\)\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments\n\n\n\n\n\nCosts (C)\n\nDirect or material indirect costs of recovery\n\n\n\n\n\n\\(RLGD = \\frac{\\max(O+A+C-R,0)}{O}\\)\n\n\n\n\n\n\n\nAggregation is over all cash flows related to recovery of defaulted credit obligation."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-in-default",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-in-default",
-    "title": "MoC & Downturn LGD",
-    "section": "Realised LGD (in-default)",
-    "text": "Realised LGD (in-default)\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{\\mathbf{ref}}\\)\n\n\n\n\n\nAdditional drawings (A)\n\nDrawings after \\(t_{\\mathbf{ref}}\\)\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments after \\(t_{\\mathbf{ref}}\\)\n\n\n\n\n\nCosts (C)\n\nDirect or material indirect costs of recovery after \\(t_{\\mathbf{ref}}\\)\n\n\n\n\n\\(RLGD = \\frac{\\max(O+A+C-R,0)}{O}\\) \n\n\n\n\n(summary)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Realised LGD",
-    "text": "Realised LGD\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\n\n\nirrespective of prior write-offs or forgiveness\nexcluding fees/payments not capitalised at \\(t_{def}\\)\n(additional drawings after default, if reflected in CCF)\n\n\n\n\n\nAdditional drawings (A)\n\nDrawings after \\(t_{def}\\)\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments\n\n\n\n\nCosts (C)\n\nDirect or material indirect costs of recovery\n\n\n\n\n\n\\[ RLGD = \\frac{\\max(O+A+C-R,0)}{O} \\]"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Realised LGD",
-    "text": "Realised LGD\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\n\n\n\n\nAdditional drawings (A)\n\nDrawings after \\(t_{def}\\)\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments\n\n\n\nUnsecured as well as secured (eligible+ineligible)\nIncluding regular contractual payments\nIncluding discounted outstanding at default end in case of return to performing (“artificial cash flow”)\n\n\n\n\nCosts (C)\n\nDirect or material indirect costs of recovery\n\n\n\n\n\n\\[ RLGD = \\frac{\\max(O+A+C-R,0)}{O} \\]\n\n\n\n\n\n\nDiscounting of cash flows at 3-month euribor + 5% or equivalent."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Realised LGD",
-    "text": "Realised LGD\n\n\n\n\nOutstanding (O)\n\nCredit obligation outstanding at \\(t_{def}\\)\n\nAdditional drawings (A)\n\nDrawings after \\(t_{def}\\)\n\n\n\n\n\nRecoveries (R)\n\nDiscounted cash flows from any recoveries and payments\n\n\n\n\n\nCosts (C)\n\nDirect or material indirect costs of recovery\n\n\n\nall direct costs of recovery discounted to \\(t_{def}\\)\n(material) indirect costs allocated to recovery process \\(i\\)\n\n\n\n\n\\[ RLGD = \\frac{\\max(O+A+C-R,0)}{O} \\]\n\n\n\n\n\n\nDiscounting of cash flows at 3-month euribor + 5% or equivalent."
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-example-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-example-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Realised LGD: example 1",
-    "text": "Realised LGD: example 1\n\nInterest-only loan of EUR 100, interest EUR 5 / month\nStops paying at \\(t=t_{def} - 3 \\text{ months}\\)\nCustomer declared in default on loan at \\(t=t_{def}\\)\nUntraceable, local P.I. charges EUR 50 (\\(t=t_{def}+6\\text{ months}\\))\n100% writtten off at \\(t_{def}+12\\text{ months}\\)\nEuribor 3 month = 0%\n\nWhat is the realized LGD? \n\n\\[\\frac{100+15+\\frac{50}{(105\\%)^6}}{100+15} \\approx 132\\%\\]"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-example-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#realised-lgd-example-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Realised LGD: example 2",
-    "text": "Realised LGD: example 2\n\nLoan of EUR 100 at \\(t_{def}\\), interest EUR 5 / month, linear amortizing at 1 / month\nCustomer declared in default on loan at \\(t=t_{def}\\), keeps paying bills\nReturned to performing at \\(t=t_{def} + 6 \\text{ months}\\)\nEuribor 3 month = 1%\n\nWhat is the realized LGD? \n\n\\[\\frac{100 - \\sum_{t=1}^{6}\\frac{5+1}{106\\%^i} - \\frac{94}{106\\%^6}}{100} \\approx 4\\%\\]"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Long-run average LGD calculation",
-    "text": "Long-run average LGD calculation\n\n\n\n\nIdentify open/closed recoveries\n\nMaximum Recovery Period & Multiple default treatment\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#observed-average-lgd",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#observed-average-lgd",
-    "title": "MoC & Downturn LGD",
-    "section": "Observed Average LGD",
-    "text": "Observed Average LGD\nDefault-weighted1 average of realised LGD, including\n\nclosed recoveries\nrecoveries where \\(t_{end} - t_{def} > \\text{MRP}\\)\nrepaid/written-off exposures\nexposures returned to performing status (“cured”)\n\n\n\n\nImportant decision: maximum recovery period (\\(\\S\\) 156 EBA/GL/2017/16)\n\nper type of exposure\nvast majority of recoveries realized, based on observed recovery patterns\n\n\n\n\n\n\nReturn to performing (cure) following Definition of Default (DoD) policy, including probation period and after multiple default treatment.\ni.e., number of defaults weighted"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Long-run average LGD calculation",
-    "text": "Long-run average LGD calculation\n\n\n\n\nIdentify open/closed recoveries\n\nMaximum Recovery Period & Multiple default treatment\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#future-recoveries",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#future-recoveries",
-    "title": "MoC & Downturn LGD",
-    "section": "Future recoveries",
-    "text": "Future recoveries\n\\(\\S\\) 158-159 EBA/GL/2017/16\n\nRealised LGD on closed recovery processes right-censored\nCensoring bias is time-in-default dependent\nCalibration target should be adjusted for bias by estimating future recoveries\n\nApproaches\n\nAt individual exposure or aggregated level\nBased on case-by-case assessments / provisions\nImputation with in-default LGD estimates\nJoint estimation\n\n\n\n(summary)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-4",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#long-run-average-lgd-calculation-4",
-    "title": "MoC & Downturn LGD",
-    "section": "Long-run average LGD calculation",
-    "text": "Long-run average LGD calculation\n\n\n\n\nIdentify open/closed recoveries\n\nMaximum Recovery Period & Multiple default treatment\n\n\n\n\n\n\nRealised LGD\n\nCalculate realized LGD for each closed recovery\n\n\n\n\n\n\n\nObserved Average LGD\n\nCalculate average realised LGD of closed recovery processes\n\n\n\n\n\n\n\nFuture recoveries\n\nEstimate future recoveries on incomplete workouts\n\n\n\n\n\n\n\nLong-run Average LGD\n\nCalculate average LGD of closed + open recoveries"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets-lgd",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#calibration-targets-lgd",
-    "title": "MoC & Downturn LGD",
-    "section": "Calibration Targets (LGD)",
-    "text": "Calibration Targets (LGD)\n\n\n\nLength of historical period\n\nat least 5/7 years, all internal data considered relevant\n\nReference date methodology\n\ntime-to-default (performing), time-in-default (in-default)\n\nReference dates \\(t_{r}\\)\n\nsample over historical data over observation dates of defaulted exposures\n\nCalibration level (L)\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target \\(\\text{LRA-LGD}\\)\n\ndefault-weighted average over LGD values, both realised and based on estimated future recoveries (RLGD)\n\n\n\n\\(\\text{LRA-LGD}(\\mathbf{L}) = \\frac{1}{N_\\mathbf{L}}\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i\\)\n\n\n\n16:00"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Margin of Conservatism",
-    "text": "Margin of Conservatism\n\n\n\nBasel framework and CRR prescribe a Margin of Conservatism in general terms only\n\n\n\nEBA Guidelines on PD & LGD more specific\n\nSpecification and clarification of concept\nPrescribes additional steps in risk quantification (appropriate adjustments)\nIntroduces (harmonizing) minimal requirements (MoC A, B, C>0)\n\n\n\n\n\n\n\nCRE 36.67\n\n\nIn general, estimates of PDs, LGDs, and EADs are likely to involve unpredictable errors. In order to avoid over-optimism, a bank must add to its estimates a margin of conservatism that is related to the likely range of errors. Where methods and data are less satisfactory and the likely range of errors is larger, the margin of conservatism must be larger.\n\n\n\n\n\n\nCRR Article 179(f)\n\n\nAn institution shall add to its estimates a margin of conservatism that is related to the expected range of estimation errors. Where methods and data are considered to be less satisfactory, the expected range of errors is larger, the margin of conservatism shall be larger.\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\n43. In order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies \\(\\small{[\\cdots]}\\) ensuring that: (i) where appropriate adjustments \\(\\small{[\\cdots]}\\) are used, the MoC accounts for any increase in the uncertainty \\(\\small{[\\cdots]}\\) (b) quantify the general estimation error \\(\\small{[\\cdots]}\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Margin of Conservatism",
-    "text": "Margin of Conservatism\n\n\n\n\nEBA Guidelines on PD & LGD more specific\n\nSpecification and clarification of concept\nPrescribes additional steps in risk quantification (appropriate adjustments)\nIntroduces (harmonizing) minimal requirements (MoC A, B, C>0 factorization)\n\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\n41. \\(\\small{[\\cdots]}\\)institutions should implement a framework for quantification, documentation and monitoring of estimation errors \\(\\small{[\\cdots]}\\)\n42. The final MoC on a risk parameter estimate should reflect the uncertainty of the estimation in all of the following categories:\n\nCategory A: \\(\\small{[\\cdots]}\\)data and methodological deficiencies\nCategory B: \\(\\small{[\\cdots]}\\)changes to underwriting standards, risk appetite,collection and recovery policies and any other \\(\\small{[\\cdots]}\\)\nCategory C: the general estimation error.\n\n43. In order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies \\(\\small{[\\cdots]}\\) ensuring that: (i) where appropriate adjustments \\(\\small{[\\cdots]}\\) are used, the MoC accounts for any increase in the uncertainty \\(\\small{[\\cdots]}\\) (b) quantify the general estimation error \\(\\small{[\\cdots]}\\)"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-3",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#margin-of-conservatism-3",
-    "title": "MoC & Downturn LGD",
-    "section": "Margin of Conservatism",
-    "text": "Margin of Conservatism\nCapital requirements based on unexpected losses:\n\\[\\text{RWA} \\sim \\int^{\\alpha} \\text{Loss}(x)p(x) \\text{d}x\\]\nLoss distribution assumed factorized over risk parameters and exposures \\(i\\):\n\\[p(\\mathbf{x}) = \\prod_i p_\\text{PD}(x_i) p_\\text{LGD}(x_i) p_\\text{EAD}(x_i)\\]\nRisk parameter densities based on estimated parameters \\(r\\):\n\\[p_{\\text{R}}(x_i) \\sim p_\\text{R}(x_i|r)p(r|\\text{data})\\]\nTherefore, $ ^{} {}(x)p(x|r)p(r) x r {}(x)p(x|r=F_r{-1}(^{})) x $\n\n\n\n\\(\\alpha\\) : risk appetite\n\\(\\alpha^\\prime\\) : “model risk” appetite"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-uncertainty",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-uncertainty",
-    "title": "MoC & Downturn LGD",
-    "section": "Risk & Uncertainty",
-    "text": "Risk & Uncertainty\n\n\nBob\n\nHigh-wealth client with excellent lawyers\nHas nuclear decay detector experiment in basement\n50% full loss/repayment by guaranteed fair quantum coin toss\n\n\n\n\nElmo\n\nLending/recovery via Pandimensional Originator LLC\nRandom entity picked from across space-time\nMay have concept of money/time\n\n\n\n\nWho would you rather lend to?\nHow much capital should you hold in either case?\n\n\nBetter title"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-uncertainty-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#risk-uncertainty-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Risk & Uncertainty",
-    "text": "Risk & Uncertainty\n\n\nBob\n\n\n\nElmo\n\n\n\nWho would you rather lend to?\nHow much capital should you hold in either case?\n\n\\[D\\sim \\text{Bernoulli}(p)\\] \\[E\\lbrack p_{Bob} \\rbrack = E\\lbrack p_{Elmo} \\rbrack=50\\% \\]\n\n\nBetter title"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#moc-quantification",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#moc-quantification",
-    "title": "MoC & Downturn LGD",
-    "section": "MoC Quantification",
-    "text": "MoC Quantification\n\n\n\nInitial Calibration Target (CT)\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated estimated based on RDS prior to adjustments\n\nMoC C\n\nMargin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies\n\nDeficiency\n\nSource of bias relative to initial calibration target\n\nAppropriately adjusted calibration target\n\nCalibration target adjusted for biases due to deficiencies\n\nMoC B\n\nMargin to account for additional uncertainty due to adjustment for non-representativeness\n\nMoC A\n\nMargin to account for other deficiencies"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_1.html#day-2",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_1.html#day-2",
-    "title": "MoC & Downturn LGD",
-    "section": "Day 2",
-    "text": "Day 2\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nQuiz & Recap\nGeneral Estimation Error\nDeficiencies\nBreak\nAppropriate Adjustments\nAdditional Uncertainties\nCase Study Explanation"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_4.html#links",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_4.html#links",
-    "title": "MoC & Downturn LGD",
-    "section": "Links",
-    "text": "Links\nMaterial for Case Study 2\nCase Study 2 (DT identification) data\nSlides for day 4\nLink to pdf\nSurvey\nLink to survey"
+    "text": "Calibration Targets\n\n\n\nLength of historical period\n\nreflecting variability of economic conditions\n\nMethodology\n\noverlapping versus non-overlapping\n\nReference dates \\(t_{r}\\)\n\nSample over historical data representative of application portfolio conditioned on target\n\nCalibration segment\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target\n\nPrescribed estimator of LRA/DT risk parameter values\n\n\n(adjusted/weighted) average of realised risk parameter values"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Leaseplan MoC / DT LGD Q4 2022",
+    "title": "Leaseplan Representativeness Q4 2023",
     "section": "",
-    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nNov 15, 2022\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 2\n\n\n\n\n\n\n\n\n\nNov 22, 2022\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 3\n\n\n\n\n\n\n\n\n\nNov 29, 2022\n\n\nPieter van den Berg, Ryan van Lamoen\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 4\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nRyan van Lamoen\n\n\n\n\n\n\nNo matching items"
+    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_4.html#day-4-1",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_4.html#day-4-1",
-    "title": "MoC & Downturn LGD",
-    "section": "Day 4",
-    "text": "Day 4\nMaterial for Case Study 2\nCase Study 2 (DT identification) data\nSlides for day 4\nLink to pdf"
-  },
-  {
-    "objectID": "slides/leaseplan_moc_dt/moc_dt_day_4.html#please-fill-out-our-survey",
-    "href": "slides/leaseplan_moc_dt/moc_dt_day_4.html#please-fill-out-our-survey",
-    "title": "MoC & Downturn LGD",
-    "section": "Please fill out our survey",
-    "text": "Please fill out our survey\nLink to survey"
-  },
-  {
-    "objectID": "index.html#course-listing",
-    "href": "index.html#course-listing",
-    "title": "Eduquant course page",
-    "section": "Course listing",
-    "text": "Course listing"
+    "objectID": "index.html#course-slides",
+    "href": "index.html#course-slides",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "",
+    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#please-fill-out-our-survey",
     "href": "index.html#please-fill-out-our-survey",
-    "title": "Leaseplan MoC / DT LGD Q4 2022",
+    "title": "Leaseplan Representativeness Q4 2023",
     "section": "Please fill out our survey",
     "text": "Please fill out our survey\nLink to survey"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nNote that these will be available for a limited time after the course has ended.↩︎"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#rating-systems",
+    "href": "slides/representativeness/representativeness_day_1.html#rating-systems",
+    "title": "Representativeness",
+    "section": "Rating Systems",
+    "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-4",
+    "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-4",
+    "title": "Representativeness",
+    "section": "Risk Parameter Estimation",
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nDirect estimation: special case\nContinuous estimation: effectively same requirements\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nCRR Article 169\n\n\n3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale.\n\n\n\n\n\n\nAmendment\n\n\nEBA shall issue guidelines on how to apply in practice the requirements on model design, risk quantification, validation and application of risk parameters using continuous or very granular rating scales for each risk parameter.\n\n\n\n\n\n\n14:15"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#overview",
+    "href": "slides/representativeness/representativeness_day_1.html#overview",
+    "title": "Representativeness",
+    "section": "Overview",
+    "text": "Overview"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#calibration-targets-1",
+    "href": "slides/representativeness/representativeness_day_1.html#calibration-targets-1",
+    "title": "Representativeness",
+    "section": "Calibration Targets",
+    "text": "Calibration Targets\n\n\n\nLength of historical period\n\nreflecting variability of economic conditions\n\nMethodology\n\noverlapping versus non-overlapping\n\nReference dates \\(t_{r}\\)\n\nSample over historical data representative of application portfolio conditioned on target\n\nCalibration segment\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target\n\nPrescribed estimator of LRA/DT risk parameter values\n\n\n(adjusted/weighted) average of realised risk parameter values\n\n\n\n \n\\[\\text{DR}(\\mathbf{L}) = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} D_i(t_r)\\]\n\\[\\text{Observed LGD}(\\mathbf{L}) = \\frac{1}{N_\\mathbf{L}}\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i\\]\n\\[\\text{CCF}(\\mathbf{L}) = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} RCCF_i(t_r)\\]"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness",
+    "href": "slides/representativeness/representativeness_day_1.html#representativeness",
+    "title": "Representativeness",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\nCRR somewhat generally worded\n\n\n\nCDR 439 more spcific\n\n\n\n\n\n\nCRR Article 174\n\n\nIf an institution uses statistical models and other mechanical methods to assign exposures to obligors or facilities grades or pools, the following requirements shall be met:\\(\\small{[\\cdots]}\\) (c) the data used to build the model shall be representative of the population of the institution’s actual obligors or exposures;\n\n\n\n\n\n\nCDR 2022/439 Article 37(2)\n\n\nWhen assessing the representativeness of the data used to build the model as referred to in Article 174(c) of Regulation (EU) No 575/2013, competent authorities shall verify: (a) the comparability of risk characteristics of the obligors or facilities reflected in the data used to build the model with those of the exposures covered by a particular rating model; (b) the comparability of the current underwriting and recovery standards ith the ones applied at the time to which the reference data set used for the modelling relates; (c) the consistency of default definition over time in the data used for the modelling \\(\\small{[\\cdots]}\\) (etc)\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\n43. In order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies \\(\\small{[\\cdots]}\\) ensuring that: (i) where appropriate adjustments \\(\\small{[\\cdots]}\\) are used, the MoC accounts for any increase in the uncertainty \\(\\small{[\\cdots]}\\) (b) quantify the general estimation error \\(\\small{[\\cdots]}\\)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-1",
+    "href": "slides/representativeness/representativeness_day_1.html#representativeness-1",
+    "title": "Representativeness",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\nCRR somewhat generally worded on a specific aspect only\n\n\n\nCDR 439 more specific\n\n‘comparability’\n’’\n\n\n\n\n\n\n\nCRR Article 174\n\n\nIf an institution uses statistical models and other mechanical methods to assign exposures to obligors or facilities grades or pools, the following requirements shall be met:\\(\\small{[\\cdots]}\\)\n(c) the data used to build the model shall be representative of the population of the institution’s actual obligors or exposures;\n\n\n\n\n\n\nCDR 2022/439 Article 37(2)\n\n\nWhen assessing the representativeness of the data used to build the model as referred to in Article 174(c) of Regulation (EU) No 575/2013, competent authorities shall verify:\n(a) the comparability of risk characteristics of the obligors or facilities reflected in the data used to build the model with those of the exposures covered by a particular rating model;\n(b) the comparability of the current underwriting and recovery standards ith the ones applied at the time to which the reference data set used for the modelling relates;\n(c) the consistency of default definition over time in the data used for the modelling \\(\\small{[\\cdots]}\\) (etc)\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\n43. In order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies \\(\\small{[\\cdots]}\\) ensuring that: (i) where appropriate adjustments \\(\\small{[\\cdots]}\\) are used, the MoC accounts for any increase in the uncertainty \\(\\small{[\\cdots]}\\) (b) quantify the general estimation error \\(\\small{[\\cdots]}\\)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements",
+    "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements",
+    "title": "Representativeness",
+    "section": "Regulatory Requirements",
+    "text": "Regulatory Requirements\nRisk Differentiation\n\n\n\nCRR somewhat generally worded on a specific aspect only\nCDR 439 article 37 introduces specific terms & dimensions\n\ncomparability\nrisk characteristics\nunderwriting/recovery standards\ndefault definition\nexternal data\n\nEBA/GL/2017/16 sets out required assessments more comprehensively\n\n4.2.3 Representativeness of data for model development\n\n\n\n\n\n\nCRR Article 174\n\n\nIf an institution uses statistical models and other mechanical methods to assign exposures to obligors or facilities grades or pools, the following requirements shall be met:\\(\\small{[\\cdots]}\\)\n(c) the data used to build the model shall be representative of the population of the institution’s actual obligors or exposures;\n\n\n\n\n\n\nCDR 2022/439 Article 37(2)\n\n\nWhen assessing the representativeness of the data used to build the model as referred to in Article 174(c) of Regulation (EU) No 575/2013, competent authorities shall verify:\n(a) the comparability of risk characteristics of the obligors or facilities reflected in the data used to build the model with those of the exposures covered by a particular rating model;\n(b) the comparability of the current underwriting and recovery standards ith the ones applied at the time to which the reference data set used for the modelling relates;\n(c) the consistency of default definition over time in the data used for the modelling \\(\\small{[\\cdots]}\\) (etc)\n(d) where external data or data pooled across institutions is used in the model development, the relevance and adequacy of such data for the institution’s exposures, products and risk profile"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-1",
+    "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-1",
+    "title": "Representativeness",
+    "section": "Regulatory Requirements",
+    "text": "Regulatory Requirements\nRisk Quantification\n\n\n\nCRR article 179 more extensive\nCDR 439 articles 42 introduces specific dimensions (focused on PD)\nEBA/GL/2017/16 sets out required assessments more comprehensively\n\n4.2.4 Representativeness of data for calibration of risk parameters\n\n\n\n\n\n\nCRR Article 179(1)\n\n\nIn quantifying the risk parameters to be associated with rating grades or pools, institutions shall apply the following requirements:\\(\\small{[\\cdots]}\\)\n(b) \\(\\small{[\\cdots]}\\)The institution’s estimates shall be representative of long run experience;\n(c) any changes in lending practice or the process for pursuing recoveries over the observation periods \\(\\small{[\\cdots]}\\) shall be taken into account.\n(d) the population of exposures represented in the data used for estimation, the lending standards used when the data was generated and other relevant characteristics shall be comparable with those of the institution’s exposures and standards. The economic or market conditions that underlie the data shall be relevant to current and foreseeable conditions.\n\n\n\n\n\n\nCDR 2022/439 Article 42\n\n\n1. When assessing compliance with the overall requirements for estimation laid down in Article 179 \\(\\small{[\\cdots]}\\), the data used for the quantification of risk parameters \\(\\small{[\\cdots]}\\) compentent authorities shall verify:\\(\\small{[\\cdots]}\\)\n(c) the representativeness of the data used to estimate the risk parameters for certain types of exposures;\n_(d) \\(\\small{[\\cdots]}\\) the length"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-2",
+    "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-2",
+    "title": "Representativeness",
+    "section": "Regulatory Requirements",
+    "text": "Regulatory Requirements\nRisk Quantification\n\n\n\nCRR article 179 more extensive\nCDR 439 articles 42 introduces specific terms\n\n\n\n\n\nCRR Article 179(1)\n\n\nIn quantifying the risk parameters to be associated with rating grades or pools, institutions shall apply the following requirements:\\(\\small{[\\cdots]}\\)\n(b) \\(\\small{[\\cdots]}\\)The institution’s estimates shall be representative of long run experience;\n(c) any changes in lending practice or the process for pursuing recoveries over the observation periods {[]}$ shall be taken into account.\n(d) the population of exposures represented in the data used for estimation, the lending standards used when the data was generated and other relevant characteristics shall be comparable with those of the institution’s exposures and standards. The economic or market conditions that underlie the data shall be relevant to current and foreseeable conditions.\n\n\n\n\n\n\nCDR 2022/439 Article 42(1)\n\n\nWhen assessing compliance with the overall requirements for estimation laid down in Article 179\\(\\small{[\\cdots]}\\), the data used for the quantification of risk parameters\\(\\small{[\\cdots]}\\) compentent authorities shall verify: (c) the representativeness of the data used to estimate the risk parameters for certain types of exposures;"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#representative-data",
+    "href": "slides/representativeness/representativeness_day_1.html#representative-data",
+    "title": "Representativeness",
+    "section": "Representative data",
+    "text": "Representative data"
   }
 ]

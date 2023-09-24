@@ -1,0 +1,626 @@
+---
+title: "Representativeness"
+subtitle: "Day 1"
+author: "Pieter van den Berg"
+date: 2023-09-25
+date-format: long
+format: eduquant-slides-revealjs
+---
+
+
+
+{{< include ../_sections/introductions.qmd >}}
+
+# Course Outline 
+
+## Course outline
+
+::: columns
+::: {.column #vcenter width="15%"}
+[Day 1]{style="color: darkseagreen;"}
+:::
+
+::: {.column #vcenter width="85%"}
+Risk Parameter Estimation Overview
+
+Data Representativeness Overview
+
+Scope of Application
+:::
+:::
+
+::: columns
+::: {.column #vcenter width="15%"}
+[Day 2]{style="color: darkseagreen;"}
+:::
+
+::: {.column #vcenter width="85%"}
+General Process Design
+
+Definition of Default
+
+Underwriting/Recovery Standards
+<!-- Estimation Process Design
+
+Definition of Default
+
+Underwriting/Lending Standards
+
+Recovery Process/Standards
+
+Case Study -->
+:::
+:::
+
+::: columns
+::: {.column #vcenter width="15%"}
+[Day 3]{style="color: darkseagreen;"}
+:::
+
+::: {.column #vcenter width="85%"}
+Economic Conditions 
+
+External Data/Ratings
+<!-- 
+Economic Conditions 
+
+Range of Variability of Default Rates
+
+External / Pooled Data
+
+Use of ECAI ratings
+
+Case Study -->
+:::
+:::
+
+::: columns
+::: {.column #vcenter width="15%"}
+[Day 4]{style="color: darkseagreen;"}
+:::
+
+::: {.column #vcenter width="85%"}
+Review of Estimates & IRB Change
+
+Governance
+<!-- Risk Characteristics
+
+Review of Estimates & IRB Change Process
+
+Governance
+
+Discussion -->
+
+
+:::
+:::
+
+
+## Day 1
+
+::: columns
+::: {.column width="15%"}
+*13:00*
+
+*13:30*
+
+*14:15*
+
+*15:00*
+
+*15:15*
+
+*16:00*
+
+*16:45*
+:::
+
+::: {.column width="85%"}
+Introduction
+
+Risk Parameter Estimation Overview
+
+Data Representativeness in Modelling
+
+[*Break*]{style="color: mauve"}
+
+General Estimation Methodology
+
+Scope of Application
+
+Case Study
+:::
+:::
+<!-- 
+# Risk Parameter Estimation
+
+## Rating Systems {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter  width="50%" .r-fit-text data-id=x1}
+Rating System
+: assessment methods & processes developed for a certain type of exposures
+
+Type of Exposures
+: homogeneously managed, comparable risk characteristics
+
+Range of Application
+: all exposures of the type in scope of the rating system  
+
+Calibration Segment
+: level of risk quantification $\subset$ scope of application
+
+Ranking method
+: Risk differentiation model
+
+Grades/Pools
+: Exposures with similar risk profiles
+:::
+
+::: {.column #vcenter  width="50%"  .r-fit-text}
+![](/media/irb_overview.drawio.svg)
+
+:::
+
+:::: -->
+
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter  width="50%" vertical-align="middle" .r-fit-text}
+
+:::{data-id=a1}
+Indirect estimation
+: risk quantification conditional on risk differentiation
+:::
+
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on (internal) risk measure
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::
+
+::: {.column #vcenter  width="50%" }
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+:::
+
+::::
+
+::: notes
+Diagram: differentiation -\> quantification
+:::
+
+::: notes
+14:00
+:::
+
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+::: {.column #vcenter   width="50%"  .r-fit-text}
+:::{data-id=a1}
+Indirect estimation
+: risk quantification conditional on risk differentiation
+:::
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on risk measure
+:::
+:::{.highlight-block}
+ * Risk measure $\sim$ into-default / realized LGD closed cases / realized CCF 
+ * Conditional on risk drivers, based on data set representative of application portfolio
+ * Regulatory requirements focus on *meaningful differentiation*
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::
+
+::: {.column #vcenter width="50%" }
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+:::
+
+::::
+
+::: notes
+Diagram: differentiation -\> quantification
+:::
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="50%"  .r-fit-text}
+
+:::{data-id=a1}
+Indirect estimation
+: risk quantification conditional on risk differentiation
+:::
+
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on risk measure
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::{.highlight-block}
+ * Estimates of long-run default/loss experience
+ * Regulatory requirements focus on *calculation method* and *quantification process*
+:::
+:::
+
+::: {.column #vcenter width="50%" }
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+:::
+
+::::
+
+::: notes
+Diagram: differentiation -\> quantification
+:::
+
+## Risk Parameter Estimation {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="50%"  .r-fit-text}
+
+:::{data-id=a1}
+Indirect estimation
+: risk quantification conditional on risk differentiation
+:::
+
+:::{.highlight-block}
+ * Direct estimation: special case
+ * Continuous estimation: effectively same requirements 
+:::
+
+:::{data-id=a2}
+Risk Differentiation
+: differentiate and rank exposures on risk measure
+:::
+
+:::{data-id=a3}
+Risk Quantification
+: Quantify risk parameter estimates; calibration to long-run or downturn estimates and MoC
+:::
+
+:::
+
+::: {.column #vcenter width="50%" .r-fit-text  }
+![](/media/differentiation_quantification_small.drawio.svg){fig-align="center"}
+
+::: {.callout-note .smaller}
+## CRR Article 169
+_3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale._
+:::
+::: {.callout-note .smaller}
+### Amendment
+[_EBA shall issue guidelines on how to apply in practice the requirements on model
+design, risk quantification, validation and application of risk parameters using
+continuous or very granular rating scales for each risk parameter._]{style="color: darkorange;"}
+:::
+:::
+::::
+
+::: notes
+14:15
+:::
+
+## Risk Parameter Quantification
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text}
+Exposure type
+: homogeneously managed, comparable risk characteristics
+
+Reference dates
+: Date to which realised values are aggregated
+
+Calibration Target
+: long-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments
+
+Appropriate Adjustment
+: Modeled effect on CT of drivers of non-representativeness & other sources of bias
+
+Appropriately Adjusted Calibration Target
+: Calibration Target adjusted for biases
+
+:::
+
+::: {.column width="50%" .r-fit-text}
+![](/media/risk_quantification.drawio.svg)
+:::
+
+::::
+
+::: notes
+Diagram: Type of Exposures -\> RDS -\> Initial Calibration Target -\> Appr. Adjusted Target
+
+Par 12 PD&LGD
+:::
+
+::: notes
+15:15
+:::
+
+## Reference Data Sets {auto-animate=true}
+
+:::: columns
+
+::: {.column width="65%" .r-fit-text}
+
+Length of historical period
+: min. requirements (5 or 7 yr) + available relevant internal data on comparable exposures
+
+Reference date methodology
+: (non-)overlapping [**PD**], time-to-default [**LGD**, **CCF**], recovery process [**in-default**]
+
+Exposure attributes
+: identify exposures of given type at historical observation dates
+
+Default/loss characteristics
+: Observed default/loss data aggregated by exposure over observation period at reference date (target variable)
+
+Risk characteristics
+: Risk drivers, appropriate adjustment variables
+
+Observation windows
+: aggregate to obtain targets (fwd) or variables (bwd) 
+
+:::
+
+::: {.column width="35%" .r-fit-text }
+![](/media/reference_data_set.drawio.svg)
+
+::: {.fragment .fade-in}
+![](/media/rds_aggr_general.drawio.svg)
+:::
+:::
+::::
+
+
+## Realised Risk Parameter Values {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text}
+
+Reference date methodology
+: (non-)overlapping [**PD**], time-to-default [**LGD**, **CCF**], time-in-default/recovery process [**in-default**]
+
+Reference dates $t_r$
+: set of dates over which calibration target is calculated, either as an average (LRA LGD), average of yearly averages (PD & LRA CCF), or an estimated downturn effect (DT LGD/CCF)
+
+Default/Loss characteristics
+: exposure-level into-default flag, (partially) realised LGD values, realised credit conversion factors, intermediate components
+
+
+:::
+
+::: {.column #vcenter width="50%"  .r-fit-text }
+![](/media/rds_aggr_general.drawio.svg)
+
+<!-- $\text{Cal. target} \sim \sum_{r}w_r\sum_{i\in\mathbf{L}}v_i y_i(t_r)$ -->
+
+:::
+
+
+::::
+
+::: aside
+Typical approach: realised values also targets of (statistical) ranking method (model)
+:::
+
+
+## Calibration Targets {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text}
+
+Length of historical period
+: reflecting variability of economic conditions
+
+Methodology
+: overlapping versus non-overlapping
+
+Reference dates $t_{r}$
+: Sample over historical data representative of application portfolio conditioned on target
+
+Calibration segment 
+: level of aggregation (range of appl. $\supseteq$ calibration segment $\supset$ grade/pool)
+
+Calibration target
+: Prescribed estimator of LRA/DT risk parameter values
+: (adjusted/weighted) average of realised risk parameter values
+
+:::
+
+::: {.column #vcenter width="50%" .r-fit-text}
+![](/media/risk_quantification_simple.drawio.svg)
+![](/media/rds_aggr_general_calib_target.drawio.svg)
+:::
+
+
+::::
+
+
+
+## Calibration Targets {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text}
+
+Length of historical period
+: reflecting variability of economic conditions
+
+Methodology
+: overlapping versus non-overlapping
+
+Reference dates $t_{r}$
+: Sample over historical data representative of application portfolio conditioned on target
+
+Calibration segment 
+: level of aggregation (range of appl. $\supseteq$ calibration segment $\supset$ grade/pool)
+
+Calibration target
+: Prescribed estimator of LRA/DT risk parameter values
+: (adjusted/weighted) average of realised risk parameter values
+
+:::
+
+::: {.column #vcenter width="50%" .r-fit-text}
+![](/media/rds_aggr_general_calib_target.drawio.svg)
+<!-- ![](/media/rds_aggr_pd.drawio.svg) -->
+
+$$\text{DR}(\mathbf{L}) = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}\sum_{i\in\mathbf{L}} D_i(t_r)$$
+
+$$\text{Observed LGD}(\mathbf{L}) = \frac{1}{N_\mathbf{L}}\sum_{i\in\mathbf{L}} \text{RLGD}_i$$
+
+$$\text{CCF}(\mathbf{L}) = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}\sum_{i\in\mathbf{L}} RCCF_i(t_r)$$
+
+:::
+
+
+::::
+
+
+
+# Break
+
+# Representativeness
+
+## Representativeness
+
+::: notes
+Conceptual understanding data generating process
+Representativeness and comparability
+Data representativeness and modelling/inference
+:::
+
+## Assessment and Estimation Procedure
+
+::: notes
+High level process
+
+Identification of potential drivers of non-representativeness
+Estimation of effect on risk estimation targets
+Quantification of appropriate adjusted calibration target
+Quantification of additional uncertainty
+
+:::
+
+## Regulatory Requirements {auto-animate=true}
+### [Risk Differentiation]{style="color: darkcyan"}
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text }
+ * CRR somewhat generally worded on a specific aspect only
+ * CDR 439 article 37 introduces specific terms & dimensions
+   - *comparability*
+   - *risk characteristics*
+   - *underwriting/recovery standards*
+   - *default definition*
+   - *external data*
+ * EBA/GL/2017/16 sets out required assessments more comprehensively
+   - 4.2.3 Representativeness of data for
+model development
+:::
+
+::: {.column #vcenter width="50%" .r-fit-text }
+
+::::: {.callout-note}
+## CRR Article 174
+_If an institution uses statistical models and other mechanical methods to assign exposures to obligors or facilities grades or pools, the following requirements shall be met:$\small{[\cdots]}$_
+
+_(c) the data used to build the model shall be representative of the population of the institution's actual obligors or exposures;_
+:::::
+
+::::: {.callout-note}
+## CDR 2022/439 Article 37(2)
+_When assessing the representativeness of the data used to build the model as referred to in Article 174(c) of Regulation (EU) No 575/2013, competent authorities shall verify:_
+
+_(a) the comparability of risk characteristics of the obligors or facilities reflected in the data used to build the model with those of the exposures covered by a particular rating model;_
+
+_(b) the comparability of the current underwriting and recovery standards ith the ones applied at the time to which the reference data set used for the modelling relates;_
+
+_(c) the consistency of default definition over time in the data used for the modelling $\small{[\cdots]}$_ (etc)
+
+_(d) where external data or data pooled across institutions is used in the model development, the relevance and adequacy of such data for the institution’s exposures, products and risk profile_
+:::::
+
+
+:::
+
+::::
+
+
+## Regulatory Requirements {auto-animate=true}
+### [Risk Quantification]{style="color: #0b3f5e"}
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text }
+
+ * CRR article 179 more extensive
+ * CDR 439 articles 42 introduces specific dimensions (focused on PD)
+ * EBA/GL/2017/16 sets out required assessments  more comprehensively
+   - 4.2.4 Representativeness of data for calibration of risk parameters
+:::
+
+::: {.column #vcenter width="50%" .r-fit-text }
+
+::::: {.callout-note}
+## CRR Article 179(1)
+_In quantifying the risk parameters to be associated with rating grades or pools, institutions shall apply the following requirements:$\small{[\cdots]}$_
+
+_(b) $\small{[\cdots]}$The institution's estimates shall be representative of long run experience;_
+
+_(c) any changes in lending practice or the process for pursuing recoveries over the observation periods $\small{[\cdots]}$ shall be taken into account._
+
+_(d) the population of exposures represented in the data used for estimation, the lending standards used when the data was generated and other relevant characteristics shall be comparable with those of the institution's exposures and standards. The economic or market conditions that underlie the data shall be relevant to current and foreseeable conditions._
+:::::
+
+::::: {.callout-note}
+## CDR 2022/439 Article 42
+_1. When assessing compliance with the overall requirements for estimation laid down in Article 179 $\small{[\cdots]}$, the data used for the quantification of risk parameters $\small{[\cdots]}$ compentent authorities shall verify:$\small{[\cdots]}$_
+
+_(c) the representativeness of the data used to estimate the risk parameters for certain types of exposures;_
+
+:::::
+
+
+:::
+
+::::
+::: notes
+Finish
+:::
+
+## Scope of Application
+
+:::notes
+Type of assessment
+Effect estimates
+Adjustment methods
+Example / case study
+:::

@@ -1,5 +1,5 @@
 ---
-title: "Leaseplan MoC / DT LGD Q4 2022"
+title: "Leaseplan Representativeness Q4 2023"
 listing: 
     id: course-listing
     contents: "slides/*/*.qmd"
@@ -18,4 +18,4 @@ Please find the course slides linked below[^1].
 
 ## Please fill out our survey
 
-[Link to survey](https://forms.gle/nPxnCuJqRKscFu827)
+[Link to survey](https://forms.gle/t6zHtawccEWbs4ms9)
