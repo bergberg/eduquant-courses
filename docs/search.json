@@ -25,7 +25,7 @@
     "href": "slides/representativeness/representativeness_day_1.html#day-1",
     "title": "Representativeness",
     "section": "Day 1",
-    "text": "Day 1\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nIntroduction\nRisk Parameter Estimation Overview\nData Representativeness in Modelling\nBreak\nGeneral Estimation Methodology\nScope of Application\nCase Study"
+    "text": "Day 1\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nIntroduction\nRisk Parameter Estimation Overview\nRepresentativeness in Modelling\nBreak\nGeneral Estimation Methodology\nScope of Application\nCase Study"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation",
@@ -256,7 +256,7 @@
     "href": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure",
     "title": "Representativeness",
     "section": "Assessment & Estimation Procedure",
-    "text": "Assessment & Estimation Procedure\n\n\n\nIdentify non-comparable scope/process/condition\nAssess non-representativeness data\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)\n\n\n\n\n\n\nHigh level process\nIdentification of potential drivers of non-representativeness Estimation of effect on risk estimation targets Quantification of appropriate adjusted calibration target Quantification of additional uncertainty"
+    "text": "Assessment & Estimation Procedure\n\n\n\nIdentify non-comparable scope/process/condition\nAssess non-representativeness data\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 34\n\n\nWhere the representativeness of data \\(\\small{\\dots}\\) is insufficient and leads to a bias or increased uncertainty of risk quantification, institutions should introduce an appropriate adjustment to correct the bias and they should apply a margin of conservatism\n\n\n\n\n\n\n\nHigh level process\nIdentification of potential drivers of non-representativeness Estimation of effect on risk estimation targets Quantification of appropriate adjusted calibration target Quantification of additional uncertainty"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure-1",

@@ -120,7 +120,7 @@ Introduction
 
 Risk Parameter Estimation Overview
 
-Data Representativeness in Modelling
+Representativeness in Modelling
 
 [*Break*]{style="color: mauve"}
 
@@ -768,6 +768,11 @@ _(e) lending standards and recovery policies._
 :::
 
 ::: {.column #vcenter width="50%" .r-fit-text}
+::: {.callout-note}
+### EBA/GL/2017/16 $\S$ 34
+_Where the representativeness of data $\small{\dots}$ is insufficient and leads to a bias or increased uncertainty of risk quantification, institutions should introduce an appropriate adjustment to correct the bias and they should apply a margin of conservatism_
+:::
+
 ![](/media/repr_methodology.drawio.svg)
 :::
 
