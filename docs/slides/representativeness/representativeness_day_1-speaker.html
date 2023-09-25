@@ -739,8 +739,8 @@ Quantify risk parameter estimates; calibration to long-run or downturn estimates
           display:block!important;
       }</style></aside>
 </section>
-<section id="risk-parameter-quantification" class="slide level2">
-<h2>Risk Parameter Quantification</h2>
+<section id="risk-parameter-quantification" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Risk Parameter Quantification</h2>
 <div class="columns">
 <div class="column r-fit-text" style="width:50%;">
 <dl>
@@ -796,6 +796,41 @@ Calibration Target adjusted for biases
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="moc-quantification" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">MoC Quantification</h2>
+<div class="columns">
+<div class="column r-fit-text" data-id="plo" style="width:65%;">
+<dl>
+<dt><em>Initial</em> Calibration Target (CT)</dt>
+<dd>
+long-run average (LRA) default rate, (LRA/DT) LGD, CCF <sub>calculated</sub> estimated based on RDS prior to adjustments
+</dd>
+<dt>MoC C</dt>
+<dd>
+Margin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies
+</dd>
+<dt>Deficiency</dt>
+<dd>
+Source of bias relative to initial calibration target
+</dd>
+<dt>Appropriately adjusted calibration target</dt>
+<dd>
+Calibration target adjusted for biases due to deficiencies
+</dd>
+<dt>MoC B</dt>
+<dd>
+Margin to account for additional uncertainty due to adjustment for non-representativeness
+</dd>
+<dt>MoC A</dt>
+<dd>
+Margin to account for additional uncertainty due to other deficiencies
+</dd>
+</dl>
+</div><div class="column r-fit-text" style="width:35%;">
+<p><img data-src="../../media/risk_quantification_moc.drawio.svg"></p>
+</div>
+</div>
 </section>
 <section id="reference-data-sets" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Reference Data Sets</h2>
@@ -926,7 +961,7 @@ Prescribed estimator of LRA/DT risk parameter values
 </dd>
 </dl>
 </div><div id="vcenter" class="column r-fit-text" style="width:50%;">
-<p><img data-src="../../media/rds_aggr_general_calib_target.drawio.svg"> <img data-src="../../media/rds_aggr_pd.drawio.svg"></p>
+<p><img data-src="../../media/rds_aggr_general_calib_target.drawio.svg"> <!-- ![](/media/rds_aggr_pd.drawio.svg) --></p>
 <p><span class="math display">\[\text{DR}(\mathbf{L}) = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}\sum_{i\in\mathbf{L}} D_i(t_r)\]</span></p>
 <p><span class="math display">\[\text{Observed LGD}(\mathbf{L}) = \frac{1}{N_\mathbf{L}}\sum_{i\in\mathbf{L}} \text{RLGD}_i\]</span></p>
 <p><span class="math display">\[\text{CCF}(\mathbf{L}) = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r)}\sum_{i\in\mathbf{L}} RCCF_i(t_r)\]</span></p>
@@ -943,30 +978,167 @@ Prescribed estimator of LRA/DT risk parameter values
 <h1>Representativeness</h1>
 
 </section>
-<section id="representative-data" class="slide level2">
-<h2>Representative data</h2>
+<section id="representativeness-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Representativeness</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Model</strong></td>
+<td>relevant scope/conditions to describe generating process</td>
+</tr>
+<tr class="even">
+<td><strong>Data</strong></td>
+<td>generated under historical realized conditions</td>
+</tr>
+<tr class="odd">
+<td><strong>Predictions</strong></td>
+<td>conditional on data generated with current conditions</td>
+</tr>
+</tbody>
+</table>
+</div><div id="vcenter" class="column r-fit-text" style="width:50%;">
+<p><img data-src="../../media/representativeness_simple.drawio.svg"></p>
+</div>
+</div>
+<div class="r-fit-text">
+<dl>
+<dt>Modelling assumption</dt>
+<dd>
+<em>comparable</em> scope &amp; conditions <span class="math inline">\(\rightarrow\)</span> <em>representative</em> data <span class="math inline">\(\rightarrow\)</span> <em>unbiased</em> estimates
+</dd>
+</dl>
+</div>
+</section>
+<section id="representativeness-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Representativeness</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<ul>
+<li>Credit Risk data generating process
+<ul>
+<li>Specify how policies/conditions relate to credit processes</li>
+<li>Not typically explicitly modelled</li>
+</ul></li>
+<li>Scope/conditions listed in
+<ul>
+<li>EBA/GL/2017/16 4.2.2, CDR 439 art. 37 (risk differentation)</li>
+<li>EBA/GL/2017/16 4.2.3, CDR 439 art. 42 (quantification)</li>
+</ul></li>
+</ul>
+</div><div id="vcenter" class="column r-fit-text" style="width:50%;">
+<p><img data-src="../../media/data_generating.drawio.svg"></p>
+</div>
+</div>
+</section>
+<section id="representativeness-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Representativeness</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<ul>
+<li>Credit Risk data generating process
+<ul>
+<li>Specify how policies/conditions relate to credit processes</li>
+<li>Not typically explicitly modelled</li>
+</ul></li>
+<li>Scope/conditions listed in
+<ul>
+<li>EBA/GL/2017/16 4.2.2, CDR 439 art. 37 (risk differentation)</li>
+<li>EBA/GL/2017/16 4.2.3, CDR 439 art. 42 (quantification)</li>
+</ul></li>
+</ul>
+</div><div id="vcenter" class="column r-fit-text" style="width:50%;">
+<p><img data-src="../../media/data_generating.drawio.svg"> <img data-src="../../media/rds_aggr_general_repn.drawio.svg"></p>
+</div>
+</div>
+</section>
+<section id="representativeness-4" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Representativeness</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:30%;">
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(y_{it}\)</span></td>
+<td>realized default/loss characteristics</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x_{it}\)</span></td>
+<td>risk drivers, …</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\pi(\theta|y;x)\)</span></td>
+<td>parameter estimate</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\pi(y|\hat\theta;x)\)</span></td>
+<td>prediction</td>
+</tr>
+</tbody>
+</table>
+</div><div id="vcenter" class="column r-fit-text" style="width:70%;">
+<p><img data-src="../../media/representativeness_generic.drawio.svg"></p>
+</div>
+</div>
+</section>
+<section id="representativeness-5" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Representativeness</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:25%;">
+<table>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(y_{it}\)</span></td>
+<td>realized default/loss characteristics</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x_{it}\)</span></td>
+<td>risk drivers, …</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\pi(\theta|y;x)\)</span></td>
+<td>parameter estimate</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\pi(y|\hat\theta;x)\)</span></td>
+<td>prediction</td>
+</tr>
+</tbody>
+</table>
+</div><div id="vcenter" class="column r-fit-text" style="width:75%;">
+<p><img data-src="../../media/representativeness_generic_counterfactual.drawio.svg"></p>
+</div>
+</div>
 </section>
 <section id="regulatory-requirements" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Regulatory Requirements</h2>
 <h3 id="risk-differentiation"><span style="color: darkcyan">Risk Differentiation</span></h3>
 <div class="columns">
-<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<div id="vcenter" class="column r-fit-text" style="width:40%;">
 <ul>
-<li>CRR somewhat generally worded on a specific aspect only</li>
-<li>CDR 439 article 37 introduces specific terms &amp; dimensions
-<ul>
-<li><em>comparability</em></li>
-<li><em>risk characteristics</em></li>
-<li><em>underwriting/recovery standards</em></li>
-<li><em>default definition</em></li>
-<li><em>external data</em></li>
-</ul></li>
-<li>EBA/GL/2017/16 sets out required assessments more comprehensively
-<ul>
-<li>4.2.3 Representativeness of data for model development</li>
-</ul></li>
+<li>Article 174 specifically worded</li>
+<li>CDR 439 article 37 &amp; EBA/GL/2017/16 4.2.2 comprehensive requirements</li>
 </ul>
-</div><div id="vcenter" class="column r-fit-text" style="width:50%;">
+</div><div id="vcenter" class="column r-fit-text" style="width:60%;">
 <div class="callout callout-note no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
@@ -981,17 +1153,29 @@ Prescribed estimator of LRA/DT risk parameter values
 <div class="callout callout-note no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
-<p><strong>CDR 2022/439 Article 37(2)</strong></p>
+<p><strong>EBA/GL/2017/16 par. 21</strong></p>
 </div>
 <div class="callout-content">
-<p><em>When assessing the representativeness of the data used to build the model as referred to in Article 174(c) of Regulation (EU) No 575/2013, competent authorities shall verify:</em></p>
-<p><em>(a) the comparability of risk characteristics of the obligors or facilities reflected in the data used to build the model with those of the exposures covered by a particular rating model;</em></p>
-<p><em>(b) the comparability of the current underwriting and recovery standards ith the ones applied at the time to which the reference data set used for the modelling relates;</em></p>
-<p><em>(c) the consistency of default definition over time in the data used for the modelling <span class="math inline">\(\small{[\cdots]}\)</span></em> (etc)</p>
-<p><em>(d) where external data or data pooled across institutions is used in the model development, the relevance and adequacy of such data for the institution’s exposures, products and risk profile</em></p>
+<p><em><span class="math inline">\(\small{[\cdots]}\)</span> institutions should analyse the representativeness of the data at the stage of model development in terms of all of the following:</em></p>
+<p><em>(a) the scope of application;</em></p>
+<p><em>(b) the definition of default;</em></p>
+<p><em>(c) the distribution of the relevant risk characteristics;</em></p>
+<p><em>(d) lending standards and recovery policies.</em></p>
 </div>
 </div>
 </div>
+<!-- ::::: {.callout-note}
+## CDR 2022/439 Article 37(2)
+_When assessing the representativeness of the data used to build the model as referred to in Article 174(c) of Regulation (EU) No 575/2013, competent authorities shall verify:_
+
+_(a) the comparability of risk characteristics of the obligors or facilities reflected in the data used to build the model with those of the exposures covered by a particular rating model;_
+
+_(b) the comparability of the current underwriting and recovery standards ith the ones applied at the time to which the reference data set used for the modelling relates;_
+
+_(c) the consistency of default definition over time in the data used for the modelling $\small{[\cdots]}$_ (etc)
+
+_(d) where external data or data pooled across institutions is used in the model development, the relevance and adequacy of such data for the institution’s exposures, products and risk profile_
+::::: -->
 </div>
 </div>
 </section>
@@ -999,16 +1183,21 @@ Prescribed estimator of LRA/DT risk parameter values
 <h2 data-id="quarto-animate-title">Regulatory Requirements</h2>
 <h3 id="risk-quantification"><span style="color: #0b3f5e">Risk Quantification</span></h3>
 <div class="columns">
-<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<div id="vcenter" class="column r-fit-text" style="width:40%;">
 <ul>
 <li>CRR article 179 more extensive</li>
-<li>CDR 439 articles 42 introduces specific dimensions (focused on PD)</li>
-<li>EBA/GL/2017/16 sets out required assessments more comprehensively
+<li>CDR 439 articles 42, EBA/GL/2017/16 4.2.4 set out required assessments more comprehensively
 <ul>
-<li>4.2.4 Representativeness of data for calibration of risk parameters</li>
+<li>4.2.4 <em>Representativeness of data for calibration of risk parameters</em></li>
+</ul></li>
+<li>Economic/market conditions
+<ul>
+<li>PD: likely range of variability of one-year default rates</li>
+<li>LRA LGD: historical observation period (no adjustment)</li>
+<li>DT LGD: Downturn identification</li>
 </ul></li>
 </ul>
-</div><div id="vcenter" class="column r-fit-text" style="width:50%;">
+</div><div id="vcenter" class="column r-fit-text" style="width:60%;">
 <div class="callout callout-note no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
@@ -1022,23 +1211,250 @@ Prescribed estimator of LRA/DT risk parameter values
 </div>
 </div>
 </div>
+<!-- :::: {.callout-note}
+## CDR 2022/439 Article 42
+_1. When assessing compliance with the overall requirements for estimation laid down in Article 179 $\small{[\cdots]}$, the data used for the quantification of risk parameters $\small{[\cdots]}$ compentent authorities shall verify:$\small{[\cdots]}$_
+
+_(c) the representativeness of the data used to estimate the risk parameters for certain types of exposures;_
+
+::::: -->
 <div class="callout callout-note no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
-<p><strong>CDR 2022/439 Article 42</strong></p>
+<p><strong>EBA/GL/2017/16 par. 28</strong></p>
 </div>
 <div class="callout-content">
-<p><em>1. When assessing compliance with the overall requirements for estimation laid down in Article 179 <span class="math inline">\(\small{[\cdots]}\)</span>, the data used for the quantification of risk parameters <span class="math inline">\(\small{[\cdots]}\)</span> compentent authorities shall verify:<span class="math inline">\(\small{[\cdots]}\)</span></em></p>
-<p><em>(c) the representativeness of the data used to estimate the risk parameters for certain types of exposures;</em></p>
-<p>_(d) <span class="math inline">\(\small{[\cdots]}\)</span> the length</p>
+<p><em><span class="math inline">\(\small{[\cdots]}\)</span>in terms of all of the following:</em></p>
+<p><em>(a) the scope of application;</em></p>
+<p><em>(b) the definition of default;</em></p>
+<p><em>(c) the distribution of the relevant risk characteristics;</em></p>
+<p><strong><em>(d) the current and foreseeable economic or market conditions;</em></strong></p>
+<p><em>(e) lending standards and recovery policies.</em></p>
 </div>
 </div>
 </div>
+</div>
+</div>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="assessment-estimation-procedure" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Assessment &amp; Estimation Procedure</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<ol type="1">
+<li>Identify non-comparable scope/process/condition</li>
+<li>Assess non-representativeness data</li>
+<li>Estimate effect size &amp; quantify adjusted calibration target</li>
+<li>Estimate additional uncertainty &amp; quantify MoC</li>
+</ol>
+<ul>
+<li>MoC A (Definition of Default)</li>
+<li>MoC B (Other non-representativeness)</li>
+</ul>
+</div><div id="vcenter" class="column r-fit-text" style="width:50%;">
+<p><img data-src="../../media/repr_methodology.drawio.svg"></p>
+</div>
+</div>
+<aside class="notes">
+<p>High level process</p>
+<p>Identification of potential drivers of non-representativeness Estimation of effect on risk estimation targets Quantification of appropriate adjusted calibration target Quantification of additional uncertainty</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="assessment-estimation-procedure-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Assessment &amp; Estimation Procedure</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:50%;">
+<ol type="1">
+<li>Identify non-comparable scope/process/condition</li>
+</ol>
+<ul>
+<li>Identify potential drivers of bias</li>
+</ul>
+<ol start="2" type="1">
+<li>Assess non-representativeness data</li>
+<li>Estimate effect size &amp; quantify adjusted calibration target</li>
+<li>Estimate additional uncertainty &amp; quantify MoC</li>
+</ol>
+<ul>
+<li>MoC A (Definition of Default)</li>
+<li>MoC B (Other non-representativeness)</li>
+</ul>
+</div><div id="vcenter" class="column r-fit-text" style="width:50%;">
+<p><img data-src="../../media/repr_methodology.drawio.svg"></p>
+</div>
+</div>
+</section>
+<section id="assessment-estimation-procedure-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Assessment &amp; Estimation Procedure</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:60%;">
+<ol class="example" type="1">
+<li>Qualitatively assess comparability scope/process/condition</li>
+</ol>
+<h5 id="expert-based">Expert-based</h5>
+<ol start="2" class="example" type="1">
+<li>Heuristically assess non-representativeness data</li>
+</ol>
+<h5 id="modelsimulation-based">Model/simulation based</h5>
+<ol start="2" type="1">
+<li>Model/simulate comparable scope/process/condition</li>
+<li>Estimate effect size &amp; quantify adjusted calibration target</li>
+<li>Estimate additional uncertainty &amp; quantify MoC</li>
+</ol>
+<ul>
+<li>MoC A (Definition of Default)</li>
+<li>MoC B (Other non-representativeness)</li>
+</ul>
+</div><div id="vcenter" class="column r-fit-text" style="width:40%;">
+<p><img data-src="../../media/repr_methodology.drawio.svg"></p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="scope-of-application" class="title-slide slide level1 inverse center" data-background-color="teal">
+<h1>Scope of Application</h1>
+
+</section>
+<section id="scope-of-application-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Scope of Application</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:40%;">
+<dl>
+<dt>Type of Exposures</dt>
+<dd>
+homogeneously managed, comparable risk characteristics
+</dd>
+<dt>Range of Application</dt>
+<dd>
+all exposures of the type in scope of the rating system
+</dd>
+</dl>
+</div><div id="vcenter" class="column r-fit-text" style="width:60%;">
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>EBA/GL/2017/16</strong></p>
+</div>
+<div class="callout-content">
+<p><em><span class="math inline">\(\small{[\cdots]}\)</span>institutions should analyse the segmentation of exposures and consider whether there were any changes to the scope of application of the considered model over the period covered by the data used in developing the model for assigning obligors or exposures to grades or pools.<span class="math inline">\(\small{[\cdots]}\)</span></em></p>
+</div>
+</div>
+</div>
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>CDR 439 art. 42(2)</strong></p>
+</div>
+<div class="callout-content">
+<p><em><span class="math inline">\(\small{[\cdots]}\)</span>shall assess the representativeness of the data used to estimate the risk parameters for certain types of exposures by assessing:</em></p>
+<p><em>(a) the structure of exposures covered by each rating model and the different risk characteristics of the obligors or facilities, and whether the current portfolio is, to the degree required, comparable to the portfolios constituting the reference data set<span class="math inline">\(\small{[\cdots]}\)</span></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="scope-of-application-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Scope of Application</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:60%;">
+<dl>
+<dt>Type of Exposures</dt>
+<dd>
+homogeneously managed, comparable risk characteristics
+</dd>
+<dt>Range of Application</dt>
+<dd>
+all exposures of the type in scope of the rating system
+</dd>
+</dl>
+<h4 id="typical-cases">Typical cases</h4>
+<ul>
+<li>historical scope of appliciation not aligned with intended</li>
+<li>historical scope not well defined</li>
+<li>exposures historically not managed homogeneously</li>
+</ul>
+</div><div id="vcenter" class="column r-fit-text" style="width:40%;">
+<p><img data-src="../../media/scope_of_appl_analysis.drawio.svg"></p>
+<p><img data-src="../../media/scope_of_appl_analysis_id.drawio.svg"></p>
+</div>
+</div>
+</section>
+<section id="scope-of-application-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Scope of Application</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:60%;">
+<h3 id="favorable-example">Favorable example</h3>
+<ul>
+<li>intended scope of application subset of historically applied</li>
+<li>simply select data of exposures in scope</li>
+<li>no further adjustments or MoC requiredc</li>
+</ul>
+</div><div id="vcenter" class="column r-fit-text" style="width:40%;">
+<p><img data-src="../../media/scope_of_appl_analysis.drawio.svg"></p>
+<p><img data-src="../../media/scope_of_appl_analysis_id.drawio.svg"></p>
+</div>
+</div>
+</section>
+<section id="scope-of-application-4" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Scope of Application</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:60%;">
+<h3 id="less-favorable-example">Less favorable example</h3>
+<ul>
+<li>historically applied subset of intended scope of application subset</li>
+<li>e.g.&nbsp;subportfolios with different data availability</li>
+</ul>
+</div><div id="vcenter" class="column r-fit-text" style="width:40%;">
+<p><img data-src="../../media/scope_of_appl_analysis.drawio.svg"></p>
+<p><img data-src="../../media/scope_of_appl_analysis_id2.drawio.svg"></p>
+</div>
+</div>
+</section>
+<section id="scope-of-application-5" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Scope of Application</h2>
+<div class="columns">
+<div id="vcenter" class="column r-fit-text" style="width:60%;">
+<h3 id="less-favorable-example-1">Less favorable example</h3>
+<ul>
+<li>historically applied subset of intended scope of application subset</li>
+<li>e.g.&nbsp;subportfolios with different data availability</li>
+</ul>
+<ol type="1">
+<li>Are subportfolios A &amp; B comparable in terms of risk characteristics &amp; management?</li>
+<li>Is data from period S representative of application portfolio?</li>
+<li></li>
+</ol>
+</div><div id="vcenter" class="column r-fit-text" style="width:40%;">
+<p><img data-src="../../media/scope_of_appl_analysis_id2.drawio.svg"></p>
+<p><img data-src="../../media/scope_of_appl_analysis_id3.drawio.svg"></p>
 </div>
 </div>
 
-
-<img src="../../site_libs/quarto-contrib/quarto-project/quantprofessionals/eduquant-slides/logo_transparent.svg" class="slide-logo r-stretch"><div class="footer footer-default">
+<p><img src="../../site_libs/quarto-contrib/quarto-project/quantprofessionals/eduquant-slides/logo_transparent.svg" class="slide-logo"></p>
+<div class="footer footer-default">
 
 </div>
 </section></section>

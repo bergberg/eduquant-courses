@@ -324,7 +324,7 @@ continuous or very granular rating scales for each risk parameter._]{style="colo
 14:15
 :::
 
-## Risk Parameter Quantification
+## Risk Parameter Quantification {auto-animate=true}
 
 :::: columns
 
@@ -361,6 +361,38 @@ Par 12 PD&LGD
 ::: notes
 15:15
 :::
+
+
+## MoC Quantification {auto-animate=true}
+
+:::: columns
+
+::: {.column width="65%" .r-fit-text data-id="plo"}
+
+*Initial* Calibration Target (CT)
+: long-run average (LRA) default rate, (LRA/DT) LGD, CCF ~calculated~ estimated based on RDS prior to adjustments
+
+MoC C
+: Margin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies
+
+Deficiency
+: Source of bias relative to initial calibration target
+
+Appropriately adjusted calibration target
+: Calibration target adjusted for biases due to deficiencies
+
+MoC B
+: Margin to account for additional uncertainty due to adjustment for non-representativeness
+
+MoC A
+: Margin to account for additional uncertainty due to other deficiencies
+:::
+
+::: {.column width="35%" .r-fit-text}
+![](/media/risk_quantification_moc.drawio.svg)
+:::
+
+::::
 
 ## Reference Data Sets {auto-animate=true}
 
@@ -510,44 +542,116 @@ $$\text{CCF}(\mathbf{L}) = \frac{1}{R}\sum_{r=1\dots R}\frac{1}{N_\mathbf{L}(t_r
 
 # Representativeness
 
-## Representativeness
+## Representativeness {auto-animate=true}
 
-::: notes
-Conceptual understanding data generating process
-Representativeness and comparability
-Data representativeness and modelling/inference
-:::
+:::: columns
 
-## Assessment and Estimation Procedure
-
-::: notes
-High level process
-
-Identification of potential drivers of non-representativeness
-Estimation of effect on risk estimation targets
-Quantification of appropriate adjusted calibration target
-Quantification of additional uncertainty
+::: {.column #vcenter width="50%" .r-fit-text}
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+|**Model**|relevant scope/conditions to describe generating process|
+|**Data**|generated under historical realized conditions|
+|**Predictions**|conditional on data generated with current conditions|
 
 :::
+
+::: {.column #vcenter width="50%" .r-fit-text}
+![](/media/representativeness_simple.drawio.svg)
+:::
+::::
+::: {.r-fit-text}
+Modelling assumption
+: _comparable_ scope & conditions $\rightarrow$ _representative_ data $\rightarrow$ _unbiased_ estimates
+:::
+
+## Representativeness {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text}
+ * Credit Risk data generating process
+   - Specify how policies/conditions relate to credit processes
+   - Not typically explicitly modelled
+ * Scope/conditions listed in 
+   - EBA/GL/2017/16 4.2.2, CDR 439 art. 37 (risk differentation)
+   - EBA/GL/2017/16 4.2.3, CDR 439 art. 42 (quantification)
+:::
+
+::: {.column #vcenter width="50%" .r-fit-text}
+![](/media/data_generating.drawio.svg)
+:::
+
+::::
+
+
+## Representativeness {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text}
+* Credit Risk data generating process
+  - Specify how policies/conditions relate to credit processes
+  - Not typically explicitly modelled
+ * Scope/conditions listed in 
+   - EBA/GL/2017/16 4.2.2, CDR 439 art. 37 (risk differentation)
+   - EBA/GL/2017/16 4.2.3, CDR 439 art. 42 (quantification)
+:::
+
+::: {.column #vcenter width="50%" .r-fit-text}
+![](/media/data_generating.drawio.svg)
+![](/media/rds_aggr_general_repn.drawio.svg)
+:::
+
+::::
+
+## Representativeness {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="30%" .r-fit-text}
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+|$y_{it}$|realized default/loss characteristics|
+|$x_{it}$|risk drivers, ...|
+|$\pi(\theta|y;x)$|parameter estimate|
+|$\pi(y|\hat\theta;x)$|prediction|
+:::
+
+::: {.column #vcenter width="70%" .r-fit-text}
+![](/media/representativeness_generic.drawio.svg)
+:::
+::::
+
+
+## Representativeness {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="25%" .r-fit-text}
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+|$y_{it}$|realized default/loss characteristics|
+|$x_{it}$|risk drivers, ...|
+|$\pi(\theta|y;x)$|parameter estimate|
+|$\pi(y|\hat\theta;x)$|prediction|
+:::
+
+::: {.column #vcenter width="75%" .r-fit-text}
+![](/media/representativeness_generic_counterfactual.drawio.svg)
+:::
+::::
+
 
 ## Regulatory Requirements {auto-animate=true}
 ### [Risk Differentiation]{style="color: darkcyan"}
 :::: columns
 
-::: {.column #vcenter width="50%" .r-fit-text }
- * CRR somewhat generally worded on a specific aspect only
- * CDR 439 article 37 introduces specific terms & dimensions
-   - *comparability*
-   - *risk characteristics*
-   - *underwriting/recovery standards*
-   - *default definition*
-   - *external data*
- * EBA/GL/2017/16 sets out required assessments more comprehensively
-   - 4.2.3 Representativeness of data for
-model development
+::: {.column #vcenter width="40%" .r-fit-text }
+ * Article 174 specifically worded
+ * CDR 439 article 37 & EBA/GL/2017/16 4.2.2 comprehensive requirements 
 :::
 
-::: {.column #vcenter width="50%" .r-fit-text }
+::: {.column #vcenter width="60%" .r-fit-text }
 
 ::::: {.callout-note}
 ## CRR Article 174
@@ -557,6 +661,20 @@ _(c) the data used to build the model shall be representative of the population 
 :::::
 
 ::::: {.callout-note}
+## EBA/GL/2017/16 par. 21
+_$\small{[\cdots]}$ institutions should analyse the representativeness of the data at the stage of model development in terms of all of the following:_
+
+_(a) the scope of application;_
+
+_(b) the definition of default;_
+
+_(c) the distribution of the relevant risk characteristics;_
+
+_(d) lending standards and recovery policies._
+:::::
+
+
+<!-- ::::: {.callout-note}
 ## CDR 2022/439 Article 37(2)
 _When assessing the representativeness of the data used to build the model as referred to in Article 174(c) of Regulation (EU) No 575/2013, competent authorities shall verify:_
 
@@ -567,8 +685,7 @@ _(b) the comparability of the current underwriting and recovery standards ith th
 _(c) the consistency of default definition over time in the data used for the modelling $\small{[\cdots]}$_ (etc)
 
 _(d) where external data or data pooled across institutions is used in the model development, the relevance and adequacy of such data for the institution’s exposures, products and risk profile_
-:::::
-
+::::: -->
 
 :::
 
@@ -579,15 +696,18 @@ _(d) where external data or data pooled across institutions is used in the model
 ### [Risk Quantification]{style="color: #0b3f5e"}
 :::: columns
 
-::: {.column #vcenter width="50%" .r-fit-text }
+::: {.column #vcenter width="40%" .r-fit-text }
 
  * CRR article 179 more extensive
- * CDR 439 articles 42 introduces specific dimensions (focused on PD)
- * EBA/GL/2017/16 sets out required assessments  more comprehensively
-   - 4.2.4 Representativeness of data for calibration of risk parameters
+ * CDR 439 articles 42, EBA/GL/2017/16 4.2.4 set out required assessments more comprehensively
+   - 4.2.4 _Representativeness of data for calibration of risk parameters_
+ * Economic/market conditions
+   - PD: likely range of variability of one-year default rates
+   - LRA LGD: historical observation period (no adjustment)
+   - DT LGD: Downturn identification
 :::
 
-::: {.column #vcenter width="50%" .r-fit-text }
+::: {.column #vcenter width="60%" .r-fit-text }
 
 ::::: {.callout-note}
 ## CRR Article 179(1)
@@ -599,28 +719,259 @@ _(c) any changes in lending practice or the process for pursuing recoveries over
 
 _(d) the population of exposures represented in the data used for estimation, the lending standards used when the data was generated and other relevant characteristics shall be comparable with those of the institution's exposures and standards. The economic or market conditions that underlie the data shall be relevant to current and foreseeable conditions._
 :::::
-
-::::: {.callout-note}
+<!-- :::: {.callout-note}
 ## CDR 2022/439 Article 42
 _1. When assessing compliance with the overall requirements for estimation laid down in Article 179 $\small{[\cdots]}$, the data used for the quantification of risk parameters $\small{[\cdots]}$ compentent authorities shall verify:$\small{[\cdots]}$_
 
 _(c) the representativeness of the data used to estimate the risk parameters for certain types of exposures;_
 
-:::::
+::::: -->
+:::: {.callout-note}
+## EBA/GL/2017/16 par. 28
+_$\small{[\cdots]}$in terms of all of the following:_
+
+_(a) the scope of application;_
+
+_(b) the definition of default;_
+
+_(c) the distribution of the relevant risk characteristics;_
+
+**_(d) the current and foreseeable economic or market conditions;_**
+
+_(e) lending standards and recovery policies._
+
+::::
 
 
 :::
 
 ::::
 ::: notes
-Finish
+
 :::
 
-## Scope of Application
 
-:::notes
-Type of assessment
-Effect estimates
-Adjustment methods
-Example / case study
+## Assessment & Estimation Procedure {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text}
+
+ 1. Identify non-comparable scope/process/condition
+ 2. Assess non-representativeness data
+ 3. Estimate effect size & quantify adjusted calibration target
+ 4. Estimate additional uncertainty & quantify MoC
+   - MoC A (Definition of Default)
+   - MoC B (Other non-representativeness)
+
+
 :::
+
+::: {.column #vcenter width="50%" .r-fit-text}
+![](/media/repr_methodology.drawio.svg)
+:::
+
+::::
+
+::: notes
+High level process
+
+Identification of potential drivers of non-representativeness
+Estimation of effect on risk estimation targets
+Quantification of appropriate adjusted calibration target
+Quantification of additional uncertainty
+
+:::
+
+
+
+## Assessment & Estimation Procedure {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text}
+
+ 1. Identify non-comparable scope/process/condition
+  - Identify potential drivers of bias
+ 2. Assess non-representativeness data
+ 3. Estimate effect size & quantify adjusted calibration target
+ 4. Estimate additional uncertainty & quantify MoC
+   - MoC A (Definition of Default)
+   - MoC B (Other non-representativeness)
+
+
+:::
+
+::: {.column #vcenter width="50%" .r-fit-text}
+![](/media/repr_methodology.drawio.svg)
+:::
+
+::::
+
+
+
+
+## Assessment & Estimation Procedure {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="60%" .r-fit-text}
+ (@) Qualitatively assess comparability scope/process/condition
+
+##### Expert-based
+ (@) Heuristically assess non-representativeness data
+
+##### Model/simulation based
+ 2. Model/simulate comparable scope/process/condition
+ 3. Estimate effect size & quantify adjusted calibration target
+ 4. Estimate additional uncertainty & quantify MoC
+   - MoC A (Definition of Default)
+   - MoC B (Other non-representativeness)
+
+:::
+
+::: {.column #vcenter width="40%" .r-fit-text}
+![](/media/repr_methodology.drawio.svg)
+:::
+
+::::
+
+
+# Scope of Application
+
+## Scope of Application {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="40%" .r-fit-text }
+Type of Exposures
+: homogeneously managed, comparable risk characteristics
+
+Range of Application
+: all exposures of the type in scope of the rating system 
+:::
+
+::: {.column #vcenter width="60%" .r-fit-text }
+
+::::: {.callout-note}
+### EBA/GL/2017/16
+_$\small{[\cdots]}$institutions should analyse the segmentation of exposures and consider whether there were any changes to the scope of application of the considered model over the period covered by the data used in developing the model for assigning obligors or exposures to grades or pools.$\small{[\cdots]}$_
+:::::
+
+::::: {.callout-note}
+### CDR 439 art. 42(2)
+_$\small{[\cdots]}$shall assess the representativeness of the data used to estimate the risk parameters for certain types of exposures by assessing:_
+
+_(a) the structure of exposures covered by each rating model and the different risk characteristics of the obligors or facilities, and whether the current portfolio is, to the degree required, comparable to the portfolios constituting the reference data set$\small{[\cdots]}$_
+:::::
+
+
+:::
+::::
+
+
+
+
+## Scope of Application {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="60%" .r-fit-text }
+Type of Exposures
+: homogeneously managed, comparable risk characteristics
+
+Range of Application
+: all exposures of the type in scope of the rating system 
+
+#### Typical cases
+
+ * historical scope of appliciation not aligned with intended
+ * historical scope not well defined
+ * exposures historically not managed homogeneously
+
+:::
+
+::: {.column #vcenter width="40%" .r-fit-text }
+
+![](/media/scope_of_appl_analysis.drawio.svg)
+
+![](/media/scope_of_appl_analysis_id.drawio.svg)
+
+
+:::
+::::
+
+
+
+## Scope of Application {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="60%" .r-fit-text }
+### Favorable example
+ * intended scope of application subset of historically applied
+ * simply select data of exposures in scope
+ * no further adjustments or MoC requiredc
+
+:::
+
+::: {.column #vcenter width="40%" .r-fit-text }
+
+![](/media/scope_of_appl_analysis.drawio.svg)
+
+![](/media/scope_of_appl_analysis_id.drawio.svg)
+
+
+:::
+::::
+
+
+
+
+## Scope of Application {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="60%" .r-fit-text }
+### Less favorable example
+ * historically applied subset of intended scope of application subset
+ * e.g. subportfolios with different data availability
+ 
+:::
+
+::: {.column #vcenter width="40%" .r-fit-text }
+
+![](/media/scope_of_appl_analysis.drawio.svg)
+
+![](/media/scope_of_appl_analysis_id2.drawio.svg)
+
+
+:::
+::::
+
+
+
+
+## Scope of Application {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="60%" .r-fit-text }
+### Less favorable example
+ * historically applied subset of intended scope of application subset
+ * e.g. subportfolios with different data availability
+ 
+ 1. Are subportfolios A & B comparable in terms of risk characteristics & management?
+ 2. Is data from period S representative of application portfolio?
+ 3. What is the effect on calibration target?
+::: 
+
+::: {.column #vcenter width="40%" .r-fit-text }
+![](/media/scope_of_appl_analysis_id2.drawio.svg)
+
+
+![](/media/scope_of_appl_analysis_id3.drawio.svg)
+
+
+:::
+::::

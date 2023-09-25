@@ -151,28 +151,28 @@
     "href": "slides/representativeness/representativeness_day_1.html#representativeness-1",
     "title": "Representativeness",
     "section": "Representativeness",
-    "text": "Representativeness\n\n\n\nCRR somewhat generally worded on a specific aspect only\n\n\n\nCDR 439 more specific\n\n‘comparability’\n’’\n\n\n\n\n\n\n\nCRR Article 174\n\n\nIf an institution uses statistical models and other mechanical methods to assign exposures to obligors or facilities grades or pools, the following requirements shall be met:\\(\\small{[\\cdots]}\\)\n(c) the data used to build the model shall be representative of the population of the institution’s actual obligors or exposures;\n\n\n\n\n\n\nCDR 2022/439 Article 37(2)\n\n\nWhen assessing the representativeness of the data used to build the model as referred to in Article 174(c) of Regulation (EU) No 575/2013, competent authorities shall verify:\n(a) the comparability of risk characteristics of the obligors or facilities reflected in the data used to build the model with those of the exposures covered by a particular rating model;\n(b) the comparability of the current underwriting and recovery standards ith the ones applied at the time to which the reference data set used for the modelling relates;\n(c) the consistency of default definition over time in the data used for the modelling \\(\\small{[\\cdots]}\\) (etc)\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\n43. In order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies \\(\\small{[\\cdots]}\\) ensuring that: (i) where appropriate adjustments \\(\\small{[\\cdots]}\\) are used, the MoC accounts for any increase in the uncertainty \\(\\small{[\\cdots]}\\) (b) quantify the general estimation error \\(\\small{[\\cdots]}\\)"
+    "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\nModel\nrelevant scope/conditions to describe generating process\n\n\nData\ngenerated under historical realized conditions\n\n\nPredictions\nconditional on data generated with current conditions\n\n\n\n\n\n\n\n\n\nModelling assumption\n\ncomparable scope & conditions \\(\\rightarrow\\) representative data \\(\\rightarrow\\) unbiased estimates"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements",
     "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements",
     "title": "Representativeness",
     "section": "Regulatory Requirements",
-    "text": "Regulatory Requirements\nRisk Differentiation\n\n\n\nCRR somewhat generally worded on a specific aspect only\nCDR 439 article 37 introduces specific terms & dimensions\n\ncomparability\nrisk characteristics\nunderwriting/recovery standards\ndefault definition\nexternal data\n\nEBA/GL/2017/16 sets out required assessments more comprehensively\n\n4.2.3 Representativeness of data for model development\n\n\n\n\n\n\nCRR Article 174\n\n\nIf an institution uses statistical models and other mechanical methods to assign exposures to obligors or facilities grades or pools, the following requirements shall be met:\\(\\small{[\\cdots]}\\)\n(c) the data used to build the model shall be representative of the population of the institution’s actual obligors or exposures;\n\n\n\n\n\n\nCDR 2022/439 Article 37(2)\n\n\nWhen assessing the representativeness of the data used to build the model as referred to in Article 174(c) of Regulation (EU) No 575/2013, competent authorities shall verify:\n(a) the comparability of risk characteristics of the obligors or facilities reflected in the data used to build the model with those of the exposures covered by a particular rating model;\n(b) the comparability of the current underwriting and recovery standards ith the ones applied at the time to which the reference data set used for the modelling relates;\n(c) the consistency of default definition over time in the data used for the modelling \\(\\small{[\\cdots]}\\) (etc)\n(d) where external data or data pooled across institutions is used in the model development, the relevance and adequacy of such data for the institution’s exposures, products and risk profile"
+    "text": "Regulatory Requirements\nRisk Differentiation\n\n\n\nArticle 174 specifically worded\nCDR 439 article 37 & EBA/GL/2017/16 4.2.2 comprehensive requirements\n\n\n\n\n\nCRR Article 174\n\n\nIf an institution uses statistical models and other mechanical methods to assign exposures to obligors or facilities grades or pools, the following requirements shall be met:\\(\\small{[\\cdots]}\\)\n(c) the data used to build the model shall be representative of the population of the institution’s actual obligors or exposures;\n\n\n\n\n\n\nEBA/GL/2017/16 par. 21\n\n\n\\(\\small{[\\cdots]}\\) institutions should analyse the representativeness of the data at the stage of model development in terms of all of the following:\n(a) the scope of application;\n(b) the definition of default;\n(c) the distribution of the relevant risk characteristics;\n(d) lending standards and recovery policies."
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-1",
     "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-1",
     "title": "Representativeness",
     "section": "Regulatory Requirements",
-    "text": "Regulatory Requirements\nRisk Quantification\n\n\n\nCRR article 179 more extensive\nCDR 439 articles 42 introduces specific dimensions (focused on PD)\nEBA/GL/2017/16 sets out required assessments more comprehensively\n\n4.2.4 Representativeness of data for calibration of risk parameters\n\n\n\n\n\n\nCRR Article 179(1)\n\n\nIn quantifying the risk parameters to be associated with rating grades or pools, institutions shall apply the following requirements:\\(\\small{[\\cdots]}\\)\n(b) \\(\\small{[\\cdots]}\\)The institution’s estimates shall be representative of long run experience;\n(c) any changes in lending practice or the process for pursuing recoveries over the observation periods \\(\\small{[\\cdots]}\\) shall be taken into account.\n(d) the population of exposures represented in the data used for estimation, the lending standards used when the data was generated and other relevant characteristics shall be comparable with those of the institution’s exposures and standards. The economic or market conditions that underlie the data shall be relevant to current and foreseeable conditions.\n\n\n\n\n\n\nCDR 2022/439 Article 42\n\n\n1. When assessing compliance with the overall requirements for estimation laid down in Article 179 \\(\\small{[\\cdots]}\\), the data used for the quantification of risk parameters \\(\\small{[\\cdots]}\\) compentent authorities shall verify:\\(\\small{[\\cdots]}\\)\n(c) the representativeness of the data used to estimate the risk parameters for certain types of exposures;\n_(d) \\(\\small{[\\cdots]}\\) the length"
+    "text": "Regulatory Requirements\nRisk Quantification\n\n\n\nCRR article 179 more extensive\nCDR 439 articles 42, EBA/GL/2017/16 4.2.4 set out required assessments more comprehensively\n\n4.2.4 Representativeness of data for calibration of risk parameters\n\nEconomic/market conditions\n\nPD: likely range of variability of one-year default rates\nLRA LGD: historical observation period (no adjustment)\nDT LGD: Downturn identification\n\n\n\n\n\n\nCRR Article 179(1)\n\n\nIn quantifying the risk parameters to be associated with rating grades or pools, institutions shall apply the following requirements:\\(\\small{[\\cdots]}\\)\n(b) \\(\\small{[\\cdots]}\\)The institution’s estimates shall be representative of long run experience;\n(c) any changes in lending practice or the process for pursuing recoveries over the observation periods \\(\\small{[\\cdots]}\\) shall be taken into account.\n(d) the population of exposures represented in the data used for estimation, the lending standards used when the data was generated and other relevant characteristics shall be comparable with those of the institution’s exposures and standards. The economic or market conditions that underlie the data shall be relevant to current and foreseeable conditions.\n\n\n\n\n\n\n\nEBA/GL/2017/16 par. 28\n\n\n\\(\\small{[\\cdots]}\\)in terms of all of the following:\n(a) the scope of application;\n(b) the definition of default;\n(c) the distribution of the relevant risk characteristics;\n(d) the current and foreseeable economic or market conditions;\n(e) lending standards and recovery policies."
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-2",
     "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-2",
     "title": "Representativeness",
     "section": "Regulatory Requirements",
-    "text": "Regulatory Requirements\nRisk Quantification\n\n\n\nCRR article 179 more extensive\nCDR 439 articles 42 introduces specific terms\n\n\n\n\n\nCRR Article 179(1)\n\n\nIn quantifying the risk parameters to be associated with rating grades or pools, institutions shall apply the following requirements:\\(\\small{[\\cdots]}\\)\n(b) \\(\\small{[\\cdots]}\\)The institution’s estimates shall be representative of long run experience;\n(c) any changes in lending practice or the process for pursuing recoveries over the observation periods {[]}$ shall be taken into account.\n(d) the population of exposures represented in the data used for estimation, the lending standards used when the data was generated and other relevant characteristics shall be comparable with those of the institution’s exposures and standards. The economic or market conditions that underlie the data shall be relevant to current and foreseeable conditions.\n\n\n\n\n\n\nCDR 2022/439 Article 42(1)\n\n\nWhen assessing compliance with the overall requirements for estimation laid down in Article 179\\(\\small{[\\cdots]}\\), the data used for the quantification of risk parameters\\(\\small{[\\cdots]}\\) compentent authorities shall verify: (c) the representativeness of the data used to estimate the risk parameters for certain types of exposures;"
+    "text": "Regulatory Requirements\n\n\nRisk Differentiation\n\n\n\nEBA/GL/2017/16 par. 21\n\n\n\\(\\small{[\\cdots]}\\) institutions should analyse the representativeness of the data at the stage of model development in terms of all of the following:\n(a) the scope of application;\n(b) the definition of default;\n(c) the distribution of the relevant risk characteristics;\n(d) lending standards and recovery policies.\n\n\n\n\nRisk Quantification\n\n\n\nEBA/GL/2017/16 par. 28\n\n\n\\(\\small{[\\cdots]}\\)in terms of all of the following:\n(a) the scope of application;\n(b) the definition of default;\n(c) the distribution of the relevant risk characteristics;\n(d) the current and foreseeable economic or market conditions;\n(e) lending standards and recovery policies.\n\n\n\n\n\nWhy the difference?"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#representative-data",
@@ -180,5 +180,152 @@
     "title": "Representativeness",
     "section": "Representative data",
     "text": "Representative data"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#assessment-and-estimation-procedure",
+    "href": "slides/representativeness/representativeness_day_1.html#assessment-and-estimation-procedure",
+    "title": "Representativeness",
+    "section": "Assessment and Estimation Procedure",
+    "text": "Assessment and Estimation Procedure\n\nHigh level process\nIdentification of potential drivers of non-representativeness Estimation of effect on risk estimation targets Quantification of appropriate adjusted calibration target Quantification of additional uncertainty"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#scope-of-application",
+    "href": "slides/representativeness/representativeness_day_1.html#scope-of-application",
+    "title": "Representativeness",
+    "section": "Scope of Application",
+    "text": "Scope of Application\n\n\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\\(\\small{[\\cdots]}\\)institutions should analyse the segmentation of exposures and consider whether there were any changes to the scope of application of the considered model over the period covered by the data used in developing the model for assigning obligors or exposures to grades or pools.\\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCDR 439 art. 42(2)\n\n\n\\(\\small{[\\cdots]}\\)shall assess the representativeness of the data used to estimate the risk parameters for certain types of exposures by assessing:\n(a) the structure of exposures covered by each rating model and the different risk characteristics of the obligors or facilities, and whether the current portfolio is, to the degree required, comparable to the portfolios constituting the reference data set\\(\\small{[\\cdots]}\\)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-2",
+    "href": "slides/representativeness/representativeness_day_1.html#representativeness-2",
+    "title": "Representativeness",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\nCredit Risk data generating process\n\nSpecify how policies/conditions relate to credit processes\nNot typically explicitly modelled\n\nScope/conditions listed in\n\nEBA/GL/2017/16 4.2.2, CDR 439 art. 37 (risk differentation)\nEBA/GL/2017/16 4.2.3, CDR 439 art. 42 (quantification)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-3",
+    "href": "slides/representativeness/representativeness_day_1.html#representativeness-3",
+    "title": "Representativeness",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\nCredit Risk data generating process\n\nSpecify how policies/conditions relate to credit processes\nNot typically explicitly modelled\n\nScope/conditions listed in\n\nEBA/GL/2017/16 4.2.2, CDR 439 art. 37 (risk differentation)\nEBA/GL/2017/16 4.2.3, CDR 439 art. 42 (quantification)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-4",
+    "href": "slides/representativeness/representativeness_day_1.html#representativeness-4",
+    "title": "Representativeness",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\n\\(y_{it}\\)\nrealized default/loss characteristics\n\n\n\\(x_{it}\\)\nrisk drivers, …\n\n\n\\(\\pi(\\theta|y;x)\\)\nparameter estimate\n\n\n\\(\\pi(y|\\hat\\theta;x)\\)\nprediction"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-5",
+    "href": "slides/representativeness/representativeness_day_1.html#representativeness-5",
+    "title": "Representativeness",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\n\\(y_{it}\\)\nrealized default/loss characteristics\n\n\n\\(x_{it}\\)\nrisk drivers, …\n\n\n\\(\\pi(\\theta|y;x)\\)\nparameter estimate\n\n\n\\(\\pi(y|\\hat\\theta;x)\\)\nprediction"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-6",
+    "href": "slides/representativeness/representativeness_day_1.html#representativeness-6",
+    "title": "Representativeness",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\n\\(y_{it}\\)\nrealized default/loss characteristics\n\n\n\\(x_{it}\\)\nrisk drivers, …\n\n\n\\(\\pi(\\theta|y;x)\\)\nparameter estimate\n\n\n\\(\\pi(y|\\hat\\theta;x)\\)\nprediction"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-7",
+    "href": "slides/representativeness/representativeness_day_1.html#representativeness-7",
+    "title": "Representativeness",
+    "section": "Representativeness",
+    "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\n\\(y_{it}\\)\nrealized default/loss characteristics\n\n\n\\(x_{it}\\)\nrisk drivers, …\n\n\n\\(\\pi(\\theta|y;x)\\)\nparameter estimate\n\n\n\\(\\pi(y|\\hat\\theta;x)\\)\nprediction"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#moc-quantification",
+    "href": "slides/representativeness/representativeness_day_1.html#moc-quantification",
+    "title": "Representativeness",
+    "section": "MoC Quantification",
+    "text": "MoC Quantification\n\n\n\nInitial Calibration Target (CT)\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated estimated based on RDS prior to adjustments\n\nMoC C\n\nMargin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies\n\nDeficiency\n\nSource of bias relative to initial calibration target\n\nAppropriately adjusted calibration target\n\nCalibration target adjusted for biases due to deficiencies\n\nMoC B\n\nMargin to account for additional uncertainty due to adjustment for non-representativeness\n\nMoC A\n\nMargin to account for additional uncertainty due to other deficiencies"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#assessment-procedure",
+    "href": "slides/representativeness/representativeness_day_1.html#assessment-procedure",
+    "title": "Representativeness",
+    "section": "Assessment Procedure",
+    "text": "Assessment Procedure\n\n\n\n(Qualitatively) assess comparability of scope/process/condition\nAssess non-representativeness data (heuristics)\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)\n\n\n\n\n\n\nHigh level process\nIdentification of potential drivers of non-representativeness Estimation of effect on risk estimation targets Quantification of appropriate adjusted calibration target Quantification of additional uncertainty"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure",
+    "href": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure",
+    "title": "Representativeness",
+    "section": "Assessment & Estimation Procedure",
+    "text": "Assessment & Estimation Procedure\n\n\n\nIdentify non-comparable scope/process/condition\nAssess non-representativeness data\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)\n\n\n\n\n\n\nHigh level process\nIdentification of potential drivers of non-representativeness Estimation of effect on risk estimation targets Quantification of appropriate adjusted calibration target Quantification of additional uncertainty"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure-1",
+    "href": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure-1",
+    "title": "Representativeness",
+    "section": "Assessment & Estimation Procedure",
+    "text": "Assessment & Estimation Procedure\n\n\n\nIdentify non-comparable scope/process/condition\n\n\nIdentify potential drivers of bias\n\n\nAssess non-representativeness data\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure-2",
+    "href": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure-2",
+    "title": "Representativeness",
+    "section": "Assessment & Estimation Procedure",
+    "text": "Assessment & Estimation Procedure\n\n\n\nQualitatively assess comparability scope/process/condition\n\nExpert-based\n\nHeuristically assess non-representativeness data\n\nModel/simulation based\n\nModel/simulate comparable scope/process/condition\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#xyz",
+    "href": "slides/representativeness/representativeness_day_1.html#xyz",
+    "title": "Representativeness",
+    "section": "xyz",
+    "text": "xyz\n\na\nd\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#expert-based",
+    "href": "slides/representativeness/representativeness_day_1.html#expert-based",
+    "title": "Representativeness",
+    "section": "Expert-based",
+    "text": "Expert-based\n\nHeuristically assess non-representativeness data"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#modelsimulation-based",
+    "href": "slides/representativeness/representativeness_day_1.html#modelsimulation-based",
+    "title": "Representativeness",
+    "section": "Model/simulation based",
+    "text": "Model/simulation based\n\nModel/simulate comparable scope/process/condition\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#scope-of-application-1",
+    "href": "slides/representativeness/representativeness_day_1.html#scope-of-application-1",
+    "title": "Representativeness",
+    "section": "Scope of Application",
+    "text": "Scope of Application\n\n\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\\(\\small{[\\cdots]}\\)institutions should analyse the segmentation of exposures and consider whether there were any changes to the scope of application of the considered model over the period covered by the data used in developing the model for assigning obligors or exposures to grades or pools.\\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCDR 439 art. 42(2)\n\n\n\\(\\small{[\\cdots]}\\)shall assess the representativeness of the data used to estimate the risk parameters for certain types of exposures by assessing:\n(a) the structure of exposures covered by each rating model and the different risk characteristics of the obligors or facilities, and whether the current portfolio is, to the degree required, comparable to the portfolios constituting the reference data set\\(\\small{[\\cdots]}\\)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#scope-of-application-2",
+    "href": "slides/representativeness/representativeness_day_1.html#scope-of-application-2",
+    "title": "Representativeness",
+    "section": "Scope of Application",
+    "text": "Scope of Application\n\n\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\n\nTypical cases\n\nhistorical scope of appliciation not aligned with intended\nhistorical scope not well defined\nexposures historically not managed homogeneously"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#scope-of-application-3",
+    "href": "slides/representativeness/representativeness_day_1.html#scope-of-application-3",
+    "title": "Representativeness",
+    "section": "Scope of Application",
+    "text": "Scope of Application\n\n\nFavorable example\n\nintended scope of application subset of historically applied\nsimply select data of exposures in scope\nno further adjustments or MoC requiredc"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#scope-of-application-4",
+    "href": "slides/representativeness/representativeness_day_1.html#scope-of-application-4",
+    "title": "Representativeness",
+    "section": "Scope of Application",
+    "text": "Scope of Application\n\n\nLess favorable example\n\nhistorically applied subset of intended scope of application subset\ne.g. subportfolios with different data availability"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#scope-of-application-5",
+    "href": "slides/representativeness/representativeness_day_1.html#scope-of-application-5",
+    "title": "Representativeness",
+    "section": "Scope of Application",
+    "text": "Scope of Application\n\n\nLess favorable example\n\nhistorically applied subset of intended scope of application subset\ne.g. subportfolios with different data availability\n\n\nAre subportfolios A & B comparable in terms of risk characteristics & management?\nIs data from period S representative of application portfolio?"
   }
 ]
