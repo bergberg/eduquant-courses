@@ -25,7 +25,7 @@
     "href": "slides/representativeness/representativeness_day_1.html#day-1",
     "title": "Representativeness",
     "section": "Day 1",
-    "text": "Day 1\n\n\n13:00\n13:30\n14:15\n15:00\n15:15\n16:00\n16:45\n\nIntroduction\nRisk Parameter Estimation Overview\nRepresentativeness in Modelling\nBreak\nGeneral Estimation Methodology\nScope of Application\nCase Study"
+    "text": "Day 1\n\n\n13:00\n13:30\n14:30\n15:30\n16:30\n\nIntroduction\nRisk Parameter Estimation Overview\nRepresentativeness Overview\nScope of Application\nCase Study\n\n\n\n\n\n\n\n\nhttps://tinyurl.com/4n5hj2vw"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation",
@@ -63,6 +63,13 @@
     "text": "Risk Parameter Quantification\n\n\n\nExposure type\n\nhomogeneously managed, comparable risk characteristics\n\nReference dates\n\nDate to which realised values are aggregated\n\nCalibration Target\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness & other sources of bias\n\nAppropriately Adjusted Calibration Target\n\nCalibration Target adjusted for biases\n\n\n\n\n\n\n\nDiagram: Type of Exposures -&gt; RDS -&gt; Initial Calibration Target -&gt; Appr. Adjusted Target\nPar 12 PD&LGD\n\n\n15:15"
   },
   {
+    "objectID": "slides/representativeness/representativeness_day_1.html#moc-quantification",
+    "href": "slides/representativeness/representativeness_day_1.html#moc-quantification",
+    "title": "Representativeness",
+    "section": "MoC Quantification",
+    "text": "MoC Quantification\n\n\n\nInitial Calibration Target (CT)\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated estimated based on RDS prior to adjustments\n\nMoC C\n\nMargin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies\n\nDeficiency\n\nSource of bias relative to initial calibration target\n\nAppropriately adjusted calibration target\n\nCalibration target adjusted for biases due to deficiencies\n\nMoC B\n\nMargin to account for additional uncertainty due to adjustment for non-representativeness\n\nMoC A\n\nMargin to account for additional uncertainty due to other deficiencies"
+  },
+  {
     "objectID": "slides/representativeness/representativeness_day_1.html#reference-data-sets",
     "href": "slides/representativeness/representativeness_day_1.html#reference-data-sets",
     "title": "Representativeness",
@@ -84,55 +91,6 @@
     "text": "Calibration Targets\n\n\n\nLength of historical period\n\nreflecting variability of economic conditions\n\nMethodology\n\noverlapping versus non-overlapping\n\nReference dates \\(t_{r}\\)\n\nSample over historical data representative of application portfolio conditioned on target\n\nCalibration segment\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target\n\nPrescribed estimator of LRA/DT risk parameter values\n\n\n(adjusted/weighted) average of realised risk parameter values"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Leaseplan Representativeness Q4 2023",
-    "section": "",
-    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#course-slides",
-    "href": "index.html#course-slides",
-    "title": "Leaseplan Representativeness Q4 2023",
-    "section": "",
-    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#please-fill-out-our-survey",
-    "href": "index.html#please-fill-out-our-survey",
-    "title": "Leaseplan Representativeness Q4 2023",
-    "section": "Please fill out our survey",
-    "text": "Please fill out our survey\nLink to survey"
-  },
-  {
-    "objectID": "index.html#footnotes",
-    "href": "index.html#footnotes",
-    "title": "Leaseplan Representativeness Q4 2023",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nNote that these will be available for a limited time after the course has ended.↩︎"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#rating-systems",
-    "href": "slides/representativeness/representativeness_day_1.html#rating-systems",
-    "title": "Representativeness",
-    "section": "Rating Systems",
-    "text": "Rating Systems\n\n\n\nRating System\n\nassessment methods & processes developed for a certain type of exposures\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\nCalibration Segment\n\nlevel of risk quantification \\(\\subset\\) scope of application\n\nRanking method\n\nRisk differentiation model\n\nGrades/Pools\n\nExposures with similar risk profiles"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-4",
-    "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-4",
-    "title": "Representativeness",
-    "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nDirect estimation: special case\nContinuous estimation: effectively same requirements\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nCRR Article 169\n\n\n3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale.\n\n\n\n\n\n\nAmendment\n\n\nEBA shall issue guidelines on how to apply in practice the requirements on model design, risk quantification, validation and application of risk parameters using continuous or very granular rating scales for each risk parameter.\n\n\n\n\n\n\n14:15"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#overview",
-    "href": "slides/representativeness/representativeness_day_1.html#overview",
-    "title": "Representativeness",
-    "section": "Overview",
-    "text": "Overview"
-  },
-  {
     "objectID": "slides/representativeness/representativeness_day_1.html#calibration-targets-1",
     "href": "slides/representativeness/representativeness_day_1.html#calibration-targets-1",
     "title": "Representativeness",
@@ -140,60 +98,11 @@
     "text": "Calibration Targets\n\n\n\nLength of historical period\n\nreflecting variability of economic conditions\n\nMethodology\n\noverlapping versus non-overlapping\n\nReference dates \\(t_{r}\\)\n\nSample over historical data representative of application portfolio conditioned on target\n\nCalibration segment\n\nlevel of aggregation (range of appl. \\(\\supseteq\\) calibration segment \\(\\supset\\) grade/pool)\n\nCalibration target\n\nPrescribed estimator of LRA/DT risk parameter values\n\n\n(adjusted/weighted) average of realised risk parameter values\n\n\n\n \n\\[\\text{DR}(\\mathbf{L}) = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} D_i(t_r)\\]\n\\[\\text{Observed LGD}(\\mathbf{L}) = \\frac{1}{N_\\mathbf{L}}\\sum_{i\\in\\mathbf{L}} \\text{RLGD}_i\\]\n\\[\\text{CCF}(\\mathbf{L}) = \\frac{1}{R}\\sum_{r=1\\dots R}\\frac{1}{N_\\mathbf{L}(t_r)}\\sum_{i\\in\\mathbf{L}} RCCF_i(t_r)\\]"
   },
   {
-    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness",
-    "href": "slides/representativeness/representativeness_day_1.html#representativeness",
-    "title": "Representativeness",
-    "section": "Representativeness",
-    "text": "Representativeness\n\n\n\nCRR somewhat generally worded\n\n\n\nCDR 439 more spcific\n\n\n\n\n\n\nCRR Article 174\n\n\nIf an institution uses statistical models and other mechanical methods to assign exposures to obligors or facilities grades or pools, the following requirements shall be met:\\(\\small{[\\cdots]}\\) (c) the data used to build the model shall be representative of the population of the institution’s actual obligors or exposures;\n\n\n\n\n\n\nCDR 2022/439 Article 37(2)\n\n\nWhen assessing the representativeness of the data used to build the model as referred to in Article 174(c) of Regulation (EU) No 575/2013, competent authorities shall verify: (a) the comparability of risk characteristics of the obligors or facilities reflected in the data used to build the model with those of the exposures covered by a particular rating model; (b) the comparability of the current underwriting and recovery standards ith the ones applied at the time to which the reference data set used for the modelling relates; (c) the consistency of default definition over time in the data used for the modelling \\(\\small{[\\cdots]}\\) (etc)\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\n43. In order to quantify MoC institutions should do all of the following: (a) quantify MoC for the identified deficiencies \\(\\small{[\\cdots]}\\) ensuring that: (i) where appropriate adjustments \\(\\small{[\\cdots]}\\) are used, the MoC accounts for any increase in the uncertainty \\(\\small{[\\cdots]}\\) (b) quantify the general estimation error \\(\\small{[\\cdots]}\\)"
-  },
-  {
     "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-1",
     "href": "slides/representativeness/representativeness_day_1.html#representativeness-1",
     "title": "Representativeness",
     "section": "Representativeness",
     "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\nModel\nrelevant scope/conditions to describe generating process\n\n\nData\ngenerated under historical realized conditions\n\n\nPredictions\nconditional on data generated with current conditions\n\n\n\n\n\n\n\n\n\nModelling assumption\n\ncomparable scope & conditions \\(\\rightarrow\\) representative data \\(\\rightarrow\\) unbiased estimates"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements",
-    "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements",
-    "title": "Representativeness",
-    "section": "Regulatory Requirements",
-    "text": "Regulatory Requirements\nRisk Differentiation\n\n\n\nArticle 174 specifically worded\nCDR 439 article 37 & EBA/GL/2017/16 4.2.2 comprehensive requirements\n\n\n\n\n\nCRR Article 174\n\n\nIf an institution uses statistical models and other mechanical methods to assign exposures to obligors or facilities grades or pools, the following requirements shall be met:\\(\\small{[\\cdots]}\\)\n(c) the data used to build the model shall be representative of the population of the institution’s actual obligors or exposures;\n\n\n\n\n\n\nEBA/GL/2017/16 par. 21\n\n\n\\(\\small{[\\cdots]}\\) institutions should analyse the representativeness of the data at the stage of model development in terms of all of the following:\n(a) the scope of application;\n(b) the definition of default;\n(c) the distribution of the relevant risk characteristics;\n(d) lending standards and recovery policies."
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-1",
-    "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-1",
-    "title": "Representativeness",
-    "section": "Regulatory Requirements",
-    "text": "Regulatory Requirements\nRisk Quantification\n\n\n\nCRR article 179 more extensive\nCDR 439 articles 42, EBA/GL/2017/16 4.2.4 set out required assessments more comprehensively\n\n4.2.4 Representativeness of data for calibration of risk parameters\n\nEconomic/market conditions\n\nPD: likely range of variability of one-year default rates\nLRA LGD: historical observation period (no adjustment)\nDT LGD: Downturn identification\n\n\n\n\n\n\nCRR Article 179(1)\n\n\nIn quantifying the risk parameters to be associated with rating grades or pools, institutions shall apply the following requirements:\\(\\small{[\\cdots]}\\)\n(b) \\(\\small{[\\cdots]}\\)The institution’s estimates shall be representative of long run experience;\n(c) any changes in lending practice or the process for pursuing recoveries over the observation periods \\(\\small{[\\cdots]}\\) shall be taken into account.\n(d) the population of exposures represented in the data used for estimation, the lending standards used when the data was generated and other relevant characteristics shall be comparable with those of the institution’s exposures and standards. The economic or market conditions that underlie the data shall be relevant to current and foreseeable conditions.\n\n\n\n\n\n\n\nEBA/GL/2017/16 par. 28\n\n\n\\(\\small{[\\cdots]}\\)in terms of all of the following:\n(a) the scope of application;\n(b) the definition of default;\n(c) the distribution of the relevant risk characteristics;\n(d) the current and foreseeable economic or market conditions;\n(e) lending standards and recovery policies."
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-2",
-    "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-2",
-    "title": "Representativeness",
-    "section": "Regulatory Requirements",
-    "text": "Regulatory Requirements\n\n\nRisk Differentiation\n\n\n\nEBA/GL/2017/16 par. 21\n\n\n\\(\\small{[\\cdots]}\\) institutions should analyse the representativeness of the data at the stage of model development in terms of all of the following:\n(a) the scope of application;\n(b) the definition of default;\n(c) the distribution of the relevant risk characteristics;\n(d) lending standards and recovery policies.\n\n\n\n\nRisk Quantification\n\n\n\nEBA/GL/2017/16 par. 28\n\n\n\\(\\small{[\\cdots]}\\)in terms of all of the following:\n(a) the scope of application;\n(b) the definition of default;\n(c) the distribution of the relevant risk characteristics;\n(d) the current and foreseeable economic or market conditions;\n(e) lending standards and recovery policies.\n\n\n\n\n\nWhy the difference?"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#representative-data",
-    "href": "slides/representativeness/representativeness_day_1.html#representative-data",
-    "title": "Representativeness",
-    "section": "Representative data",
-    "text": "Representative data"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#assessment-and-estimation-procedure",
-    "href": "slides/representativeness/representativeness_day_1.html#assessment-and-estimation-procedure",
-    "title": "Representativeness",
-    "section": "Assessment and Estimation Procedure",
-    "text": "Assessment and Estimation Procedure\n\nHigh level process\nIdentification of potential drivers of non-representativeness Estimation of effect on risk estimation targets Quantification of appropriate adjusted calibration target Quantification of additional uncertainty"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#scope-of-application",
-    "href": "slides/representativeness/representativeness_day_1.html#scope-of-application",
-    "title": "Representativeness",
-    "section": "Scope of Application",
-    "text": "Scope of Application\n\n\n\nType of Exposures\n\nhomogeneously managed, comparable risk characteristics\n\nRange of Application\n\nall exposures of the type in scope of the rating system\n\n\n\n\n\n\nEBA/GL/2017/16\n\n\n\\(\\small{[\\cdots]}\\)institutions should analyse the segmentation of exposures and consider whether there were any changes to the scope of application of the considered model over the period covered by the data used in developing the model for assigning obligors or exposures to grades or pools.\\(\\small{[\\cdots]}\\)\n\n\n\n\n\n\nCDR 439 art. 42(2)\n\n\n\\(\\small{[\\cdots]}\\)shall assess the representativeness of the data used to estimate the risk parameters for certain types of exposures by assessing:\n(a) the structure of exposures covered by each rating model and the different risk characteristics of the obligors or facilities, and whether the current portfolio is, to the degree required, comparable to the portfolios constituting the reference data set\\(\\small{[\\cdots]}\\)"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-2",
@@ -224,32 +133,18 @@
     "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\n\\(y_{it}\\)\nrealized default/loss characteristics\n\n\n\\(x_{it}\\)\nrisk drivers, …\n\n\n\\(\\pi(\\theta|y;x)\\)\nparameter estimate\n\n\n\\(\\pi(y|\\hat\\theta;x)\\)\nprediction"
   },
   {
-    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-6",
-    "href": "slides/representativeness/representativeness_day_1.html#representativeness-6",
+    "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements",
+    "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements",
     "title": "Representativeness",
-    "section": "Representativeness",
-    "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\n\\(y_{it}\\)\nrealized default/loss characteristics\n\n\n\\(x_{it}\\)\nrisk drivers, …\n\n\n\\(\\pi(\\theta|y;x)\\)\nparameter estimate\n\n\n\\(\\pi(y|\\hat\\theta;x)\\)\nprediction"
+    "section": "Regulatory Requirements",
+    "text": "Regulatory Requirements\nRisk Differentiation\n\n\n\nArticle 174 specifically worded\nCDR 439 article 37 & EBA/GL/2017/16 4.2.2 comprehensive requirements\n\n\n\n\n\nCRR Article 174\n\n\nIf an institution uses statistical models and other mechanical methods to assign exposures to obligors or facilities grades or pools, the following requirements shall be met:\\(\\small{[\\cdots]}\\)\n(c) the data used to build the model shall be representative of the population of the institution’s actual obligors or exposures;\n\n\n\n\n\n\nEBA/GL/2017/16 par. 21\n\n\n\\(\\small{[\\cdots]}\\) institutions should analyse the representativeness of the data at the stage of model development in terms of all of the following:\n(a) the scope of application;\n(b) the definition of default;\n(c) the distribution of the relevant risk characteristics;\n(d) lending standards and recovery policies."
   },
   {
-    "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-7",
-    "href": "slides/representativeness/representativeness_day_1.html#representativeness-7",
+    "objectID": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-1",
+    "href": "slides/representativeness/representativeness_day_1.html#regulatory-requirements-1",
     "title": "Representativeness",
-    "section": "Representativeness",
-    "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\n\\(y_{it}\\)\nrealized default/loss characteristics\n\n\n\\(x_{it}\\)\nrisk drivers, …\n\n\n\\(\\pi(\\theta|y;x)\\)\nparameter estimate\n\n\n\\(\\pi(y|\\hat\\theta;x)\\)\nprediction"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#moc-quantification",
-    "href": "slides/representativeness/representativeness_day_1.html#moc-quantification",
-    "title": "Representativeness",
-    "section": "MoC Quantification",
-    "text": "MoC Quantification\n\n\n\nInitial Calibration Target (CT)\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated estimated based on RDS prior to adjustments\n\nMoC C\n\nMargin to account for statistical uncertainty of calibration target estimate in the absence of potential biases due to deficiencies\n\nDeficiency\n\nSource of bias relative to initial calibration target\n\nAppropriately adjusted calibration target\n\nCalibration target adjusted for biases due to deficiencies\n\nMoC B\n\nMargin to account for additional uncertainty due to adjustment for non-representativeness\n\nMoC A\n\nMargin to account for additional uncertainty due to other deficiencies"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#assessment-procedure",
-    "href": "slides/representativeness/representativeness_day_1.html#assessment-procedure",
-    "title": "Representativeness",
-    "section": "Assessment Procedure",
-    "text": "Assessment Procedure\n\n\n\n(Qualitatively) assess comparability of scope/process/condition\nAssess non-representativeness data (heuristics)\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)\n\n\n\n\n\n\nHigh level process\nIdentification of potential drivers of non-representativeness Estimation of effect on risk estimation targets Quantification of appropriate adjusted calibration target Quantification of additional uncertainty"
+    "section": "Regulatory Requirements",
+    "text": "Regulatory Requirements\nRisk Quantification\n\n\n\nCRR article 179 more extensive\nCDR 439 articles 42, EBA/GL/2017/16 4.2.4 set out required assessments more comprehensively\n\n4.2.4 Representativeness of data for calibration of risk parameters\n\nEconomic/market conditions\n\nPD: likely range of variability of one-year default rates\nLRA LGD: historical observation period (no adjustment)\nDT LGD: Downturn identification\n\n\n\n\n\n\nCRR Article 179(1)\n\n\nIn quantifying the risk parameters to be associated with rating grades or pools, institutions shall apply the following requirements:\\(\\small{[\\cdots]}\\)\n(b) \\(\\small{[\\cdots]}\\)The institution’s estimates shall be representative of long run experience;\n(c) any changes in lending practice or the process for pursuing recoveries over the observation periods \\(\\small{[\\cdots]}\\) shall be taken into account.\n(d) the population of exposures represented in the data used for estimation, the lending standards used when the data was generated and other relevant characteristics shall be comparable with those of the institution’s exposures and standards. The economic or market conditions that underlie the data shall be relevant to current and foreseeable conditions.\n\n\n\n\n\n\n\nEBA/GL/2017/16 par. 28\n\n\n\\(\\small{[\\cdots]}\\)in terms of all of the following:\n(a) the scope of application;\n(b) the definition of default;\n(c) the distribution of the relevant risk characteristics;\n(d) the current and foreseeable economic or market conditions;\n(e) lending standards and recovery policies."
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure",
@@ -271,27 +166,6 @@
     "title": "Representativeness",
     "section": "Assessment & Estimation Procedure",
     "text": "Assessment & Estimation Procedure\n\n\n\nQualitatively assess comparability scope/process/condition\n\nExpert-based\n\nHeuristically assess non-representativeness data\n\nModel/simulation based\n\nModel/simulate comparable scope/process/condition\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#xyz",
-    "href": "slides/representativeness/representativeness_day_1.html#xyz",
-    "title": "Representativeness",
-    "section": "xyz",
-    "text": "xyz\n\na\nd\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#expert-based",
-    "href": "slides/representativeness/representativeness_day_1.html#expert-based",
-    "title": "Representativeness",
-    "section": "Expert-based",
-    "text": "Expert-based\n\nHeuristically assess non-representativeness data"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_1.html#modelsimulation-based",
-    "href": "slides/representativeness/representativeness_day_1.html#modelsimulation-based",
-    "title": "Representativeness",
-    "section": "Model/simulation based",
-    "text": "Model/simulation based\n\nModel/simulate comparable scope/process/condition\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#scope-of-application-1",
@@ -327,5 +201,131 @@
     "title": "Representativeness",
     "section": "Scope of Application",
     "text": "Scope of Application\n\n\nLess favorable example\n\nhistorically applied subset of intended scope of application subset\ne.g. subportfolios with different data availability\n\n\nAre subportfolios A & B comparable in terms of risk characteristics & management?\nIs data from period S representative of application portfolio?\nWhat is the effect on calibration target?"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#scope-of-application-6",
+    "href": "slides/representativeness/representativeness_day_1.html#scope-of-application-6",
+    "title": "Representativeness",
+    "section": "Scope of Application",
+    "text": "Scope of Application\n\n\nLess favorable example\n\nhistorically applied subset of intended scope of application subset\ne.g. subportfolios with different data availability\n\n\nAre subportfolios A & B comparable in terms of risk characteristics?\nIs data from period S representative of application portfolio?\nWhat is the effect on calibration targets?"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-2-scope-of-application",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-2-scope-of-application",
+    "title": "Representativeness",
+    "section": "Case Study 2: Scope of Application",
+    "text": "Case Study 2: Scope of Application\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for the bias introduced by having a non-comparable scope of application on certain historical reference dates. This is a (simulated) data set of a non-homogeneous portfolio with two homogeneous subportfolios, and there are no risk drivers, grades or other features to distinguish the exposures by, except the helpfully labelled ‘subportfolio’ (A or B). Lucky you!"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-1-one-dod-two-dod",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-1-one-dod-two-dod",
+    "title": "Representativeness",
+    "section": "Case study 1: one Dod, two Dod",
+    "text": "Case study 1: one Dod, two Dod\n\n\n\n\nThere are two subportfolios A and B\nThey have different default levels, otherwise each is homogeneous\nRather than modelling the differences, you choose to estimate a single LRA DR calibration target for the entire portfolio.\nEstimate an appropriately adjusted default rate\nBonus: calculate a MoC A\n\n\n\n\n\n\n\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "",
+    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#course-slides",
+    "href": "index.html#course-slides",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "",
+    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#please-fill-out-our-survey",
+    "href": "index.html#please-fill-out-our-survey",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "Please fill out our survey",
+    "text": "Please fill out our survey\nLink to survey"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nNote that these will be available for a limited time after the course has ended.↩︎"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-1",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-1",
+    "title": "Representativeness",
+    "section": "Case study",
+    "text": "Case study\n\n\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for the bias introduced by having a non-comparable scope of application on certain historical reference dates.\n\n\n\n\n\n\nDownload the dataset from the slides website (csv or xlsx)\nUse your favorite tool! Anything goes.\nBring the results for discussion to next week training\nOr send them to pieter@berg-sp.eu"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-2-two-subportfolios-one-data",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-2-two-subportfolios-one-data",
+    "title": "Representativeness",
+    "section": "Case study 2: Two subportfolios, one data",
+    "text": "Case study 2: Two subportfolios, one data\n\n\n\n\nThere are two subportfolios A and B\nThey have different default levels, otherwise each is homogeneous\nRather than modelling the differences, you choose to estimate a single LRA DR calibration target for the entire portfolio.\nEstimate an appropriately adjusted default rate\nBonus: calculate a MoC A\n\n\n\n\n\n\n\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-2-two-subportfolios-one-data-1",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-2-two-subportfolios-one-data-1",
+    "title": "Representativeness",
+    "section": "Case study 2: Two subportfolios, one data",
+    "text": "Case study 2: Two subportfolios, one data\n\n\n\n\nThere are two subportfolios A and B\nThey have different default levels, otherwise each is homogeneous\nRather than modelling the differences, you choose to estimate a single LRA DR calibration target for the entire portfolio.\nEstimate an appropriately adjusted default rate\nBonus: calculate a MoC A\n\n\n\n\n\n\n\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-2-two-subportfolios-one-data-2",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-2-two-subportfolios-one-data-2",
+    "title": "Representativeness",
+    "section": "Case study 2: Two subportfolios, one data",
+    "text": "Case study 2: Two subportfolios, one data\n\n\n\n\nThere are two subportfolios A and B\nThey have different default levels, otherwise each is homogeneous\nRather than modelling the differences, you choose to estimate a single LRA DR calibration target for the entire portfolio.\nEstimate an appropriately adjusted default rate\nBonus: calculate a MoC A\n\n\n\n\n\n\n\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-two-subportfolios-one-data",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-two-subportfolios-one-data",
+    "title": "Representativeness",
+    "section": "Case study: Two subportfolios, one data",
+    "text": "Case study: Two subportfolios, one data\n\n\nDescription\n\nThere are two subportfolios A and B\nThey have different default levels, otherwise each is homogeneous\nRather than modelling the differences, you choose to estimate a single LRA DR calibration target for the entire portfolio.\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A\n\nData\nYou are given a panel data set with a set of exposures i in subportfolio ‘A’ or ‘B’ at dates t and a default flag d. Two other derived variables are included for your convenience: a 12-month forward-looking into-default flag into_d_12, and a status: enter, stock, default or exit."
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-two-subportfolios-one-data-1",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-two-subportfolios-one-data-1",
+    "title": "Representativeness",
+    "section": "Case study: Two subportfolios, one data",
+    "text": "Case study: Two subportfolios, one data\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-two-subportfolios-one-data-2",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-two-subportfolios-one-data-2",
+    "title": "Representativeness",
+    "section": "Case study: Two subportfolios, one data",
+    "text": "Case study: Two subportfolios, one data\n\n\n\n\nThere are two subportfolios A and B\nThey have different default levels, otherwise each is homogeneous\nRather than modelling the differences, you choose to estimate a single LRA DR calibration target for the entire portfolio.\nEstimate an appropriately adjusted default rate\nBonus: calculate a MoC A\n\n\n\n\n\n\n\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-two-subportfolios-one-data-3",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-two-subportfolios-one-data-3",
+    "title": "Representativeness",
+    "section": "Case study: Two subportfolios, one data",
+    "text": "Case study: Two subportfolios, one data\n\n\n\n\nThere are two subportfolios A and B\nThey have different default levels, otherwise each is homogeneous\nRather than modelling the differences, you choose to estimate a single LRA DR calibration target for the entire portfolio.\nEstimate an appropriately adjusted default rate\nBonus: calculate a MoC A\n\n\n\n\n\n\n\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-two-subportfolios-one-data-4",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-two-subportfolios-one-data-4",
+    "title": "Representativeness",
+    "section": "Case study: Two subportfolios, one data",
+    "text": "Case study: Two subportfolios, one data\n\n\n\n\nThere are two subportfolios A and B\nThey have different default levels, otherwise each is homogeneous\nRather than modelling the differences, you choose to estimate a single LRA DR calibration target for the entire portfolio.\nEstimate an appropriately adjusted default rate\nBonus: calculate a MoC A\n\n\n\n\n\n\n\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-2-portfolios-1-data",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-2-portfolios-1-data",
+    "title": "Representativeness",
+    "section": "Case study: 2 portfolios, 1 data",
+    "text": "Case study: 2 portfolios, 1 data\n\n\nDescription\n\nThere are two subportfolios A and B\nThey have different default levels, otherwise each is homogeneous\nRather than modelling the differences, you choose to estimate a single LRA DR calibration target for the entire portfolio.\n\n\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A\n\n\n\n\nData\nYou are given a panel data set with a set of exposures i in subportfolio ‘A’ or ‘B’ at dates t and a default flag d. Two other derived variables are included for your convenience: a 12-month forward-looking into-default flag into_d_12, and a status: enter, stock, default or exit."
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_1.html#case-study-2-portfolios-1-data-1",
+    "href": "slides/representativeness/representativeness_day_1.html#case-study-2-portfolios-1-data-1",
+    "title": "Representativeness",
+    "section": "Case study: 2 portfolios, 1 data",
+    "text": "Case study: 2 portfolios, 1 data\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\n\n\n\n\n\n  Download data as csv\n\n\n\n\n\n\n Download data as xlsx\n\n\n\n\n\n\n\n\n\nhttps://tinyurl.com/4n5hj2vw"
   }
 ]

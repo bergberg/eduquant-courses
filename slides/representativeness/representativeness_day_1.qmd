@@ -104,15 +104,12 @@ Discussion -->
 
 *13:30*
 
-*14:15*
+*14:30*
 
-*15:00*
+*15:30*
 
-*15:15*
+*16:30*
 
-*16:00*
-
-*16:45*
 :::
 
 ::: {.column width="85%"}
@@ -120,17 +117,26 @@ Introduction
 
 Risk Parameter Estimation Overview
 
-Representativeness in Modelling
-
-[*Break*]{style="color: mauve"}
-
-General Estimation Methodology
+Representativeness Overview
 
 Scope of Application
 
 Case Study
 :::
 :::
+::: footer
+```{r }
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 4
+library(qrcode)
+code <- qr_code("https://quantprofessionals.github.io/eduquant-courses/slides/representativeness/representativeness_day_1.html")
+plot(code)
+```
+[https://tinyurl.com/4n5hj2vw](https://tinyurl.com/4n5hj2vw)
+:::
+
 <!-- 
 # Risk Parameter Estimation
 
@@ -979,4 +985,171 @@ Range of Application
 
 
 :::
+::::
+
+
+
+## Scope of Application {auto-animate=true}
+
+:::: columns
+
+::: {.column #vcenter width="60%" .r-fit-text }
+### Less favorable example
+ * historically applied subset of intended scope of application subset
+ * e.g. subportfolios with different data availability
+ 
+ 1. Are subportfolios A & B comparable in terms of risk characteristics?
+ 2. Is data from period S representative of application portfolio?
+ 3. What is the effect on calibration targets?
+
+
+
+::: 
+
+::: {.column #vcenter width="40%" .r-fit-text }
+![](/media/scope_of_appl_analysis_id2.drawio.svg)
+
+
+![](/media/scope_of_appl_analysis_id3.drawio.svg)
+
+
+:::
+::::
+
+# Case Study
+
+## Case study {.smaller .r-fit-text auto-animate=true}
+:::: columns
+
+::: {.column #vcenter width="60%" .r-fit-text }
+
+#### Introduction
+
+
+In this exercise, you will **estimate an appropriate adjustment and MoC A** to account for the bias introduced by having a **non-comparable scope of application on certain historical reference dates**. 
+::: 
+
+::: {.column #vcenter width="40%" .r-fit-text }
+![](/media/scope_of_appl_analysis_id2.drawio.svg)
+:::
+::::
+
+::: fragment
+ * Download the dataset from the slides website (`csv` or `xlsx`)
+ * Use your favorite tool! Anything goes.
+ * Bring the results for discussion to next week training
+ * Or send them to [pieter@berg-sp.eu](mailto:pieter@berg-sp.eu)
+::: 
+
+## Case study: 2 portfolios, 1 data {.smaller .r-fit-text auto-animate=true}
+:::: columns
+
+::: {.column #vcenter width="60%" .r-fit-text }
+
+
+#### Description
+
+ * There are two subportfolios A and B
+ * They have different default levels, otherwise each is homogeneous
+ * Rather than modelling the differences, you *choose* to estimate a single LRA DR calibration target for the entire portfolio.
+
+::: fragment
+#### Assignment
+
+ * Estimate an appropriately adjusted long-run average default rate
+ * Bonus Points: calculate a MoC A
+:::
+
+::: fragment
+
+#### Data
+
+You are given a panel data set with a set of exposures `i` in subportfolio 'A' or 'B' at dates `t` and a default flag `d`. Two other derived variables are included for your convenience: a 12-month forward-looking into-default flag `into_d_12`, and a `status`: `enter`, `stock`, `default` or `exit`.
+:::
+
+::: 
+
+::: {.column #vcenter width="40%" .r-fit-text }
+![](/media/scope_of_appl_analysis_id2.drawio.svg)
+:::
+
+::::
+
+
+## Case study: 2 portfolios, 1 data {.smaller .r-fit-text auto-animate=true}
+
+
+:::: columns
+::: {.column width="50%" .r-fit-text }
+
+
+| column    | description    |
+|-------------|-------------|
+|`i`| exposure id|
+|`t`| time|
+|`subportfolio`| "A" or "B"|
+|`d`| in-default|
+|`into_d_12`| into default within 12 months|
+|`status`| `enter`, `stock`, `default` or `exit`|
+:::
+::: {.column width="50%" .r-fit-text .smaller}
+
+```{r}
+library(dplyr)
+case_study_2_data <- read.csv("../../media/case_study_2_data.csv.gz")
+``` 
+
+```{r echo=FALSE}
+#| tbl-cap: "sample of 10 exposures" 
+
+case_study_2_data |>
+  filter(i %in% sample(i,10)) |> 
+  as.data.frame()
+```
+
+:::
+::::
+
+:::: columns
+::: {.column #vcenter width="50%" .r-fit-text }
+
+```{r }
+library(downloadthis)
+case_study_2_data |>
+  download_this( 
+    output_name = "case study 2 data",
+    output_extension = ".csv",
+    button_label = " Download data as csv",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+``` 
+```{r}
+case_study_2_data |>
+  download_this( 
+    output_name = "case study 2 data",
+    output_extension = ".xlsx",
+    button_label = "Download data as xlsx",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+```
+
+:::
+::: {.column #vcenter width="50%" .r-fit-text }
+```{r }
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+library(qrcode)
+code <- qr_code("https://quantprofessionals.github.io/eduquant-courses/slides/representativeness/representativeness_day_1.html#/case-study-2-portfolios-1-data-1")
+plot(code)
+```
+[https://tinyurl.com/4n5hj2vw](https://tinyurl.com/4n5hj2vw)
+
+:::
+
 ::::
