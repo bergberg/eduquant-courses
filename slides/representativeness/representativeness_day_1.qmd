@@ -1110,8 +1110,6 @@ case_study_2_data |>
 :::
 ::::
 
-:::: columns
-::: {.column #vcenter width="50%" .r-fit-text }
 
 ```{r }
 library(downloadthis)
@@ -1136,9 +1134,7 @@ case_study_2_data |>
     icon = "fa fa-save"
   )
 ```
-
-:::
-::: {.column #vcenter width="50%" .r-fit-text }
+::: footer
 ```{r }
 #| dev.args:
 #|   bg: "transparent"
@@ -1152,4 +1148,3 @@ plot(code)
 
 :::
 
-::::
