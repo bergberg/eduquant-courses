@@ -1,0 +1,249 @@
+---
+title: "Representativeness"
+subtitle: "Day 2"
+author: 
+ - Pieter van den Berg
+ - Ryan van Lamoen
+ - Taoying Farenhorst-Yuan
+date: 2023-10-09
+date-format: long
+format: eduquant-slides-revealjs
+multiplex: false
+---
+
+
+## Day 2
+
+::: columns
+::: {.column width="15%"}
+*13:00*
+
+*13:30*
+
+*14:30*
+
+*15:30*
+
+*16:30*
+
+:::
+
+::: {.column width="85%"}
+Case study discussion & Recap
+
+Economic & Market Conditions
+
+Definition of Default
+
+General estimation process
+
+Case Study #2
+:::
+:::
+::: footer
+```{r }
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 4
+library(qrcode)
+code <- qr_code("https://quantprofessionals.github.io/eduquant-courses/slides/representativeness/representativeness_day_2.html")
+plot(code)
+```
+:::
+
+
+
+# Case study discussion
+```{r setup}
+library(dplyr)
+library(ggplot2)
+library(latex2exp)
+case_study_2_data <- read.csv("../../media/case_study_2_data.csv.gz")
+bg <- 'transparent'
+ggtheme <- theme_minimal()+theme(
+                           panel.background = element_rect(fill=bg, linetype = "blank"), 
+                           plot.background = element_rect(fill=bg, color=NA), 
+                           panel.grid.major = element_blank(), 
+                           panel.grid.minor = element_blank(), 
+                           legend.background = element_rect(fill=bg, linetype = "blank"), 
+                           legend.box.background = element_rect(fill=bg, linetype = "blank"))
+``` 
+
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate=true}
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text }
+
+
+#### Description
+
+ * There are two segments A and B
+ * They have different default levels, otherwise each is homogeneous
+ * Estimating a LRA default rate on the total sample average dr leads to biased result
+ * What is the correct treatment?
+
+::: 
+
+::: {.column #vcenter width="50%" .r-fit-text }
+
+
+```{r pf_overview_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+
+ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+case_study_2_data |> 
+    count(t,status,subportfolio) |> 
+    ggplot(aes(x=t,y=n)) + 
+    geom_area(aes(fill=status), alpha=.66) + 
+    facet_grid(rows=vars(subportfolio),) +
+    labs(caption="subportfolio breakdown by status", y = "nr of exposures") +
+    scale_fill_manual(values = c("default" = "darkred", "stock"="lightgrey", "exit"="steelblue","enter"="darkgreen"))
+```
+:::
+::::
+:::: columns
+::: {.column #vcenter width="50%" .r-fit-text }
+
+```{r ratio plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+case_study_2_data |> 
+  count(t,subportfolio) |> 
+  tidyr::pivot_wider(
+    values_from = "n",
+    names_from = subportfolio,
+    names_prefix = "n_",
+    values_fill = 0
+  ) |> 
+  mutate(r_B_t_ci = binom::binom.bayes(n_B, n_A+n_B, type="highest"),
+         r_B_t = r_B_t_ci$mean,
+         r_B_t_upper = r_B_t_ci$upper,
+         r_B_t_lower = r_B_t_ci$lower) |> 
+  ggplot(aes(t, r_B_t)) + 
+  geom_pointrange(aes(ymin=r_B_t_lower,ymax=r_B_t_upper), shape = 'x',size = 0.3) +
+  scale_y_continuous(limits = c(0,NA), labels = scales::label_percent()) +
+  labs(caption="share of B",y=latex2exp::TeX("$\\frac{n_B}{n_A+n_B}$"))
+```
+::: 
+
+::: {.column #vcenter width="50%" .r-fit-text }
+
+```{r pf_dr_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+plotdata <- 
+case_study_2_data |> 
+  filter(!d) |>  
+  ungroup() %>% 
+  {bind_rows(
+    group_by(., t, subportfolio)|> 
+  summarize(into_dr_12 = sum(into_d_12)/n(), into_dr_12_sd = sqrt(into_dr_12*(1-into_dr_12)/n())),
+  group_by(.,t)|> 
+  summarize(
+    subportfolio = "Total",
+    into_dr_12 = sum(into_d_12)/n(), into_dr_12_sd = sqrt(into_dr_12*(1-into_dr_12)/n()))
+  )} |> ungroup()
+  aggrplotdata <- group_by(plotdata, subportfolio) |> summarise(mean_into_dr_12 = mean(into_dr_12), min_t= min(t)) |> mutate(min_t=min(min_t))
+  
+  ggplot(plotdata, aes(t, into_dr_12, color = subportfolio)) + 
+  geom_pointrange(aes(ymin=into_dr_12-into_dr_12_sd,ymax=into_dr_12+into_dr_12_sd ), shape = 'x',size = 0.3) +
+  scale_y_continuous(limits = c(0,NA), labels = scales::label_percent()) +
+  scale_color_brewer(palette="Dark2")+
+  geom_hline(data = aggrplotdata, aes(yintercept=mean_into_dr_12, colour = subportfolio),linetype = "dashed") +
+  geom_text(data=aggrplotdata, aes(min_t,color=subportfolio, mean_into_dr_12,label = scales::label_percent(accuracy = 0.1)(mean_into_dr_12)), hjust = 0, nudge_y = .02, size=3, show.legend=FALSE) +
+  labs(caption="12 month into-default rate ", y= "default rate")
+```
+
+:::
+
+::::
+
+
+
+## Case study: 2 portfolios, 1 data {.smaller .r-fit-text auto-animate=true}
+
+
+:::: columns
+::: {.column width="50%" .r-fit-text }
+
+
+| column    | description    |
+|-------------|-------------|
+|`i`| exposure id|
+|`t`| time|
+|`subportfolio`| "A" or "B"|
+|`d`| in-default|
+|`into_d_12`| into default within 12 months|
+|`status`| `enter`, `stock`, `default` or `exit`|
+:::
+::: {.column width="50%" .r-fit-text .smaller}
+
+
+```{r echo=FALSE}
+#| tbl-cap: "sample of 10 exposures" 
+
+case_study_2_data |>
+  filter(i %in% sample(i,10)) |> 
+  as.data.frame()
+```
+
+:::
+::::
+::: footer
+
+:::: columns
+::: column
+
+```{r }
+library(downloadthis)
+case_study_2_data |>
+  download_this( 
+    output_name = "case study 2 data",
+    output_extension = ".csv",
+    button_label = " Download data as csv",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+``` 
+```{r}
+case_study_2_data |>
+  download_this( 
+    output_name = "case study 2 data",
+    output_extension = ".xlsx",
+    button_label = "Download data as xlsx",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+```
+:::
+::: column
+
+```{r }
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 2
+library(qrcode)
+code <- qr_code("https://quantprofessionals.github.io/eduquant-courses/slides/representativeness/representativeness_day_1.html#/case-study-2-portfolios-1-data-1")
+plot(code)
+```
+[https://tinyurl.com/4n5hj2vw](https://tinyurl.com/4n5hj2vw)
+
+:::
+::::
+
+:::
+
