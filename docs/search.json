@@ -46,6 +46,62 @@
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nDescription\n\nThere are two segments A and B\nThey have different default levels, otherwise each is homogeneous\nEstimating a LRA default rate on the total sample average dr leads to biased result\nWhat is the correct treatment?"
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-1",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-1",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\n\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n\n…different (stationary) default levels\n\n\n\n\n\n\\(\\rightarrow\\) What is the correct/allowed treatment?"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-2",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-2",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\n\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n…different (stationary) default levels\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-.smaller-.r-fit-text",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-.smaller-.r-fit-text",
+    "title": "Representativeness",
+    "section": "Case study: scope of application {.smaller .r-fit-text”}",
+    "text": "Case study: scope of application {.smaller .r-fit-text”}\n\n\nDescription\n\nThere are two homogeneous segments A and B\n\n\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n\n\n…different (stationary) default levels\n\n\n\nTotal sample average dr is a biased estimator\n\n\n\n\nWhat is the correct/allowed treatment?"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-3",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-3",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\nDescription\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\nBehavioural\npoint-in-time\nNone/grade/pool\n\n\nEcon. cond.\npoint-in-time\nNone/grade/pool\n\n\nEcon. cond.\nLRA/DT\nCalibration segment\n\n\nFac./obligor type\ncond. LRA/DT\nCalibration segment\n\n\nProcesses\ncond. LRA/DT\nType of exposures\n\n\nOther\ncond. LRA/DT\nAppropriate adjustment"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-4",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-4",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\nDescription\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\nOther\ncond. LRA/DT\nAppropriate adjustment\n\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-5",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-5",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\nDescription\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\nRepresentative of what?\n\nModelling problem\nTypical approach:\n\nassume something reasonable\n\\(r_0\\sim\\sum_t\\frac{n_B}{n_A+n_B}(t)/T\\)\n\\(r_0=\\frac{n_B}{n_A+n_B}(t=\\text{last Thursday})\\)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-6",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-6",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\nDescription\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\n\\(\\r_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{n_B}{n_A+n_B}(t_{u_0}+u)\\)\n\\(n^\\prime_{B}(t)=\\frac{r_0}{1-r_0}n_A(t)\\)\n\\(D(t&gt; t_{u_0})=\\frac{D_A(t)n_A(t)+D_B(t)n_B(t)}{n_A(t)+n_B(t)}\\)\n\\(D^\\prime(t\\le t_{u_0})=\\frac{D_A(t)n_A(t)+D_B(t)n^\\prime_B(t)}{n_A(t)+n^\\prime_B(t)}\\)\n\\(D^\\prime(t\\le t_{u_0})=\\frac{D_A(t)+D_B(t)\\frac{r_0}{1-r_0}}{n_A(t)+n^\\prime_B(t)}n_A(t)\\)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#vcenter",
+    "href": "slides/representativeness/representativeness_day_2.html#vcenter",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B"
   }
 ]

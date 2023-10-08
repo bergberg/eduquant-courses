@@ -4,7 +4,7 @@ subtitle: "Day 2"
 author: 
  - Pieter van den Berg
  - Ryan van Lamoen
- - Taoying Farenhorst-Yuan
+ - Taoying Farenhorst
 date: 2023-10-09
 date-format: long
 format: eduquant-slides-revealjs
@@ -40,7 +40,7 @@ General estimation process
 Case Study #2
 :::
 :::
-::: footer
+::: footer 
 ```{r }
 #| dev.args:
 #|   bg: "transparent"
@@ -71,25 +71,23 @@ ggtheme <- theme_minimal()+theme(
 ``` 
 
 
-## Case study: scope of application {.smaller .r-fit-text auto-animate=true}
+## Case study: scope of application { .smaller .r-fit-text auto-animate="true"}
+
 :::: columns
 
-::: {.column #vcenter width="50%" .r-fit-text }
+::: {.column width="50%" #vcenter .r-fit-text }
 
 
 #### Description
 
- * There are two segments A and B
- * They have different default levels, otherwise each is homogeneous
- * Estimating a LRA default rate on the total sample average dr leads to biased result
- * What is the correct treatment?
+ * Two homogeneous segments A and B
+
 
 ::: 
 
-::: {.column #vcenter width="50%" .r-fit-text }
+::: {.column width="50%" #vcenter .r-fit-text }
 
-
-```{r pf_overview_plot}
+```{r segment_plot}
 #| dev.args:
 #|   bg: "transparent"
 #| fig.asp: 1
@@ -104,12 +102,51 @@ case_study_2_data |>
     labs(caption="subportfolio breakdown by status", y = "nr of exposures") +
     scale_fill_manual(values = c("default" = "darkred", "stock"="lightgrey", "exit"="steelblue","enter"="darkgreen"))
 ```
-:::
-::::
-:::: columns
-::: {.column #vcenter width="50%" .r-fit-text }
 
-```{r ratio plot}
+:::
+
+
+::::
+
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+
+
+#### Description
+
+ * Two homogeneous segments A and B
+
+ [...with a varying share $\frac{n_A}{n_A+n_B}(t)$]{style="color:darkcyan"}
+
+::::: {.fragment .fade-in fragment-index=2}
+ ...different (stationary) default levels 
+:::::
+::::: {.fragment .fade-in fragment-index=2}
+ 
+:::::
+::::: {.fragment .fade-in fragment-index=3} 
+[**$\rightarrow$ What is the correct/allowed treatment**?]{style="color:slateblue"}
+:::::
+
+
+```{r segment_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+
+```
+::: 
+
+::: {.column width="50%" .r-fit-text }
+
+
+
+```{r ratio_plot}
 #| dev.args:
 #|   bg: "transparent"
 #| fig.asp: 1
@@ -128,15 +165,13 @@ case_study_2_data |>
          r_B_t_upper = r_B_t_ci$upper,
          r_B_t_lower = r_B_t_ci$lower) |> 
   ggplot(aes(t, r_B_t)) + 
-  geom_pointrange(aes(ymin=r_B_t_lower,ymax=r_B_t_upper), shape = 'x',size = 0.3) +
+  geom_pointrange(aes(ymin=r_B_t_lower,ymax=r_B_t_upper), shape = 'x',size = 0.3,color="darkcyan", linewidth=0.5) +
   scale_y_continuous(limits = c(0,NA), labels = scales::label_percent()) +
   labs(caption="share of B",y=latex2exp::TeX("$\\frac{n_B}{n_A+n_B}$"))
 ```
-::: 
 
-::: {.column #vcenter width="50%" .r-fit-text }
-
-```{r pf_dr_plot}
+::::: {.fragment .fade-in fragment-index=2}
+```{r dr_plot}
 #| dev.args:
 #|   bg: "transparent"
 #| fig.asp: 1
@@ -161,89 +196,266 @@ case_study_2_data |>
   scale_y_continuous(limits = c(0,NA), labels = scales::label_percent()) +
   scale_color_brewer(palette="Dark2")+
   geom_hline(data = aggrplotdata, aes(yintercept=mean_into_dr_12, colour = subportfolio),linetype = "dashed") +
-  geom_text(data=aggrplotdata, aes(min_t,color=subportfolio, mean_into_dr_12,label = scales::label_percent(accuracy = 0.1)(mean_into_dr_12)), hjust = 0, nudge_y = .02, size=3, show.legend=FALSE) +
+  geom_text(data=aggrplotdata, aes(min_t,color=subportfolio, mean_into_dr_12,label = scales::label_percent(accuracy = 0.1)(mean_into_dr_12)), hjust = 0, nudge_y = .02, size=2.5, show.legend=FALSE) +
   labs(caption="12 month into-default rate ", y= "default rate")
 ```
-
+:::::
 :::
+
 
 ::::
 
-
-
-## Case study: 2 portfolios, 1 data {.smaller .r-fit-text auto-animate=true}
-
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
 
 :::: columns
-::: {.column width="50%" .r-fit-text }
+
+::: {.column width="70%" .r-fit-text }
 
 
-| column    | description    |
-|-------------|-------------|
-|`i`| exposure id|
-|`t`| time|
-|`subportfolio`| "A" or "B"|
-|`d`| in-default|
-|`into_d_12`| into default within 12 months|
-|`status`| `enter`, `stock`, `default` or `exit`|
-:::
-::: {.column width="50%" .r-fit-text .smaller}
+#### Description
+
+ * Two homogeneous segments A and B
+
+ [...with a varying share $\frac{n_A}{n_A+n_B}(t)$]{style="color:darkcyan"}
+
+ ...different (stationary) default levels
+ 
+ [**$\rightarrow$ Treatment depends on segmentation dimension**]{style="color:slateblue"}
+
+|Segmentation|Level of risk|Treatment|
+|--|--|--|
 
 
-```{r echo=FALSE}
-#| tbl-cap: "sample of 10 exposures" 
+::: 
 
-case_study_2_data |>
-  filter(i %in% sample(i,10)) |> 
-  as.data.frame()
-```
+::: {.column width="30%" .r-fit-text }
 
-:::
-::::
-::: footer
-
-:::: columns
-::: column
-
-```{r }
-library(downloadthis)
-case_study_2_data |>
-  download_this( 
-    output_name = "case study 2 data",
-    output_extension = ".csv",
-    button_label = " Download data as csv",
-    button_type = "success",
-    has_icon = TRUE,
-    icon = "fa fa-save"
-  )
-``` 
-```{r}
-case_study_2_data |>
-  download_this( 
-    output_name = "case study 2 data",
-    output_extension = ".xlsx",
-    button_label = "Download data as xlsx",
-    button_type = "success",
-    has_icon = TRUE,
-    icon = "fa fa-save"
-  )
-```
-:::
-::: column
-
-```{r }
+```{r ratio_plot}
 #| dev.args:
 #|   bg: "transparent"
 #| fig.asp: 1
-#| fig.width: 2
-library(qrcode)
-code <- qr_code("https://quantprofessionals.github.io/eduquant-courses/slides/representativeness/representativeness_day_1.html#/case-study-2-portfolios-1-data-1")
-plot(code)
+#| fig.width: 2.5
 ```
-[https://tinyurl.com/4n5hj2vw](https://tinyurl.com/4n5hj2vw)
-
+```{r dr_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 2.5
+```
 :::
+
+
 ::::
 
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
+
+:::: columns
+
+::: {.column width="75%" .r-fit-text }
+
+
+#### Description
+
+ [**$\rightarrow$ Treatment depends on segmentation dimension**]{style="color:slateblue"}
+
+|Segmentation|Level of risk|Treatment|
+|--|--|--|
+|Behavioural|point-in-time|None/grade/pool|
+|Econ. cond.|point-in-time|None/grade/pool|
+|Econ. cond.|LRA/DT|Calibration segment|
+|Fac./obligor type|cond. LRA/DT|Calibration segment|
+|Processes|cond. LRA/DT|Type of exposures|
+|*Other*|*cond. LRA/DT*|*Appropriate adjustment*|
+
+
+
+:::::{.fragment fragment-index=1}
+![](/media/rating_system_calib_segm_small.drawio.svg)
+:::::
+
+
+::: 
+
+::: {.column width="25%" .r-fit-text }
+
+```{r ratio_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 2.5
+```
+```{r dr_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 2.5
+```
+
 :::
 
+
+::::
+
+
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
+
+:::: columns
+
+::: {.column width="75%" .r-fit-text }
+
+
+#### Description
+
+ $\rightarrow$ Treatment depends on segmentation dimension
+
+|Segmentation|Level of risk|Treatment|
+|--|--|--|
+|*Other*|*cond. LRA/DT*|*Appropriate adjustment*|
+
+ $\rightarrow$ Adjust calibraton target for [**effect of non-representativeness**]{style="color:slateblue"}
+
+::::{.fragment}
+![](/media/representativeness_simple.drawio.svg)
+::::
+::: 
+
+::: {.column width="25%" .r-fit-text }
+
+```{r ratio_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 2.5
+```
+```{r dr_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 2.5
+```
+:::
+
+
+::::
+
+
+
+
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+
+
+#### Description
+
+
+ [$\rightarrow$ Adjust calibraton target for effect of non-representativeness]{style="color:slateblue"}
+ 
+##### Representative of what?
+ * Modelling problem
+ * Typical approach: 
+    - assume something reasonable
+    - $r_0\sim\sum_t\frac{n_B}{n_A+n_B}(t)/T$
+    - $r_0=\frac{n_B}{n_A+n_B}(t=\text{last Thursday})$
+::: 
+
+::: {.column width="50%" .r-fit-text }
+
+
+:::::: {.r-stack}
+```{r ratio_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 4
+```
+
+:::::{.fragment}
+```{r ratio_plot2}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 4
+ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+  
+plotdf <- case_study_2_data |>
+  count(t,subportfolio) |> 
+  tidyr::pivot_wider(
+    values_from = "n",
+    names_from = subportfolio,
+    names_prefix = "n_",
+    values_fill = 0
+  ) |> 
+  mutate(r_B_t_ci = binom::binom.bayes(n_B, n_A+n_B, type="highest"),
+         r_B_t = r_B_t_ci$mean,
+         r_B_t_upper = r_B_t_ci$upper,
+         r_B_t_lower = r_B_t_ci$lower)
+
+    plotdfs <- plotdf |> 
+      filter(t>=82) |> 
+      transmute(
+        t,
+         r_B_0 = mean(r_B_t),
+         r_B_0_upper = mean(r_B_t_upper),
+         r_B_0_lower = mean(r_B_t_lower))
+    
+    ggplot(plotdf,aes(t, r_B_t)) + 
+  geom_rect(data=NULL,ymin=-Inf,ymax=Inf,xmin=82,xmax=120, fill="lightgrey",alpha=0.002)+
+  geom_smooth(data=filter(plotdf,t>=82), formula = y ~ 1, color = "black", linetype="dashed", method="lm", fullrange=TRUE) +
+  geom_pointrange(aes(ymin=r_B_t_lower,ymax=r_B_t_upper), shape = 'x',size = 0.3, color="darkcyan") +
+  geom_text(data=plotdfs,aes(x=120,y=r_B_0,label = scales::label_percent(accuracy = 1)(r_B_0)), nudge_y = 0.02) +
+  scale_y_continuous(limits = c(0,NA), labels = scales::label_percent()) +
+  labs(caption="share of B",y=latex2exp::TeX("$\\frac{n_B}{n_A+n_B}$"))
+```
+:::::
+::::::
+:::
+
+
+::::
+
+
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
+
+:::: columns
+
+::: {.column width="50%" .r-fit-text }
+
+
+#### Description
+
+
+[$\rightarrow$ Adjust calibraton target for effect of non-representativeness]{style="color:slateblue"}
+
+$\r_0\sim\frac{1}{S}\sum_{u=1...S}\frac{n_B}{n_A+n_B}(t_{u_0}+u)$
+
+$n^\prime_{B}(t)=\frac{r_0}{1-r_0}n_A(t)$
+
+$D(t> t_{u_0})=\frac{D_A(t)n_A(t)+D_B(t)n_B(t)}{n_A(t)+n_B(t)}$
+
+$D^\prime(t\le t_{u_0})=\frac{D_A(t)n_A(t)+D_B(t)n^\prime_B(t)}{n_A(t)+n^\prime_B(t)}$
+
+
+$D^\prime(t\le t_{u_0})=\frac{D_A(t)+D_B(t)\frac{r_0}{1-r_0}}{n_A(t)+n^\prime_B(t)}n_A(t)$
+
+::: 
+
+::: {.column width="50%" .r-fit-text }
+:::::{.fragment}
+```{r ratio_plot2}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 4
+```
+:::::
+:::
+
+
+::::
