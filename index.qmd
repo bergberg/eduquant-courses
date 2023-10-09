@@ -13,6 +13,8 @@ Please find the course slides linked below[^1].
 
 [^1]:Note that these will be available for a limited time after the course has ended.
 
+[Case study economic conditions](/media/CASE_Representativeness_economic_conditions.xlsx)
+
 ::: {#course-listing}
 :::
 
