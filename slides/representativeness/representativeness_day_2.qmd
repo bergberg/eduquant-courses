@@ -75,7 +75,11 @@ ggtheme <- theme_minimal()+theme(
                            panel.grid.major = element_blank(), 
                            panel.grid.minor = element_blank(), 
                            legend.background = element_rect(fill=bg, linetype = "blank"), 
-                           legend.box.background = element_rect(fill=bg, linetype = "blank"))
+                           legend.box.background = element_rect(fill=bg, linetype = "blank"),
+                           legend.position = "bottom",
+                           legend.text = element_text(size=10),
+                           legend.title = element_text(size=9)
+                           )
 
 cl_err <- 0.68
 
@@ -210,7 +214,7 @@ aggrplotdata <- filter(aggrplotdata2,subportfolio!="Adjusted")
 #| fig.width: 3
 #| 
 
-ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+ggplot2::theme_set(ggtheme)
 case_study_2_data |> 
     count(t,status,subportfolio) |> 
     ggplot(aes(x=t,y=n)) + 
@@ -225,7 +229,11 @@ case_study_2_data |>
 
 ::::
 
+::: notes
+ * Stationary, homogeneous subportfolios A, B
+ * This is not about having to *exclude* exposures that are of a different type (too much data) but having to include exposures of the same type (not enough data)
 
+:::
 
 ## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
 
@@ -250,7 +258,7 @@ case_study_2_data |>
 #|   bg: "transparent"
 #| fig.asp: 1
 #| fig.width: 3
-ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+ggplot2::theme_set(ggtheme)
  ggplot(plotdf,aes(t, r_A_t)) + 
   geom_rect(data=NULL,ymin=-Inf,ymax=Inf,xmin=82,xmax=107, fill=NA,alpha=0)+
   geom_pointrange(aes(ymin=r_A_t_lower,ymax=r_A_t_upper), shape = 'x',size = 0.3,color="darkcyan", linewidth=0.5) +
@@ -277,6 +285,12 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 
 ::::
 
+
+::: notes
+ * In real life, look at characteristics / reason for segmentation
+ * here, all we have is nr of exposures
+:::
+
 ## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
 
 :::: columns
@@ -301,7 +315,7 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 #|   bg: "transparent"
 #| fig.asp: 1
 #| fig.width: 3
-ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+ggplot2::theme_set(ggtheme)
 
   plotdf2 |> 
   filter(subportfolio!="Adjusted") |>
@@ -338,6 +352,13 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 
 
 ::::
+
+::: notes
+ * Toy example, not always so obvious
+ * Can think of this as already conditioned on (other) risk characteristics, i.e.,  homogeneous grade/pool
+ * Note that this are aggregations over stationary processes, so any trend you see is purely in your head
+ * In real life, may require analysis of relation to other time varying effects, in particular econ. cond.
+:::
 
 
 ## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
@@ -386,6 +407,11 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 ::::
 
 
+::: notes
+ * Many scenarios where you have a time-varying segmentation of reference data that may effect default/loss char., assignment to grades/pools, calibration targets
+
+:::
+
 
 ## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
 
@@ -432,6 +458,155 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 ::::
 
 
+::: notes
+Correct / alllowed treatment depends on 
+ * what you're segmenting over
+ * what the observed effect on default/loss char. is (point-in-time and/or LRA/DT) (conditional on risk char.)
+ * if there is no observed effect at all, should you do anything?
+  - Perhaps in case of extrapolation approaches (obs not affected but dependence is affected)
+ 
+:::
+
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
+
+:::: columns
+::: {.column width="65%" .r-fit-text }
+
+#### Treatment
+
+ [**$\rightarrow$ Treatment depends on segmentation dimension**]{style="color:slateblue"}
+
+|Segmentation|Level of risk|Treatment|
+|--|--|--|
+|Behavioural|point-in-time||
+|Econ. cond.|point-in-time||
+|Econ. cond.|LRA/DT||
+|Fac./obligor type|LRA/DT||
+|Processes|LRA/DT||
+|*Other*|*LRA/DT*||
+::: 
+
+::: {.column width="35%" .r-fit-text }
+
+::::: {auto-animate-id="ratiosplot"}
+![](/media/rating_system_calib_segm_small.drawio.svg)
+:::::
+
+```{r drs_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+```
+:::
+::::
+
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
+
+:::: columns
+::: {.column width="65%" .r-fit-text }
+
+#### Treatment
+
+ [**$\rightarrow$ Treatment depends on segmentation dimension**]{style="color:slateblue"}
+
+|Segmentation|Level of risk|Treatment|
+|--|--|--|
+|Behavioural|point-in-time|None/grade|
+|Econ. cond.|point-in-time|None/grade|
+|Econ. cond.|LRA/DT||
+|Fac./obligor type|LRA/DT||
+|Processes|LRA/DT||
+|*Other*|*LRA/DT*||
+::: 
+
+::: {.column width="35%" .r-fit-text }
+
+::::: {auto-animate-id="ratiosplot"}
+![](/media/rating_system_calib_segm_small.drawio.svg)
+:::::
+
+```{r drs_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+```
+:::
+::::
+
+
+
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
+
+:::: columns
+::: {.column width="65%" .r-fit-text }
+
+#### Treatment
+
+ [**$\rightarrow$ Treatment depends on segmentation dimension**]{style="color:slateblue"}
+
+|Segmentation|Level of risk|Treatment|
+|--|--|--|
+|Behavioural|point-in-time|None/grade|
+|Econ. cond.|point-in-time|None/grade|
+|Econ. cond.|LRA/DT|Calibration segment|
+|Fac./obligor type|LRA/DT|Calibration segment|
+|Processes|LRA/DT||
+|*Other*|*LRA/DT*||
+::: 
+
+::: {.column width="35%" .r-fit-text }
+
+::::: {auto-animate-id="ratiosplot"}
+![](/media/rating_system_calib_segm_small.drawio.svg)
+:::::
+
+```{r drs_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+```
+:::
+::::
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
+
+:::: columns
+::: {.column width="65%" .r-fit-text }
+
+#### Treatment
+
+ [**$\rightarrow$ Treatment depends on segmentation dimension**]{style="color:slateblue"}
+
+|Segmentation|Level of risk|Treatment|
+|--|--|--|
+|Behavioural|point-in-time|None/grade|
+|Econ. cond.|point-in-time|None/grade|
+|Econ. cond.|LRA/DT|Calibration segment|
+|Fac./obligor type|LRA/DT|Calibration segment|
+|Processes|LRA/DT|Type of exposures|
+|Other|LRA/DT||
+::: 
+
+::: {.column width="35%" .r-fit-text }
+
+::::: {auto-animate-id="ratiosplot"}
+![](/media/rating_system_calib_segm_small.drawio.svg)
+:::::
+
+```{r drs_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+```
+:::
+::::
 
 ## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
 
@@ -446,12 +621,12 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 
 |Segmentation|Level of risk|Treatment|
 |--|--|--|
-|Behavioural|point-in-time|None/grade/pool|
-|Econ. cond.|point-in-time|None/grade/pool|
+|Behavioural|point-in-time|None/grade|
+|Econ. cond.|point-in-time|None/grade|
 |Econ. cond.|LRA/DT|Calibration segment|
-|Fac./obligor type|cond. LRA/DT|Calibration segment|
-|Processes|cond. LRA/DT|Type of exposures|
-|*Other*|*cond. LRA/DT*|*Appropriate adjustment*|
+|Fac./obligor type|LRA/DT|Calibration segment|
+|Processes|LRA/DT|Type of exposures|
+|*Other*|*LRA/DT*|*Adjustment*|
 
 
 
@@ -478,6 +653,11 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 ::::
 
 
+::: notes
+ 
+:::
+
+
 
 ## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
 
@@ -494,7 +674,7 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 |--|--|--|
 |*Other*|*cond. LRA/DT*|*Appropriate adjustment*|
 
- $\rightarrow$ Adjust calibraton target for [**effect of non-representativeness**]{style="color:slateblue"}
+ [**$\rightarrow$ Adjust calibraton target for effect of non-representativeness**]{style="color:slateblue"}
 
 ::::{.fragment}
 ![](/media/representativeness_simple.drawio.svg)
@@ -560,13 +740,14 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 #|   bg: "transparent"
 #| fig.asp: 1
 #| fig.width: 4
-ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+ggplot2::theme_set(ggtheme)
  ggplot(plotdf,aes(t, r_A_t)) + 
   geom_rect(data=NULL,ymin=-Inf,ymax=Inf,xmin=82,xmax=107, fill="#F5F5DC",alpha=0.1)+
   geom_pointrange(aes(ymin=r_A_t_lower,ymax=r_A_t_upper), shape = 'x',size = 0.3,color="darkcyan", linewidth=0.5) +
   geom_pointrange(aes(y=s_A_t,ymin=s_A_t_lower,ymax=s_A_t_upper), shape = 'x',size = 0.3,color="darkred", linewidth=0.5) +
   scale_y_continuous(limits = c(0,NA), labels = scales::label_percent()) +
-  labs(caption="share of A",y=latex2exp::TeX("$\\frac{n_A}{n_A+n_B}$"))
+  labs(caption="share of A",y=latex2exp::TeX("$\\frac{n_A}{n_A+n_B}$")) + 
+  coord_cartesian(clip = "off")
 ```
 :::::
 
@@ -604,10 +785,10 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 #|   bg: "transparent"
 #| fig.asp: 1
 #| fig.width: 4
-ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+ggplot2::theme_set(ggtheme)
  ggplot(plotdf,aes(t, r_A_t)) + 
   geom_rect(data=NULL,ymin=-Inf,ymax=Inf,xmin=82,xmax=107, fill="#F5F5DC",alpha=0.1)+
-  geom_pointrange(aes(ymin=r_A_t_lower,ymax=r_A_t_upper), shape = 'x',size = 0.3,color="darkcyan", linewidth=0.5) +
+  annotate("text", x = 82, y = 0, label = latex2exp::TeX("$t_{u_0}$"))+
   geom_pointrange(aes(y=s_A_t,ymin=s_A_t_lower,ymax=s_A_t_upper), shape = 'x',size = 0.3,color="darkred", linewidth=0.5) +
   geom_smooth(data=filter(plotdf,t>=82), formula = y ~ 1, color = "darkcyan", linetype="dashed", method="lm", fullrange=TRUE) +
   geom_smooth(data=filter(plotdf,t>=82), aes(y=s_A_t),formula = y ~ 1, color = "darkred", linetype="dashed", method="lm", fullrange=TRUE) +
@@ -689,7 +870,7 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 #| fig.asp: 1
 #| fig.width: 3
 
-ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+ggplot2::theme_set(ggtheme)
  ggplot(plotdf,aes(t, r_A_t)) + 
   geom_rect(data=NULL,ymin=-Inf,ymax=Inf,xmin=82,xmax=107, fill="#F5F5DC",alpha=0.1)+
   geom_pointrange(aes(ymin=r_A_t_lower,ymax=r_A_t_upper), shape = 'x',size = 0.3,color="darkcyan", linewidth=0.5) +
@@ -737,7 +918,7 @@ ggplot(aes(t, into_dr_12, color = subportfolio)) +
   scale_y_continuous(limits = c(0,NA), labels = scales::label_percent()) +
   geom_hline(data=aggrdf, aes(yintercept=mean_into_dr_12, colour = subportfolio),  linetype = "dashed") +
   geom_text(data=aggrdf, aes(x=107,color=subportfolio, mean_into_dr_12,label = scales::label_percent(accuracy = 0.1)(mean_into_dr_12)),  nudge_x=5, nudge_y = 0.01, size=3,legend=FALSE) +
-  labs(caption="Stationary portfolio simulated 12 month into-default rate", y="default rate")
+  labs(caption="12 month into-default rate", y="default rate")
 
 ```
 :::

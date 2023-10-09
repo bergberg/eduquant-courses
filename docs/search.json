@@ -18,77 +18,112 @@
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\n\n\n\nSame exposure type (post exclusions)"
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\n\n\n\nSame exposure type (post exclusions)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStationary, homogeneous subportfolios A, B\nThis is not about having to exclude exposures that are of a different type (too much data) but having to include exposures of the same type (not enough data)"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-1",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-1",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n\n\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)"
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n\n\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn real life, look at characteristics / reason for segmentation\nhere, all we have is nr of exposures"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-2",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-2",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n\n\n…different (stationary) default levels"
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n\n\n…different (stationary) default levels\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nToy example, not always so obvious\nCan think of this as already conditioned on (other) risk characteristics, i.e., homogeneous grade/pool\nNote that this are aggregations over stationary processes, so any trend you see is purely in your head\nIn real life, may require analysis of relation to other time varying effects, in particular econ. cond."
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-3",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-3",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\n`\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n…different (stationary) default levels\n\n\\(\\rightarrow\\) What is the correct/allowed treatment?"
+    "text": "Case study: scope of application\n\n\n`\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n…different (stationary) default levels\n\n\\(\\rightarrow\\) What is the correct/allowed treatment?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMany scenarios where you have a time-varying segmentation of reference data that may effect default/loss char., assignment to grades/pools, calibration targets"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-4",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-4",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n…different (stationary) default levels\n\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment"
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n…different (stationary) default levels\n\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorrect / alllowed treatment depends on * what you’re segmenting over * what the observed effect on default/loss char. is (point-in-time and/or LRA/DT) (conditional on risk char.) * if there is no observed effect at all, should you do anything? - Perhaps in case of extrapolation approaches (obs not affected but dependence is affected)"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-5",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-5",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nTreatment\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\nBehavioural\npoint-in-time\nNone/grade/pool\n\n\nEcon. cond.\npoint-in-time\nNone/grade/pool\n\n\nEcon. cond.\nLRA/DT\nCalibration segment\n\n\nFac./obligor type\ncond. LRA/DT\nCalibration segment\n\n\nProcesses\ncond. LRA/DT\nType of exposures\n\n\nOther\ncond. LRA/DT\nAppropriate adjustment"
+    "text": "Case study: scope of application\n\n\nTreatment\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\nBehavioural\npoint-in-time\n\n\n\nEcon. cond.\npoint-in-time\n\n\n\nEcon. cond.\nLRA/DT\n\n\n\nFac./obligor type\nLRA/DT\n\n\n\nProcesses\nLRA/DT\n\n\n\nOther\nLRA/DT"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-6",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-6",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nTreatment\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\nOther\ncond. LRA/DT\nAppropriate adjustment\n\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness"
+    "text": "Case study: scope of application\n\n\nTreatment\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\nBehavioural\npoint-in-time\nNone/grade\n\n\nEcon. cond.\npoint-in-time\nNone/grade\n\n\nEcon. cond.\nLRA/DT\n\n\n\nFac./obligor type\nLRA/DT\n\n\n\nProcesses\nLRA/DT\n\n\n\nOther\nLRA/DT"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-7",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-7",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\nRepresentative of what?\n\nModelling problem\nTypical approach: assume something reasonable\n\n\n\nNeed to model defaults and performing"
+    "text": "Case study: scope of application\n\n\nTreatment\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\nBehavioural\npoint-in-time\nNone/grade\n\n\nEcon. cond.\npoint-in-time\nNone/grade\n\n\nEcon. cond.\nLRA/DT\nCalibration segment\n\n\nFac./obligor type\nLRA/DT\nCalibration segment\n\n\nProcesses\nLRA/DT\n\n\n\nOther\nLRA/DT"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-8",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-8",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\nRepresentative of what?\n\nModelling problem\nTypical approach: assume something reasonable\nNeed to model defaults and performing"
+    "text": "Case study: scope of application\n\n\nTreatment\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\nBehavioural\npoint-in-time\nNone/grade\n\n\nEcon. cond.\npoint-in-time\nNone/grade\n\n\nEcon. cond.\nLRA/DT\nCalibration segment\n\n\nFac./obligor type\nLRA/DT\nCalibration segment\n\n\nProcesses\nLRA/DT\nType of exposures\n\n\nOther\nLRA/DT"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-9",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-9",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\nRepresentative of what?\n\nModelling problem\nTypical approach: assume something reasonable\nNeed to model defaults and performing\n\n\\(r_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{n_A}{n_A+n_B}(t_{u_0}+u)\\)\n\\(s_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{D_A}{D_A+D_B}(t_{u_0}+u)\\)"
+    "text": "Case study: scope of application\n\n\nTreatment\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\nBehavioural\npoint-in-time\nNone/grade\n\n\nEcon. cond.\npoint-in-time\nNone/grade\n\n\nEcon. cond.\nLRA/DT\nCalibration segment\n\n\nFac./obligor type\nLRA/DT\nCalibration segment\n\n\nProcesses\nLRA/DT\nType of exposures\n\n\nOther\nLRA/DT\nAdjustment"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-10",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-10",
     "title": "Representativeness",
     "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\nTreatment\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\nOther\ncond. LRA/DT\nAppropriate adjustment\n\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-11",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-11",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\nRepresentative of what?\n\nModelling problem\nTypical approach: assume something reasonable\n\n\n\nNeed to model defaults and performing"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-12",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-12",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\nRepresentative of what?\n\nModelling problem\nTypical approach: assume something reasonable\nNeed to model defaults and performing"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-13",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-13",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\nRepresentative of what?\n\nModelling problem\nTypical approach: assume something reasonable\nNeed to model defaults and performing\n\n\\(r_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{n_A}{n_A+n_B}(t_{u_0}+u)\\)\n\\(s_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{D_A}{D_A+D_B}(t_{u_0}+u)\\)"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-14",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-14",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
     "text": "Case study: scope of application\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\n\\(r_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{n_A}{n_A+n_B}(t_{u_0}+u)\\)\n\\(s_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{D_A}{D_A+D_B}(t_{u_0}+u)\\)\n\n\n\n\n\n\n\n\n\n\n\\[D^\\prime(t\\le t_{u_0})=D_A(t) \\frac{r_0}{s_0} \\pm \\sqrt{\\sigma^2_{D_A}\\frac{r^2_0}{s^2_0}+... } \\]\n\n\nAdjusted calibration target\n\\[\\bar{D}^\\prime = \\frac{1}{T}\\sum_t D^\\prime(t) \\pm \\sqrt{...}\\]"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-15",
+    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-15",
+    "title": "Representativeness",
+    "section": "Case study: scope of application",
+    "text": "Case study: scope of application\n\n\n\\[D^\\prime(t\\le t_{u_0})=D_A(t) \\frac{r_0}{s_0} \\pm \\sqrt{\\sigma^2_{D_A}\\frac{r^2_0}{s^2_0}+... } \\]\nAdjusted calibration target\n\\[\\bar{D}^\\prime = \\frac{1}{T}\\sum_t D^\\prime(t) \\pm \\sqrt{...}\\]\n\ntarget increased, in line with assumptions\nincreased uncertainty \\(\\sim \\sigma_{r_0}, \\sigma_{s_0}\\)\ntoy example! in real life:\n\nunderstand & model explicitly instead\nvalidate assumptions"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#introductions",
@@ -341,12 +376,5 @@
     "title": "Leaseplan Representativeness Q4 2023",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nNote that these will be available for a limited time after the course has ended.↩︎"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-11",
-    "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-11",
-    "title": "Representativeness",
-    "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\n\\[D^\\prime(t\\le t_{u_0})=D_A(t) \\frac{r_0}{s_0} \\pm \\sqrt{\\sigma^2_{D_A}\\frac{r^2_0}{s^2_0}+... } \\]\nAdjusted calibration target\n\\[\\bar{D}^\\prime = \\frac{1}{T}\\sum_t D^\\prime(t) \\pm \\sqrt{...}\\]\n\ntarget increased, in line with assumptions\nincreased uncertainty \\(\\sim \\sigma_{r_0}, \\sigma_{s_0}\\)\ntoy example! in real life:\n\nunderstand & model explicitly instead\nvalidate assumptions"
   }
 ]
