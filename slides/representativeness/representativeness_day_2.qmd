@@ -715,3 +715,5 @@ ggplot(aes(t, into_dr_12, color = subportfolio)) +
 :::
 ::::
 
+
+# End of case study 1
