@@ -17,26 +17,35 @@ format: eduquant-slides-revealjs
 ::: {.column width="15%"}
 *13:00*
 
-*13:30*
+*13:15*
+
+*14:15*
 
 *14:30*
 
-*15:30*
+*15:00*
+
+*15:45*
 
 *16:30*
 
 :::
 
 ::: {.column width="85%"}
-Case study discussion & Recap
 
-Economic & Market Conditions
+Introduction
 
-Definition of Default
+Case study #1 discussion
+
+*Break*
 
 General estimation process
 
-Case Study #2
+Definition of default
+
+Economic & market conditions
+
+Case study #2
 :::
 :::
 ::: footer 
@@ -182,7 +191,14 @@ aggrplotdata <- filter(aggrplotdata2,subportfolio!="Adjusted")
 
  * Two homogeneous segments A and B
 
+::::{.fragment fragment-index=1}
+ * Same exposure type (post exclusions)
+::::
 
+::::{.fragment fragment-index=1}
+![](/media/scope_of_appl_analysis_id.drawio.svg)
+::::
+ 
 ::: 
 
 ::: {.column width="50%" #vcenter .r-fit-text }
@@ -210,6 +226,7 @@ case_study_2_data |>
 ::::
 
 
+
 ## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
 
 :::: columns
@@ -220,32 +237,13 @@ case_study_2_data |>
 #### Description
 
  * Two homogeneous segments A and B
+ * Same exposure type (post exclusions)
 
+::::{.fragment fragment-index=1}
  [...with a varying share $\frac{n_A}{n_A+n_B}(t)$]{style="color:darkcyan"}
+::::
 
-::::: {.fragment .fade-in fragment-index=2}
- ...different (stationary) default levels 
-:::::
-::::: {.fragment .fade-in fragment-index=2}
- 
-:::::
-::::: {.fragment .fade-in fragment-index=3} 
-[**$\rightarrow$ What is the correct/allowed treatment**?]{style="color:slateblue"}
-:::::
-
-
-```{r segment_plot}
-#| dev.args:
-#|   bg: "transparent"
-#| fig.asp: 1
-#| fig.width: 3
-
-```
-::: 
-
-::: {.column width="50%" .r-fit-text }
-
-
+::::{.fragment fragment-index=1}
 
 ```{r ratios_plot}
 #| dev.args:
@@ -258,6 +256,20 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
   geom_pointrange(aes(ymin=r_A_t_lower,ymax=r_A_t_upper), shape = 'x',size = 0.3,color="darkcyan", linewidth=0.5) +
   scale_y_continuous(limits = c(0,NA), labels = scales::label_percent()) +
   labs(caption="share of A",y=latex2exp::TeX("$\\frac{n_A}{n_A+n_B}$"))
+```
+::::
+
+::: 
+
+::: {.column width="50%" .r-fit-text }
+
+
+```{r segment_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+
 ```
 
 :::
@@ -275,39 +287,14 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 #### Description
 
  * Two homogeneous segments A and B
-
- [...with a varying share $\frac{n_A}{n_A+n_B}(t)$]{style="color:darkcyan"}
+ * Same exposure type (post exclusions)
+ * [...with a varying share $\frac{n_A}{n_A+n_B}(t)$]{style="color:darkcyan"}
 
 ::::: {.fragment .fade-in fragment-index=2}
  ...different (stationary) default levels 
 :::::
+
 ::::: {.fragment .fade-in fragment-index=2}
- 
-:::::
-::::: {.fragment .fade-in fragment-index=3} 
-[**$\rightarrow$ What is the correct/allowed treatment**?]{style="color:slateblue"}
-:::::
-
-
-```{r segment_plot}
-#| dev.args:
-#|   bg: "transparent"
-#| fig.asp: 1
-#| fig.width: 3
-
-```
-::: 
-
-::: {.column width="50%" .r-fit-text }
-
-
-
-```{r ratios_plot}
-#| dev.args:
-#|   bg: "transparent"
-#| fig.asp: 1
-#| fig.width: 2
-```
 
 ```{r drs_plot}
 #| dev.args:
@@ -326,10 +313,78 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
   geom_text(data=aggrplotdata, aes(min_t,color=subportfolio, mean_into_dr_12,label = scales::label_percent(accuracy = 0.1)(mean_into_dr_12)), hjust = 0, nudge_y = .02, size=2.5, show.legend=FALSE) +
   labs(caption="12 month into-default rate ", y= "default rate")
 ```
+:::::
+::: 
+
+::: {.column width="50%" .r-fit-text }
+
+
+```{r segment_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+
+```
+::::: {auto-animate-id="ratiosplot"}
+```{r ratios_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+```
+:::::
 :::
 
 
 ::::
+
+
+## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
+
+:::: columns
+
+::: {.column width="65%" .r-fit-text }
+`
+
+#### Description
+
+ * Two homogeneous segments A and B
+ * Same exposure type (post exclusions)
+ * [...with a varying share $\frac{n_A}{n_A+n_B}(t)$]{style="color:darkcyan"}
+ * ...different (stationary) default levels 
+
+[**$\rightarrow$ What is the correct/allowed treatment**?]{style="color:slateblue"}
+
+::::: {auto-animate-id="none"}
+
+::::{.fragment}
+![](/media/risk_quantification_rep.drawio.svg)
+::::
+:::::
+
+::: 
+
+::: {.column width="35%" .r-fit-text }
+
+::::: {auto-animate-id="ratiosplot"}
+```{r ratios_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 2
+```
+:::::
+
+```{r drs_plot}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 3
+```
+:::
+::::
+
 
 
 ## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
@@ -342,11 +397,10 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 #### Description
 
  * Two homogeneous segments A and B
+ * Same exposure type (post exclusions)
+ * [...with a varying share $\frac{n_A}{n_A+n_B}(t)$]{style="color:darkcyan"}
+ * ...different (stationary) default levels 
 
- [...with a varying share $\frac{n_A}{n_A+n_B}(t)$]{style="color:darkcyan"}
-
- ...different (stationary) default levels
- 
  [**$\rightarrow$ Treatment depends on segmentation dimension**]{style="color:slateblue"}
 
 |Segmentation|Level of risk|Treatment|
@@ -357,12 +411,15 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 
 ::: {.column width="35%" .r-fit-text }
 
+::::: {auto-animate-id="ratiosplot"}
+
 ```{r ratios_plot}
 #| dev.args:
 #|   bg: "transparent"
 #| fig.asp: 1
 #| fig.width: 2
 ```
+:::::
 ```{r drs_plot}
 #| dev.args:
 #|   bg: "transparent"
@@ -373,6 +430,7 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 
 
 ::::
+
 
 
 ## Case study: scope of application {.smaller .r-fit-text auto-animate="true"}
@@ -402,8 +460,10 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 
 ::: {.column width="35%" .r-fit-text }
 
-
+::::: {auto-animate-id="ratiosplot"}
 ![](/media/rating_system_calib_segm_small.drawio.svg)
+:::::
+
 ```{r drs_plot}
 #| dev.args:
 #|   bg: "transparent"
@@ -531,7 +591,6 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 ##### Representative of what?
  * Modelling problem
  * Typical approach: assume something reasonable
-
  * Need to model [defaults]{style="color:darkred"} and [performing]{style="color:darkcyan"}
 ::: 
 
@@ -575,6 +634,11 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 
 [$\rightarrow$ Adjust calibraton target for effect of non-representativeness]{style="color:slateblue"}
 
+##### Representative of what?
+ * Modelling problem
+ * Typical approach: assume something reasonable
+ * Need to model [defaults]{style="color:darkred"} and [performing]{style="color:darkcyan"}
+
 [$r_0\sim\frac{1}{S}\sum_{u=1...S}\frac{n_A}{n_A+n_B}(t_{u_0}+u)$]{style="color:darkcyan"}
 
 [$s_0\sim\frac{1}{S}\sum_{u=1...S}\frac{D_A}{D_A+D_B}(t_{u_0}+u)$]{style="color:darkred"}
@@ -590,7 +654,7 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 #| dev.args:
 #|   bg: "transparent"
 #| fig.asp: 1
-#| fig.width: 2
+#| fig.width: 4
 
 ```
 ::::::
@@ -619,11 +683,23 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 
 ::: {.column width="50%" .r-fit-text }
 
-```{r ratios_plot5}
+```{r ratios_plot5_small}
 #| dev.args:
 #|   bg: "transparent"
 #| fig.asp: 1
-#| fig.width: 2
+#| fig.width: 3
+
+ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
+ ggplot(plotdf,aes(t, r_A_t)) + 
+  geom_rect(data=NULL,ymin=-Inf,ymax=Inf,xmin=82,xmax=107, fill="#F5F5DC",alpha=0.1)+
+  geom_pointrange(aes(ymin=r_A_t_lower,ymax=r_A_t_upper), shape = 'x',size = 0.3,color="darkcyan", linewidth=0.5) +
+  geom_pointrange(aes(y=s_A_t,ymin=s_A_t_lower,ymax=s_A_t_upper), shape = 'x',size = 0.3,color="darkred", linewidth=0.5) +
+  geom_smooth(data=filter(plotdf,t>=82), formula = y ~ 1, color = "darkcyan", linetype="dashed", method="lm", fullrange=TRUE) +
+  geom_smooth(data=filter(plotdf,t>=82), aes(y=s_A_t),formula = y ~ 1, color = "darkred", linetype="dashed", method="lm", fullrange=TRUE) +
+  geom_text(data=plotdfs,aes(x=107,y=r_A_0,label = scales::label_percent(accuracy = 1)(r_A_0)), nudge_x=3,nudge_y = -0.05, color="darkcyan", size=3) +
+  geom_text(data=plotdfs,aes(x=107,y=s_A_0,label = scales::label_percent(accuracy = 1)(s_A_0)),  nudge_x=3, nudge_y = -0.05, color="darkred", size=3) +
+  scale_y_continuous(limits = c(0,NA), labels = scales::label_percent()) +
+  labs(caption="share of A",y=latex2exp::TeX("$\\frac{n_A}{n_A+n_B}$"))
 ```
 :::
 ::::
@@ -645,7 +721,7 @@ ggplot2::theme_set(ggtheme + theme(legend.position = "bottom"))
 :::
 ::: {.column width="50%" .r-fit-text }
 
-:::{data-id=zfsd}
+:::{auto-animate-id=zfsd}
 ```{r drs_plot_adj}
 #| dev.args:
 #|   bg: "transparent"
@@ -691,7 +767,7 @@ ggplot(aes(t, into_dr_12, color = subportfolio)) +
 :::
 ::: {.column  #vcenter width="50%" .r-fit-text }
 
-::: {data-id=zfsd}
+::: {auto-animate-id=zfsd}
 ```{r drs_plot_adj2}
 #| dev.args:
 #|   bg: "transparent"

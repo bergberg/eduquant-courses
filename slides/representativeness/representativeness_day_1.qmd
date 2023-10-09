@@ -39,7 +39,8 @@ General Process Design
 
 Definition of Default
 
-Underwriting/Recovery Standards
+Economic & Market conditions
+
 <!-- Estimation Process Design
 
 Definition of Default
@@ -58,9 +59,14 @@ Case Study -->
 :::
 
 ::: {.column #vcenter width="85%"}
-Economic Conditions 
+Underwriting/Lending Standards
+
+Recovery Process/Standards 
 
 External Data/Ratings
+
+Risk Characteristics
+
 <!-- 
 Economic Conditions 
 
@@ -1134,6 +1140,8 @@ case_study_2_data |>
     icon = "fa fa-save"
   )
 ```
+[case_study_2_data.csv.gz](/media/case_study_2_data.csv.gz)
+
 ::: footer
 ```{r }
 #| dev.args:
