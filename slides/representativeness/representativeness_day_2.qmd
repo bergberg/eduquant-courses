@@ -58,6 +58,7 @@ library(qrcode)
 code <- qr_code("https://quantprofessionals.github.io/eduquant-courses/slides/representativeness/representativeness_day_2.html")
 plot(code)
 ```
+[https://tinyurl.com/eduquant-current](https://tinyurl.com/eduquant-current)
 :::
 
 
