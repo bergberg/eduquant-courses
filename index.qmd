@@ -24,6 +24,11 @@ Please find the course slides linked below[^1].
 
 [Case study #2](/media/CASE_Representativeness_economic_conditions.xlsx)
 
+[Case study #3 (csv)](/media/case_study_3_data.csv.gz)/[(xlsx)](/media/case_study_3_data.xlsx)
+
+[Case study #4 (csv)](/media/case_study_4_data.csv.gz)/[(xlsx)](/media/case_study_4_data.xlsx)
+
+
 ## Please fill out our survey
 
 [Link to survey](https://forms.gle/t6zHtawccEWbs4ms9)
