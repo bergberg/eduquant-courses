@@ -1116,30 +1116,7 @@ case_study_2_data |>
 :::
 ::::
 
-
-```{r }
-library(downloadthis)
-case_study_2_data |>
-  download_this( 
-    output_name = "case study 2 data",
-    output_extension = ".csv",
-    button_label = " Download data as csv",
-    button_type = "success",
-    has_icon = TRUE,
-    icon = "fa fa-save"
-  )
-``` 
-```{r}
-case_study_2_data |>
-  download_this( 
-    output_name = "case study 2 data",
-    output_extension = ".xlsx",
-    button_label = "Download data as xlsx",
-    button_type = "success",
-    has_icon = TRUE,
-    icon = "fa fa-save"
-  )
-```
+[case_study_2_data.xlsx](/media/case_study_2_data.xlsx)
 [case_study_2_data.csv.gz](/media/case_study_2_data.csv.gz)
 
 ::: footer
