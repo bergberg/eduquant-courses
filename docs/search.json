@@ -410,7 +410,7 @@
     "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-3-acceptance-policy-change-1",
     "title": "Representativeness",
     "section": "Case study 3: acceptance policy change",
-    "text": "Case study 3: acceptance policy change\n\n\nDescription\n\nOne homogeneous portfolio, one DoD, two acceptance policies \\(U,V\\)\nAcceptance policy change at \\(t_{\\text{change}} = 70\\) \\[\\text{acc_policy}(t_0): \\begin{align*} t_0&lt;t_{\\text{change}} &=  U \\\\ t_0\\ge t_{\\text{change}} &=  V \\end{align*}\\]\n\\(U,V\\) apply a different threshold \\(a_0&gt;\\Delta_{\\text{acc_policy}(t_0)}\\)\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A"
+    "text": "Case study 3: acceptance policy change\n\n\nDescription\n\nOne homogeneous portfolio, one DoD, two acceptance policies \\(U,V\\)\nAcceptance policy change at \\(t_{\\text{change}} = 70\\) \\[\\text{acc_policy}(t_0): \\begin{align*} t_0&lt;t_{\\text{change}} &=  U \\\\ t_0\\ge t_{\\text{change}} &=  V \\end{align*}\\]\n\\(U,V\\) apply a different threshold \\(a_0&gt;\\Delta_{\\text{acc_policy}(t_0)}\\)\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A\nExtra bonus points: repeat, but this time ignore a_0"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-3-acceptance-policy-change-2",
@@ -431,7 +431,7 @@
     "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-4-two-dod-1",
     "title": "Representativeness",
     "section": "Case study 4: Two DoD",
-    "text": "Case study 4: Two DoD\n\n\nDescription\n\nOne homogeneous portfolio\nsimulated DoD available in historical data\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A\nExtra bonus points: repeat, but this time ignore a_0"
+    "text": "Case study 4: Two DoD\n\n\nDescription\n\nOne homogeneous portfolio\nsimulated DoD available in historical data\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-4-two-dod-2",
