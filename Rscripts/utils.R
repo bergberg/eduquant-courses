@@ -8,7 +8,7 @@ summarise_binom_rate <-
            ci_point = "mean",
            ci_upper = "upper",
            ci_lower = "lower",
-           conf.level = 0.95,
+           conf.level = 0.68,
            n_overlap = 12,
            avg = "avg",
            type = "highest") {
@@ -86,14 +86,16 @@ ggplot_rate_series <-
           alpha=0.9,
           linewidth=1,
           linetype="dashed",
-          aes(y = .data[[paste0(name_str, avg_postfix)]])),
-        geom_ribbon(
-          color=NA,
-          alpha=alpha*.33,
-          aes(
-            ymin = .data[[paste0(name_str, avg_postfix, lower_postfix)]],
-            ymax = .data[[paste0(name_str, avg_postfix, upper_postfix)]])
-        )) * (blend("multiply")  ) +
+          aes(y = .data[[paste0(name_str, avg_postfix)]]))
+        # ,
+        # geom_ribbon(
+        #   color=NA,
+        #   alpha=alpha*.33,
+        #   aes(
+        #     ymin = .data[[paste0(name_str, avg_postfix, lower_postfix)]],
+        #     ymax = .data[[paste0(name_str, avg_postfix, upper_postfix)]])
+        # )
+      ) * (blend("multiply")  ) +
       geom_label_repel(
         data=data_labels,
         fill="white",

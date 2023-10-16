@@ -27,39 +27,11 @@ library(ggrepel)
 library(latex2exp)
 source("../../Rscripts/utils.R")
 cred_sim <- vroom::vroom("../../media/cred_sim.csv.gz")
-acc_policy_threshold <- 
-  c(U = quantile(filter(cred_sim, status=="enter")$a0, 0.1, names=FALSE),
-    V = quantile(filter(cred_sim, status=="enter")$a0, 0.5, names=FALSE)
-  )
+cred_sim_acc <- vroom::vroom("../../media/cred_sim_acc.csv.gz")
+cred_sim_acc_aggr_dr <- vroom::vroom("../../media/cred_sim_acc_aggr_dr.csv.gz")
+
 t_acc_policy_change <- 70L
 
-cred_sim_acc <- cred_sim |> 
-  mutate(
-    acc_policy=case_when(
-              t0 < t_acc_policy_change ~ "U",
-              t0 >= t_acc_policy_change ~ "V"),
-    accepted = case_when(
-              a0 > acc_policy_threshold[acc_policy] ~ "accepted",
-              TRUE ~ "rejected")
-  ) |> filter(t>=25L, !d)
-
-cred_sim_acc_aggr_dr <- 
-   bind_rows(
-     cred_sim_acc |>
-       group_by(accepted, acc_policy) |> 
-       summarise_binom_rate(into_d_12, name = dr),
-     cred_sim_acc |> 
-       group_by(accepted) |> 
-       summarise_binom_rate(into_d_12, name = dr) |> 
-       mutate(acc_policy = "Any"),
-    cred_sim_acc |> 
-       group_by(acc_policy) |> 
-       summarise_binom_rate(into_d_12, name = dr) |> 
-       mutate(accepted = "Any"),
-    cred_sim_acc |> 
-       summarise_binom_rate(into_d_12, name = dr) |> 
-       mutate(accepted = "Any", acc_policy = "Any")
-     )
 
 bg <- 'transparent'
 ggtheme <- theme_minimal()+theme(
@@ -114,22 +86,20 @@ $$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0\ge t
 
 ggplot2::theme_set(ggtheme)
 p1 <- cred_sim_acc_aggr_dr |> 
-  ungroup() |> 
   filter(accepted=="Any", acc_policy=="Any") |>
   ggplot_rate_series(name = dr, alpha = 0.33) +
   geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
   labs(caption = "accepted + rejected")
 
 p2 <- cred_sim_acc_aggr_dr |> 
-  ungroup() |> 
   filter(accepted=="accepted", acc_policy=="Any") |>
   ggplot_rate_series(name = dr, alpha = 0.33) +
   geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
   labs(caption = "accepted only, any policy")
 
 p3 <- cred_sim_acc_aggr_dr |> 
-  ungroup(accepted) |> 
   filter(accepted=="accepted", acc_policy!="Any") |>
+  group_by(acc_policy) |> 
   ggplot_rate_series(name = dr, alpha = 0.33) +
   coord_cartesian(ylim=c(0,0.05)) + 
   geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
@@ -229,6 +199,7 @@ This is a (simulated) data set of a homogeneous portfolio, and there are no risk
 
 ggplot2::theme_set(ggtheme)
 case_study_4_data |> 
+filter(!d) |>
 group_by(DoD) |> 
 summarise_binom_rate(into_d_12,name = dr) |> ggplot_rate_series(name=dr)
 
@@ -287,39 +258,9 @@ In this exercise, you will **estimate an appropriate adjustment and MoC A** to a
 [Hard mode unlocked!]{style="color:red"}
 
 ```{r setup3}
-acc_policy_threshold <- 
-  c(U = quantile(filter(cred_sim, status=="enter")$a0, 0.5, names=FALSE),
-    V = quantile(filter(cred_sim, status=="enter")$a0, 0.1, names=FALSE)
-  )
-t_acc_policy_change <- 70L
-
-cred_sim_acc2 <- cred_sim |> 
-  mutate(
-    acc_policy=case_when(
-              t0 < t_acc_policy_change ~ "U",
-              t0 >= t_acc_policy_change ~ "V"),
-    accepted = case_when(
-              a0 > acc_policy_threshold[acc_policy] ~ "accepted",
-              TRUE ~ "rejected")
-  ) |> filter(t>=25L, !d)
-
-cred_sim_acc_aggr_dr2 <- 
-   bind_rows(
-     cred_sim_acc2 |>
-       group_by(accepted, acc_policy) |> 
-       summarise_binom_rate(into_d_12, name = dr),
-     cred_sim_acc2 |> 
-       group_by(accepted) |> 
-       summarise_binom_rate(into_d_12, name = dr) |> 
-       mutate(acc_policy = "Any"),
-    cred_sim_acc2 |> 
-       group_by(acc_policy) |> 
-       summarise_binom_rate(into_d_12, name = dr) |> 
-       mutate(accepted = "Any"),
-    cred_sim_acc2 |> 
-       summarise_binom_rate(into_d_12, name = dr) |> 
-       mutate(accepted = "Any", acc_policy = "Any")
-     )
+cred_sim2 <- vroom::vroom("../../media/cred_sim2.csv.gz")
+cred_sim_acc2 <- vroom::vroom("../../media/cred_sim_acc2.csv.gz")
+cred_sim_acc_aggr_dr2 <- vroom::vroom("../../media/cred_sim_acc_aggr_dr2.csv.gz")
 
 ```
 
@@ -354,24 +295,22 @@ $$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0\ge t
 
 ggplot2::theme_set(ggtheme)
 p1 <- cred_sim_acc_aggr_dr2 |> 
-  ungroup() |> 
   filter(accepted=="Any", acc_policy=="Any") |>
   ggplot_rate_series(name = dr, alpha = 0.33) +
   geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
   labs(caption = "accepted + rejected")
 
 p2 <- cred_sim_acc_aggr_dr2 |> 
-  ungroup() |> 
   filter(accepted=="accepted", acc_policy=="Any") |>
   ggplot_rate_series(name = dr, alpha = 0.33) +
   geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
   labs(caption = "accepted only, any policy")
 
 p3 <- cred_sim_acc_aggr_dr2 |> 
-  ungroup(accepted) |> 
   filter(accepted=="accepted", acc_policy!="Any") |>
+  group_by(acc_policy) |> 
   ggplot_rate_series(name = dr, alpha = 0.33) +
-  coord_cartesian(ylim=c(0,0.05)) + 
+  coord_cartesian(ylim=c(0,0.1)) + 
   geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
   labs(caption = "accepted only, per policy") +
   theme(legend.title=element_blank()) 
