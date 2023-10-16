@@ -28,6 +28,7 @@ Please find the course slides linked below[^1].
 
 [Case study #4 (csv)](/media/case_study_4_data.csv.gz)/[(xlsx)](/media/case_study_4_data.xlsx)
 
+[Case study #5 (csv)](/media/case_study_5_data.csv.gz)/[(xlsx)](/media/case_study_5_data.xlsx)
 
 ## Please fill out our survey
 
