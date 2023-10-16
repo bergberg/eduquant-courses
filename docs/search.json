@@ -417,7 +417,7 @@
     "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-3-acceptance-policy-change-2",
     "title": "Representativeness",
     "section": "Case study 3: acceptance policy change",
-    "text": "Case study 3: acceptance policy change\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt_0\nt of origination\n\n\na_0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
+    "text": "Case study 3: acceptance policy change\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-4-two-dod",
@@ -431,7 +431,7 @@
     "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-4-two-dod-1",
     "title": "Representativeness",
     "section": "Case study 4: Two DoD",
-    "text": "Case study 4: Two DoD\n\n\nDescription\n\nOne homogeneous portfolio\nsimulated DoD available in historical data\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A"
+    "text": "Case study 4: Two DoD\n\n\nDescription\n\nOne homogeneous portfolio\nsimulated DoD available in historical data\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A\nExtra bonus points: repeat, but this time ignore a_0"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-4-two-dod-2",
@@ -439,5 +439,26 @@
     "title": "Representativeness",
     "section": "Case study 4: Two DoD",
     "text": "Case study 4: Two DoD\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nDoD\nsimulated or implemented\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-5-acceptance-policy-change-hard-mode",
+    "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-5-acceptance-policy-change-hard-mode",
+    "title": "Representativeness",
+    "section": "Case study 5: acceptance policy change (hard mode)",
+    "text": "Case study 5: acceptance policy change (hard mode)\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for the bias introduced by having a non-comparable acceptance policy applied for exposures over part of the historical data set.\nHard mode unlocked!"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-5-acceptance-policy-change-hard-mode-1",
+    "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-5-acceptance-policy-change-hard-mode-1",
+    "title": "Representativeness",
+    "section": "Case study 5: acceptance policy change (hard mode)",
+    "text": "Case study 5: acceptance policy change (hard mode)\n\n\nDescription\n\nOne homogeneous portfolio, one DoD, two acceptance policies \\(U,V\\)\nAcceptance policy change at \\(t_{\\text{change}} = 70\\) \\[\\text{acc_policy}(t_0): \\begin{align*} t_0&lt;t_{\\text{change}} &=  U \\\\ t_0\\ge t_{\\text{change}} &=  V \\end{align*}\\]\n\\(U,V\\) apply a different threshold \\(a_0&gt;\\Delta_{\\text{acc_policy}(t_0)}\\)\n\nAssignment\n\nBy simply looking at the default rate plots, can you tell why this exercise is harder?\nEstimate an appropriately adjusted long-run average default rate + MoC A"
+  },
+  {
+    "objectID": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-5-acceptance-policy-change-hard-mode-2",
+    "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-5-acceptance-policy-change-hard-mode-2",
+    "title": "Representativeness",
+    "section": "Case study 5: acceptance policy change (hard mode)",
+    "text": "Case study 5: acceptance policy change (hard mode)\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
   }
 ]

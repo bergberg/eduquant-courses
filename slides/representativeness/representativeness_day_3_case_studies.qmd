@@ -102,7 +102,6 @@ $$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0\ge t
  * Estimate an appropriately adjusted long-run average default rate
  * Bonus Points: calculate a MoC A
 
-
 ::: 
 
 ::: {.column #vcenter width="50%" .r-fit-text }
@@ -160,8 +159,8 @@ p3 <- cred_sim_acc_aggr_dr |>
 |`into_d_12`| into default within 12 months|
 |`status`| `enter`, `stock`, `default` or `exit`|
 |`m`|time since origination|
-|`t_0`| t of origination|
-|`a_0`| debt service to income at origination score|
+|`t0`| t of origination|
+|`a0`| debt service to income at origination score|
 |`acc_policy`| `U` or `V`|
 
 :::
@@ -216,8 +215,8 @@ This is a (simulated) data set of a homogeneous portfolio, and there are no risk
 
  * Estimate an appropriately adjusted long-run average default rate
  * Bonus Points: calculate a MoC A
+ * Extra bonus points: repeat, but this time ignore `a_0`
  
-
 ::: 
 
 ::: {.column #vcenter width="50%" .r-fit-text }
@@ -273,6 +272,154 @@ case_study_4_data |>
 [ [link to xlsx]{.underline}](/media/case_study_4_data.xlsx)
 
 [ [link to csv.gz]{.underline}](/media/case_study_4_data.csv.gz)
+:::
+::::
+
+
+## Case study 5: acceptance policy change (hard mode) {.smaller .r-fit-text auto-animate=true}
+
+
+#### Introduction
+
+
+In this exercise, you will **estimate an appropriate adjustment and MoC A** to account for the bias introduced by having a **non-comparable acceptance policy** applied for exposures over part of the historical data set. 
+
+[Hard mode unlocked!]{style="color:red"}
+
+```{r setup3}
+acc_policy_threshold <- 
+  c(U = quantile(filter(cred_sim, status=="enter")$a0, 0.5, names=FALSE),
+    V = quantile(filter(cred_sim, status=="enter")$a0, 0.1, names=FALSE)
+  )
+t_acc_policy_change <- 70L
+
+cred_sim_acc2 <- cred_sim |> 
+  mutate(
+    acc_policy=case_when(
+              t0 < t_acc_policy_change ~ "U",
+              t0 >= t_acc_policy_change ~ "V"),
+    accepted = case_when(
+              a0 > acc_policy_threshold[acc_policy] ~ "accepted",
+              TRUE ~ "rejected")
+  ) |> filter(t>=25L, !d)
+
+cred_sim_acc_aggr_dr2 <- 
+   bind_rows(
+     cred_sim_acc2 |>
+       group_by(accepted, acc_policy) |> 
+       summarise_binom_rate(into_d_12, name = dr),
+     cred_sim_acc2 |> 
+       group_by(accepted) |> 
+       summarise_binom_rate(into_d_12, name = dr) |> 
+       mutate(acc_policy = "Any"),
+    cred_sim_acc2 |> 
+       group_by(acc_policy) |> 
+       summarise_binom_rate(into_d_12, name = dr) |> 
+       mutate(accepted = "Any"),
+    cred_sim_acc2 |> 
+       summarise_binom_rate(into_d_12, name = dr) |> 
+       mutate(accepted = "Any", acc_policy = "Any")
+     )
+
+```
+
+## Case study 5: acceptance policy change (hard mode) {.smaller .r-fit-text auto-animate=true}
+:::: columns
+
+::: {.column #vcenter width="50%" .r-fit-text }
+
+
+#### Description
+
+ * One homogeneous portfolio, one DoD, two acceptance policies $U,V$
+ * Acceptance policy change at $t_{\text{change}} = 70$
+$$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0\ge t_{\text{change}} &=  V \end{align*}$$
+
+ * $U,V$ apply a different threshold $a_0>\Delta_{\text{acc_policy}(t_0)}$
+
+#### Assignment
+
+ * By simply looking at the default rate plots, can you tell why this exercise is harder?
+ * Estimate an appropriately adjusted long-run average default rate + MoC A
+
+::: 
+
+::: {.column #vcenter width="50%" .r-fit-text }
+```{r plot4}
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 5
+#| 
+
+ggplot2::theme_set(ggtheme)
+p1 <- cred_sim_acc_aggr_dr2 |> 
+  ungroup() |> 
+  filter(accepted=="Any", acc_policy=="Any") |>
+  ggplot_rate_series(name = dr, alpha = 0.33) +
+  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
+  labs(caption = "accepted + rejected")
+
+p2 <- cred_sim_acc_aggr_dr2 |> 
+  ungroup() |> 
+  filter(accepted=="accepted", acc_policy=="Any") |>
+  ggplot_rate_series(name = dr, alpha = 0.33) +
+  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
+  labs(caption = "accepted only, any policy")
+
+p3 <- cred_sim_acc_aggr_dr2 |> 
+  ungroup(accepted) |> 
+  filter(accepted=="accepted", acc_policy!="Any") |>
+  ggplot_rate_series(name = dr, alpha = 0.33) +
+  coord_cartesian(ylim=c(0,0.05)) + 
+  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
+  labs(caption = "accepted only, per policy") +
+  theme(legend.title=element_blank()) 
+
+(p1+p2)/p3
+
+```
+:::
+
+::::
+
+
+## Case study 5: acceptance policy change (hard mode) {.smaller .r-fit-text auto-animate=true}
+
+
+:::: columns
+::: {.column width="50%" .r-fit-text }
+
+
+| column    | description    |
+|-------------|-------------|
+|`i`| exposure id|
+|`t`| time|
+|`d`| in-default|
+|`into_d_12`| into default within 12 months|
+|`status`| `enter`, `stock`, `default` or `exit`|
+|`m`|time since origination|
+|`t0`| t of origination|
+|`a0`| debt service to income at origination score|
+|`acc_policy`| `U` or `V`|
+
+:::
+::: {.column width="50%" .r-fit-text .smaller}
+
+```{r}
+case_study_5_data <- readr::read_csv("../../media/case_study_5_data.csv.gz")
+``` 
+
+```{r echo=FALSE}
+#| tbl-cap: "sample of 10 exposures" 
+
+case_study_5_data |>
+  filter(i %in% sample(i,10)) |> 
+  as.data.frame()
+```
+[ [link to xlsx]{.underline}](/media/case_study_5_data.xlsx)
+
+[ [link to csv.gz]{.underline}](/media/case_study_5_data.csv.gz)
 :::
 ::::
 
