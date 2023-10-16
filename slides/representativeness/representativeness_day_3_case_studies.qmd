@@ -101,7 +101,7 @@ $$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0\ge t
 
  * Estimate an appropriately adjusted long-run average default rate
  * Bonus Points: calculate a MoC A
- * Extra bonus points: repeat, but this time ignore `a_0`
+ * Extra bonus points: repeat, but this time ignore `a0`
 
 ::: 
 
