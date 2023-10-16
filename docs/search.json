@@ -431,7 +431,7 @@
     "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-4-two-dod-1",
     "title": "Representativeness",
     "section": "Case study 4: Two DoD",
-    "text": "Case study 4: Two DoD\n\n\nDescription\n\nOne homogeneous portfolio\nsimulated DoD available in historical data\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A"
+    "text": "Case study 4: Two DoD\n\n\nDescription\n\nOne homogeneous portfolio\nsimulated DoD available in historical data\nimplemented DoD available for \\(t \\ge 95\\)\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-4-two-dod-2",
