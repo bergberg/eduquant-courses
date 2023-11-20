@@ -417,7 +417,7 @@
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change",
     "title": "Representativeness",
     "section": "Case study 3: acceptance policy change",
-    "text": "Case study 3: acceptance policy change\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for the bias introduced by having a non-comparable acceptance policy applied for exposures over part of the historical data set.\n\nDownload the dataset from the slides website (csv or xlsx)\nUse your favorite tool! Anything goes.\nBring the results for discussion to the next training\nOr send them to pieter@berg-sp.eu"
+    "text": "Case study 3: acceptance policy change\n\n\n\n\n\n\nhttps://tinyurl.com/4n5hj2vw\n\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for the bias introduced by having a non-comparable acceptance policy applied for exposures over part of the historical data set.\n\nDownload the dataset from the slides website (csv or xlsx)\nUse your favorite tool! Anything goes.\nBring the results for discussion to the next training\nOr send them to pieter@berg-sp.eu"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change-1",
@@ -459,7 +459,7 @@
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change-6",
     "title": "Representativeness",
     "section": "Case study 3: acceptance policy change",
-    "text": "Case study 3: acceptance policy change\n\n\n\n\nAcceptance policy change at \\(t_{\\text{change}} = 70\\) \\[\\text{acc_policy}(t_0): \\begin{align*} t_0&lt;t_{\\text{change}} &=  U \\\\ t_0\\ge t_{\\text{change}} &=  V \\end{align*}\\]\n\\(U,V\\) apply a different threshold \\(a_0&gt;\\Delta_{\\text{acc_policy}(t_0)}\\)\nWe can simply take \\(U_{adj}: a_{0i} &gt; \\Delta_{V}\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nNot so fast! \\(V\\) and \\(U(adj)\\) look quite different!"
+    "text": "Case study 3: acceptance policy change\n\n\n\n\nAcceptance policy change at \\(t_{\\text{change}} = 70\\) \\[\\text{acc_policy}(t_0): \\begin{align*} t_0&lt;t_{\\text{change}} &=  U \\\\ t_0\\ge t_{\\text{change}} &=  V \\end{align*}\\]\n\\(U,V\\) apply a different threshold \\(a_0&gt;\\Delta_{\\text{acc_policy}(t_0)}\\)\nWe can simply take \\(U_{adj}: a_{0i} &gt; \\Delta_{V}\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nNot so fast! \\(V\\) and \\(U(adj)\\) look similar but \\(U\\)"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change-7",
@@ -476,46 +476,25 @@
     "text": "Case study 3: acceptance policy change\n\n\n\n\nAcceptance policy change at \\(t_{\\text{change}} = 70\\) \\[\\text{acc_policy}(t_0): \\begin{align*} t_0&lt;t_{\\text{change}} &=  U \\\\ t_0\\ge t_{\\text{change}} &=  V \\end{align*}\\]\n\\(U,V\\) apply a different threshold \\(a_0&gt;\\Delta_{\\text{acc_policy}(t_0)}\\)\nWe can simply take \\(U_{adj}: a_{0i} &gt; \\Delta_{V}\\)\n\n\n\nSimply due to maturity dependence\nIn this simple case, this causes no problems\nReal life not so lucky"
   },
   {
-    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-two-dod",
-    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-two-dod",
-    "title": "Representativeness",
-    "section": "Case study 4: Two DoD",
-    "text": "Case study 4: Two DoD\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for a difference between the implemented DoD used in application and the simulated DoD available in historical data.\nFortunately, some data is available that was collected under the new definition.\nThis is a (simulated) data set of a homogeneous portfolio, and there are no risk drivers, grades or other features to distinguish the exposures by. Lucky you!"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-two-dod-1",
-    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-two-dod-1",
-    "title": "Representativeness",
-    "section": "Case study 4: Two DoD",
-    "text": "Case study 4: Two DoD\n\n\nDescription\n\nOne homogeneous portfolio\nsimulated DoD available in historical data\nimplemented DoD available for \\(t \\ge 95\\)\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A"
-  },
-  {
-    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-two-dod-2",
-    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-two-dod-2",
-    "title": "Representativeness",
-    "section": "Case study 4: Two DoD",
-    "text": "Case study 4: Two DoD\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nDoD\nsimulated or implemented\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
-  },
-  {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod",
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod",
     "title": "Representativeness",
     "section": "Case study 4: one Dod, two Dod",
-    "text": "Case study 4: one Dod, two Dod\n\n\nimplemented DoD to be used in application and the simulated DoD available based on historical data\nEstimate an appropriate adjustment and MoC A\n\n\nApproach\nUse different assumptions/scenarios:\n\nAssume that \\(\\bar{R}^{(impl)}_{(12)} = \\alpha \\bar{R}^{(sim)}_{(12)} + \\epsilon\\), where \\(\\bar{R}_{(n)}\\) is an observed average \\(n\\)-month into-default rate. In words, assume that any average default rate over a fixed period under the new default definition is a constant facator times that under the simulated one.\nAssume that \\(R^{(impl)}_{(12)}(t) = \\alpha + \\beta R^{(sim)}_{(12)}(t) + \\epsilon\\), where \\(R_{(n)}(t)\\) is the observed \\(n\\)-month into-default rate at reference date \\(t\\). In words, assume that not the long-run average 12-month, but the monthly 12-month into-default rate under the new definition is linearly related to the simulated one."
+    "text": "Case study 4: one Dod, two Dod\n\n\nDescription\n\nOne homogeneous portfolio\nsimulated DoD available in historical data\nimplemented DoD available for \\(t \\ge 83\\)\n\nAssignment\n\nEstimate an appropriately adjusted long-run average default rate\nBonus Points: calculate a MoC A"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-1",
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-1",
     "title": "Representativeness",
     "section": "Case study 4: one Dod, two Dod",
-    "text": "Case study 4: one Dod, two Dod\n\n\nimplemented DoD to be used in application and the simulated DoD available in historical data\nEstimate an appropriate adjustment and MoC A\nScenario A: \\(\\bar{R}^{(impl)}_{(12)} = \\alpha \\bar{R}^{(sim)}_{(12)} + \\epsilon\\)\nScenario B: \\(R^{(impl)}_{(12)}(t) = \\alpha + \\beta R^{(sim)}_{(12)}(t) + \\epsilon\\)\n\n\nApproach\nFor each of these scenarios,\n\nEstimate \\(\\alpha\\) resp. \\(\\beta\\) based on the overlapping period.\nBased on your estimates, derive appropriately adjusted default rates.\nAlso estimate the uncertainty of \\(\\alpha\\) resp. \\(\\beta\\).\nUsing error propagation, derive the corresponding additional uncertainty of the estimated adjusted long-run average default rate."
+    "text": "Case study 4: one Dod, two Dod\n\n\nimplemented DoD to be used in application and the simulated DoD available based on historical data\nEstimate an appropriate adjustment and MoC A\n\n\nApproach\nUse different assumptions/scenarios:\n\nAssume that \\(\\bar{R}^{(impl)}_{(12)} = \\alpha \\bar{R}^{(sim)}_{(12)} + \\epsilon\\), where \\(\\bar{R}_{(n)}\\) is an observed average \\(n\\)-month into-default rate. In words, assume that any average default rate over a fixed period under the new default definition is a constant facator times that under the simulated one.\nAssume that \\(R^{(impl)}_{(12)}(t) = \\alpha + \\beta R^{(sim)}_{(12)}(t) + \\epsilon\\), where \\(R_{(n)}(t)\\) is the observed into-default rate at reference date \\(t\\). In words, assume that not the long-run average 12-month, but the monthly 12-month into-default rate under the new definition is linearly related to the simulated one."
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-2",
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-2",
     "title": "Representativeness",
     "section": "Case study 4: one Dod, two Dod",
-    "text": "Case study 4: one Dod, two Dod\n\n\nimplemented DoD to be used in application and the simulated DoD available in historical data\nEstimate an appropriate adjustment and MoC A\nScenario A: \\(\\bar{R}^{(impl)}_{(12)} = \\alpha \\bar{R}^{(sim)}_{(12)} + \\epsilon\\)\nScenario B: \\(R^{(impl)}_{(12)}(t) = \\alpha + \\beta R^{(sim)}_{(12)}(t) + \\epsilon\\)"
+    "text": "Case study 4: one Dod, two Dod\n\n\nimplemented DoD to be used in application and the simulated DoD available in historical data\nEstimate an appropriate adjustment and MoC A\nScenario A: \\(\\bar{R}^{(impl)}_{(12)} = \\alpha \\bar{R}^{(sim)}_{(12)} + \\epsilon\\)\nScenario B: \\(R^{(impl)}_{(12)}(t) = \\alpha + \\beta R^{(sim)}_{(12)}(t) + \\epsilon\\)\n\n\nApproach\nFor each of these scenarios,\n\nEstimate \\(\\alpha\\), \\(\\beta\\) based on the overlapping period.\nBased on your estimates, derive appropriately adjusted default rates.\nAlso estimate the uncertainty of \\(\\alpha\\) resp. \\(\\beta\\).\nUsing error propagation / bootstrapping / …, derive the corresponding additional uncertainty of the estimated adjusted long-run average default rate."
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-3",
@@ -567,13 +546,6 @@
     "text": "Case study 4: one Dod, two Dod\n(B) Monthly 12-month into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(12)}(t) = constant + \\beta\\cdot D^{(sim)}_{(12)}(t) +\\epsilon\\]\n\\[\\bar{D}^{(adj)} = \\sum_t D^{(adj)}_{(12)}(t) / T \\]\nThe regression standard errors are propagated to the 12-month adjusted default rate to obtain the additional uncertainty due to the adjustment."
   },
   {
-    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-reflection",
-    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-reflection",
-    "title": "Representativeness",
-    "section": "Case study 4: reflection",
-    "text": "Case study 4: reflection\n\n\n\n\n\n\nImportant\n\n\n\nSimpler approaches may inflate estimated additional uncertainty \\(\\rightarrow €€€\\) capital\nHowever, this second approach ignores that \\(cov(\\epsilon_t,\\epsilon_{t+1..12})&gt;&gt;0\\) and therefore underestimates \\(\\sigma(\\bar{D}^{adj})\\)"
-  },
-  {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-10",
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-10",
     "title": "Representativeness",
@@ -595,60 +567,32 @@
     "text": "Case study 4: one Dod, two Dod\n(C) Monthly 1-month into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(1)}(t) = constant + \\beta\\cdot D^{(sim)}_{(1)}(t) +\\epsilon\\]\nExtrapolation to 12-month into-default rate:\n\\[D^{(adj)}_{(12)}(t) = 1 - (1 - D^{(adj)}_{(1)}(t))^{12}\\]\n\\[\\sigma^{(adj)}_{(12)}(t) = 1 - (1 - \\sigma^{(adj)}_{(1)})(1 - D^{(adj)}_{(1)})^{11}\\]"
   },
   {
-    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-5-acceptance-policy-change-hard-mode",
-    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-5-acceptance-policy-change-hard-mode",
+    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-reflection",
+    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-reflection",
     "title": "Representativeness",
-    "section": "Case study 5: acceptance policy change (hard mode)",
-    "text": "Case study 5: acceptance policy change (hard mode)\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for the bias introduced by having a non-comparable acceptance policy applied for exposures over part of the historical data set.\nHard mode unlocked!"
+    "section": "Case study 4: reflection",
+    "text": "Case study 4: reflection\n\n\n\n\n\n\nImportant\n\n\n\nSimpler approaches may inflate estimated additional uncertainty \\(\\rightarrow €€€\\) capital\nHowever, this second approach ignores that \\(cov(\\epsilon_t,\\epsilon_{t+1..12})&gt;&gt;0\\) and therefore underestimates \\(\\sigma(\\bar{D}^{adj})\\)"
   },
   {
-    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-5-acceptance-policy-change-hard-mode-1",
-    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-5-acceptance-policy-change-hard-mode-1",
+    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-13",
+    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-13",
     "title": "Representativeness",
-    "section": "Case study 5: acceptance policy change (hard mode)",
-    "text": "Case study 5: acceptance policy change (hard mode)\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
+    "section": "Case study 4: one Dod, two Dod",
+    "text": "Case study 4: one Dod, two Dod\n(C) Monthly 1-month into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(1)}(t) = constant + \\beta\\cdot D^{(sim)}_{(1)}(t) +\\epsilon\\]\nExtrapolation to 12-month into-default rate:\n\\[D^{(adj)}_{(12)}(t) = 1 - (1 - D^{(adj)}_{(1)}(t))^{12}\\]\n\\[\\sigma^{(adj)}_{(12)}(t) = 1 - (1 - \\sigma^{(adj)}_{(1)})(1 - D^{(adj)}_{(1)})^{11}\\]"
   },
   {
-    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-5-acceptance-policy-change-hard-mode-2",
-    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-5-acceptance-policy-change-hard-mode-2",
+    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-14",
+    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-14",
     "title": "Representativeness",
-    "section": "Case study 5: acceptance policy change (hard mode)",
-    "text": "Case study 5: acceptance policy change (hard mode)\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
+    "section": "Case study 4: one Dod, two Dod",
+    "text": "Case study 4: one Dod, two Dod\n(C) Monthly 1-month into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(1)}(t) = constant + \\beta\\cdot D^{(sim)}_{(1)}(t) +\\epsilon\\]\nExtrapolation to 12-month into-default rate:\n\\[D^{(adj)}_{(12)}(t) = 1 - (1 - D^{(adj)}_{(1)}(t))^{12}\\]\n\\[\\sigma^{(adj)}_{(12)}(t) = 1 - (1 - \\sigma^{(adj)}_{(1)})(1 - D^{(adj)}_{(1)})^{11}\\]"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Leaseplan Representativeness Q4 2023",
-    "section": "",
-    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 2\n\n\n\n\n\n\n\n\n\nOct 9, 2023\n\n\nPieter van den Berg, Ryan van Lamoen, Taoying Farenhorst\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 3 (case studies)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 4 (case studies discussion)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#course-slides",
-    "href": "index.html#course-slides",
-    "title": "Leaseplan Representativeness Q4 2023",
-    "section": "",
-    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 2\n\n\n\n\n\n\n\n\n\nOct 9, 2023\n\n\nPieter van den Berg, Ryan van Lamoen, Taoying Farenhorst\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 3 (case studies)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 4 (case studies discussion)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#case-study-data",
-    "href": "index.html#case-study-data",
-    "title": "Leaseplan Representativeness Q4 2023",
-    "section": "Case study data",
-    "text": "Case study data\nCase study #1\nCase study #2\nCase study #3 (csv)/(xlsx)\nCase study #4 (csv)/(xlsx)\nCase study #5 (csv)/(xlsx)\nCase study #6 (zip)"
-  },
-  {
-    "objectID": "index.html#please-fill-out-our-survey",
-    "href": "index.html#please-fill-out-our-survey",
-    "title": "Leaseplan Representativeness Q4 2023",
-    "section": "Please fill out our survey",
-    "text": "Please fill out our survey\nLink to survey"
-  },
-  {
-    "objectID": "index.html#footnotes",
-    "href": "index.html#footnotes",
-    "title": "Leaseplan Representativeness Q4 2023",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nNote that these will be available for a limited time after the course has ended.↩︎"
+    "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-15",
+    "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-15",
+    "title": "Representativeness",
+    "section": "Case study 4: one Dod, two Dod",
+    "text": "Case study 4: one Dod, two Dod\n(C) Monthly 1-month into-default rates\n\n\nHere, we assume\n\\[D^{(adj)}_{(1)}(t) = constant + \\beta\\cdot D^{(sim)}_{(1)}(t) +\\epsilon\\]\nExtrapolation to 12-month into-default rate:\n\\[D^{(adj)}_{(12)}(t) = 1 - (1 - D^{(adj)}_{(1)}(t))^{12}\\]\n\\[\\sigma^{(adj)}_{(12)}(t) = 1 - (1 - \\sigma^{(adj)}_{(1)})(1 - D^{(adj)}_{(1)})^{11}\\]"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-5-acceptance-policy-change-2",
@@ -712,5 +656,40 @@
     "title": "Representativeness",
     "section": "Case study 5: acceptance policy change (2)",
     "text": "Case study 5: acceptance policy change (2)\n\n\n\n\nOne homogeneous portfolio, one DoD, two acceptance policies \\(U,V\\)\nAcceptance policy change at $t_{} = 70, \\(Delta_{V} &gt; Delta_{U}\\)!\nEstimate based on a stratum of interest\n\n\n\nScale observed default rates \\(D^{(adj)}_{(12)}(t)\\) in \\(U\\) according to maturity bucket \\(\\rightarrow U(adj)\\)\n\\[\\bar{D}^{(adj)} = \\sum_t D^{(adj)}_{(12)}(t) / T \\]\nUse (block-)bootstrap for errors"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "",
+    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 2\n\n\n\n\n\n\n\n\n\nOct 9, 2023\n\n\nPieter van den Berg, Ryan van Lamoen, Taoying Farenhorst\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 3 (case studies)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 4 (case studies discussion)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#course-slides",
+    "href": "index.html#course-slides",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "",
+    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 2\n\n\n\n\n\n\n\n\n\nOct 9, 2023\n\n\nPieter van den Berg, Ryan van Lamoen, Taoying Farenhorst\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 3 (case studies)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 4 (case studies discussion)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#case-study-data",
+    "href": "index.html#case-study-data",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "Case study data",
+    "text": "Case study data\nCase study #1\nCase study #2\nCase study #3 (csv)/(xlsx)\nCase study #4 (csv)/(xlsx)\nCase study #5 (csv)/(xlsx)\nCase study #6 (zip)"
+  },
+  {
+    "objectID": "index.html#please-fill-out-our-survey",
+    "href": "index.html#please-fill-out-our-survey",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "Please fill out our survey",
+    "text": "Please fill out our survey\nLink to survey"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Leaseplan Representativeness Q4 2023",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nNote that these will be available for a limited time after the course has ended.↩︎"
   }
 ]

@@ -11,6 +11,20 @@ format: eduquant-slides-revealjs
 # Case Studies discussion
 
 ## Case study 3: acceptance policy change {.smaller .r-fit-text auto-animate=true}
+::: footer
+```{r }
+#| dev.args:
+#|   bg: "transparent"
+#| fig.asp: 1
+#| fig.width: 2
+library(qrcode)
+code <- qr_code("https://quantprofessionals.github.io/eduquant-courses/slides/representativeness/representativeness_day_4.html")
+plot(code)
+```
+[https://tinyurl.com/4n5hj2vw](https://tinyurl.com/4n5hj2vw)
+
+:::
+
 
 
 #### Introduction
@@ -90,13 +104,13 @@ ggplot2::theme_set(ggtheme)
 p1 <- cred_sim_acc_aggr_dr |> 
   filter(accepted=="Any", acc_policy=="Any") |>
   ggplot_rate_series(name = dr, alpha = 0.33) +
-  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
+  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dotted") +
   labs(caption = "accepted + rejected")
 
 p2 <- cred_sim_acc_aggr_dr |> 
   filter(accepted=="accepted", acc_policy=="Any") |>
   ggplot_rate_series(name = dr, alpha = 0.33) +
-  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
+  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dotted") +
   labs(caption = "accepted only, any policy")
 
 p3 <- cred_sim_acc_aggr_dr |> 
@@ -104,7 +118,7 @@ p3 <- cred_sim_acc_aggr_dr |>
   group_by(acc_policy) |> 
   ggplot_rate_series(name = dr, alpha = 0.33) +
   coord_cartesian(ylim=c(0,0.05)) + 
-  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") +
+  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dotted") +
   labs(caption = "accepted only, per policy") +
   theme(legend.title=element_blank()) 
 
@@ -206,7 +220,7 @@ $$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0\ge t
 #| 
 ggplot2::theme_set(ggtheme)
 df_acc_s |> ggplot_rate_series(name=dr) + coord_cartesian(ylim=c(0,0.1)) +
-  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed") 
+  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dotted") 
 ```
 :::
 ::::
@@ -240,7 +254,7 @@ $$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0\ge t
 #| 
 ggplot2::theme_set(ggtheme)
 df_acc |> ggplot_rate_series(name=dr) + coord_cartesian(ylim=c(0,0.1)) +
-  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed")
+  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dotted")
 ```
 :::
 ::::
@@ -272,12 +286,6 @@ $$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0\ge t
 :::
 ::::
 
-
-
-
-
-
-
 ## Case study 3: acceptance policy change  {.smaller .r-fit-text auto-animate=true}
 :::: columns
 ::: {.column width="50%" .r-fit-text }
@@ -298,14 +306,14 @@ $$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0\ge t
 #| fig.asp: 0.5
 #| fig.width: 5
 df_acc |> ggplot_rate_series(name=dr) + coord_cartesian(ylim=c(0,0.1)) +
-  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed")
+  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dotted")
 
 ```
 :::
 ::::
 
 ::: {.callout-warning appearance="default"}
-Not so fast! $V$ and $U(adj)$ look quite different!
+Not so fast! $V$ and $U(adj)$ look similar but $U$
 :::
 
 
@@ -399,22 +407,13 @@ $$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0\ge t
 
 
 
-## Case study 4: Two DoD {.smaller .r-fit-text auto-animate=true}
+
+## Case study 4: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
 
 ```{r setup2}
 case_study_4_data <- readr::read_csv("../../media/case_study_4_data.csv.gz")
 ```
-#### Introduction
-
-In this exercise, you will estimate an **appropriate adjustment** and **MoC A** to account for a difference between the `implemented` DoD used in application and the `simulated` DoD available in historical data. 
-
-Fortunately, some data is available that was collected under the new definition. 
-
-This is a (simulated) data set of a homogeneous portfolio, and there are no risk drivers, grades or other features to distinguish the exposures by. Lucky you!
-
-## Case study 4: Two DoD {.smaller .r-fit-text auto-animate=true}
 :::: columns
-
 ::: {.column #vcenter width="50%" .r-fit-text }
 
 
@@ -422,7 +421,7 @@ This is a (simulated) data set of a homogeneous portfolio, and there are no risk
 
  * One homogeneous portfolio
  * `simulated` DoD available in historical data
- * `implemented` DoD available for $t \ge 95$
+ * `implemented` DoD available for $t \ge 83$
 
 
 
@@ -443,47 +442,12 @@ This is a (simulated) data set of a homogeneous portfolio, and there are no risk
 source("../../Rscripts/utils.R")
 
 ggplot2::theme_set(ggtheme)
-case_study_4_data |> filter(!d) |> summarise_binom_rate_ci(indicator = into_d_12,t=t,name=dr,ci_fun=binom::binom.exact,conf.level = 0.68,n_overlap=12) |> ggplot_rate_series(name=dr)
+case_study_4_data |> filter(!d) |> summarise_binom_rate_ci(indicator = into_d_12,t=t,name=dr,ci_fun=binom::binom.exact,conf.level = 0.5,n_overlap=12) |> ggplot_rate_series(name=dr) + geom_vline(xintercept = 83, linetype="dotted", linewidth=0.4)
 
 ```
 :::
 
 ::::
-
-
-## Case study 4: Two DoD {.smaller .r-fit-text auto-animate=true}
-
-
-:::: columns
-::: {.column width="50%" .r-fit-text }
-
-
-| column    | description    |
-|-------------|-------------|
-|`i`| exposure id|
-|`t`| time|
-|`DoD`| `simulated` or `implemented`|
-|`d`| in-default|
-|`into_d_12`| into default within 12 months|
-|`status`| `enter`, `stock`, `default` or `exit`|
-
-
-:::
-::: {.column width="50%" .r-fit-text .smaller}
-
-```{r echo=FALSE}
-#| tbl-cap: "sample of 10 exposures" 
-
-case_study_4_data |>
-  filter(i %in% sample(i,10)) |> 
-  as.data.frame()
-```
-[ [link to xlsx]{.underline}](/media/case_study_4_data.xlsx)
-
-[ [link to csv.gz]{.underline}](/media/case_study_4_data.csv.gz)
-:::
-::::
-
 
 
 ## Case study 4: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
@@ -501,7 +465,7 @@ Use different assumptions/scenarios:
 
  A) Assume that $\bar{R}^{(impl)}_{(12)} = \alpha \bar{R}^{(sim)}_{(12)} + \epsilon$, where $\bar{R}_{(n)}$ is an observed average $n$-month into-default rate. In words, assume that any average default rate over a fixed period under the new default definition is a constant facator times that under the simulated one.
 
- B) Assume that $R^{(impl)}_{(12)}(t) = \alpha + \beta R^{(sim)}_{(12)}(t) + \epsilon$, where $R_{(n)}(t)$ is the observed $n$-month into-default rate at reference date $t$. In words, assume that not the long-run average 12-month, but the monthly 12-month into-default rate under the new definition is linearly related to the simulated one.
+ B) Assume that $R^{(impl)}_{(12)}(t) = \alpha + \beta R^{(sim)}_{(12)}(t) + \epsilon$, where $R_{(n)}(t)$ is the observed into-default rate at reference date $t$. In words, assume that not the long-run average 12-month, but the monthly 12-month into-default rate under the new definition is linearly related to the simulated one.
 
 
 ## Case study 4: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
@@ -517,19 +481,10 @@ Use different assumptions/scenarios:
 #### Approach
 For each of these scenarios,
 
- 1) Estimate $\alpha$ resp. $\beta$ based on the overlapping period.
+ 1) Estimate $\alpha$, $\beta$ based on the overlapping period.
  2) Based on your estimates, derive appropriately adjusted default rates.
  3) Also estimate the uncertainty of $\alpha$ resp. $\beta$.
- 4) Using error propagation, derive the corresponding **additional** uncertainty of the estimated adjusted long-run average default rate.
-
-## Case study 4: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
-
-::: {style="color:darkgrey"}
- * `implemented` DoD to be used in application and the `simulated` DoD available in historical data
- * Estimate an appropriate adjustment and MoC A
- * Scenario A: $\bar{R}^{(impl)}_{(12)} = \alpha \bar{R}^{(sim)}_{(12)} + \epsilon$
- * Scenario B: $R^{(impl)}_{(12)}(t) = \alpha + \beta R^{(sim)}_{(12)}(t) + \epsilon$
-:::
+ 4) Using error propagation / bootstrapping / ..., derive the corresponding **additional** uncertainty of the estimated adjusted long-run average default rate.
 
 
 ## Case study 4: one Dod, two Dod {.smaller .r-fit-text auto-animate=true}
@@ -624,7 +579,7 @@ case_study_4_summary <- case_study_4_data |> filter(!d) |> group_by(DoD) |>
   
 
   case_study_4_summary |> filter(DoD!="adjusted") |> group_by(DoD) |> ggplot_rate_series(name=dr) + 
-  labs(caption=stringr::str_wrap("Stationary portfolio simulated default rate, DoD threshold at 0 (Old) and 1 (New). All but the last 25 periods are masked for the New DoD.", 60))
+  labs(caption=stringr::str_wrap("Stationary portfolio simulated default rate, DoD threshold at 0 (Old) and 1 (New). All but the last 25 periods are masked for the New DoD.", 60))  + geom_vline(xintercept = 83, linetype="dotted", linewidth=0.4)
 
 ```
 
@@ -657,7 +612,7 @@ Rather large additional uncertainty (using non-overlapping windows)
 
 ggplot2::theme_set(ggtheme)
 case_study_4_summary  |> group_by(DoD) |> ggplot_rate_series(name=dr) + 
-  labs(caption=stringr::str_wrap("Stationary portfolio simulated default rate, DoD threshold at 0 (Old) and 1 (New). All but the last 25 periods are masked for the New DoD.", 60))
+  labs(caption=stringr::str_wrap("Stationary portfolio simulated default rate, DoD threshold at 0 (Old) and 1 (New). All but the last 25 periods are masked for the New DoD.", 60)) + geom_vline(xintercept = 83, linetype="dotted", linewidth=0.4)
 ```
 :::
 ::::
@@ -736,7 +691,7 @@ ggplot2::theme_set(ggtheme)
 df_adj_wide |> ggplot(aes(x=t)) + 
     stat_lineribbon(aes(ydist=distributional::dist_student_t(df=df.residual(lm_adj), mu = .fitted, sigma = .se.fit)), alpha = 0.33*1/4, fill="darkred", linewidth=.4)+
     geom_line(data=df_adj_long, aes(y=dr, color=DoD)) +
-    scale_y_continuous(labels = scales::label_percent(accuracy = .1)) + coord_cartesian(ylim=c(0,NA))
+    scale_y_continuous(labels = scales::label_percent(accuracy = .1)) + coord_cartesian(ylim=c(0,NA))  + geom_vline(xintercept = 83, linetype="dotted", linewidth=0.4)
 
 ```
 :::
@@ -766,7 +721,7 @@ $$\bar{D}^{(adj)} = \sum_t D^{(adj)}_{(12)}(t) / T $$
 #| fig.width: 5
 
 ggplot2::theme_set(ggtheme)
-df_adj_long |> group_by(DoD) |>  ggplot_rate_series(t=t,name=dr)
+df_adj_long |> group_by(DoD) |>  ggplot_rate_series(t=t,name=dr) + geom_vline(xintercept = 83, linetype="dotted", linewidth=0.4)
 ```
 :::
 ::::
@@ -800,7 +755,7 @@ case_study_4_summary_overlap2 |>
   broom::augment(lm_adj, newdata=., se_fit = TRUE) |> 
   ggplot(aes(x=dr_simulated)) + 
     stat_lineribbon(aes(ydist=distributional::dist_student_t(df=df.residual(lm_adj), mu = .fitted, sigma = .se.fit)), alpha = 0.33*1/4, fill="darkred", linewidth=.4) +
-  geom_point(data=case_study_4_summary_overlap2, aes(y=dr_implemented))  + scale_x_continuous(labels = scales::label_percent(accuracy = .1)) + scale_y_continuous(labels = scales::label_percent(accuracy = .1)) + coord_cartesian(ylim=c(0,NA))
+  geom_point(data=case_study_4_summary_overlap2, aes(y=dr_implemented))  + scale_x_continuous(labels = scales::label_percent(accuracy = .1)) + scale_y_continuous(labels = scales::label_percent(accuracy = .1)) + coord_cartesian(ylim=c(0,NA)) 
 
 
 ```
@@ -942,7 +897,7 @@ $$\sigma^{(adj)}_{(12)}(t) = 1 - (1 - \sigma^{(adj)}_{(1)})(1 - D^{(adj)}_{(1)})
 #| fig.asp: 1
 #| fig.width: 5
 ggplot2::theme_set(ggtheme)
-df_adj_long1 |> group_by(DoD) |>  ggplot_rate_series(t=t,name=dr)
+df_adj_long1 |> group_by(DoD) |>  ggplot_rate_series(t=t,name=dr)  + geom_vline(xintercept = 83, linetype="dotted", linewidth=0.4)
       
 
 ```
@@ -1018,7 +973,7 @@ case_study_5_data |>
 df_acc_s <- case_study_5_data |> 
   filter(!d) |> 
   group_by(acc_policy) |> 
-  summarise_binom_rate_ci(name=dr, indicator = into_d_12, ci_fun = binom::binom.exact)
+  summarise_binom_rate_ci(name=dr, indicator = into_d_12, ci_fun = binom::binom.exact, conf.level = 0.5)
 
 df_acc_m <- case_study_5_data |>
   group_by(acc_policy) |>  
@@ -1067,7 +1022,7 @@ $$\text{acc_policy}(t_0): \begin{align*} t_0<t_{\text{change}} &=  U \\ t_0 \ge 
 #| 
 ggplot2::theme_set(ggtheme)
 df_acc_s |> ggplot_rate_series(name=dr) + coord_cartesian(ylim=c(0,0.05)) +
-  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dashed")
+  geom_vline(xintercept = t_acc_policy_change, linewidth=0.25, linetype = "dotted")
 ```
 :::
 ::::
