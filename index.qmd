@@ -30,6 +30,8 @@ Please find the course slides linked below[^1].
 
 [Case study #5 (csv)](/media/case_study_5_data.csv.gz)/[(xlsx)](/media/case_study_5_data.xlsx)
 
+[Case study #6 (zip)](/media/dataset.zip)
+
 ## Please fill out our survey
 
 [Link to survey](https://forms.gle/t6zHtawccEWbs4ms9)

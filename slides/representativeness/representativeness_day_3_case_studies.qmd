@@ -198,10 +198,9 @@ This is a (simulated) data set of a homogeneous portfolio, and there are no risk
 #|  
 
 ggplot2::theme_set(ggtheme)
-case_study_4_data |> 
-filter(!d) |>
-group_by(DoD) |> 
-summarise_binom_rate(into_d_12,name = dr) |> ggplot_rate_series(name=dr)
+case_study_4_data |> filter(!d) |> group_by(DoD) |>
+    summarise_binom_rate_ci(indicator = into_d_12,t=t,name=dr,ci_fun=binom::binom.exact,conf.level = 0.68,n_overlap=12) |> 
+    ggplot_rate_series(name=dr)
 
 ```
 :::
