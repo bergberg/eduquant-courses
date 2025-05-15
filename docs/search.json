@@ -25,7 +25,7 @@
     "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-3-acceptance-policy-change-2",
     "title": "Representativeness",
     "section": "Case study 3: acceptance policy change",
-    "text": "Case study 3: acceptance policy change\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
+    "text": "Case study 3: acceptance policy change\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-4-two-dod",
@@ -46,7 +46,7 @@
     "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-4-two-dod-2",
     "title": "Representativeness",
     "section": "Case study 4: Two DoD",
-    "text": "Case study 4: Two DoD\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nDoD\nsimulated or implemented\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
+    "text": "Case study 4: Two DoD\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nDoD\nsimulated or implemented\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-5-acceptance-policy-change-hard-mode",
@@ -67,49 +67,49 @@
     "href": "slides/representativeness/representativeness_day_3_case_studies.html#case-study-5-acceptance-policy-change-hard-mode-2",
     "title": "Representativeness",
     "section": "Case study 5: acceptance policy change (hard mode)",
-    "text": "Case study 5: acceptance policy change (hard mode)\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
+    "text": "Case study 5: acceptance policy change (hard mode)\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#day-2",
     "href": "slides/representativeness/representativeness_day_2.html#day-2",
     "title": "Representativeness",
     "section": "Day 2",
-    "text": "Day 2\n\n\n13:00\n13:15\n14:15\n14:30\n15:00\n15:45\n16:30\n\nIntroduction\nCase study #1 discussion\nBreak\nGeneral estimation process\nDefinition of default\nEconomic & market conditions\nCase study #2\n\n\n\n\n\n\n\n\nhttps://tinyurl.com/eduquant-current"
+    "text": "Day 2\n\n\n13:00\n13:15\n14:15\n14:30\n15:00\n15:45\n16:30\n\nIntroduction\nCase study #1 discussion\nBreak\nGeneral estimation process\nDefinition of default\nEconomic & market conditions\nCase study #2\n\n\n\n\n\n\n\n\n\n\n\nhttps://tinyurl.com/eduquant-current"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\n\n\n\nSame exposure type (post exclusions)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStationary, homogeneous subportfolios A, B\nThis is not about having to exclude exposures that are of a different type (too much data) but having to include exposures of the same type (not enough data)"
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\n\n\n\nSame exposure type (post exclusions)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStationary, homogeneous subportfolios A, B\nThis is not about having to exclude exposures that are of a different type (too much data) but having to include exposures of the same type (not enough data)"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-1",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-1",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n\n\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn real life, look at characteristics / reason for segmentation\nhere, all we have is nr of exposures"
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n\n\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn real life, look at characteristics / reason for segmentation\nhere, all we have is nr of exposures"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-2",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-2",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n\n\n…different (stationary) default levels\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nToy example, not always so obvious\nCan think of this as already conditioned on (other) risk characteristics, i.e., homogeneous grade/pool\nNote that this are aggregations over stationary processes, so any trend you see is purely in your head\nIn real life, may require analysis of relation to other time varying effects, in particular econ. cond."
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n\n\n…different (stationary) default levels\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nToy example, not always so obvious\nCan think of this as already conditioned on (other) risk characteristics, i.e., homogeneous grade/pool\nNote that this are aggregations over stationary processes, so any trend you see is purely in your head\nIn real life, may require analysis of relation to other time varying effects, in particular econ. cond."
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-3",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-3",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\n`\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n…different (stationary) default levels\n\n\\(\\rightarrow\\) What is the correct/allowed treatment?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMany scenarios where you have a time-varying segmentation of reference data that may effect default/loss char., assignment to grades/pools, calibration targets"
+    "text": "Case study: scope of application\n\n\n`\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n…different (stationary) default levels\n\n\\(\\rightarrow\\) What is the correct/allowed treatment?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMany scenarios where you have a time-varying segmentation of reference data that may effect default/loss char., assignment to grades/pools, calibration targets"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-4",
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-4",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n…different (stationary) default levels\n\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorrect / alllowed treatment depends on * what you’re segmenting over * what the observed effect on default/loss char. is (point-in-time and/or LRA/DT) (conditional on risk char.) * if there is no observed effect at all, should you do anything? - Perhaps in case of extrapolation approaches (obs not affected but dependence is affected)"
+    "text": "Case study: scope of application\n\n\nDescription\n\nTwo homogeneous segments A and B\nSame exposure type (post exclusions)\n…with a varying share \\(\\frac{n_A}{n_A+n_B}(t)\\)\n…different (stationary) default levels\n\n\\(\\rightarrow\\) Treatment depends on segmentation dimension\n\n\n\nSegmentation\nLevel of risk\nTreatment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorrect / alllowed treatment depends on * what you’re segmenting over * what the observed effect on default/loss char. is (point-in-time and/or LRA/DT) (conditional on risk char.) * if there is no observed effect at all, should you do anything? - Perhaps in case of extrapolation approaches (obs not affected but dependence is affected)"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-5",
@@ -179,7 +179,7 @@
     "href": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-14",
     "title": "Representativeness",
     "section": "Case study: scope of application",
-    "text": "Case study: scope of application\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\n\\(r_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{n_A}{n_A+n_B}(t_{u_0}+u)\\)\n\\(s_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{D_A}{D_A+D_B}(t_{u_0}+u)\\)\n\n\n\n\n\n\n\n\n\n\n\\[D^\\prime(t\\le t_{u_0})=D_A(t) \\frac{r_0}{s_0} \\pm \\sqrt{\\sigma^2_{D_A}\\frac{r^2_0}{s^2_0}+... } \\]\n\n\nAdjusted calibration target\n\\[\\bar{D}^\\prime = \\frac{1}{T}\\sum_t D^\\prime(t) \\pm \\sqrt{...}\\]"
+    "text": "Case study: scope of application\n\n\n\\(\\rightarrow\\) Adjust calibraton target for effect of non-representativeness\n\\(r_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{n_A}{n_A+n_B}(t_{u_0}+u)\\)\n\\(s_0\\sim\\frac{1}{S}\\sum_{u=1...S}\\frac{D_A}{D_A+D_B}(t_{u_0}+u)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[D^\\prime(t\\le t_{u_0})=D_A(t) \\frac{r_0}{s_0} \\pm \\sqrt{\\sigma^2_{D_A}\\frac{r^2_0}{s^2_0}+... } \\]\n\n\nAdjusted calibration target\n\\[\\bar{D}^\\prime = \\frac{1}{T}\\sum_t D^\\prime(t) \\pm \\sqrt{...}\\]"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_2.html#case-study-scope-of-application-15",
@@ -200,49 +200,49 @@
     "href": "slides/representativeness/representativeness_day_1.html#course-outline-1",
     "title": "Representativeness",
     "section": "Course outline",
-    "text": "Course outline\n\n\nDay 1\n\nRisk Parameter Estimation Overview\nData Representativeness Overview\nScope of Application\n\n\n\n\nDay 2\n\nGeneral Process Design\nDefinition of Default\nEconomic & Market conditions\n\n\n\n\n\nDay 3\n\nUnderwriting/Lending Standards\nRecovery Process/Standards\nExternal Data/Ratings\nRisk Characteristics\n\n\n\n\n\nDay 4\n\nReview of Estimates & IRB Change\nGovernance"
+    "text": "Course outline\n\n\nDay 1\n\nRisk Parameter Estimation Overview\nData Representativeness Overview\nScope of Application\n\n\n\nDay 2\n\nGeneral Process Design\nDefinition of Default\nEconomic & Market conditions\n\n\n\n\nDay 3\n\nUnderwriting/Lending Standards\nRecovery Process/Standards\nExternal Data/Ratings\nRisk Characteristics\n\n\n\n\nDay 4\n\nReview of Estimates & IRB Change\nGovernance"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#day-1",
     "href": "slides/representativeness/representativeness_day_1.html#day-1",
     "title": "Representativeness",
     "section": "Day 1",
-    "text": "Day 1\n\n\n13:00\n13:30\n14:30\n15:30\n16:30\n\nIntroduction\nRisk Parameter Estimation Overview\nRepresentativeness Overview\nScope of Application\nCase Study\n\n\n\n\n\n\n\n\nhttps://tinyurl.com/4n5hj2vw"
+    "text": "Day 1\n\n\n13:00\n13:30\n14:30\n15:30\n16:30\n\nIntroduction\nRisk Parameter Estimation Overview\nRepresentativeness Overview\nScope of Application\nCase Study\n\n\n\n\n\n\n\n\n\n\n\nhttps://tinyurl.com/4n5hj2vw"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation",
     "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation",
     "title": "Representativeness",
     "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on (internal) risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -&gt; quantification\n\n\n14:00"
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on (internal) risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -&gt; quantification\n\n\n14:00"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-1",
     "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-1",
     "title": "Representativeness",
     "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk measure \\(\\sim\\) into-default / realized LGD closed cases / realized CCF\nConditional on risk drivers, based on data set representative of application portfolio\nRegulatory requirements focus on meaningful differentiation\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -&gt; quantification"
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk measure \\(\\sim\\) into-default / realized LGD closed cases / realized CCF\nConditional on risk drivers, based on data set representative of application portfolio\nRegulatory requirements focus on meaningful differentiation\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -&gt; quantification"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-2",
     "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-2",
     "title": "Representativeness",
     "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\nEstimates of long-run default/loss experience\nRegulatory requirements focus on calculation method and quantification process\n\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -&gt; quantification"
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\nEstimates of long-run default/loss experience\nRegulatory requirements focus on calculation method and quantification process\n\n\n\n\n\n\n\n\n\n\nDiagram: differentiation -&gt; quantification"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-3",
     "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-estimation-3",
     "title": "Representativeness",
     "section": "Risk Parameter Estimation",
-    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nDirect estimation: special case\nContinuous estimation: effectively same requirements\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\nCRR Article 169\n\n\n3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale.\n\n\n\n\n\n\nAmendment\n\n\nEBA shall issue guidelines on how to apply in practice the requirements on model design, risk quantification, validation and application of risk parameters using continuous or very granular rating scales for each risk parameter.\n\n\n\n\n\n\n14:15"
+    "text": "Risk Parameter Estimation\n\n\n\n\nIndirect estimation\n\nrisk quantification conditional on risk differentiation\n\n\n\n\n\nDirect estimation: special case\nContinuous estimation: effectively same requirements\n\n\n\n\nRisk Differentiation\n\ndifferentiate and rank exposures on risk measure\n\n\n\n\n\nRisk Quantification\n\nQuantify risk parameter estimates; calibration to long-run or downturn estimates and MoC\n\n\n\n\n\n\n\n\n\n\n\n\n\nCRR Article 169\n\n\n3. Where an institution uses direct estimates of risk parameters for individual obligors or exposures these may be seen as estimates assigned to grades on a continuous rating scale.\n\n\n\n\n\n\n\n\nAmendment\n\n\nEBA shall issue guidelines on how to apply in practice the requirements on model design, risk quantification, validation and application of risk parameters using continuous or very granular rating scales for each risk parameter.\n\n\n\n\n\n\n14:15"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#risk-parameter-quantification",
     "href": "slides/representativeness/representativeness_day_1.html#risk-parameter-quantification",
     "title": "Representativeness",
     "section": "Risk Parameter Quantification",
-    "text": "Risk Parameter Quantification\n\n\n\nExposure type\n\nhomogeneously managed, comparable risk characteristics\n\nReference dates\n\nDate to which realised values are aggregated\n\nCalibration Target\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness & other sources of bias\n\nAppropriately Adjusted Calibration Target\n\nCalibration Target adjusted for biases\n\n\n\n\n\n\n\nDiagram: Type of Exposures -&gt; RDS -&gt; Initial Calibration Target -&gt; Appr. Adjusted Target\nPar 12 PD&LGD\n\n\n15:15"
+    "text": "Risk Parameter Quantification\n\n\n\nExposure type\n\nhomogeneously managed, comparable risk characteristics\n\nReference dates\n\nDate to which realised values are aggregated\n\nCalibration Target\n\nlong-run average (LRA) default rate, (LRA/DT) LGD, CCF calculated based on RDS prior to adjustments\n\nAppropriate Adjustment\n\nModeled effect on CT of drivers of non-representativeness & other sources of bias\n\nAppropriately Adjusted Calibration Target\n\nCalibration Target adjusted for biases\n\n\n\n\n\n\nDiagram: Type of Exposures -&gt; RDS -&gt; Initial Calibration Target -&gt; Appr. Adjusted Target\nPar 12 PD&LGD\n\n\n15:15"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#moc-quantification",
@@ -263,7 +263,7 @@
     "href": "slides/representativeness/representativeness_day_1.html#realised-risk-parameter-values",
     "title": "Representativeness",
     "section": "Realised Risk Parameter Values",
-    "text": "Realised Risk Parameter Values\n\n\n\nReference date methodology\n\n(non-)overlapping [PD], time-to-default [LGD, CCF], time-in-default/recovery process [in-default]\n\nReference dates \\(t_r\\)\n\nset of dates over which calibration target is calculated, either as an average (LRA LGD), average of yearly averages (PD & LRA CCF), or an estimated downturn effect (DT LGD/CCF)\n\nDefault/Loss characteristics\n\nexposure-level into-default flag, (partially) realised LGD values, realised credit conversion factors, intermediate components\n\n\n\n\n\n\n\n\n\nTypical approach: realised values also targets of (statistical) ranking method (model)"
+    "text": "Realised Risk Parameter Values\n\n\n\nReference date methodology\n\n(non-)overlapping [PD], time-to-default [LGD, CCF], time-in-default/recovery process [in-default]\n\nReference dates \\(t_r\\)\n\nset of dates over which calibration target is calculated, either as an average (LRA LGD), average of yearly averages (PD & LRA CCF), or an estimated downturn effect (DT LGD/CCF)\n\nDefault/Loss characteristics\n\nexposure-level into-default flag, (partially) realised LGD values, realised credit conversion factors, intermediate components\n\n\n\n\n\n\n\n\nTypical approach: realised values also targets of (statistical) ranking method (model)"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#calibration-targets",
@@ -284,7 +284,7 @@
     "href": "slides/representativeness/representativeness_day_1.html#representativeness-1",
     "title": "Representativeness",
     "section": "Representativeness",
-    "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\nModel\nrelevant scope/conditions to describe generating process\n\n\nData\ngenerated under historical realized conditions\n\n\nPredictions\nconditional on data generated with current conditions\n\n\n\n\n\n\n\n\n\nModelling assumption\n\ncomparable scope & conditions \\(\\rightarrow\\) representative data \\(\\rightarrow\\) unbiased estimates"
+    "text": "Representativeness\n\n\n\n\n\n\n\n\n\n\n\nModel\nrelevant scope/conditions to describe generating process\n\n\nData\ngenerated under historical realized conditions\n\n\nPredictions\nconditional on data generated with current conditions\n\n\n\n\n\n\n\n\nModelling assumption\n\ncomparable scope & conditions \\(\\rightarrow\\) representative data \\(\\rightarrow\\) unbiased estimates"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#representativeness-2",
@@ -333,7 +333,7 @@
     "href": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure",
     "title": "Representativeness",
     "section": "Assessment & Estimation Procedure",
-    "text": "Assessment & Estimation Procedure\n\n\n\nIdentify non-comparable scope/process/condition\nAssess non-representativeness data\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 34\n\n\nWhere the representativeness of data \\(\\small{\\dots}\\) is insufficient and leads to a bias or increased uncertainty of risk quantification, institutions should introduce an appropriate adjustment to correct the bias and they should apply a margin of conservatism\n\n\n\n\n\n\n\nHigh level process\nIdentification of potential drivers of non-representativeness Estimation of effect on risk estimation targets Quantification of appropriate adjusted calibration target Quantification of additional uncertainty"
+    "text": "Assessment & Estimation Procedure\n\n\n\nIdentify non-comparable scope/process/condition\nAssess non-representativeness data\nEstimate effect size & quantify adjusted calibration target\nEstimate additional uncertainty & quantify MoC\n\n\nMoC A (Definition of Default)\nMoC B (Other non-representativeness)\n\n\n\n\n\nEBA/GL/2017/16 \\(\\S\\) 34\n\n\nWhere the representativeness of data \\(\\small{\\dots}\\) is insufficient and leads to a bias or increased uncertainty of risk quantification, institutions should introduce an appropriate adjustment to correct the bias and they should apply a margin of conservatism\n\n\n\n\n\n\nHigh level process\nIdentification of potential drivers of non-representativeness Estimation of effect on risk estimation targets Quantification of appropriate adjusted calibration target Quantification of additional uncertainty"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#assessment-estimation-procedure-1",
@@ -396,7 +396,7 @@
     "href": "slides/representativeness/representativeness_day_1.html#case-study-1",
     "title": "Representativeness",
     "section": "Case study",
-    "text": "Case study\n\n\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for the bias introduced by having a non-comparable scope of application on certain historical reference dates.\n\n\n\n\n\n\nDownload the dataset from the slides website (csv or xlsx)\nUse your favorite tool! Anything goes.\nBring the results for discussion to next week training\nOr send them to pieter@berg-sp.eu"
+    "text": "Case study\n\n\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for the bias introduced by having a non-comparable scope of application on certain historical reference dates.\n\n\n\n\n\nDownload the dataset from the slides website (csv or xlsx)\nUse your favorite tool! Anything goes.\nBring the results for discussion to next week training\nOr send them to pieter@berg-sp.eu"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_1.html#case-study-2-portfolios-1-data",
@@ -410,14 +410,14 @@
     "href": "slides/representativeness/representativeness_day_1.html#case-study-2-portfolios-1-data-1",
     "title": "Representativeness",
     "section": "Case study: 2 portfolios, 1 data",
-    "text": "Case study: 2 portfolios, 1 data\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\n\ncase_study_2_data.xlsx case_study_2_data.csv.gz\n\n\n\n\n\n\nhttps://tinyurl.com/4n5hj2vw"
+    "text": "Case study: 2 portfolios, 1 data\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nsubportfolio\n“A” or “B”\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\n\ncase_study_2_data.xlsx case_study_2_data.csv.gz\n\n\n\n\n\n\n\n\n\n\nhttps://tinyurl.com/4n5hj2vw"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change",
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change",
     "title": "Representativeness",
     "section": "Case study 3: acceptance policy change",
-    "text": "Case study 3: acceptance policy change\n\n\n\n\n\n\nhttps://tinyurl.com/4n5hj2vw\n\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for the bias introduced by having a non-comparable acceptance policy applied for exposures over part of the historical data set.\n\nDownload the dataset from the slides website (csv or xlsx)\nUse your favorite tool! Anything goes.\nBring the results for discussion to the next training\nOr send them to pieter@berg-sp.eu"
+    "text": "Case study 3: acceptance policy change\n\n\n\n\n\n\n\n\n\n\nhttps://tinyurl.com/4n5hj2vw\n\nIntroduction\nIn this exercise, you will estimate an appropriate adjustment and MoC A to account for the bias introduced by having a non-comparable acceptance policy applied for exposures over part of the historical data set.\n\nDownload the dataset from the slides website (csv or xlsx)\nUse your favorite tool! Anything goes.\nBring the results for discussion to the next training\nOr send them to pieter@berg-sp.eu"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change-1",
@@ -431,7 +431,7 @@
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change-2",
     "title": "Representativeness",
     "section": "Case study 3: acceptance policy change",
-    "text": "Case study 3: acceptance policy change\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
+    "text": "Case study 3: acceptance policy change\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change-3",
@@ -459,7 +459,7 @@
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change-6",
     "title": "Representativeness",
     "section": "Case study 3: acceptance policy change",
-    "text": "Case study 3: acceptance policy change\n\n\n\n\nAcceptance policy change at \\(t_{\\text{change}} = 70\\) \\[\\text{acc_policy}(t_0): \\begin{align*} t_0&lt;t_{\\text{change}} &=  U \\\\ t_0\\ge t_{\\text{change}} &=  V \\end{align*}\\]\n\\(U,V\\) apply a different threshold \\(a_0&gt;\\Delta_{\\text{acc_policy}(t_0)}\\)\nWe can simply take \\(U_{adj}: a_{0i} &gt; \\Delta_{V}\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nNot so fast! \\(V\\) and \\(U(adj)\\) look similar but \\(U\\)"
+    "text": "Case study 3: acceptance policy change\n\n\n\n\nAcceptance policy change at \\(t_{\\text{change}} = 70\\) \\[\\text{acc_policy}(t_0): \\begin{align*} t_0&lt;t_{\\text{change}} &=  U \\\\ t_0\\ge t_{\\text{change}} &=  V \\end{align*}\\]\n\\(U,V\\) apply a different threshold \\(a_0&gt;\\Delta_{\\text{acc_policy}(t_0)}\\)\nWe can simply take \\(U_{adj}: a_{0i} &gt; \\Delta_{V}\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nNot so fast! \\(V\\) and \\(U(adj)\\) look similar but \\(U\\)"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-3-acceptance-policy-change-7",
@@ -571,7 +571,7 @@
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-reflection",
     "title": "Representativeness",
     "section": "Case study 4: reflection",
-    "text": "Case study 4: reflection\n\n\n\n\n\n\nImportant\n\n\n\nSimpler approaches may inflate estimated additional uncertainty \\(\\rightarrow €€€\\) capital\nHowever, this second approach ignores that \\(cov(\\epsilon_t,\\epsilon_{t+1..12})&gt;&gt;0\\) and therefore underestimates \\(\\sigma(\\bar{D}^{adj})\\)"
+    "text": "Case study 4: reflection\n\n\n\n\n\n\n\nImportant\n\n\n\nSimpler approaches may inflate estimated additional uncertainty \\(\\rightarrow €€€\\) capital\nHowever, this second approach ignores that \\(cov(\\epsilon_t,\\epsilon_{t+1..12})&gt;&gt;0\\) and therefore underestimates \\(\\sigma(\\bar{D}^{adj})\\)"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-4-one-dod-two-dod-13",
@@ -606,7 +606,7 @@
     "href": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-5-acceptance-policy-change-2-1",
     "title": "Representativeness",
     "section": "Case study 5: acceptance policy change (2)",
-    "text": "Case study 5: acceptance policy change (2)\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
+    "text": "Case study 5: acceptance policy change (2)\n\n\n\n\n\ncolumn\ndescription\n\n\n\n\ni\nexposure id\n\n\nt\ntime\n\n\nd\nin-default\n\n\ninto_d_12\ninto default within 12 months\n\n\nstatus\nenter, stock, default or exit\n\n\nm\ntime since origination\n\n\nt0\nt of origination\n\n\na0\ndebt service to income at origination score\n\n\nacc_policy\nU or V\n\n\n\n\n\n\n sample of 10 exposures\n  \n\n\n\nlink to xlsx\nlink to csv.gz"
   },
   {
     "objectID": "slides/representativeness/representativeness_day_4_case_studies_discussion.html#case-study-5-acceptance-policy-change-2-2",
@@ -662,14 +662,14 @@
     "href": "index.html",
     "title": "Leaseplan Representativeness Q4 2023",
     "section": "",
-    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 2\n\n\n\n\n\n\n\n\n\nOct 9, 2023\n\n\nPieter van den Berg, Ryan van Lamoen, Taoying Farenhorst\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 3 (case studies)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 4 (case studies discussion)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
+    "text": "Please find the course slides linked below1.\n\n\n\n\n\n\n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay 2\n\n\n\n\n\n\n\n\nOct 9, 2023\n\n\nPieter van den Berg, Ryan van Lamoen, Taoying Farenhorst\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay 3 (case studies)\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay 4 (case studies discussion)\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#course-slides",
     "href": "index.html#course-slides",
     "title": "Leaseplan Representativeness Q4 2023",
     "section": "",
-    "text": "Please find the course slides linked below1.\n\n\n\n\n  \n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 2\n\n\n\n\n\n\n\n\n\nOct 9, 2023\n\n\nPieter van den Berg, Ryan van Lamoen, Taoying Farenhorst\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 3 (case studies)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n  \n\n\n\n\n\nDay 4 (case studies discussion)\n\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
+    "text": "Please find the course slides linked below1.\n\n\n\n\n\n\n\n\n\n\n\nDay 1\n\n\n\n\n\n\n\n\nSep 25, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay 2\n\n\n\n\n\n\n\n\nOct 9, 2023\n\n\nPieter van den Berg, Ryan van Lamoen, Taoying Farenhorst\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay 3 (case studies)\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay 4 (case studies discussion)\n\n\n\n\n\n\n\n\nOct 17, 2023\n\n\nPieter van den Berg\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#case-study-data",
